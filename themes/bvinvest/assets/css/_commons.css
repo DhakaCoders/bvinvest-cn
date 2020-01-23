@@ -12,17 +12,17 @@ a, button, input{
 a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
 	outline: 0;
-}
+} 
 
 body {
-    background: #f8f8f8;
-    color: #000000;
+    background: #fff;
+    color: #656565;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
-p{
-	line-height: 1.2;
-}
+
 /*-- app gap use pattern --*/
 /*data-xxs = 575
 data-xs = 767
@@ -88,7 +88,7 @@ Containers
 
 }
 .container{
-	max-width: 1200px;
+	max-width: 1400px;
 	width: 100%;
 }
 .container-md{

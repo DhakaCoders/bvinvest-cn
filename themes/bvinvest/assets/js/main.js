@@ -127,6 +127,84 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 }
 
-    new WOW().init();
+
+
+/*
+  Ronojit
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  Proshanto
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  Milon
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  Shoriful
+*/
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  new WOW().init();
 
 })(jQuery);
