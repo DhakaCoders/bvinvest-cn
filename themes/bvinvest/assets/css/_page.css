@@ -1,0 +1,94 @@
+/* 
+----------------- 
+Start sitemap
+-----------------
+*/ 
+.sitemap{
+  max-width: 800px;
+  margin: 0 auto;
+  padding:100px 0;
+}
+.sitemap ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitemap ul ul {
+   margin-left: 30px;
+  padding-top: 12px;
+}
+
+.sitemap ul li {
+  padding: 5px 0;
+  margin-bottom: 0;
+}
+
+.sitemap ul li a {
+  display: inline-block;
+  vertical-align: baseline;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  position: relative;
+  -ms-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.sitemap ul li a:hover{
+  color: #15B615;
+}
+.sitemap ul li a:focus{
+  text-decoration: underline;
+}
+.sitemap h2 {
+  margin: 0;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  color: #15B615;
+}
+
+
+/*=============
+  Banner Design
+==============*/
+
+.page-banner-sec-con{
+  position: relative;
+  min-height: 752px;
+  overflow: hidden;
+}
+.page-banner-bg-con{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.page-banner-des{
+  padding-top:212px;
+  padding-bottom: 28px;
+  color: #fff;
+  max-width:770px;
+}
+.page-banner-des h1{
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.page-banner-des strong{
+  display: block;
+  font-size: 72px;
+}
+
+.page-banner-des p{
+  font-size: 22px;
+  letter-spacing: 0.02em;
+}
+
