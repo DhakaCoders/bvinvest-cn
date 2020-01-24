@@ -170,7 +170,9 @@ footer-wrp
 	max-width: 672px;
 	width: 100%;
 	background: #15B615;
-	padding: 60px 85px 50px;
+	padding: 40px 85px 35px;
+	border-top: 17px solid#07AA07;
+	border-bottom: 17px solid#07AA07;
 }
 .ftr-top-frm-dsc{
 	text-align: left;
