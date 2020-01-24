@@ -195,7 +195,7 @@ footer-wrp
  Contact form css
 ------------------------
 */
-.vd-contact-form #wp-form .wpforms-field-container .wpforms-field {
+.ftr-top-form #wp-form .wpforms-field-container .wpforms-field {
 	width: 50%;
 	float: left;
 	clear: none;
@@ -203,10 +203,10 @@ footer-wrp
 	position: relative;
 	margin-bottom: 30px;
 }
-.vd-contact-form #wp-form .wpforms-field-container .wpforms-field.fullwidth{
+.ftr-top-form #wp-form .wpforms-field-container .wpforms-field.fullwidth{
 	width: 100%;
 }
-.vd-contact-form #wp-form .wpforms-field-container .wpforms-field .wpforms-field-label{
+.ftr-top-form #wp-form .wpforms-field-container .wpforms-field .wpforms-field-label{
 	font-size: 14px;
 	line-height: 16px;
 	color: #fff !important;
@@ -217,7 +217,7 @@ footer-wrp
 	text-transform: uppercase;
 }
 
-.vd-contact-form #wp-form .wpforms-field-container .wpforms-field input {
+.ftr-top-form #wp-form .wpforms-field-container .wpforms-field input {
 	max-width: 100%;
 	width: 100%;
 	height: 48px;
@@ -231,10 +231,10 @@ footer-wrp
 	-webkit-transition: all 0.5s;
 	color: #7B7B7B;
 }
-.vd-contact-form #wp-form .wpforms-field-container .wpforms-field.wpforms-field-textarea {
+.ftr-top-form #wp-form .wpforms-field-container .wpforms-field.wpforms-field-textarea {
 	width: 100%;
 }
-.vd-contact-form #wp-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea {
+.ftr-top-form #wp-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea {
 	width: 100%;
 	height: 250px;
 	border: 1px solid #E7E7E7;
@@ -245,8 +245,8 @@ footer-wrp
 	resize:none;
 }
 
-.vd-contact-form #wp-form .wpforms-submit-container button[type="submit"],
-.vd-contact-form #wp-form .wpforms-submit-container input[type="submit"]{
+.ftr-top-form #wp-form .wpforms-submit-container button[type="submit"],
+.ftr-top-form #wp-form .wpforms-submit-container input[type="submit"]{
 	max-width: 210px !important;
 	width: 100% !important;
 	height: 50px !important;
