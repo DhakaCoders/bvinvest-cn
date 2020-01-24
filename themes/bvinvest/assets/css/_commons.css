@@ -1,5 +1,5 @@
 /**
-Commons
+Commons 
 */
 *, *:focus,.btn,.btn:focus{
 	outline: 0!important;
@@ -85,7 +85,7 @@ Containers
 	
 }
 .container-lg{
-
+	max-width: 1470px;
 }
 .container{
 	max-width: 1400px;
