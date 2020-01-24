@@ -1,0 +1,276 @@
+/*
+-------------------
+footer-wrp
+-------------------
+*/
+.ftr-top-wrp{
+	padding-top: 90px;
+}
+.ftr-logo{
+	float: left;
+	width: 24%;
+}
+.ftr-menu-item{
+	float: left;
+	width: 28%;
+}
+.ftr-socail,
+.ftr-contact{
+	float: left;
+	width: 24%;
+}
+.ftr-logo a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: initial;
+}
+.ftr-menu-item ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	float: left;
+}
+.ftr-menu-item ul li{
+	font-size: 14px;
+	line-height: 16px;
+	padding-bottom: 24px;
+}
+.ftr-menu-item ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #656565;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+.ftr-middel-lft ul li a:hover,
+.ftr-contact span a:hover,
+.ftr-menu-item ul li a:hover{
+	color: #008000;
+}
+.ftr-contact span{
+	display: block;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #7B7B7B;
+	text-transform: uppercase;
+	padding-bottom: 25px;
+}
+.ftr-contact span:first-child{
+	margin-top: -5px;
+}
+.ftr-contact span a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: inherit;
+}
+.ftr-socail span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 18px;
+	color: #7B7B7B;
+	letter-spacing: 0.02em;
+	font-weight: 400;
+}
+.socail{
+	padding-top: 55px;
+}
+.socail a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	padding-right: 20px;
+}
+.ftr-middel-inr{
+	padding:50px 0;
+	border-top: 1px solid #F1F1F1;
+	border-bottom: 1px solid #F1F1F1;
+}
+.ftr-middel-lft{
+	float: left;
+	width: 61%;
+}
+.ftr-middel-lft p{
+	float: left;
+	font-size: 14px;
+	line-height: 16px;
+	color: #7B7B7B;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+}
+.ftr-middel-lft ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+}
+.ftr-middel-lft ul li{
+	float: left;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 0 13px;
+	position: relative;
+}
+.ftr-middel-lft ul li:after{
+	content: "";
+	width: 1px;
+	height: 12px;
+	background: #7B7B7B;
+	position: absolute;
+	top: 2px;
+	right: -1px;
+}
+.ftr-middel-lft ul li:last-child:after{
+	content: none;
+}
+.ftr-middel-lft ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-weight: 400;
+	color: #7B7B7B;
+}
+.ftr-middel-rgt{
+	float: right;
+	width: 39%;
+}
+.ftr-middel-rgt span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 14px;
+	line-height: 16px;
+	color: #7B7B7B;
+	font-weight: 400;
+	float: right;
+}
+.ftr-btm-inr{
+	padding: 50px 0 45px;
+}
+.ftr-btm-inr p{
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #ACACAC;
+	text-align: center;
+}
+
+.footer-top-form-sec-wrp{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center center !important;
+	min-height: 504px !important;
+}
+.footer-form-wrp{
+	max-width: 672px;
+	width: 100%;
+	background: #15B615;
+	padding: 60px 85px 50px;
+}
+.ftr-top-frm-dsc{
+	text-align: left;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	padding-bottom: 15px;
+}
+.ftr-top-frm-dsc h4{
+	margin: 0;
+	font-weight: 700;
+	line-height: 38px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+/*
+------------------------
+ Contact form css
+------------------------
+*/
+.vd-contact-form #wp-form .wpforms-field-container .wpforms-field {
+	width: 50%;
+	float: left;
+	clear: none;
+	padding: 0 10px;
+	position: relative;
+	margin-bottom: 30px;
+}
+.vd-contact-form #wp-form .wpforms-field-container .wpforms-field.fullwidth{
+	width: 100%;
+}
+.vd-contact-form #wp-form .wpforms-field-container .wpforms-field .wpforms-field-label{
+	font-size: 14px;
+	line-height: 16px;
+	color: #fff !important;
+	font-weight: 700;
+	display: block;
+	margin: 0;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+}
+
+.vd-contact-form #wp-form .wpforms-field-container .wpforms-field input {
+	max-width: 100%;
+	width: 100%;
+	height: 48px;
+	border: none;
+	padding: 20px 16px;
+	font-size: 14px;
+	line-height: 15px;
+	text-transform: capitalize;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	color: #7B7B7B;
+}
+.vd-contact-form #wp-form .wpforms-field-container .wpforms-field.wpforms-field-textarea {
+	width: 100%;
+}
+.vd-contact-form #wp-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea {
+	width: 100%;
+	height: 250px;
+	border: 1px solid #E7E7E7;
+	padding: 20px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	resize:none;
+}
+
+.vd-contact-form #wp-form .wpforms-submit-container button[type="submit"],
+.vd-contact-form #wp-form .wpforms-submit-container input[type="submit"]{
+	max-width: 210px !important;
+	width: 100% !important;
+	height: 50px !important;
+	background: transparent !important;
+	font-weight: 500 !important;
+	font-size: 16px !important;
+	color: #FFFFFF !important;
+	text-align: center !important;
+	text-transform: uppercase !important;
+	margin-top: 5px !important;
+	padding-bottom: 0 !important;
+	position: relative;
+	border: 2px solid #FFFFFF !important;
+	box-sizing: border-box;
+	border-radius: 50px;
+	float: left;
+}
+.ftr-msg{
+	float: left;
+	padding-left: 15px;
+	padding-top: 12px;
+}
+.ftr-msg p{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	font-style: italic;
+	color: #fff;
+}
