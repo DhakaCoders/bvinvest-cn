@@ -190,6 +190,12 @@ contact-form-sec-wrp
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.contact-form-wrp .wpforms-field-container .yourCustomStraat{
+	width: 74%;
+}
+.contact-form-wrp .wpforms-field-container .yourCustomNr{
+	width: 26%;
+}
 .contact-form-wrp .wpforms-field-container .wpforms-field-textarea{
 	width: 100%;
 }
@@ -210,6 +216,43 @@ contact-form-sec-wrp
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.contact-form-wrp .wpforms-field-container .fullwidth{
+	width: 100%;
+}
+.contact-form-wrp .select-box.check-box select {
+	background: url(../images/select-angle-icon.svg)!important;
+	background-size: 9px 16px;
+	background-repeat: no-repeat !important;
+	background-position: 98.5% center !important;
+}
+.contact-form-wrp .select-box select{
+	outline: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	padding-right: 40px;
+	width: 100% !important;
+	max-width: 100% !important;
+	height: 56px !important;
+	border: 1px solid #EBEBEB;
+	padding: 20px 20px;
+	font-size: 12px !important;
+	line-height: 14px;
+	color: #7B7B7B !important;
+	font-weight: 400 !important;
+	position: relative;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	text-transform: uppercase;
+}
+.contact-form-wrp .select-box select.round option{
+	font-size: 14px !important;
+	line-height: 22px !important;
+	display: inline-block !important;
+	vertical-align: baseline !important;
+}
+
 .contact-form-wrp .wpforms-field-container .wpforms-field-html{
 	width: 100%;
 }

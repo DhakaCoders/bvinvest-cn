@@ -578,6 +578,7 @@ if( $('#detailpaginamap').length ){
   Milon
 */
 
+
 /*
 -----------------------
 Start Contact Google Map ->> 
@@ -900,7 +901,79 @@ if( $('#googlemap').length ){
 
 
 
+new WOW().init();
 
-  new WOW().init();
+$(document).ready(function () {
+ $('body').addClass('aniLoaded');
+});
+
+$('.recipeItemsSliderController').onScreen({
+  tolerance: 250,
+  toggleClass: false,
+  doIn: function() {
+    $(this).addClass('onScreen')
+  }
+});
+
+AOS.init({
+  once: true,
+  duration: 800
+});
+
+$('.hasBgAnimation .banner-bg').css('min-width', windowWidth);
+
+var toLerance = windowHeight / 2;
+
+$('.firstLine').onScreen({
+  tolerance: toLerance,
+  toggleClass: true,
+  doIn: function() {
+    $(this).addClass('onScreen')
+  },
+  doOut: function() {
+    $(this).removeClass('notOnScreen')
+  }
+});
+
+window.onscroll=function(){
+  scrollTimeline();
+  scrollFunction();
+};
+function scrollTimeline(){
+  var mE = $('.middleElement').offset().top;
+  var fL = $('.firstLine').offset().top;
+  ofH = mE - fL;
+    $('.historyActiveWrap').css('height', ofH);
+}
+
+$('.historyInit ul li').onScreen({
+  tolerance: toLerance,
+  toggleClass: true,
+  doIn: function() {
+    $(this).addClass('onScreen')
+  }
+});
+
+$(window).on('load', function(){
+  setTimeout(removeLoader, 600); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( "#loadingDiv" ).fadeOut(500, function() {
+      // fadeOut complete. Remove the loading div
+      $( "#loadingDiv" ).addClass('loadingdone'); //makes page more lightweight 
+  });  
+}
+
+function scrollFunction(){
+  if(document.body.scrollTop>700||document.documentElement.scrollTop>700){
+    $(".logo-fixed").addClass('showingFixedLogo');
+  }else{
+    $(".logo-fixed").removeClass('showingFixedLogo');
+  }
+}
+
+var prpgofstop = $('.product-inr-tab-wrp .img-change-pagi').offset().top;
+$('.prPaginationOutside').css('top', prpgofstop);
+
 
 })(jQuery);
