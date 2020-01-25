@@ -279,6 +279,19 @@ over-ons-service-sec-wrp
     background: #d5dce4;
     z-index: 1;
 }
+.activeLine{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    background: #15B615;
+    z-index: 2;	
+    height: 0;
+    overflow: hidden;
+}
 .historyActiveWrap .firstLine{
 	background: #002853;
 }
