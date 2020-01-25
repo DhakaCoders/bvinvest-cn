@@ -150,7 +150,6 @@ $(window).scroll(function() {
   });
 });
 
-
 if( $('.hmTestimonialSlider').length ){
   $('.hmTestimonialSlider').slick({
     pauseOnHover: false,
@@ -166,6 +165,60 @@ if( $('.hmTestimonialSlider').length ){
     nextArrow: $('.testimonialRightArrow')
   });
 }
+
+if( $('.detailpagina-slider').length ){
+  $('.detailpagina-slider').slick({
+    pauseOnHover: false,
+    autoplay: false,
+    dots: false,
+    infinite: true,
+    arrows:true,
+    speed: 1000,
+    fade: true,
+    slidesToShow: 1,
+    slidesToScroll: 1, 
+    prevArrow: $('.detailpaginaLeftArrow'),
+    nextArrow: $('.detailpaginaRightArrow'),
+    asNavFor: '.detailpagina-thumb-slider',
+  });
+}
+
+if( $('.detailpagina-thumb-slider').length ){
+  $('.detailpagina-thumb-slider').slick({
+      dots: false,
+      autoplay: false,
+      infinite: true,
+      speed: 1000,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      arrows:false,
+      asNavFor: '.detailpagina-slider',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows:false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows:false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
 
 
 if( $('.hmGrdSlider').length ){
@@ -211,6 +264,315 @@ $('.slider-filter-bar > a').on('click', function(e){
   $(this).addClass('active');
   $(this).siblings().removeClass('active');
 });
+
+
+
+
+
+
+
+/*
+-----------------------
+Start Contact Google Map ->> 
+-----------------------
+*/
+if( $('#detailpaginamap').length ){
+    var latitude = $('#detailpaginamap').data('latitude');
+    var longitude = $('#detailpaginamap').data('longitude');
+
+    var myCenter= new google.maps.LatLng(latitude,  longitude);
+    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+    function initialize(){
+        var mapProp = {
+          center:myCenter,
+
+          mapTypeControl:false,
+          scrollwheel: false,
+
+          zoomControl: false,
+          disableDefaultUI: true,
+          zoom:17,
+          streetViewControl: false,
+          rotateControl: false,
+          mapTypeId:google.maps.MapTypeId.ROADMAP,
+          styles : [
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#333333"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "hue": "#ff0000"
+            },
+            {
+                "weight": "6.00"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "weight": "1"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.neighborhood",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.neighborhood",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.landcover",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#dedede"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#dddddd"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "visibility": "on"
+            },
+            {
+                "weight": "2"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e9e9e9"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    }
+]
+          };
+
+        var map= new google.maps.Map(document.getElementById('detailpaginamap'),mapProp);
+
+        var marker= new google.maps.Marker({
+          position:myCenter,
+          icon:'assets/images/map-marker.png'
+          });
+        marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
   Milon
