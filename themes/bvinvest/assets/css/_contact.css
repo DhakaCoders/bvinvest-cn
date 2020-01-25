@@ -216,16 +216,16 @@ contact-form-sec-wrp
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.contact-form-wrp .wpforms-field-container .fullwidth{
+.contact-form-wrp .wpforms-field-container .wpforms-field-select{
 	width: 100%;
 }
-.contact-form-wrp .select-box.check-box select {
+.contact-form-wrp .wpforms-field-select select {
 	background: url(../images/select-angle-icon.svg)!important;
 	background-size: 9px 16px;
 	background-repeat: no-repeat !important;
 	background-position: 98.5% center !important;
 }
-.contact-form-wrp .select-box select{
+.contact-form-wrp .wpforms-field-select select{
 	outline: 0;
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -246,7 +246,7 @@ contact-form-sec-wrp
 	-webkit-transition: all 0.5s;
 	text-transform: uppercase;
 }
-.contact-form-wrp .select-box select.round option{
+.contact-form-wrp .wpforms-field-select select option{
 	font-size: 14px !important;
 	line-height: 22px !important;
 	display: inline-block !important;
