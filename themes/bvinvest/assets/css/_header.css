@@ -32,7 +32,6 @@
 	text-transform: uppercase;
 	color: #7B7B7B;
 }
-
 .hdr-rgt-top-lnc a:hover {
 	color: #15B615;
 }
@@ -93,7 +92,6 @@
 	width: 1px;
 	height: 24px;
 }
-
 .hdr-main-menu-controlar{
 	padding: 12px 0;
 }
@@ -118,41 +116,41 @@ nav.main-nav > ul > li:last-child{
 nav.main-nav > ul > li:first-child{
     padding-left: 0;
 }
-	nav.main-nav > ul > li > a {
-	    position: relative;
-	    padding-bottom: 2px;
-	    text-transform: uppercase;
-	    display: inline-block;
-	    vertical-align: baseline;
-	    font-weight: 500;
-		font-size: 16px;
-		letter-spacing: 0.02em;
-		color: #656565;
-	}
-	nav.main-nav > ul > li > a::after{
-	    border-bottom: 3px solid #15B615;
-	    content: "";
-	    display: block;
-	    height: 3px;
-	    left: 0;
-	    right: 0;
-	    position: absolute;
-	    top: 100%;
-	    transform: scale(0, 1);
-	    -ms-transform: scale(0, 1);
-	    -webkit-transform: scale(0, 1);
-	    transform-origin: center center 0;
-	    transition: all 0.15s ease-out 0s;
-	    width: 100%;
-	}
-	nav.main-nav > ul > li > a:hover::after{
-	    transform: scale(1, 1);
-	}
-	nav.main-nav > ul > li.current-menu-item > a,
-	nav.main-nav > ul > li > a:hover{
-	    color: #15B615;
-	    background:#0000 ;
-	}
+nav.main-nav > ul > li > a {
+    position: relative;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: baseline;
+    font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	color: #656565;
+}
+nav.main-nav > ul > li > a::after{
+    border-bottom: 3px solid #15B615;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 100%;
+    transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    -webkit-transform: scale(0, 1);
+    transform-origin: center center 0;
+    transition: all 0.15s ease-out 0s;
+    width: 100%;
+}
+nav.main-nav > ul > li > a:hover::after{
+    transform: scale(1, 1);
+}
+nav.main-nav > ul > li.current-menu-item > a,
+nav.main-nav > ul > li > a:hover{
+    color: #15B615;
+    background:#0000 ;
+}
 
 
 
@@ -232,7 +230,7 @@ nav.main-nav ul li.menu-item-has-children ul li:last-child{
 nav.main-nav ul li.menu-item-has-children:hover > a{
     color:#15B615;
 }
-nav.main-nav > ul > li.menu-item-has-children:hover > a:after{
+nav.main-nav > ul > li.menu-item-has-children:hover > a::after{
     transform: scale(1, 1);
 }
 

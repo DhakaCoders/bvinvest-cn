@@ -151,10 +151,59 @@ $(window).scroll(function() {
 });
 
 
+if( $('.hmTestimonialSlider').length ){
+  $('.hmTestimonialSlider').slick({
+    pauseOnHover: false,
+    autoplay: false,
+    dots: false,
+    infinite: true,
+    arrows:true,
+    speed: 1000,
+    fade: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: $('.testimonialLeftArrow'),
+    nextArrow: $('.testimonialRightArrow')
+  });
+}
 
 
-
-
+if( $('.hmGrdSlider').length ){
+  $('.hmGrdSlider').slick({
+      dots: false,
+      autoplay: false,
+      infinite: true,
+      speed: 1000,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows:true,
+      prevArrow: $('.hmGrdSliderLeftArrow'),
+      nextArrow: $('.hmGrdSliderRightArrow'),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows:false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows:false,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
 
 
 
