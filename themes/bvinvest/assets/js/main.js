@@ -594,10 +594,151 @@ if( $('#detailpaginamap').length ){
 
 
 
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+var bar1 = new ProgressBar.Circle(container1, {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 10,
+  trailWidth: 10,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#aaa', width: 10 },
+  to: { color: '#15B615', width: 10 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(9248);
+    }
+
+  }
+});
+bar1.text.style.fontFamily = '"Roboto", sans-serif';
+bar1.text.style.fontSize = '36px';
+bar1.text.style.color = '#282828';
+//bar.text.style.box-shadow = '0px 8px 20px rgba(0, 0, 0, 0.03)';
+
+bar1.animate(1.0);  // Number from 0.0 to 1.0
 
 
 
 
+var bar2 = new ProgressBar.Circle(container2, {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 10,
+  trailWidth: 10,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#aaa', width: 10 },
+  to: { color: '#15B615', width: 10 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(1578);
+    }
+
+  }
+});
+bar2.text.style.fontFamily = '"Roboto", sans-serif';
+bar2.text.style.fontSize = '36px';
+bar2.text.style.color = '#282828';
+//bar.text.style.box-shadow = '0px 8px 20px rgba(0, 0, 0, 0.03)';
+
+bar2.animate(1.0);  // Number from 0.0 to 1.0
+
+
+
+var bar3 = new ProgressBar.Circle(container3, {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 10,
+  trailWidth: 10,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#aaa', width: 10 },
+  to: { color: '#15B615', width: 10 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(7846);
+    }
+
+  }
+});
+bar3.text.style.fontFamily = '"Roboto", sans-serif';
+bar3.text.style.fontSize = '36px';
+bar3.text.style.color = '#282828';
+//bar.text.style.box-shadow = '0px 8px 20px rgba(0, 0, 0, 0.03)';
+
+bar3.animate(1.0);  // Number from 0.0 to 1.0
+
+
+
+var bar4 = new ProgressBar.Circle(container4, {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 10,
+  trailWidth: 10,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#aaa', width: 10 },
+  to: { color: '#15B615', width: 10 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(897);
+    }
+
+  }
+});
+bar4.text.style.fontFamily = '"Roboto", sans-serif';
+bar4.text.style.fontSize = '36px';
+bar4.text.style.color = '#282828';
+//bar.text.style.box-shadow = '0px 8px 20px rgba(0, 0, 0, 0.03)';
+
+bar4.animate(1.0);  // Number from 0.0 to 1.0
 
 
 
@@ -939,77 +1080,16 @@ if( $('#googlemap').length ){
 
 new WOW().init();
 
-$(document).ready(function () {
- $('body').addClass('aniLoaded');
-});
-
-$('.recipeItemsSliderController').onScreen({
-  tolerance: 250,
-  toggleClass: false,
-  doIn: function() {
-    $(this).addClass('onScreen')
-  }
-});
-
-AOS.init({
-  once: true,
-  duration: 800
-});
-
-$('.hasBgAnimation .banner-bg').css('min-width', windowWidth);
-
-var toLerance = windowHeight / 2;
-
-$('.firstLine').onScreen({
-  tolerance: toLerance,
-  toggleClass: true,
-  doIn: function() {
-    $(this).addClass('onScreen')
-  },
-  doOut: function() {
-    $(this).removeClass('notOnScreen')
-  }
-});
-
 window.onscroll=function(){
   scrollTimeline();
-  scrollFunction();
 };
 function scrollTimeline(){
   var mE = $('.middleElement').offset().top;
   var fL = $('.firstLine').offset().top;
   ofH = mE - fL;
-    $('.historyActiveWrap').css('height', ofH);
+    $('.activeLine').css('height', ofH);
 }
 
-$('.historyInit ul li').onScreen({
-  tolerance: toLerance,
-  toggleClass: true,
-  doIn: function() {
-    $(this).addClass('onScreen')
-  }
-});
-
-$(window).on('load', function(){
-  setTimeout(removeLoader, 600); //wait for page load PLUS two seconds.
-});
-function removeLoader(){
-    $( "#loadingDiv" ).fadeOut(500, function() {
-      // fadeOut complete. Remove the loading div
-      $( "#loadingDiv" ).addClass('loadingdone'); //makes page more lightweight 
-  });  
-}
-
-function scrollFunction(){
-  if(document.body.scrollTop>700||document.documentElement.scrollTop>700){
-    $(".logo-fixed").addClass('showingFixedLogo');
-  }else{
-    $(".logo-fixed").removeClass('showingFixedLogo');
-  }
-}
-
-var prpgofstop = $('.product-inr-tab-wrp .img-change-pagi').offset().top;
-$('.prPaginationOutside').css('top', prpgofstop);
 
 
 })(jQuery);
