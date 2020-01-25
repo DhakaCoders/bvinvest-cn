@@ -462,6 +462,58 @@ ul.testimonial-ratings li i{
 
 
 
+.pregress-counter-col{
+  position: relative;
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pregress-counter-col span{
+  display: inline-block;
+  vertical-align: baseline;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+#container1,
+#container2,
+#container3,
+#container4 {
+  width: 155px;
+  height: 155px;
+  position: relative;
+  margin: 0 auto 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
