@@ -36,3 +36,7 @@
 	-webkit-transform: translateY(-50%); 
 	padding-right: 50px;
 }
+.progrees-bar-wrp{
+	background: #f9f9f9;
+	margin-bottom: 24px;
+}
