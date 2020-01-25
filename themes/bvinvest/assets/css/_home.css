@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #F1F1F1;
 }
 .bw-invest-des{
   order: 1;
@@ -460,7 +461,9 @@ ul.testimonial-ratings li i{
 
 
 
-
+.pregress-counter-innr{
+  padding: 60px 0 64px;
+}
 
 .pregress-counter-col{
   position: relative;
@@ -470,7 +473,6 @@ ul.testimonial-ratings li i{
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .pregress-counter-col span{
   display: inline-block;
   vertical-align: baseline;
@@ -480,7 +482,6 @@ ul.testimonial-ratings li i{
   text-transform: uppercase;
   color: #282828;
 }
-
 #container1,
 #container2,
 #container3,
@@ -490,9 +491,14 @@ ul.testimonial-ratings li i{
   position: relative;
   margin: 0 auto 20px;
 }
-
-
-
+.pregress-counter-col .progressbar-text{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #282828 !important;
+}
 
 
 

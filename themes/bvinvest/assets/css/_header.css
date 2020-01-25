@@ -35,6 +35,15 @@
 .hdr-rgt-top-lnc a:hover {
 	color: #15B615;
 }
+
+.hdr-rgt-top-lnc a svg{
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;    
+}
+.hdr-rgt-top-lnc a:hover svg{
+    fill: #15B615!important;
+}
 .hdr-rgt-top-lnc-innr{
 	max-width: 610px;
 	width: 100%;

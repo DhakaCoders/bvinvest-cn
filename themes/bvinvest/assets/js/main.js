@@ -581,19 +581,14 @@ var bar1 = new ProgressBar.Circle(container1, {
 
     var value = Math.round(circle.value() * 100);
     if (value === 0) {
-      circle.setText('');
+      circle.setText(0);
     } else {
       circle.setText(9248);
     }
 
   }
 });
-bar1.text.style.fontFamily = '"Roboto", sans-serif';
-bar1.text.style.fontSize = '36px';
-bar1.text.style.color = '#282828';
-//bar.text.style.box-shadow = '0px 8px 20px rgba(0, 0, 0, 0.03)';
-
-bar1.animate(1.0);  // Number from 0.0 to 1.0
+bar1.animate(0.9);  // Number from 0.0 to 1.0
 
 
 
@@ -618,19 +613,14 @@ var bar2 = new ProgressBar.Circle(container2, {
 
     var value = Math.round(circle.value() * 100);
     if (value === 0) {
-      circle.setText('');
+      circle.setText(0);
     } else {
       circle.setText(1578);
     }
 
   }
 });
-bar2.text.style.fontFamily = '"Roboto", sans-serif';
-bar2.text.style.fontSize = '36px';
-bar2.text.style.color = '#282828';
-//bar.text.style.box-shadow = '0px 8px 20px rgba(0, 0, 0, 0.03)';
-
-bar2.animate(1.0);  // Number from 0.0 to 1.0
+bar2.animate(0.8);  // Number from 0.0 to 1.0
 
 
 
@@ -654,19 +644,14 @@ var bar3 = new ProgressBar.Circle(container3, {
 
     var value = Math.round(circle.value() * 100);
     if (value === 0) {
-      circle.setText('');
+      circle.setText(0);
     } else {
       circle.setText(7846);
     }
 
   }
 });
-bar3.text.style.fontFamily = '"Roboto", sans-serif';
-bar3.text.style.fontSize = '36px';
-bar3.text.style.color = '#282828';
-//bar.text.style.box-shadow = '0px 8px 20px rgba(0, 0, 0, 0.03)';
-
-bar3.animate(1.0);  // Number from 0.0 to 1.0
+bar3.animate(0.68);  // Number from 0.0 to 1.0
 
 
 
@@ -690,19 +675,43 @@ var bar4 = new ProgressBar.Circle(container4, {
 
     var value = Math.round(circle.value() * 100);
     if (value === 0) {
-      circle.setText('');
+      circle.setText(0);
     } else {
       circle.setText(897);
     }
 
   }
 });
-bar4.text.style.fontFamily = '"Roboto", sans-serif';
-bar4.text.style.fontSize = '36px';
-bar4.text.style.color = '#282828';
-//bar.text.style.box-shadow = '0px 8px 20px rgba(0, 0, 0, 0.03)';
+bar4.animate(0.55);  // Number from 0.0 to 1.0
 
-bar4.animate(1.0);  // Number from 0.0 to 1.0
+
+/*
+
+$('.classname').onScreen({
+tolerance: 100,
+toggleClass: true,
+doIn: function() {
+$(this).addClass('onScreen')
+},
+doOut: function() {
+$(this).removeClass('notOnScreen')
+}
+});
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
