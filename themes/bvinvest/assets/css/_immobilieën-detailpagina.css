@@ -42,6 +42,10 @@
   margin-bottom: 15px;
   position: relative;
 }
+.etailpagina-slider-des > span > i {
+  display: inline-block;
+  vertical-align: middle;
+}
 .etailpagina-slider-des > span > strong {
   display: inline-block;
   vertical-align: middle;
@@ -172,7 +176,7 @@
   padding-top: 70px;
 }
 .detailpagina-main-des-top{
-    padding-bottom: 13px;
+  padding-bottom: 13px;
 }
 .detailpagina-main-des-top h2{
   font-weight: 900;
