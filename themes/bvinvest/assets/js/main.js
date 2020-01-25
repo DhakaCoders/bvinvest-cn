@@ -913,8 +913,6 @@ function scrollTimeline(){
     $('.activeLine').css('height', ofH);
 }
 
-var prpgofstop = $('.product-inr-tab-wrp .img-change-pagi').offset().top;
-$('.prPaginationOutside').css('top', prpgofstop);
 
 
 })(jQuery);
