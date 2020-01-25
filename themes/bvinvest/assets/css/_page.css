@@ -177,7 +177,7 @@ page-banner-filter-form
   top: -2px;
 }
 .psearch-form-fields .bootstrap-select>.dropdown-toggle{
-  padding: 33px 27px 33px 40px;
+  padding: 33px 37px 33px 40px;
   border: none;
   border-right: 1px solid #F1F1F1;
   font-weight: 500;
@@ -202,10 +202,6 @@ page-banner-filter-form
 .psearch-form-fields .dropdown-menu > .active > a:hover {
   background-color:  #15B615;
 }
-
-
-
-
 
 
 
