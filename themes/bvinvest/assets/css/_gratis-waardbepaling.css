@@ -1,0 +1,38 @@
+/*
+*/
+.gw-dsc-box{
+	background: #16b616;
+	min-height: 135px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.gw-dsc-box i{
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	display: inline-block;
+	vertical-align: baseline;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 15px;
+	position: absolute;
+	left: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.gw-dsc-box p{
+	margin: 0;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 500;
+	color: #fff;
+	position: absolute;
+	left: 115px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%); 
+	padding-right: 50px;
+}
