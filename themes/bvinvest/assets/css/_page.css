@@ -349,6 +349,16 @@ page-banner-filter-form
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.bradecumb-btn a:hover,
+.bradecumb ul li a:hover{
+  color: #107a10;
+}
+.bradecumb-btn a:hover:after{
+  left: -5px;
 }
 .bradecumb-btn{
   float: right;
@@ -366,6 +376,9 @@ page-banner-filter-form
   text-transform: uppercase;
   padding-left: 40px;
   position: relative;
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .bradecumb-btn a:after{
   content: "";
@@ -377,5 +390,9 @@ page-banner-filter-form
   background-size: 18px 13px;
   width: 18px;
   height: 13px;
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
+
 

@@ -15,12 +15,16 @@ over-ons-two-part-sec-wrp
 	margin: 0 -8px;
 	padding-top: 16px;
 }
+.over-ons-two-part-innr{
+	display: flex;
+	align-items: center;
+}
 .over-ons-lft-btm-img{
 	float: left;
 	padding: 0 8px;
 }
 .over-ons-rgt{
-	padding: 90px 0 75px 110px;
+	padding: 80px 0 75px 110px;
 	width:57%;
 	float: left;
 }
@@ -70,6 +74,14 @@ over-ons-two-part-sec-wrp
 	color: #656565;
 	border: 2px solid #656565;
 	margin-left: 10px;
+}
+.over-ons-btn a:hover:last-child{
+	border-color: #15B615 !important;
+	color: #15B615 !important;
+}
+.over-ons-btn a:hover:first-child{
+	border-color: #656565 !important;
+	color: #656565 !important;
 }
 /*
 ------------------------
@@ -151,6 +163,7 @@ over-ons-service-sec-wrp
 
 /*
 -----------------------
+history-timeline-sec
 -----------------------
 */
 .history-timeline-sec{
@@ -168,13 +181,12 @@ over-ons-service-sec-wrp
 	font-weight: 900;
 }
 .history-timeline-main {
-    max-width: 1100px;
+    max-width: 1130px;
     margin: 0 auto;
     position: relative;
     padding-top: 30px;
 }
 .history-timeline-main ul li{
-	/*padding-bottom: 160px;*/
     position: relative;
 }
 .history-timeline-main ul li .time-line-wrp{
@@ -196,14 +208,8 @@ over-ons-service-sec-wrp
 .history-timeline-main ul li .time-line-wrp .time-line-des{
   float: left;
   width: 100%;
-  /*padding-top: 100px;*/
   text-align: right;
 }
-/*.history-timeline-main ul li:nth-child(2n+2) .time-line-wrp .time-line-img{
-    float: right;
-	padding-right: 0;
-	text-align: left;
-}*/
 .history-timeline-main ul li:nth-child(2n+2) .time-line-wrp .time-line-des{
   text-align: left;
 }
@@ -228,12 +234,14 @@ over-ons-service-sec-wrp
 }
 .time-line-des p{
 	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 24px;
 }
-.history-timeline-main ul li .time-line-des h3:after {
+.history-timeline-main ul li .time-line-wrp .time-line-des h3:after{
     content: "";
     position: absolute;
     right: -136px;
-    top: 7px;
+    top: 10px;
     width: 31px;
     height: 25px;
     border-radius: 100%;
@@ -242,21 +250,23 @@ over-ons-service-sec-wrp
     background-size: 31px 25px;
     z-index: 3;
 }
-.history-timeline-main ul li .time-line-des h3 .pointBullet{
+.history-timeline-main ul li:nth-child(2n+2) .time-line-des h3:after{
+	background: url(../images/time-line-cricle-1.svg);
+}
+.history-timeline-main ul li .time-line-wrp .time-line-des h3 .pointBullet{
 	position: absolute;
 	left:-64px;
 	top:7px;
 	width:16px;
 	height: 16px;
 	border-radius: 100%;
-	/*background:#d5dce4;*/
-	border: 3px solid rgba(196, 196, 196, 0.21);
+	background:#f3f3f3;
 	z-index: 3	
 }
 
 .history-timeline-main ul li:nth-child(2n+2) .time-line-des h3:after,
 .history-timeline-main ul li:nth-child(2n+2) .time-line-des h3:before{
-	left:-145px;
+	left:-138px;
 	right:auto;
 }
 

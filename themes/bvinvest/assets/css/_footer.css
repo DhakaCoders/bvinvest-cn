@@ -195,7 +195,7 @@ footer-wrp
  Contact form css
 ------------------------
 */
-.ftr-top-form #wp-form .wpforms-field-container .wpforms-field {
+.ftr-top-form .wpforms-field-container .wpforms-field{
 	width: 50%;
 	float: left;
 	clear: none;
@@ -203,10 +203,10 @@ footer-wrp
 	position: relative;
 	margin-bottom: 30px;
 }
-.ftr-top-form #wp-form .wpforms-field-container .wpforms-field.fullwidth{
+.ftr-top-form .wpforms-field-container .wpforms-field.fullwidth{
 	width: 100%;
 }
-.ftr-top-form #wp-form .wpforms-field-container .wpforms-field .wpforms-field-label{
+.ftr-top-form .wpforms-field-container .wpforms-field .wpforms-field-label{
 	font-size: 14px;
 	line-height: 16px;
 	color: #fff !important;
@@ -217,7 +217,7 @@ footer-wrp
 	text-transform: uppercase;
 }
 
-.ftr-top-form #wp-form .wpforms-field-container .wpforms-field input {
+.ftr-top-form .wpforms-field-container .wpforms-field input {
 	max-width: 100%;
 	width: 100%;
 	height: 48px;
@@ -230,23 +230,16 @@ footer-wrp
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	color: #7B7B7B;
+	text-transform: uppercase;
+	border:1px solid transparent;
 }
-.ftr-top-form #wp-form .wpforms-field-container .wpforms-field.wpforms-field-textarea {
-	width: 100%;
-}
-.ftr-top-form #wp-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea {
-	width: 100%;
-	height: 250px;
-	border: 1px solid #E7E7E7;
-	padding: 20px;
-	transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	resize:none;
+.ftr-top-form .wpforms-field-container .wpforms-field input:focus{
+	border-color:#107a10; 
 }
 
-.ftr-top-form #wp-form .wpforms-submit-container button[type="submit"],
-.ftr-top-form #wp-form .wpforms-submit-container input[type="submit"]{
+
+.ftr-top-form .wpforms-submit-container button[type="submit"],
+.ftr-top-form .wpforms-submit-container input[type="submit"]{
 	max-width: 210px !important;
 	width: 100% !important;
 	height: 50px !important;
@@ -263,6 +256,14 @@ footer-wrp
 	box-sizing: border-box;
 	border-radius: 50px;
 	float: left;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.ftr-top-form .wpforms-submit-container button[type="submit"]:hover,
+.ftr-top-form .wpforms-submit-container input[type="submit"]:hover{
+	background:#0c740c !important;
+	border-color: #0c740c !important;
 }
 .ftr-msg{
 	float: left;
