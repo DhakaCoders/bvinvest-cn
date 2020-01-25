@@ -143,10 +143,36 @@ page-banner-filter-form
 
 
 .psearch-form-fields > ul > li > div input{
-  height: 100%;
   width: 100%;
-  padding: 19px 22px 19px 24px;
+  padding: 33px 37px 33px 40px;
+  border: none;
+  border-right: 1px solid #F1F1F1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #282828;
+  border-radius: 0
 }
+.psearch-form-fields > ul > li > div input:focus{
+  background: #dae0e5;
+}
+
+.psearch-form-fields ::placeholder {
+  color: #282828;
+  opacity: 1;
+}
+.psearch-form-fields :-ms-input-placeholder { 
+  color: #282828;
+  opacity: 1;
+}
+.psearch-form-fields ::-ms-input-placeholder {
+  color: #282828;
+  opacity: 1;
+}
+
+
 .psearch-form-fields .submit button{
   position: relative;
   width: 100%;
