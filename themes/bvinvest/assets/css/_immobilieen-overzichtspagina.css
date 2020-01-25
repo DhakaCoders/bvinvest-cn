@@ -36,10 +36,14 @@
 	transition: 0.5s ease-in-out;
 	-webkit-transition: 0.5s ease-in-out;
 }
-.bvi-grd-key{
+.bvi-grid-key-info-ctlr{
 	position: absolute;
 	bottom: 18px;
 	left: 8px;
+	z-index: 11;
+}
+.bvi-grd-key{
+	float: left;
 	background: transparent;
 	border-radius: 8px;
 	padding: 10px 22px 12px 10px;
@@ -89,12 +93,11 @@
 	border-top: 8px solid #14A7FA;
 }
 .bvi-grd-date{
-	position: absolute;
-	left: 145px;
-	bottom: 18px;
+	float: left;
 	background: #5C958E;
 	border-radius: 8px;
 	padding: 10px;
+	margin-left: 8px;
 }
 .bvi-grd-item-des{
 	padding-top: 30px;
