@@ -85,6 +85,9 @@
 .sky{
 	background: #14A7FA;
 }
+.sky:after{
+	border-top: 8px solid #14A7FA;
+}
 .bvi-grd-date{
 	position: absolute;
 	left: 145px;
