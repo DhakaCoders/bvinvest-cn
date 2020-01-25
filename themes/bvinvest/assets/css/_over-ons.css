@@ -1,0 +1,321 @@
+/*
+-------------------------
+over-ons-two-part-sec-wrp
+-------------------------
+*/
+.over-ons-two-part-sec-wrp{
+	padding:75px 0;
+}
+.over-ons-lft{
+	position: relative;
+	width:43%;
+	float: left;
+}
+.over-ons-lft-btm-img-wrp{
+	margin: 0 -8px;
+	padding-top: 16px;
+}
+.over-ons-lft-btm-img{
+	float: left;
+	padding: 0 8px;
+}
+.over-ons-rgt{
+	padding: 90px 0 75px 110px;
+	width:57%;
+	float: left;
+}
+.over-ons-rgt h3{
+	margin: 0;
+	margin-bottom: 5px;
+	font-weight: 500;
+	color: #282828;
+	text-transform: uppercase;
+	line-height: 42px;
+}
+.over-ons-rgt h1{
+	margin: 0;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #282828;
+	margin-bottom: 38px;
+}
+.over-ons-rgt p{
+	margin-bottom: 20px;
+	line-height: 29px;
+}
+.over-ons-btn{
+	padding-top: 12px;
+}
+.over-ons-btn a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #15B615;
+	max-width: 220px;
+	width: 100%;
+	height: 56px;
+	text-align: center;
+	border: 2px solid #15B615;
+	box-sizing: border-box;
+	border-radius: 50px;
+	padding: 18px 65px 20px;
+}
+.over-ons-btn a:last-child{
+	max-width: 200px;
+	width: 100%;
+	color: #656565;
+	border: 2px solid #656565;
+	margin-left: 10px;
+}
+/*
+------------------------
+over-ons-service-sec-wrp
+------------------------
+*/
+.over-ons-service-sec-wrp{
+	background: linear-gradient(0deg, #F9F9F9, #F9F9F9);
+	padding-top: 75px;
+	padding-bottom: 45px;
+}
+.over-ons-service-head{
+	max-width: 895px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.over-ons-service-head h4{
+	margin: 0;
+	font-weight: 900;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #282828;
+	margin-bottom: 15px;
+}
+.over-ons-service-wrp ul{
+	list-style: none;
+	margin: 0 -10px;
+	padding: 0;
+}
+.over-ons-service-wrp ul li {
+    float: left;
+    width: 25%;
+    padding: 0 10px 60px;
+}
+.over-ons-service-wrp ul li:nth-child(4n+1){
+	clear: left;
+}
+.over-ons-service-dsc{
+	text-align: center;
+}
+.over-ons-service-dsc span{
+	display: inline-block;
+	vertical-align: baseline;
+	width: 92px;
+	height: 92px;
+	background: #15B615;
+	border-radius: 100px;
+	position: relative;
+}
+.over-ons-service-dsc span i{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+.over-ons-service-dsc h5{
+	margin: 0;
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 900;
+	color: #000;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-top: 22px;
+	margin-bottom: 15px;
+}
+.over-ons-service-dsc p{
+	font-size: 16px;
+	line-height: 24px;
+	color: #656565;
+	text-align: center;
+}
+
+/*
+-----------------------
+-----------------------
+*/
+.history-timeline-sec{
+	padding: 78px 0 92px
+}
+.history-timeline-top {
+    text-align: center;
+    padding-bottom: 55px;
+}
+.history-timeline-top h2{
+	margin: 0;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #282828;
+	font-weight: 900;
+}
+.history-timeline-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+}
+.history-timeline-main ul li{
+	/*padding-bottom: 160px;*/
+    position: relative;
+}
+.history-timeline-main ul li .time-line-wrp{
+	width: 50%;
+	float: left;
+	padding-right: 125px;
+}
+.history-timeline-main ul li:nth-child(2n+2) .time-line-wrp{
+	float: right;
+	padding-right: 0;
+	padding-left: 125px;
+	margin-top: -275px;
+}
+.history-timeline-main ul li .time-line-wrp .time-line-img{
+	float: left;
+	width: 100%;
+	text-align: right;
+}
+.history-timeline-main ul li .time-line-wrp .time-line-des{
+  float: left;
+  width: 100%;
+  /*padding-top: 100px;*/
+  text-align: right;
+}
+/*.history-timeline-main ul li:nth-child(2n+2) .time-line-wrp .time-line-img{
+    float: right;
+	padding-right: 0;
+	text-align: left;
+}*/
+.history-timeline-main ul li:nth-child(2n+2) .time-line-wrp .time-line-des{
+  text-align: left;
+}
+.time-line-des h3{
+	position: relative;
+	margin: 0;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 30px;
+	color: #15B615;
+}
+.time-line-des h5{
+	margin: 0;
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #282828;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.time-line-des p{
+	margin-bottom: 30px;
+}
+.history-timeline-main ul li .time-line-des h3:after {
+    content: "";
+    position: absolute;
+    right: -136px;
+    top: 7px;
+    width: 31px;
+    height: 25px;
+    border-radius: 100%;
+    background: url(../images/time-line-cricle.svg);
+    background-repeat: no-repeat;
+    background-size: 31px 25px;
+    z-index: 3;
+}
+.history-timeline-main ul li .time-line-des h3 .pointBullet{
+	position: absolute;
+	left:-64px;
+	top:7px;
+	width:16px;
+	height: 16px;
+	border-radius: 100%;
+	/*background:#d5dce4;*/
+	border: 3px solid rgba(196, 196, 196, 0.21);
+	z-index: 3	
+}
+
+.history-timeline-main ul li:nth-child(2n+2) .time-line-des h3:after,
+.history-timeline-main ul li:nth-child(2n+2) .time-line-des h3:before{
+	left:-145px;
+	right:auto;
+}
+
+
+#history-qk-banner-sec .qk-banner-dsc{
+    max-width: 800px;
+}
+.history-timeline-main-wrp{
+	overflow: hidden;
+	position: relative;
+}
+.firstLine{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    background: #d5dce4;
+    z-index: 1;
+}
+.activeLine{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    background: #15B615;
+    z-index: 2;	
+    height: 0;
+    overflow: hidden;
+}
+.historyActiveWrap .firstLine{
+	background: #002853;
+}
+.history-timeline-main.thisActive ul li .time-line-des h3:after{
+	background: #002853;
+}
+.middleElement{
+	position: fixed;
+	height: 1px;
+	width: 1px;
+	left: 50%;
+	top: 50%;
+}
+.historyActiveWrap{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0px;
+    overflow: hidden;	
+}
+.historyActiveWrap .time-line-des h3 span,
+.historyActiveWrap .history-timeline-main ul li .time-line-img,
+.historyActiveWrap .time-line-des p{
+	opacity: 0;
+	visibility: hidden;
+}

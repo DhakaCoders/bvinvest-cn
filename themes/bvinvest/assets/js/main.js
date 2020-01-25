@@ -719,6 +719,7 @@ bar4.animate(1.0);  // Number from 0.0 to 1.0
   Milon
 */
 
+
 /*
 -----------------------
 Start Contact Google Map ->> 
@@ -1041,7 +1042,20 @@ if( $('#googlemap').length ){
 
 
 
+new WOW().init();
 
-  new WOW().init();
+window.onscroll=function(){
+  scrollTimeline();
+};
+function scrollTimeline(){
+  var mE = $('.middleElement').offset().top;
+  var fL = $('.firstLine').offset().top;
+  ofH = mE - fL;
+    $('.activeLine').css('height', ofH);
+}
+
+var prpgofstop = $('.product-inr-tab-wrp .img-change-pagi').offset().top;
+$('.prPaginationOutside').css('top', prpgofstop);
+
 
 })(jQuery);
