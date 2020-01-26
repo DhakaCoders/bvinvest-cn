@@ -887,6 +887,21 @@ $(this).removeClass('notOnScreen')
   Milon
 */
 
+if (windowWidth <= 767) {
+  $('.ftr-menu-item h5').on('click', function(e){
+    e.preventDefault();
+    $(this).parent().find('ul').slideToggle(500);
+    $(this).toggleClass('sub-menu-expend-sm')
+  });
+  
+  $('.ftr-contact h5').on('click', function(e){
+    e.preventDefault();
+    $(this).parent().find('ul').slideToggle(500);
+    $(this).toggleClass('sub-menu-expend-sm')
+  });
+
+}
+
 
 
 
