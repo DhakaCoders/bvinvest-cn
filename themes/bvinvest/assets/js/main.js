@@ -685,6 +685,37 @@ var bar4 = new ProgressBar.Circle(container4, {
 bar4.animate(0.55);  // Number from 0.0 to 1.0
 
 
+var bar5 = new ProgressBar.Circle(container5, {
+  color: '#aaa',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 10,
+  trailWidth: 10,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#aaa', width: 10 },
+  to: { color: '#15B615', width: 10 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText(0);
+    } else {
+      circle.setText(897);
+    }
+
+  }
+});
+bar5.animate(0.55);  // Number from 0.0 to 1.0
+
+
+
 /*
 
 $('.classname').onScreen({
@@ -727,6 +758,8 @@ $(this).removeClass('notOnScreen')
 /*
   Milon
 */
+
+
 
 
 /*

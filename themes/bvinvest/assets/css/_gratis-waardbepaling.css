@@ -39,4 +39,19 @@
 .progrees-bar-wrp{
 	background: #f9f9f9;
 	margin-bottom: 24px;
+	position: relative;
+}
+.progrees-bar-wrp .progressbar-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #282828 !important;
+}
+#container5{
+    width: 155px;
+    height: 155px;
+    position: relative;
+    margin: 0 auto 20px;
 }
