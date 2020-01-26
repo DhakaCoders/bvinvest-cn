@@ -579,12 +579,12 @@ var bar5 = new ProgressBar.Circle(container5, {
     if (value === 0) {
       circle.setText(0);
     } else {
-      circle.setText(897);
+      circle.setText(7846);
     }
 
   }
 });
-bar5.animate(0.55);  // Number from 0.0 to 1.0
+bar5.animate(0.68);  // Number from 0.0 to 1.0
 
 }
 
