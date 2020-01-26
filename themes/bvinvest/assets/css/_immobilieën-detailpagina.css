@@ -78,7 +78,7 @@
 }
 .etailpagina-slider-des ul li{
   float: left;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 .etailpagina-slider-des ul li i{
   display: inline-block;
@@ -87,7 +87,8 @@
 .etailpagina-slider-des li span{
   display: inline-block;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
 }
 .detailpagina-slider-arrow-wrp{
   position: absolute;

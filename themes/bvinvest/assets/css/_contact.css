@@ -140,7 +140,7 @@ contact-form-sec-wrp
 .contact-form-dsc{
 	border-bottom: 1px solid #F1F1F1;
 	padding-bottom: 5px;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 }
 .contact-form-dsc h1{
 	margin: 0;
@@ -276,6 +276,9 @@ contact-form-sec-wrp
 	line-height: 16px;
 	font-weight: 400;
 	color: #656565;
+}
+.gw-form-wrp .wpforms-field-container .wpforms-field-html{
+	padding-top: 12px;
 }
 .contact-form-wrp .wpforms-field-container .wpforms-field-html p a{
 	color: inherit;
