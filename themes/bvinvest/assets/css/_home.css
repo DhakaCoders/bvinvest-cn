@@ -510,21 +510,9 @@ ul.testimonial-ratings li i{
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-
-
-
-
-
-
-
-
-
-
-
 .pregress-counter-innr{
   padding: 60px 0 64px;
 }
-
 .pregress-counter-col{
   position: relative;
   width: 25%;
@@ -569,6 +557,45 @@ ul.testimonial-ratings li i{
 
 
 
+
+
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+
+}
+
+@media(max-width: 991px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){  
+
+}
+
+@media(max-width: 359px){
+
+}
 
 
 

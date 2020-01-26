@@ -244,17 +244,65 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a::after{
 
 
 
+@media(max-width: 1499px){
 
+}
 
+@media(max-width: 1399px){
+    nav.main-nav > ul > li {
+        padding: 0 14px;
+    }
+}
 
+@media(max-width: 1299px){
+    .header {
+        padding: 15px 0 18px;
+    }
+}
 
+@media(max-width: 1199px){
+    nav.main-nav > ul > li > a {
+        font-size: 14px;
+    }
+    .header-left {
+        float: left;
+        width: 23%;
+        padding-top: 20px;
+    }
+    .header-right {
+        float: right;
+        width: 77%;
+        padding-left: 10px;
+    }
+    nav.main-nav > ul > li {
+        padding: 0 10px;
+    }
+}
 
+@media(max-width: 991px){
+    .header {
+        padding: 20px 0;
+    }
+    .header-left {
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+    }
+}
 
+@media(max-width: 767px){
 
+}
 
+@media(max-width: 575px){
 
+}
 
+@media(max-width: 479px){  
 
+}
 
+@media(max-width: 359px){
 
+}
 
