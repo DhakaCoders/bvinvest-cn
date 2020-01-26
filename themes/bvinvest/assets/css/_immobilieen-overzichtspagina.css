@@ -11,9 +11,7 @@
 	padding-left: 12px;
 	padding-right: 12px;
 }
-.bvi-grid-ctlr ul li:nth-child(3n+1){
-	clear: left;
-}
+
 .bvi-grd-item{
 	position: relative;
 }
@@ -109,6 +107,14 @@
 	line-height: 28px;
 	letter-spacing: 0.02em;
 	font-weight: normal;
+}
+.bvi-grd-item-des strong.vkt{
+	font-size: 14px;
+	color: #C4C4C4;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	line-height: 28px;
+	font-weight: 500;
 }
 .bvi-grd-item-des h5{
 	font-size: 24px;
