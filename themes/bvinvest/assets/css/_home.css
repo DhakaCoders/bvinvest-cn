@@ -39,10 +39,10 @@
   font-weight: 900;
   text-transform: uppercase;
   color: #282828;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 .bw-invest-des p{
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 .bw-invest-des a{
   display: inline-block;
@@ -62,12 +62,12 @@
   color: #fff;
 }
 .bw-invest-link{
-  padding-top: 20px;
+  padding-top: 12px;
 }
 .bw-invest-img{
   order: 2;
   width: 47%;
-  padding: 63px 0 65px 87px;
+  padding: 63px 0 65px 77px;
   position: relative; 
   z-index: 2;
   overflow: hidden;
@@ -217,6 +217,7 @@
   vertical-align: baseline;
   color: #15B615;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 .hmGrdSlider-grd-des h5{
   font-weight: 700;
@@ -256,6 +257,7 @@
 }
 .hmGrdSlider-grd-des > a:hover{
   padding-right: 27px;
+  color: #15B615;
 }
 .hmGrdSlider-grd-des > a::after{
   content: "";
@@ -271,6 +273,13 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.hmGrdSlider-grd-des > a:hover::after{
+  background: url(../images/hmGrdSlider-grd-lnc-icon-h.png);
+  background-repeat: no-repeat;
 }
 .hmGrdSliderLeftArrow{
   position: absolute;
@@ -376,7 +385,7 @@
   height: 44px;
   border-radius: 8px;
   text-align: center;
-
+  margin-right: 5px;
 }
 .hmGrdSlider-info-right li span i{
   display: inline-block;
@@ -405,6 +414,13 @@
   padding: 10px 0;
   order:1;
   width: 50.72%;
+  padding-left: 15px;
+}
+.hm-testimonial-img-innr{
+  max-width: 699px;
+  float: right;
+  padding-right: 135px;
+  width: 100%;
 }
 .hm-testimonial-main{
   width: 49.28%;
@@ -412,10 +428,17 @@
   order: 2;
 }
 .hmTestimonialSlider-wrap{
+  background: #F4F4F4;
+}
+.hmTestimonialSlider-wrap-innr{
   position: relative;
+  max-width: 670px;
+  width: 100%;
+  float: left;
+  padding-right: 15px;
+  background: #F4F4F4;
 }
 .hmTestimonialSlider{
-  background: #F4F4F4;
 }
 .hmTestimonialSlider-item{
   padding: 57px 15px 60px 85px;
@@ -453,6 +476,11 @@ ul.testimonial-ratings li i{
   line-height: 36px;
   letter-spacing: 0.02em;
   padding-right: 80px;
+  font-weight: 500;
+}
+.hmTestimonialSlider strong span{
+  font-weight: 300;
+  font-style: italic;
 }
 .testimonialRightArrow{
   position: absolute;

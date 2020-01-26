@@ -20,42 +20,45 @@
   background-position: center center!important;
   background-size: cover!important;
 }
-.etailpagina-slider-des{
+.detailpagina-slider-des{
   position: absolute;
   left: 0;
   bottom: 0;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   padding-right: 20px;
 }
-.etailpagina-slider-item-innr{
+.detailpagina-slider-item-innr{
   min-height: 768px;
   position: relative;
 }
-.etailpagina-slider-des > span{
+.detailpagina-slider-des > span{
   display: inline-block;
   vertical-align: middle;
-  padding: 5px 22px 5px 8px;
+  padding: 2px 22px 4px 8px;
   border-radius: 8px;
   margin-bottom: 15px;
   position: relative;
 }
-.etailpagina-slider-des > span > i {
+.detailpagina-slider-des > span > i {
   display: inline-block;
   vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
-.etailpagina-slider-des > span > strong {
+.detailpagina-slider-des > span > strong {
   display: inline-block;
   vertical-align: middle;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 20px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
+  padding-left: 10px;
 }
-.etailpagina-slider-des > span::after {
+.detailpagina-slider-des > span::after {
   content: "";
   position: absolute;
   left: 11px;
@@ -66,25 +69,33 @@
   border-right: 5px solid #0000;
   border-top: 8px solid #0000;
 }
-.etailpagina-slider-des > span.key-info-bg::after {
+.detailpagina-slider-des > span.key-info-bg::after {
   border-top: 8px solid #15B615;
 }
-.etailpagina-slider-des h1 {
+.detailpagina-slider-des h1 {
   font-weight: 900;
   line-height: 64px;
 }
-.etailpagina-slider-des ul{
+.detailpagina-slider-des ul{
  margin-bottom: 25px;
 }
-.etailpagina-slider-des ul li{
+.detailpagina-slider-des ul li{
   float: left;
   padding-right: 20px;
 }
-.etailpagina-slider-des ul li i{
+.detailpagina-slider-des ul li i{
   display: inline-block;
   vertical-align: middle;
+  position: relative;
 }
-.etailpagina-slider-des li span{
+.detailpagina-slider-des ul li:nth-child(2) i{
+  top: -1px;
+}
+.detailpagina-slider-des ul li:nth-child(3) i{
+  top: -3px;
+}
+
+.detailpagina-slider-des li span{
   display: inline-block;
   vertical-align: middle;
   font-size: 16px;
@@ -177,7 +188,7 @@
   padding-top: 70px;
 }
 .detailpagina-main-des-top{
-  padding-bottom: 13px;
+  padding-bottom: 20px;
 }
 .detailpagina-main-des-top h2{
   font-weight: 900;
@@ -185,15 +196,16 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #282828;
+  margin-bottom: 15px;
 }
 .detailpagina-main-des-top p{
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .detailpagina-main-des-top ul{
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left:40px;
+  padding-left:38px;
   padding-bottom: 9px;
 }
 .detailpagina-main-des-top li{
@@ -231,7 +243,7 @@
 }
 .detailpagina-rtable-wrp .table td, 
 .detailpagina-rtable-wrp .table th {
-  padding: 17px 27px;
+  padding: 15px 27px;
   vertical-align: top;
   border-top: 0;
 }
@@ -242,7 +254,7 @@
   background-color: #fff;
 }
 .detailpagina-testimonial{
-  padding: 57px 100px 55px 85px;
+  padding: 57px 100px 55px 90px;
   margin-bottom: 70px;
   background: -wekkit-linear-gradient(0deg, #F9F9F9, #F9F9F9);
   background: linear-gradient(0deg, #F9F9F9, #F9F9F9)
@@ -280,6 +292,7 @@
   line-height: 36px;
   letter-spacing: 0.02em;
   padding-right: 80px;
+  font-weight: 500;
 }
 .detailpagina-social {
   margin-bottom: 37px;
@@ -293,6 +306,18 @@
   color: #7B7B7B;
   padding-right: 6px;
 }
+.detailpagina-social a{
+  display: inline-block;
+  vertical-align: baseline;  
+}
+.detailpagina-social a svg {
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.detailpagina-social a:hover svg {
+  fill: #15B615 !important;
+}
 .detailpagina-social i{
   display: inline-block;
   vertical-align: baseline;
@@ -302,7 +327,7 @@
   height: 250px;
 }
 .detailpagina-map-block-link{
-  padding: 35px 20px 30px 120px;
+  padding: 31px 20px 25px 120px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   position: relative;
@@ -362,7 +387,6 @@
 .detailpagina-form label{
   font-weight: 700;
   font-size: 14px;
-  line-height: 28px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -374,7 +398,6 @@
   padding: 11px 15px;
   font-weight: 700;
   font-size: 12px;
-  line-height: 28px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #7B7B7B;
@@ -392,6 +415,10 @@
   min-height: 74px;
   border: 0;
   resize: none;
+}
+.detailpagina-form input:focus,
+.detailpagina-form textarea:focus{
+  background: #d7d7d7; 
 }
 .detailpagina-form ::placeholder {
   color: #7B7B7B;
