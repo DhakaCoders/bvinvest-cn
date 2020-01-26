@@ -1,5 +1,8 @@
 (function($) {
 var windowWidth = $(window).width();
+var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+
+
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
@@ -83,7 +86,7 @@ if( $('.responsive-slider').length ){
 
 
 /*Google Map*/
-var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+
 
 if( $('#mapID').length ){
 var latitude = $('#mapID').data('latitude');
@@ -201,133 +204,120 @@ if( $('.dfpProgressAreaSlider').length ){
     });
 }
 
+
 if( $('#prmap').length ){
-  if( $('#prmap').length ){
-  var locations = [];
+var locations = [];
 
-  $('#prmapdata span').each(function(){
-    var title = $(this).data('address');
-    var type = $(this).data('type');
-    var latitude = $(this).data('latitude');
-    var longitude = $(this).data('longitude');
-    var data = [title, latitude, longitude, type];
-    locations.push( data );
-  });
+$('#prmapdata span').each(function(){
+  var title = $(this).data('title');
+  var price = $(this).data('price');
+  var type = $(this).data('type');
+  var latitude = $(this).data('latitude');
+  var longitude = $(this).data('longitude');
+  var link = $(this).data('link');
+  var data = [latitude, longitude, type, title, link, price];
+  locations.push( data );
+});
 // map center points
-  var clat = $('#prmap').data('lat');
-  var clon = $('#prmap').data('lon');
-  var myCenter = new google.maps.LatLng(clat,  clon);
+var clat = $('#prmap').data('lat');
+var clon = $('#prmap').data('lon');
+var homeurl = $('#prmap').data('uri');
+var myCenter = new google.maps.LatLng(clat,  clon);
 
-      var map = new google.maps.Map(document.getElementById('prmap'), {
-        zoom: 16,
-        center: myCenter,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        mapTypeControl: false,
-        streetViewControl: false,
-        styles : CustomMapStyles
+    var map = new google.maps.Map(document.getElementById('prmap'), {
+      zoom: 10,
+      center: myCenter,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      mapTypeControl: false,
+      streetViewControl: false,
+      styles : CustomMapStyles
 
-      });
+    });
 
-      var infowindow = new google.maps.InfoWindow();
+    var infowindow = new google.maps.InfoWindow({maxWidth: 210});
 
-      var marker, i;
+    var marker, i;
 
-      for (i = 0; i < locations.length; i++) { 
-        var marker = 'assets/images/pindark.svg';
-        /*if( locations[i][4] == 'rent' ){
-          marker = 'assets/images/pindark.svg';
-        }*/
-        /*if( locations[i][4] == 'sold' ){
-          marker = 'assets/images/pindark.svg';
-        }*/
-        marker = new google.maps.Marker({
-          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-          map: map,
-          icon: marker
-        });
-
-  /*      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-          return function() {
-            infowindow.setContent(locations[i][0]);
-            infowindow.open(map, marker);
-          }
-        })(marker, i));*/
+    for (i = 0; i < locations.length; i++) { 
+      var markerimg = homeurl + '/assets/images/pindark.svg';
+      if( locations[i][2] == 'rent' ){
+        markerimg = homeurl + '/assets/images/pindark.svg';
       }
-  }
-
+      if( locations[i][2] == 'sold' ){
+        markerimg = homeurl + '/assets/images/pindark.svg';
+      }
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+        map: map,
+        icon: markerimg
+      });
+      var content = '<div class="kImmoinfoWindow"><span class="kiiwicon"><img src="'+markerimg+'"/></span><strong>'+locations[i][3]+'</strong><span class="kiipprice">€ '+locations[i][5]+'</span><a href="'+locations[i][4]+'">MEER INFO</a></div>';
+      google.maps.event.addListener(marker, 'click', (function(marker,content,infowindow) {
+        return function() {
+          infowindow.setContent(content);
+          infowindow.open(map, marker);
+        }
+      })(marker,content,infowindow));
+    }
 }
 
+
+
+
 if( $('#prmap2').length ){
-  if( $('#prmap2').length ){
-  var locations = [];
+var locations = [];
 
-  $('#prmapdata2 span').each(function(){
-    var title = $(this).data('address');
-    var type = $(this).data('type');
-    var latitude = $(this).data('latitude');
-    var longitude = $(this).data('longitude');
-    var data = [title, latitude, longitude, type];
-    locations.push( data );
-  });
+$('#prmapdata span').each(function(){
+  var title = $(this).data('title');
+  var price = $(this).data('price');
+  var type = $(this).data('type');
+  var latitude = $(this).data('latitude');
+  var longitude = $(this).data('longitude');
+  var link = $(this).data('link');
+  var data = [latitude, longitude, type, title, link, price];
+  locations.push( data );
+});
 // map center points
-  var clat = $('#prmap2').data('lat');
-  var clon = $('#prmap2').data('lon');
-  var myCenter = new google.maps.LatLng(clat,  clon);
+var clat = $('#prmap2').data('lat');
+var clon = $('#prmap2').data('lon');
+var homeurl = $('#prmap2').data('uri');
+var myCenter = new google.maps.LatLng(clat,  clon);
 
-      var map = new google.maps.Map(document.getElementById('prmap2'), {
-        zoom: 16,
-        center: myCenter,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        mapTypeControl: false,
-        streetViewControl: false,
-        styles : CustomMapStyles
+    var map = new google.maps.Map(document.getElementById('prmap2'), {
+      zoom: 10,
+      center: myCenter,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      mapTypeControl: false,
+      streetViewControl: false,
+      styles : CustomMapStyles
 
-      });
+    });
 
+    var infowindow = new google.maps.InfoWindow({maxWidth: 210});
 
-var contentString = '<div id="content">'+
-      '<div class="kImmoinfoWindow">'+
-      '<div class="kImmoinfoWindowInner">'+
-      '<strong id="firstHeading" class="firstHeading">Gentsestraat 161 Geraardsbergen</strong>'+
-      '<span class ="kiipprice">€ 349.000</span>'+
-      '<a href="#">MEER INFO</a>'+
-      '</div>'+
-      '</div>';
-      var infowindow = new google.maps.InfoWindow({
-        content: contentString
-      });
-      var marker, i;
+    var marker, i;
 
-      for (i = 0; i < locations.length; i++) { 
-        var marker = 'assets/images/pindark.svg';
-        /*if( locations[i][4] == 'rent' ){
-          marker = 'assets/images/pindark.svg';
-        }*/
-        /*if( locations[i][4] == 'sold' ){
-          marker = 'assets/images/pindark.svg';
-        }*/
-        marker = new google.maps.Marker({
-          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-          map: map,
-          icon: marker
-        });
-
-        marker.addListener('click', function() {
-          infowindow.open(map, marker);
-          //this.infowindow.open(map, this);
-        });
-  
-
-
-  /*      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-          return function() {
-            infowindow.setContent(locations[i][0]);
-            infowindow.open(map, marker);
-          }
-        })(marker, i));*/
+    for (i = 0; i < locations.length; i++) { 
+      var markerimg = homeurl + '/assets/images/pinorange.svg';
+      if( locations[i][2] == 'rent' ){
+        markerimg = homeurl + '/assets/images/pinorange.svg';
       }
-  }
-
+      if( locations[i][2] == 'sold' ){
+        markerimg = homeurl + '/assets/images/pinorange.svg';
+      }
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
+        map: map,
+        icon: markerimg
+      });
+      var content = '<div class="kImmoinfoWindow"><span class="kiiwicon"><img src="'+markerimg+'"/></span><strong>'+locations[i][3]+'</strong><span class="kiipprice">€ '+locations[i][5]+'</span><a href="'+locations[i][4]+'">MEER INFO</a></div>';
+      google.maps.event.addListener(marker, 'click', (function(marker,content,infowindow) {
+        return function() {
+          infowindow.setContent(content);
+          infowindow.open(map, marker);
+        }
+      })(marker,content,infowindow));
+    }
 }
 
 /*
