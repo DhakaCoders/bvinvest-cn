@@ -4,7 +4,7 @@ over-ons-two-part-sec-wrp
 -------------------------
 */
 .over-ons-two-part-sec-wrp{
-	padding:75px 0;
+	padding:80px 0;
 }
 .over-ons-lft{
 	position: relative;
@@ -44,7 +44,7 @@ over-ons-two-part-sec-wrp
 	margin-bottom: 38px;
 }
 .over-ons-rgt p{
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 	line-height: 29px;
 }
 .over-ons-btn{
@@ -252,6 +252,8 @@ history-timeline-sec
 }
 .history-timeline-main ul li:nth-child(2n+2) .time-line-des h3:after{
 	background: url(../images/time-line-cricle-1.svg);
+	background-repeat: no-repeat;
+    background-size: 31px 25px;
 }
 .history-timeline-main ul li .time-line-wrp .time-line-des h3 .pointBullet{
 	position: absolute;
