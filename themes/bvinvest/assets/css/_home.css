@@ -333,8 +333,17 @@
   vertical-align: middle;
   position: absolute;
   left: 0;
-  top: 0;
+  top:-2px;
 }
+.hmGrdSlider-info-left a:nth-child(2) i svg{
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.hmGrdSlider-info-left a:nth-child(2):hover i svg{
+  fill: #15B615!important;
+}
+
 .hmGrdSlider-info-right{
   width: 40%;
   text-align: right;
