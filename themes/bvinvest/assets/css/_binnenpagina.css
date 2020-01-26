@@ -379,6 +379,10 @@ Gallery design
 .dfp-grd-slider-ctlr .bvi-grd-item-des{
 	padding-bottom: 40px;
 }
+.dfp-grd-slider-ctlr .bvi-grd-item-feature-item i{
+	top: 5px;
+}
+
 
 
 @media(max-width: 1199px){
