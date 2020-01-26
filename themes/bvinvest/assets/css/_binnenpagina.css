@@ -361,11 +361,21 @@ Gallery design
 }
 
 .dfp-progress-area-ctlr{
-	height: 336px;
-	border-top: 1px solid #F1F1F1;
-	border-bottom: 1px solid #F1F1F1;
+	border-top: 2px solid #F3F3F3;
+	border-bottom: 2px solid #F3F3F3;
 	margin-bottom: 50px;
+	padding: 40px 0;
+	margin-top: 10px;
+	margin-top: 40px;
 }
+
+.dfp-progress-area-ctlr .dfp-progress-area-slide-item{
+	text-align: center;
+}
+.dfp-progress-area-slide-item .pregress-counter-col{
+	width: 100%;
+}
+
 .dfp-grd-slider{
 	margin: 0 -12px!important;
 }
@@ -379,6 +389,10 @@ Gallery design
 .dfp-grd-slider-ctlr .bvi-grd-item-des{
 	padding-bottom: 40px;
 }
+.dfp-grd-slider-ctlr .bvi-grd-item-feature-item i{
+	top: 5px;
+}
+
 
 
 @media(max-width: 1199px){

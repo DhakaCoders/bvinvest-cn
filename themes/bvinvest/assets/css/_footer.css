@@ -5,6 +5,7 @@ footer-wrp
 */
 .ftr-top-wrp{
 	padding-top: 90px;
+	padding-bottom: 60px;
 }
 .ftr-logo{
 	float: left;
@@ -58,7 +59,7 @@ footer-wrp
 	font-weight: 400;
 	color: #7B7B7B;
 	text-transform: uppercase;
-	padding-bottom: 25px;
+	padding-bottom: 28px;
 }
 .ftr-contact span:first-child{
 	margin-top: -5px;
@@ -87,6 +88,10 @@ footer-wrp
 	text-decoration: none;
 	padding-right: 20px;
 }
+.contact-socail a i:hover svg,
+.socail a i:hover svg{
+	fill: #14b615;
+}
 .ftr-middel-inr{
 	padding:50px 0;
 	border-top: 1px solid #F1F1F1;
@@ -94,7 +99,7 @@ footer-wrp
 }
 .ftr-middel-lft{
 	float: left;
-	width: 61%;
+	width: 60%;
 }
 .ftr-middel-lft p{
 	float: left;
@@ -103,6 +108,7 @@ footer-wrp
 	color: #7B7B7B;
 	font-weight: 400;
 	letter-spacing: 0.02em;
+	margin-bottom: 0;
 }
 .ftr-middel-lft ul{
 	margin: 0;
@@ -138,7 +144,7 @@ footer-wrp
 }
 .ftr-middel-rgt{
 	float: right;
-	width: 39%;
+	width: 40%;
 }
 .ftr-middel-rgt span{
 	display: inline-block;
@@ -164,13 +170,13 @@ footer-wrp
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
 	background-position: center center !important;
-	min-height: 504px !important;
+	min-height: 500px !important;
 }
 .footer-form-wrp{
 	max-width: 672px;
 	width: 100%;
 	background: #15B615;
-	padding: 40px 85px 35px;
+	padding: 42px 85px 37px;
 	border-top: 17px solid#07AA07;
 	border-bottom: 17px solid#07AA07;
 }
@@ -187,7 +193,7 @@ footer-wrp
 	line-height: 38px;
 	color: #fff;
 	text-transform: uppercase;
-	margin-bottom: 15px;
+	margin-bottom: 8px;
 }
 
 /*
@@ -213,7 +219,7 @@ footer-wrp
 	font-weight: 700;
 	display: block;
 	margin: 0;
-	padding-bottom: 8px;
+	margin-bottom: 5px;
 	text-transform: uppercase;
 }
 
