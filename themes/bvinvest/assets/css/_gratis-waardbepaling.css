@@ -1,5 +1,12 @@
 /*
+----------------------
+gw-form-sec-wrp
+----------------------
 */
+.gw-form-sec-wrp{
+	padding-top: 70px;
+	padding-bottom: 65px;
+}
 .gw-dsc-box{
 	background: #16b616;
 	min-height: 135px;
