@@ -348,3 +348,127 @@ page-banner-filter-form
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+  .psearch-form-fields > ul > li {
+      padding: 15px 0;
+  }
+  .psearch-form-fields .bootstrap-select > .dropdown-toggle {
+    padding: 22px 25px 22px;
+  }
+  .psearch-form-fields .submit button {
+    height: 102px;
+  }
+}
+
+@media(max-width: 1199px){
+  .psearch-form-fields .bootstrap-select > .dropdown-toggle {
+    padding: 15px 17px;
+  }
+  .psearch-form-fields .submit button {
+      height: 88px;
+  }
+}
+
+@media(max-width: 991px){
+  .psearch-form-fields .bootstrap-select>.dropdown-toggle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .psearch-form-fields > ul > li {
+    padding: 8px 0;
+  }
+  .psearch-form-fields .submit button {
+    height: 68px;
+  }
+  .psearch-form-wrap .dropdown-toggle::after {
+    width: 12px;
+    height: 8px;
+    position: relative;
+    top: 3px;
+  }
+.psearch-form-fields .submit button span {
+  position: relative;
+  padding-right: 28px;
+}
+.psearch-form-fields .submit button {
+  font-size: 15px;
+}  
+.psearch-form-fields .submit button i {
+  top: -5px;
+}
+.psearch-form-fields .submit button i svg{
+  width: 18px!important;
+  height: 18px!important;
+}
+
+
+}
+
+@media(max-width: 767px){
+.psearch-form-fields > ul > li:nth-child(1),
+.psearch-form-fields > ul > li:nth-child(2),
+.psearch-form-fields > ul > li:nth-child(3),
+.psearch-form-fields > ul > li:nth-child(4){
+  width:50%;
+}
+.psearch-form-fields > ul > li:nth-child(5){
+  width:100%;
+  padding:0;
+}
+}
+
+@media(max-width: 575px){
+
+  .psearch-form-fields > ul > li:nth-child(1),
+  .psearch-form-fields > ul > li:nth-child(2),
+  .psearch-form-fields > ul > li:nth-child(3),
+  .psearch-form-fields > ul > li:nth-child(4){
+    width:100%;
+  }
+  .psearch-form-fields .bootstrap-select>.dropdown-toggle {
+    border-right: 0;
+  }
+  .psearch-form-fields > ul > li:not(:last-child){
+    border-bottom: 1px solid #F1F1F1;
+  }
+
+}
+
+@media(max-width: 479px){  
+
+}
+
+@media(max-width: 359px){
+
+}
+
+
+
+
+
+
+
+
+
