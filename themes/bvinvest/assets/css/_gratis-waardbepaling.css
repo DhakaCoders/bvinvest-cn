@@ -40,6 +40,8 @@
 	background: #f9f9f9;
 	margin-bottom: 24px;
 	position: relative;
+	padding: 60px 20px 55px;
+	text-align: center;
 }
 .progrees-bar-wrp .progressbar-text {
     font-weight: 700;
@@ -54,4 +56,14 @@
     height: 155px;
     position: relative;
     margin: 0 auto 20px;
+}
+.progrees-bar-wrp span {
+    display: inline-block;
+    vertical-align: baseline;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #282828;
+    text-align: center;
 }
