@@ -2,7 +2,7 @@
 ----------------- 
 Start sitemap
 -----------------
-*/ 
+*/  
 .sitemap{
   max-width: 800px;
   margin: 0 auto;
@@ -158,7 +158,6 @@ page-banner-filter-form
 .psearch-form-fields > ul > li > div input:focus{
   background: #dae0e5;
 }
-
 .psearch-form-fields ::placeholder {
   color: #282828;
   opacity: 1;
@@ -171,8 +170,6 @@ page-banner-filter-form
   color: #282828;
   opacity: 1;
 }
-
-
 .psearch-form-fields .submit button{
   position: relative;
   width: 100%;
@@ -192,7 +189,6 @@ page-banner-filter-form
 .psearch-form-fields .submit button:hover{
   background: #0d950d;
 }
-
 .psearch-form-fields .submit button span{
   position: relative;
   padding-right: 45px;
@@ -228,9 +224,6 @@ page-banner-filter-form
 .psearch-form-fields .dropdown-menu > .active > a:hover {
   background-color:  #15B615;
 }
-
-
-
 .psearch-form-wrap .dropdown-toggle::after {
   content: "";
   border:0!important;
@@ -239,13 +232,10 @@ page-banner-filter-form
   background-size: 100% 100%;
   width: 16px;
   height: 9px;
-  
 }
-
 .psearch-form-wrap .dropdown.show .dropdown-toggle::after {
   background-repeat: no-repeat;
   background-image: url('../images/select-dropdown-icon-up.png');
-
 }
 
 
