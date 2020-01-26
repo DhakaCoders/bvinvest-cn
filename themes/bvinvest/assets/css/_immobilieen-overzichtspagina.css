@@ -181,9 +181,11 @@
 	-webkit-transform: translateY(-50%);
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+
 }
 .bvi-grd-item-des-link a:hover{
 	color: #15B615;
+	padding-right: 28px;
 }
 .bvi-grd-item-des-link a:hover:after{
 	background: url('../images/bvi-right-arrow - hover.svg');
