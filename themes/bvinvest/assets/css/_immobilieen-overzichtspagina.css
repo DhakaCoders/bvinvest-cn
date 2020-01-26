@@ -11,9 +11,7 @@
 	padding-left: 12px;
 	padding-right: 12px;
 }
-.bvi-grid-ctlr ul li:nth-child(3n+1){
-	clear: left;
-}
+
 .bvi-grd-item{
 	position: relative;
 }
@@ -110,6 +108,14 @@
 	letter-spacing: 0.02em;
 	font-weight: normal;
 }
+.bvi-grd-item-des strong.vkt{
+	font-size: 14px;
+	color: #C4C4C4;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	line-height: 28px;
+	font-weight: 500;
+}
 .bvi-grd-item-des h5{
 	font-size: 24px;
 	color: #282828;
@@ -181,9 +187,11 @@
 	-webkit-transform: translateY(-50%);
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+
 }
 .bvi-grd-item-des-link a:hover{
 	color: #15B615;
+	padding-right: 28px;
 }
 .bvi-grd-item-des-link a:hover:after{
 	background: url('../images/bvi-right-arrow - hover.svg');
