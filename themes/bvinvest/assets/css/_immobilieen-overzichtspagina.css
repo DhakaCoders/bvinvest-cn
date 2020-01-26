@@ -84,10 +84,10 @@
 .red .bvi-grd-key:after{
 	border-top: 8px solid #FF2E00;
 }
-.sky{
+.sky .bvi-grd-key{
 	background: #14A7FA;
 }
-.sky:after{
+.sky .bvi-grd-key:after{
 	border-top: 8px solid #14A7FA;
 }
 .bvi-grd-date{
