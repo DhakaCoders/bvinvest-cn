@@ -202,10 +202,69 @@ if( $('.dfpProgressAreaSlider').length ){
 }
 
 
+if( $('#prmap').length ){
+var locations = [];
+
+$('#prmapdata span').each(function(){
+  var title = $(this).data('address');
+  var type = $(this).data('type');
+  var latitude = $(this).data('latitude');
+  var longitude = $(this).data('longitude');
+  var data = [title, latitude, longitude, type];
+  locations.push( data );
+});
+// map center points
+var clat = $('#prmap').data('lat');
+var clon = $('#prmap').data('lon');
+var myCenter = new google.maps.LatLng(clat,  clon);
+
+    var map = new google.maps.Map(document.getElementById('prmap'), {
+      zoom: 16,
+      center: myCenter,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      mapTypeControl: false,
+      streetViewControl: false,
+      styles : CustomMapStyles
+
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) { 
+      var marker = 'assets/images/pindark.svg';
+      /*if( locations[i][4] == 'rent' ){
+        marker = 'assets/images/pindark.svg';
+      }*/
+      /*if( locations[i][4] == 'sold' ){
+        marker = 'assets/images/pindark.svg';
+      }*/
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: marker
+      });
+
+/*      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));*/
+    }
+}
 
 
 
+/*
+mixitup  filter
+*/
+if( $('.mixContainer').length ){
+  var config = document.querySelector('.mixContainer');
+  var mixer = mixitup(config);
 
+}
 
 /*
   Proshanto
