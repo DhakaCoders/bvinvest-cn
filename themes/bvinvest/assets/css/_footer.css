@@ -7,6 +7,9 @@ footer-wrp
 	padding-top: 90px;
 	padding-bottom: 60px;
 }
+.ftr-tp-bdr{
+	border-top: 6px solid #F2F2F2;
+}
 .ftr-logo{
 	float: left;
 	width: 24%;
