@@ -278,7 +278,10 @@
   top: -110px;
   display: inline-block;
   cursor: pointer;
-  z-index: 5
+  z-index: 5;
+  -webkit-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
 }
 .hmGrdSliderRightArrow {
   position: absolute;
@@ -287,6 +290,15 @@
   display: inline-block;
   cursor: pointer;
   z-index: 5;
+  -webkit-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.hmGrdSliderLeftArrow:hover,
+.hmGrdSliderRightArrow:hover {
+  -webkit- transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .hmGrdSlider-info{
   padding: 70px 0 72px;
@@ -448,7 +460,10 @@ ul.testimonial-ratings li i{
   bottom: 65px;
   display: inline-block;
   cursor: pointer;
-  z-index: 5
+  z-index: 5;
+  -webkit-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
 }
 .testimonialLeftArrow{
   position: absolute;
@@ -456,9 +471,17 @@ ul.testimonial-ratings li i{
   bottom: 65px;
   display: inline-block;
   cursor: pointer;
-  z-index: 5
+  z-index: 5;
+  -webkit-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
 }
-
+.testimonialRightArrow:hover,
+.testimonialLeftArrow:hover {
+ -webkit- transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
 
 
 
