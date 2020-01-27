@@ -296,6 +296,12 @@ body #prmap .gm-style .gm-style-iw-t::before {
 	.grds-page-entry-hdr-title h1{
 		font-size: 50px;
 	}
+	.tab-btns-bar-rgt-select label{
+		padding-right: 2px;
+	}
+	.tab-btns-bar-rgt-select{
+		padding-top: 20px;
+	}
 }
 
 @media(max-width: 767px){
@@ -435,13 +441,24 @@ body #prmap .gm-style .gm-style-iw-t::before {
 		margin-right: auto;
 	}
 	.tab-btns-bar-rgt-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-	    width: 239px;
+	    width: 100%;
 	}
-	.overzichtspagina-page-cntlr .psearch-form-wrap{
+	.overzichtspagina-page-cntlr .psearch-form-wrap,
+	.realisatie-page-cntlr .psearch-form-wrap,
+	.kijkdagen-page-cntlr .psearch-form-wrap{
 	    display: none;
 	}
-	.overzichtspagina-page-cntlr .psearch-form {
+	.overzichtspagina-page-cntlr .psearch-form,
+	.realisatie-page-cntlr .psearch-form,
+	.kijkdagen-page-cntlr .psearch-form{
 	    padding-top: 0px;
+	}
+	.tab-btns-bar-rgt-select{
+		display: block;
+	}
+	.tab-btns-bar-rgt-select label{
+		width: 100%;
+		display: block;
 	}
 }
 
