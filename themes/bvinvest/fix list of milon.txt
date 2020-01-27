@@ -43,6 +43,8 @@ Desktop---->
 
 
 
+
+
 Footer 
 ---------------------
 Desktop--->
@@ -63,6 +65,36 @@ Desktop--->
 
 5. https://www.screencast.com/t/EA78kCXv
 	link hobe with hover color
+
+
+
+
+
+Gratis Waardbepaling page
+------------------------
+Desktop--->
+1. https://www.screencast.com/t/J1cISIhGqwM
+	text jodi besi dey tahole amon hoy.
+	ata solve korte pari amara flex diye.
+	i) https://www.screencast.com/t/aqqSTum3JuD
+		top, btm,lft,rgt ar padding ta parent a daw
+	ii) ai .gw-dsc-box  ai dive a -->  display: flex, align-item: center dilei hoye jabe.
+	 positon lagbena p te
+	iii) https://www.screencast.com/t/E5n9uwwBT
+	 	br tag sara text thik rakha jaykina try kore dekhio, na gele br tag thak 
+
+
+Over Ons 
+------------------
+Desktop--->
+1. https://www.screencast.com/t/OfMil5fe9Dx
+	aita h4/h5 diye manage koro 
+	
+2. https://www.screencast.com/t/OWfSqwMzVeN
+	ai word ta uporer line a jabe
+
+
+
 
 
 
