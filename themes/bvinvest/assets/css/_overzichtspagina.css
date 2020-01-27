@@ -36,8 +36,10 @@
 }
 .bvi-grid-key-info-ctlr{
 	position: absolute;
-	bottom: 18px;
+	bottom: 0px;
+	padding-bottom: 8px;
 	left: 8px;
+	right: 8px;
 	z-index: 11;
 }
 .bvi-grd-key{
@@ -45,6 +47,9 @@
 	background: transparent;
 	border-radius: 8px;
 	padding: 10px 22px 12px 10px;
+	position: relative;
+	margin-bottom: 10px;
+	margin-right: 8px;
 }
 .bvi-grd-key:after{
 	content: "";
@@ -95,7 +100,6 @@
 	background: #5C958E;
 	border-radius: 8px;
 	padding: 10px;
-	margin-left: 8px;
 }
 .bvi-grd-item-des{
 	padding-top: 30px;
