@@ -144,6 +144,17 @@ img{
 	display: none!important;
 }
 
+
+.hide-639{
+	display: block!important;
+}
+.show-639{
+	display: none!important;
+}
+
+
+
+
 .divider{
 	line-height: 0;
 	font-size: 0;
