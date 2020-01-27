@@ -437,6 +437,12 @@ body #prmap .gm-style .gm-style-iw-t::before {
 	.tab-btns-bar-rgt-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
 	    width: 239px;
 	}
+	.overzichtspagina-page-cntlr .psearch-form-wrap{
+	    display: none;
+	}
+	.overzichtspagina-page-cntlr .psearch-form {
+	    padding-top: 0px;
+	}
 }
 
 
@@ -455,6 +461,13 @@ body #prmap .gm-style .gm-style-iw-t::before {
 	}
 }
 
-@media(max-width: 359px){
+@media(max-width: 400px){
+	.tab-btns-bar-rgt-select label{
+		display: block;
+		width: 100%;
+	}
+	.tab-btns-bar-rgt-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+	    width: 100%;
+	}
 
 }
