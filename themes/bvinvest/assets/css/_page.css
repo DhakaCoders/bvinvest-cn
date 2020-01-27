@@ -372,6 +372,9 @@ page-banner-filter-form
 }
 
 @media(max-width: 1199px){
+  .page-banner-sec-con {
+    min-height: 600px;
+  }
   .page-banner-des {
     padding: 175px 0 28px;
   }
