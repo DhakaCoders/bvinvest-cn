@@ -219,8 +219,9 @@
 }
 .bvi-pgt-cltr ul.page-numbers li{
 	display: inline-block;
-	margin-left: 16px;
-	margin-right: 16px;
+	vertical-align: top;
+	margin-left: 8px;
+	margin-right: 8px;
 	padding-top: 40px;
 	padding-bottom: 38px;
 }
@@ -229,6 +230,12 @@
 	color: #282828;
 	line-height: 28px;
 	font-weight: 500px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px
 }
 .bvi-pgt-cltr ul.page-numbers li a:hover{
 	color: #15B615;
