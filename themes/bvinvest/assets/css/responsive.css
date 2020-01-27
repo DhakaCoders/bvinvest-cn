@@ -104,16 +104,16 @@
 
 @media(max-width: 479px){
 	h1{
-		font-size: 40px;
-	}
-	h2{  
 		font-size: 34px;
 	}
-	h3{
+	h2{  
 		font-size: 30px;
 	}
-	h4{
+	h3{
 		font-size: 28px;
+	}
+	h4{
+		font-size: 24px;
 	}
 	h5{
 		font-size: 20px;
