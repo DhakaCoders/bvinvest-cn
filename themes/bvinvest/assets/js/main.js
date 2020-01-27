@@ -385,8 +385,9 @@ if( $('.detailpagina-thumb-slider').length ){
       infinite: true,
       speed: 1000,
       slidesToShow: 6,
-      slidesToScroll: 1,
+      //slidesToScroll: 1,
       arrows:false,
+      focusOnSelect: true,
       asNavFor: '.detailpagina-slider',
       responsive: [
         {
@@ -785,7 +786,7 @@ bar5.animate(0.68);  // Number from 0.0 to 1.0
 
 
 
-if( $('.pregress-counter-col').length ){
+if( $('#container1').length ){
   var bar1 = new ProgressBar.Circle(container1, {
     color: '#aaa',
     // This has to be the same size as the maximum width to
@@ -814,8 +815,9 @@ if( $('.pregress-counter-col').length ){
     }
   });
   bar1.animate(0.9);  // Number from 0.0 to 1.0
+}
 
-
+if( $('#container2').length ){
   var bar2 = new ProgressBar.Circle(container2, {
     color: '#aaa',
     // This has to be the same size as the maximum width to
@@ -844,8 +846,9 @@ if( $('.pregress-counter-col').length ){
     }
   });
   bar2.animate(0.8);  // Number from 0.0 to 1.0
+}
 
-
+if( $('#container3').length ){
   var bar3 = new ProgressBar.Circle(container3, {
     color: '#aaa',
     // This has to be the same size as the maximum width to
@@ -874,8 +877,9 @@ if( $('.pregress-counter-col').length ){
     }
   });
   bar3.animate(0.68);  // Number from 0.0 to 1.0
+}
 
-
+if( $('#container4').length ){
   var bar4 = new ProgressBar.Circle(container4, {
     color: '#aaa',
     // This has to be the same size as the maximum width to

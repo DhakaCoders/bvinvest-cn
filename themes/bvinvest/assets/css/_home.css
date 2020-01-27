@@ -1,6 +1,5 @@
 .bw-invest-sec{ 
   position: relative;
-  overflow: hidden;
 }
 .bw-invest-sec::after{
   content: "";
@@ -22,6 +21,7 @@
 .bw-invest-des{
   order: 1;
   width: 53%;
+  padding-right: 165px;
 }
 .bw-invest-des span{
   display: inline-block;

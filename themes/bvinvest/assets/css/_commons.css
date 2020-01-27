@@ -8,7 +8,7 @@ Commons
 a, button, input{
 	outline: 0;
 	border: 0;
-}
+} 
 a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
 	outline: 0;

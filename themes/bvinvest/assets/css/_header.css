@@ -11,7 +11,7 @@
     display: inline-block;
     vertical-align: baseline;
 }
-.header-logo a img{
+.header-logo a img{ 
     width: 100%;
 }
 .header-right {
