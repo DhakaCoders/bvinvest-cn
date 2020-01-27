@@ -49,6 +49,20 @@ new---->
 	home icon ta ul ar vitore dile kivabe dev korbe. ata ul ar bahire hobe
 
 
+Responsive---->
+1. i) https://www.screencast.com/t/ag2SFKhwi
+	767px a desktop ar gap tai thakbe
+   ii) https://www.screencast.com/t/Wvtyf8NCPHaH
+   	639px thake ai look ta hobe. (home and home icon) and right ar link ta
+   	mane xs ar psd design tar moto hobe
+
+2. https://www.screencast.com/t/3DsSsN49LD
+	i) ai media thake full-width kore daw
+	ii) and right ar grd ta top a thakbe r left ar grd ta niche
+	iii) then design gulo fix korte hobe jemon ta valo lage 
+
+
+
 
 Footer 
 ---------------------
@@ -73,6 +87,12 @@ Desktop--->
 
 
 
+Responsive---->
+
+1. https://www.screencast.com/t/VOq50a39GQ
+	aita center daw 991 te
+
+
 
 
 Gratis Waardbepaling page
@@ -89,6 +109,21 @@ Desktop--->
 	 	br tag sara text thik rakha jaykina try kore dekhio, na gele br tag thak  <----ok
 
 
+Responsive---->
+1. https://www.screencast.com/t/K5D8Bbft
+	1199px a aitar font size komay 39px daw and line-height 1
+
+2. https://www.screencast.com/t/ntSyoBSyH4
+	991px ai font size ta daw
+
+3. https://www.screencast.com/t/dKGQ8Zsqp
+	767px a jokhon full width hosche , tokhon right ar grd ta top a thakbe r left ar ta nche
+
+4. https://www.screencast.com/t/49gYdKhCS8
+	ai grd ta 767px a full width daw. max-width badh daw
+
+	then fix korte hobe sundor kore 2 ta grd ai. 
+
 Over Ons 
 ------------------
 Desktop--->
@@ -97,6 +132,12 @@ Desktop--->
 	
 2. https://www.screencast.com/t/OWfSqwMzVeN
 	ai word ta uporer line a jabe <----ok
+
+
+Responsive---->
+1. https://www.screencast.com/t/7nOKI67y
+	767 te aitar font-size 20px daw
+
 
 
 
