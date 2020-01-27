@@ -319,7 +319,7 @@ if( $('.hmTestimonialSlider').length ){
     infinite: true,
     arrows:true,
     speed: 1000,
-    fade: true,
+    //fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: $('.testimonialLeftArrow'),
@@ -341,6 +341,16 @@ if( $('.detailpagina-slider').length ){
     prevArrow: $('.detailpaginaLeftArrow'),
     nextArrow: $('.detailpaginaRightArrow'),
     asNavFor: '.detailpagina-thumb-slider',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      }
+    ]
   });
 }
 
@@ -404,10 +414,11 @@ if( $('.hmGrdSlider').length ){
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 576,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots: true
           }
         }
         // You can unslick at a given breakpoint now by adding:
