@@ -172,8 +172,8 @@ over-ons-service-sec-wrp
 history-timeline-sec
 -----------------------
 */
-.history-timeline-sec{
-	padding: 78px 0 92px
+.history-timeline-sec {
+    padding: 65px 0 100px;
 }
 .history-timeline-top {
     text-align: center;
@@ -204,7 +204,7 @@ history-timeline-sec
 	float: right;
 	padding-right: 0;
 	padding-left: 125px;
-	margin-top: -275px;
+	margin-top: -240px;
 }
 .history-timeline-main ul li .time-line-wrp .time-line-img{
 	float: left;
