@@ -468,6 +468,13 @@ footer-wrp
 	.ftr-msg {
 	    padding-right: 20px;
 	}
+	.ftr-top-frm-dsc h4{
+		line-height: 34px;
+	}
+	.ftr-middel-lft ul {
+	    padding-top: 22px;
+	    padding-bottom: 22px;
+	}
 }
 
 @media(max-width: 575px){
@@ -510,6 +517,9 @@ footer-wrp
 	}
 	.ftr-middel-lft ul li:last-child{
 		padding-right: 0;
+	}
+	.ftr-top-frm-dsc h4{
+		line-height: 30px;
 	}
 }
 
