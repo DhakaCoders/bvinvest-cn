@@ -1,8 +1,69 @@
-Home page
+Contact page
 ------------------------
 Desktop---->
 
-1. https://www.screencast.com/t/abDIASzu
+1. i) https://www.screencast.com/t/abDIASzu
+   ii) https://www.screencast.com/t/IOITtEXpmTM6
 	hover korle ai color ta daw. green color ta valo dekhaschena
-	
-2. 
+
+2. https://www.screencast.com/t/5mAlu8G6J
+	ai icon ta ul ar left a sprite kore daw
+
+3. https://www.screencast.com/t/v98JhX9L1q
+	ai arrow ta 'a' tag ar vitre 'i' tag niye sprite kore daw.
+
+4. https://www.screencast.com/t/DtVY2QK5
+	hover korle title ar color ta daw
+
+5. https://www.screencast.com/t/qpofz10HPLaM
+	resize none hobe
+
+6. https://www.screencast.com/t/hmzdOmtl
+	cursor pointer hobe
+
+7. https://www.screencast.com/t/HZcT5fv5088k
+	ai link and link sara design kore rakhte hobe. client link nao nite pare aitate.
+
+8. https://www.screencast.com/t/Kz6GUcHHAP
+	ai icon ta aktu niche nambe maybe
+
+9. https://www.screencast.com/t/ecXPBHRlQm
+	ai placeholder ar text ta thik nai. onno text hobe
+
+10. https://www.screencast.com/t/nOLMRvqt6pUf
+	aitar placeholder ta, label ar tai diye daw. design mistake hoiche.
+
+11. https://www.screencast.com/t/dM3cgT7pJw3d
+	ai img ta, div ar bg te use koro. choto ba boro img up korle desgin thik thakar jonno.
+
+12. https://www.screencast.com/t/wn9dAMyrZo0
+	letter-spacing missing
+
+	onno kothao form thake sekhaneo update hobe
+
+
+
+Footer 
+---------------------
+Desktop--->
+1. https://www.screencast.com/t/ytAPsOd9dY
+	i) ai button a hover korle , ai design ta daw. 
+	ii) cursor pointer hobe
+
+2. https://www.screencast.com/t/K11GQtKTTHuT
+	star ar color green hobe
+
+3. https://www.screencast.com/t/eVGR8hCR
+	sob text a letter-spacing missing.
+	ami r baki gulo check kortechina. sob page ar, sob text gulo dhore dhore letter-spacing gulo update korte hobe.
+	onek jaygay ache letter-spacing
+
+4. https://www.screencast.com/t/XFhOEvsRWC
+	ak label a thakbe alignment ta, ai 2 ta aktu niche mone hosche
+
+5. https://www.screencast.com/t/EA78kCXv
+	link hobe with hover color
+
+
+
+
