@@ -1,5 +1,5 @@
 .header{
-	padding: 20px 0 25px;
+	padding: 20px 0 26px;
 }
 .header-left{
     float: left;
@@ -20,8 +20,7 @@
     padding-left: 10px;
 }
 .hdr-rgt-top-lnc{
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding: 11px 0 3px;
 }
 .hdr-rgt-top-lnc a {
     display: inline-block;
@@ -35,7 +34,6 @@
 .hdr-rgt-top-lnc a:hover {
 	color: #15B615;
 }
-
 .hdr-rgt-top-lnc a svg{
     transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -85,8 +83,11 @@
 .hdr-rgt-top-addr a:first-child{
 	padding-right: 13px;
 }
-.hdr-rgt-top-addr a img{
-	padding-right: 6px;
+.hdr-rgt-top-addr a i{
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    top: -1px;
 }
 .hdr-rgt-top-social::after,
 .hdr-rgt-top-addr::after{
@@ -161,11 +162,6 @@ nav.main-nav > ul > li > a:hover{
     background:#0000 ;
 }
 
-
-
-
-
-
 /* Sub menu */
 
 nav.main-nav li.menu-item-has-children > ul.sub-menu {
@@ -200,7 +196,7 @@ nav.main-nav ul li.menu-item-has-children ul{
     padding: 10px 15px;
 }
 nav.main-nav ul li.menu-item-has-children ul li{
-    padding: 0 0 10px 0;
+    padding: 0 0 7px 0;
     width: 100%;
     text-align: center;
     text-transform: capitalize;
@@ -248,79 +244,65 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a::after{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+    nav.main-nav > ul > li {
+        padding: 0 14px;
+    }
+}
+
+@media(max-width: 1299px){
+    .header {
+        padding: 15px 0 18px;
+    }
+}
+
+@media(max-width: 1199px){
+    nav.main-nav > ul > li > a {
+        font-size: 14px;
+    }
+    .header-left {
+        float: left;
+        width: 23%;
+        padding-top: 20px;
+    }
+    .header-right {
+        float: right;
+        width: 77%;
+        padding-left: 10px;
+    }
+    nav.main-nav > ul > li {
+        padding: 0 10px;
+    }
+}
+
+@media(max-width: 991px){
+    .header {
+        padding: 20px 0;
+    }
+    .header-left {
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){  
+
+}
+
+@media(max-width: 359px){
+
+}
 

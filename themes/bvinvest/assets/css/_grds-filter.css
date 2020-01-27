@@ -1,6 +1,88 @@
-#prmap{
+#prmap,
+#prmap2{
 	height: 640px;
 	width: 100%!important;
+}
+
+
+body #prmap .gm-style .gm-style-iw-c {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #15B615;
+}
+.gm-style .gm-style-iw-c {
+    position: absolute;
+    box-sizing: border-box;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-100%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 7px 1px rgba(0,0,0,0.3);
+}
+.kImmoinfoWindow {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.kImmoinfoWindow strong {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+    color: #323232;
+    padding: 5px 0 8px;
+    display: block;
+}
+.kImmoinfoWindow span.kiipprice {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    color: #A99E81;
+    padding-bottom: 25px;
+    display: block;
+}
+
+.kImmoinfoWindow a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #242424;
+    border-bottom: 2px solid #242424;
+    padding-bottom: 3px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+.gm-style-iw-d{
+	position: relative!important;
+	right: 2px!important;
+}
+.kImmoinfoWindow a:hover {
+    border-color: #15B615;;
+}
+body #prmap .gm-style .gm-style-iw-t::before {
+    background: #fff;
+    box-shadow: none;
+    content: "";
+    height: 25px;
+    width: 25px;
+    z-index: 1;
+    left: 0;
+    position: absolute;
+    top: -2px;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.gm-ui-hover-effect{
+	padding-right: 20px!important;
+	padding-top: 10px!important;
+}
+.kiiwicon{
+	display: block;
 }
 
 .grds-page-entry-hdr-title{
@@ -55,6 +137,7 @@
 	line-height: 28px;
 	padding-left: 10px;
 	padding-right: 10px;
+	opacity: .7;
 }
 .tab-btns-filter-btn{
 	display: inline-block;
@@ -78,14 +161,59 @@
 }
 .tab-btns-filter-btn button.mixitup-control-active{
 	border-color: #15B615;
+	opacity: 1!important;
 }
 .tab-btns-filter-btn button.mixitup-control-active i{
 	background: #15B615!important;
 }
+.tab-btns-filter-btn button.mixitup-control-active span{
+	color: #15B615;
+}
 
-/*.bvi-grid-ctlr ul li:nth-child(3n+1){
-	clear: initial!important;
-}*/
+.tab-btns-filter{
+	float: left;
+}
+
+.tab-btns-bar-rgt-select{
+	float: right;
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+}
+.tab-btns-bar-rgt-select label{
+	margin-bottom: 0;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #C4C4C4;
+	font-size: 14px;
+	line-height: 28px;
+	padding-right: 1px;
+}
+.tab-btns-bar-rgt-select button.btn-light{
+	background: transparent;
+	border: 0;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #282828;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+.tab-btns-bar-rgt-select .dropdown-toggle::after {
+    content: "";
+    border: 0!important;
+    background-repeat: no-repeat;
+    background-image: url(../images/select-dropdown-icon-dwn.png);
+    background-size: 100% 100%;
+    width: 16px;
+    height: 9px;
+    position: relative;
+    top: 3px;
+}
+.tab-btns-bar-rgt-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 245px;
+}
 
 .tab-btns-filter-btn:nth-child(1) button i{
 	background: #15B615;

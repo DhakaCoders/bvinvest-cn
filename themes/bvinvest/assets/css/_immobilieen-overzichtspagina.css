@@ -11,9 +11,7 @@
 	padding-left: 12px;
 	padding-right: 12px;
 }
-.bvi-grid-ctlr ul li:nth-child(3n+1){
-	clear: left;
-}
+
 .bvi-grd-item{
 	position: relative;
 }
@@ -74,22 +72,22 @@
 	letter-spacing: 0.02em;
 	font-weight: 500;
 }
-.green{
+.green .bvi-grd-key{
 	background: #15B615;
 }
-.green:after{
+.green .bvi-grd-key:after{
 	border-top: 8px solid #15B615;
 }
-.red{
+.red .bvi-grd-key{
 	background: #FF2E00;
 }
-.red:after{
+.red .bvi-grd-key:after{
 	border-top: 8px solid #FF2E00;
 }
-.sky{
+.sky .bvi-grd-key{
 	background: #14A7FA;
 }
-.sky:after{
+.sky .bvi-grd-key:after{
 	border-top: 8px solid #14A7FA;
 }
 .bvi-grd-date{
@@ -109,6 +107,14 @@
 	line-height: 28px;
 	letter-spacing: 0.02em;
 	font-weight: normal;
+}
+.bvi-grd-item-des strong.vkt{
+	font-size: 14px;
+	color: #C4C4C4;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	line-height: 28px;
+	font-weight: 500;
 }
 .bvi-grd-item-des h5{
 	font-size: 24px;
@@ -181,9 +187,11 @@
 	-webkit-transform: translateY(-50%);
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+
 }
 .bvi-grd-item-des-link a:hover{
 	color: #15B615;
+	padding-right: 28px;
 }
 .bvi-grd-item-des-link a:hover:after{
 	background: url('../images/bvi-right-arrow - hover.svg');
@@ -230,5 +238,14 @@
 	background: #15B615;
 	border-radius: 8px;
 	color: #fff;
+}
+
+
+.bvi-grd-key-date{
+	padding-top: 10px;
+}
+
+.realisatie-page-cntlr .bvi-grd-item-des{
+	padding-bottom: 20px;
 }
 
