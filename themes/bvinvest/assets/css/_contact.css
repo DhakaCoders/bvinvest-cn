@@ -319,3 +319,132 @@ contact-form-sec-wrp
 	height: 565px;
 	margin-top: -185px;
 }
+
+/*
+--------------------
+ Responsive Css
+--------------------
+*/
+@media(max-width: 1299px){
+	#googlemap {
+	    margin-top: -160px;
+	}
+}
+
+@media(max-width: 1199px){
+	.contact-form-rgt {
+	    width: 69%;
+	    padding-left: 40px;
+	}
+	#googlemap {
+	    height: 500px;
+	    margin-top: -100px;
+	}
+}
+
+@media(max-width: 991px){
+	#googlemap {
+	    height: 450px;
+	    margin-top: 40px;
+	}
+	.contact-form-info {
+	    padding: 40px 10px;
+	}
+	.contact-map-location {
+	    padding: 30px 35px 32px 70px;
+	}
+	.contact-map-location i {
+	    width: 50px;
+	    height: 50px;
+	    padding-top: 7px;
+	    position: absolute;
+	    left: 10px;
+	    top: 50%;
+	}
+	.contact-map-location span br{
+		display: none;
+	}
+	.contact-map-location h6,
+	.contact-map-location span {
+	    font-size: 17px;
+	    line-height: 19px;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.contact-form-sec-wrp {
+	    padding-top: 50px;
+	}
+	.contact-form-lft {
+	    width: 100%;
+	}
+	.contact-form-lft {
+	    width: 100%;
+	    max-width: 500px;
+	    margin: 0 auto;
+	    float: none;
+	    padding-bottom: 40px;
+	}
+	.contact-form-rgt {
+	    width: 100%;
+	    padding-left: 0;
+	    max-width: 500px;
+	    margin: 0 auto;
+	    float: none;
+	}
+	.contact-map-location span {
+	    font-size: 17px;
+	    line-height: 19px;
+	    display: block;
+	}
+	.contact-form-info {
+	    padding: 40px 20px;
+	}
+	.contact-map-location i {
+	    left: 20px;
+	}
+	.contact-map-location {
+	    padding: 30px 35px 32px 90px;
+	}
+	.contact-form-info span{
+		padding-bottom: 30px;
+	}
+	#googlemap {
+	    height: 400px;
+	}
+}
+
+@media(max-width: 575px){
+	#googlemap {
+	    height: 350px;
+	}
+
+}
+
+@media(max-width: 479px){
+	.contact-form-wrp .wpforms-field-container .wpforms-field {
+	    width: 100%;
+	}
+	.contact-form-wrp .wpforms-field-container .wpforms-field-html p {
+	    font-size: 14px;
+	    line-height: 20px;
+	    text-align: center;
+	}
+	.contact-form-wrp .wpforms-submit-container button {
+	    max-width: 232px;
+	    width: 100%;
+	    height: 56px;
+	    display: table;
+	    margin: 0 auto;
+	}
+	.contact-form-wrp .wpforms-field-container .wpforms-field-textarea textarea {
+	    width: 100%;
+	    height: 120px;
+	}
+
+}
+
+@media(max-width: 359px){
+
+}

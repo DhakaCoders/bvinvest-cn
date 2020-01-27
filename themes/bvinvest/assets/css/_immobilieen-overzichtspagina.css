@@ -72,22 +72,22 @@
 	letter-spacing: 0.02em;
 	font-weight: 500;
 }
-.green{
+.green .bvi-grd-key{
 	background: #15B615;
 }
-.green:after{
+.green .bvi-grd-key:after{
 	border-top: 8px solid #15B615;
 }
-.red{
+.red .bvi-grd-key{
 	background: #FF2E00;
 }
-.red:after{
+.red .bvi-grd-key:after{
 	border-top: 8px solid #FF2E00;
 }
-.sky{
+.sky .bvi-grd-key{
 	background: #14A7FA;
 }
-.sky:after{
+.sky .bvi-grd-key:after{
 	border-top: 8px solid #14A7FA;
 }
 .bvi-grd-date{
