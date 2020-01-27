@@ -20,8 +20,11 @@ footer-wrp
 	float: left;
 	width: 24%;
 }
+.ftr-contact{
+	margin-top: -1px;
+}
 .ftr-socail{
-	margin-top: -6px;
+	margin-top: -7px;
 }
 .ftr-logo a{
 	display: inline-block;
@@ -63,6 +66,7 @@ footer-wrp
 	color: #7B7B7B;
 	text-transform: uppercase;
 	padding-bottom: 28px;
+	letter-spacing: 0.02em;
 }
 .ftr-contact span:first-child{
 	margin-top: -5px;
@@ -144,12 +148,13 @@ footer-wrp
 	text-decoration: none;
 	font-weight: 400;
 	color: #7B7B7B;
+	letter-spacing: 0.02em;
 }
 .ftr-middel-rgt{
 	float: right;
 	width: 40%;
 }
-.ftr-middel-rgt span{
+.ftr-middel-rgt a{
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 14px;
@@ -157,6 +162,13 @@ footer-wrp
 	color: #7B7B7B;
 	font-weight: 400;
 	float: right;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	letter-spacing: 0.02em;
+}
+.ftr-middel-rgt a:hover{
+	color: #16b616;
 }
 .ftr-btm-inr{
 	padding: 50px 0 45px;
@@ -167,6 +179,7 @@ footer-wrp
 	font-weight: 400;
 	color: #ACACAC;
 	text-align: center;
+	letter-spacing: 0.02em;
 }
 
 .footer-top-form-sec-wrp{
@@ -189,6 +202,7 @@ footer-wrp
 	font-size: 16px;
 	line-height: 24px;
 	padding-bottom: 15px;
+	letter-spacing: 0.02em;
 }
 .ftr-top-frm-dsc h4{
 	margin: 0;
@@ -197,6 +211,7 @@ footer-wrp
 	color: #fff;
 	text-transform: uppercase;
 	margin-bottom: 8px;
+	letter-spacing: 0.02em;
 }
 
 /*
@@ -228,6 +243,7 @@ footer-wrp
 	margin: 0;
 	margin-bottom: 5px;
 	text-transform: uppercase;
+	letter-spacing: 0.02em;
 }
 
 .ftr-top-form .wpforms-field-container .wpforms-field input {
@@ -245,6 +261,7 @@ footer-wrp
 	color: #7B7B7B;
 	text-transform: uppercase;
 	border:1px solid transparent;
+	letter-spacing: 0.02em;
 }
 .ftr-top-form .wpforms-field-container .wpforms-field input:focus{
 	border-color:#107a10; 
@@ -272,17 +289,20 @@ footer-wrp
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+	cursor: pointer;
+	letter-spacing: 0.02em;
 }
 .ftr-top-form .wpforms-submit-container button[type="submit"]:hover,
 .ftr-top-form .wpforms-submit-container input[type="submit"]:hover{
-	background:#0c740c !important;
-	border-color: #0c740c !important;
+	background:#fff !important;
+	border-color: #fff !important;
+	color: #000 !important;
 }
 .ftr-msg {
     float: right;
     padding-left: 15px;
     padding-top: 12px;
-    padding-right: 83px;
+    padding-right: 75px;
 }
 .ftr-msg p{
 	font-size: 16px;
@@ -290,6 +310,7 @@ footer-wrp
 	font-weight: 400;
 	font-style: italic;
 	color: #fff;
+	letter-spacing: 0.02em;
 }
 
 /*

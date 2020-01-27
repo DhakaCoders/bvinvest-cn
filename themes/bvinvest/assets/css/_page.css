@@ -257,16 +257,13 @@ page-banner-filter-form
   position: relative;
   padding-left: 13px;
 }
-.bradecumb ul:after{
-  content: "";
+.bradecumb ul i{
   position: absolute;
   left: 0;
-  top: -5px;
-  background: url(../images/home-icon.svg);
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-  width: 25px;
-  height: 25px;
+  top: -7px;
+}
+.bradecumb ul i:hover svg{
+  fill: #ddd;
 }
 .bradecumb ul li{
   float: left;
@@ -303,13 +300,7 @@ page-banner-filter-form
 }
 .bradecumb-btn a:hover,
 .bradecumb ul li a:hover{
-  color: #107a10;
-}
-.bradecumb-btn a:hover:after{
-  left: -5px;
-  background: url(../images/bradecumb-btn-ary-hover.svg);
-   background-repeat: no-repeat;
-  background-size: 18px 13px;
+  color: #ddd;
 }
 .bradecumb-btn{
   float: right;
@@ -331,19 +322,20 @@ page-banner-filter-form
   -ms-transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
-.bradecumb-btn a:after{
+.bradecumb-btn a i{
   content: "";
   position: absolute;
   left: 0;
-  top: 2px;
-  background: url(../images/bradecumb-btn-ary.svg);
-  background-repeat: no-repeat;
-  background-size: 18px 13px;
-  width: 18px;
-  height: 13px;
+  top: 0;
   transition: all 0.5s;
   -ms-transition: all 0.5s;
   -webkit-transition: all 0.5s;
+}
+.bradecumb-btn a:hover i svg{
+  fill: #ddd;
+}
+.bradecumb-btn a:hover i{
+  left: -5px;
 }
 
 
