@@ -437,10 +437,14 @@ body #prmap .gm-style .gm-style-iw-t::before {
 	.tab-btns-bar-rgt-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
 	    width: 239px;
 	}
-	.overzichtspagina-page-cntlr .psearch-form-wrap{
+	.overzichtspagina-page-cntlr .psearch-form-wrap,
+	.realisatie-page-cntlr .psearch-form-wrap,
+	.kijkdagen-page-cntlr .psearch-form-wrap{
 	    display: none;
 	}
-	.overzichtspagina-page-cntlr .psearch-form {
+	.overzichtspagina-page-cntlr .psearch-form,
+	.realisatie-page-cntlr .psearch-form,
+	.kijkdagen-page-cntlr .psearch-form{
 	    padding-top: 0px;
 	}
 }
