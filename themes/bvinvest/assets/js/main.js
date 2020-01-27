@@ -333,17 +333,7 @@ if( $('.mixContainer').length ){
   Proshanto
 */
 
-//banner animation
-$(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-  $('.animate-banner').css({
-    '-webkit-transform' : 'scale(' + (1 + scroll/2000) + ')',
-    '-moz-transform'    : 'scale(' + (1 + scroll/2000) + ')',
-    '-ms-transform'     : 'scale(' + (1 + scroll/2000) + ')',
-    '-o-transform'      : 'scale(' + (1 + scroll/2000) + ')',
-    'transform'         : 'scale(' + (1 + scroll/2000) + ')'
-  });
-});
+
 
 if( $('.hmTestimonialSlider').length ){
   $('.hmTestimonialSlider').slick({
@@ -434,7 +424,6 @@ if( $('.hmGrdSlider').length ){
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            arrows:false,
             dots: true
           }
         },
@@ -442,9 +431,7 @@ if( $('.hmGrdSlider').length ){
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows:false,
-            dots: true
+            slidesToScroll: 1
           }
         }
         // You can unslick at a given breakpoint now by adding:
@@ -453,6 +440,48 @@ if( $('.hmGrdSlider').length ){
       ]
     });
 }
+
+
+var windowWidth = $(window).width();
+
+if(windowWidth < 768){
+  if( $('.pregressSlider').length ){
+    $('.pregressSlider').slick({
+        dots: true,
+        autoplay: false,
+        infinite: false,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows:true,
+        prevArrow: $('.pregressLeftArrow'),
+        nextArrow: $('.pregressRightArrow'),
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows:false,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows:false,
+              dots: true
+            }
+          }
+        ]
+      });
+  }
+
+}
+  
+
 
 
 $('.slider-filter-bar > a').on('click', function(e){
