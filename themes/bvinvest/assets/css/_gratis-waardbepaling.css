@@ -109,12 +109,19 @@ gw-form-sec-wrp
 	    font-size: 17px;
 	    line-height: 19px;
 	}
+	.contact-form-dsc h1{
+		font-size: 39px;
+		line-height: 1;
+	}
 }
 
 @media(max-width: 991px){
 	.gw-dsc-box p {
 	    font-size: 16px;
 	    line-height: 18px;
+	}
+	.progrees-bar-wrp span{
+		font-size: 22px;
 	}
 	
 }

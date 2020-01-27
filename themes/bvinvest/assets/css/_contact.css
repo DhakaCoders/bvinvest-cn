@@ -148,7 +148,7 @@ contact-form-sec-wrp
 	display: none;
 }
 .contact-form-rgt{
-	float: left;
+	float: right;
 	width: 69%;
 	padding-left: 65px;
 }
@@ -407,16 +407,12 @@ contact-form-sec-wrp
 	}
 	.contact-form-lft {
 	    width: 100%;
-	    max-width: 500px;
-	    margin: 0 auto;
 	    float: none;
-	    padding-bottom: 40px;
+	    padding-top: 50px;
 	}
 	.contact-form-rgt {
 	    width: 100%;
 	    padding-left: 0;
-	    max-width: 500px;
-	    margin: 0 auto;
 	    float: none;
 	}
 	.contact-map-location span {
@@ -446,6 +442,9 @@ contact-form-sec-wrp
 	.contact-lft-img img{
 		display: block;
 	}
+	.contact-form-dsc h1{
+		margin-bottom: 20px;
+	}
 }
 
 @media(max-width: 575px){
@@ -455,7 +454,7 @@ contact-form-sec-wrp
 	.contact-form-dsc h1 {
 	    font-size: 35px;
 	    line-height: 38px;
-	    margin-bottom: 20px;
+	    margin-bottom: 15px;
 	}
 
 }

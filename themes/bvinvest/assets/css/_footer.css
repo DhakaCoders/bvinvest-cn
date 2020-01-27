@@ -398,6 +398,9 @@ footer-wrp
 	.ftr-btm-inr p {
 	    line-height: 28px;
 	}
+	.ftr-middel-rgt a{
+		float: none;
+	}
 }
 
 @media(max-width: 767px){
