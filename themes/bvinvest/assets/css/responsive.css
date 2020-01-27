@@ -1,15 +1,18 @@
-@media(max-width: 1499px){
-
-} 
-
-@media(max-width: 1399px){
+@media(max-width: 1599px){
 	.container-lg{
 		max-width: 1240px;
 	}
 	.container{
 		max-width: 1200px;
-		width: 100%;
 	}
+
+} 
+
+@media(max-width: 1499px){
+
+} 
+
+@media(max-width: 1399px){
 }
 
 @media(max-width: 1299px){
