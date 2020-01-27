@@ -165,6 +165,7 @@
 .detailpagina-thumb-slider-item{
   padding-left: 11px;
   padding-right: 11px;
+  cursor: pointer;
 }
 .detailpagina-thumb-slider-item i{
   display: inline-block;
