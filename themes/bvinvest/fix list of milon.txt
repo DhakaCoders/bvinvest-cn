@@ -4,44 +4,49 @@ Desktop---->
 
 1. i) https://www.screencast.com/t/abDIASzu
    ii) https://www.screencast.com/t/IOITtEXpmTM6
-	hover korle ai color ta daw. green color ta valo dekhaschena (done)
+	hover korle ai color ta daw. green color ta valo dekhaschena (done) <---ok
 
 2. https://www.screencast.com/t/5mAlu8G6J
-	ai icon ta ul ar left a sprite kore daw(done)
+	ai icon ta ul ar left a sprite kore daw(done)  <----ok
 
 3. https://www.screencast.com/t/v98JhX9L1q
-	ai arrow ta 'a' tag ar vitre 'i' tag niye sprite kore daw.(done)
+	ai arrow ta 'a' tag ar vitre 'i' tag niye sprite kore daw.(done) <----ok
 
 4. https://www.screencast.com/t/DtVY2QK5
-	hover korle title ar color ta daw(done)
+	hover korle title ar color ta daw(done) <----ok
 
 5. https://www.screencast.com/t/qpofz10HPLaM
-	resize none hobe(done)
+	resize none hobe(done) <----ok
 
 6. https://www.screencast.com/t/hmzdOmtl
-	cursor pointer hobe(done)
+	cursor pointer hobe(done) <----ok
 
 7. https://www.screencast.com/t/HZcT5fv5088k
-	ai link and link sara design kore rakhte hobe. client link nao nite pare aitate.(done)
+	ai link and link sara design kore rakhte hobe. client link nao nite pare aitate.(done) <----ok
 
 8. https://www.screencast.com/t/Kz6GUcHHAP
-	ai icon ta aktu niche nambe maybe(done)
+	ai icon ta aktu niche nambe maybe(done) <----ok
 
 9. https://www.screencast.com/t/ecXPBHRlQm
-	ai placeholder ar text ta thik nai. onno text hobe (done)
+	ai placeholder ar text ta thik nai. onno text hobe (done) <----ok
 
 10. https://www.screencast.com/t/nOLMRvqt6pUf
-	aitar placeholder ta, label ar tai diye daw. design mistake hoiche.(done)
+	aitar placeholder ta, label ar tai diye daw. design mistake hoiche.(done) <----ok
 
 11. https://www.screencast.com/t/dM3cgT7pJw3d
-	ai img ta, div ar bg te use koro. choto ba boro img up korle desgin thik thakar jonno.(done)
+	ai img ta, div ar bg te use koro. choto ba boro img up korle desgin thik thakar jonno.(done) <----ok
 
 12. https://www.screencast.com/t/wn9dAMyrZo0
-	letter-spacing missing(done)
+	letter-spacing missing(done) <----ok
 
 	onno kothao form thake sekhaneo update hobe
 
 
+
+new---->
+
+1. https://www.screencast.com/t/BXlZO1HMfpC
+	home icon ta ul ar vitore dile kivabe dev korbe. ata ul ar bahire hobe
 
 
 
@@ -49,22 +54,22 @@ Footer
 ---------------------
 Desktop--->
 1. https://www.screencast.com/t/ytAPsOd9dY
-	i) ai button a hover korle , ai design ta daw. 
-	ii) cursor pointer hobe
+	i) ai button a hover korle , ai design ta daw.  <----ok
+	ii) cursor pointer hobe   <----ok
 
 2. https://www.screencast.com/t/K11GQtKTTHuT
-	star ar color green hobe 
+	star ar color green hobe <----ok 
 
 3. https://www.screencast.com/t/eVGR8hCR
 	sob text a letter-spacing missing.
 	ami r baki gulo check kortechina. sob page ar, sob text gulo dhore dhore letter-spacing gulo update korte hobe.
-	onek jaygay ache letter-spacing
+	onek jaygay ache letter-spacing  <----ok
 
 4. https://www.screencast.com/t/XFhOEvsRWC
-	ak label a thakbe alignment ta, ai 2 ta aktu niche mone hosche
+	ak label a thakbe alignment ta, ai 2 ta aktu niche mone hosche <----ok
 
 5. https://www.screencast.com/t/EA78kCXv
-	link hobe with hover color
+	link hobe with hover color <----ok
 
 
 
@@ -77,21 +82,21 @@ Desktop--->
 	text jodi besi dey tahole amon hoy.
 	ata solve korte pari amara flex diye.
 	i) https://www.screencast.com/t/aqqSTum3JuD
-		top, btm,lft,rgt ar padding ta parent a daw
+		top, btm,lft,rgt ar padding ta parent a daw <----ok
 	ii) ai .gw-dsc-box  ai dive a -->  display: flex, align-item: center dilei hoye jabe.
-	 positon lagbena p te
+	 positon lagbena p te <----ok
 	iii) https://www.screencast.com/t/E5n9uwwBT
-	 	br tag sara text thik rakha jaykina try kore dekhio, na gele br tag thak 
+	 	br tag sara text thik rakha jaykina try kore dekhio, na gele br tag thak  <----ok
 
 
 Over Ons 
 ------------------
 Desktop--->
 1. https://www.screencast.com/t/OfMil5fe9Dx
-	aita h4/h5 diye manage koro 
+	aita h4/h5 diye manage koro  <----ok
 	
 2. https://www.screencast.com/t/OWfSqwMzVeN
-	ai word ta uporer line a jabe
+	ai word ta uporer line a jabe <----ok
 
 
 
