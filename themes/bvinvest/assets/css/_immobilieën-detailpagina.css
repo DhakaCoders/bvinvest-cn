@@ -15,6 +15,15 @@
 .detailpagina-slider-wrp-con{
   position: relative;
 }
+.detailpagina-slider .detailpagina-slider-item{
+  display: none;
+}
+.detailpagina-slider .detailpagina-slider-item:first-child{
+  display: block;
+}
+.detailpagina-slider.slick-initialized .detailpagina-slider-item{
+  display: block;
+} 
 .detailpagina-slider-item{
   background-repeat: no-repeat!important;
   background-position: center center!important;
@@ -34,21 +43,24 @@
   min-height: 768px;
   position: relative;
 }
-.detailpagina-slider-des > span{
+.detailpagina-slider-des .key-info-bg{
   display: inline-block;
   vertical-align: middle;
-  padding: 2px 22px 4px 8px;
+  padding: 4px 22px 4px 8px;
   border-radius: 8px;
   margin-bottom: 15px;
   position: relative;
 }
-.detailpagina-slider-des > span > i {
+.green-info .key-info-bg{
+  background: #15B615;
+}
+.detailpagina-slider-des .key-info-bg i {
   display: inline-block;
   vertical-align: middle;
   position: relative;
   top: -2px;
 }
-.detailpagina-slider-des > span > strong {
+.detailpagina-slider-des .key-info-bg strong {
   display: inline-block;
   vertical-align: middle;
   font-weight: 400;
@@ -57,8 +69,10 @@
   text-transform: uppercase;
   color: #FFFFFF;
   padding-left: 10px;
+  line-height: 30px;
+  margin: 0;
 }
-.detailpagina-slider-des > span::after {
+.detailpagina-slider-des .key-info-bg::after {
   content: "";
   position: absolute;
   left: 11px;
@@ -69,12 +83,15 @@
   border-right: 5px solid #0000;
   border-top: 8px solid #0000;
 }
-.detailpagina-slider-des > span.key-info-bg::after {
+.green-info .detailpagina-slider-des .key-info-bg::after {
   border-top: 8px solid #15B615;
 }
-.detailpagina-slider-des h1 {
+.detailpagina-slider-des strong{
   font-weight: 900;
   line-height: 64px;
+  font-size: 56px;
+  display: block;
+  margin-bottom: 10px;
 }
 .detailpagina-slider-des ul{
  margin-bottom: 25px;
@@ -87,6 +104,7 @@
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  padding-right: 2px;
 }
 .detailpagina-slider-des ul li:nth-child(2) i{
   top: -1px;
@@ -94,12 +112,14 @@
 .detailpagina-slider-des ul li:nth-child(3) i{
   top: -3px;
 }
-
 .detailpagina-slider-des li span{
   display: inline-block;
   vertical-align: middle;
   font-size: 16px;
   letter-spacing: 0.02em;
+}
+.detailpagina-slider-des li span sup{
+  font-size: 12px;
 }
 .detailpagina-slider-arrow-wrp{
   position: absolute;
@@ -145,10 +165,20 @@
   -ms-transition: all .3s ease;
   transition: all .3s ease;
 }
-.detailpaginaLeftArrow img,
-.detailpaginaRightArrow img{
+.detailpaginaLeftArrow i,
+.detailpaginaRightArrow i{
   position: relative;
   top: 11px;
+}
+.detailpaginaLeftArrow i svg,
+.detailpaginaRightArrow i svg{
+  -webkit-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.detailpaginaLeftArrow:hover i svg,
+.detailpaginaRightArrow:hover i svg{
+  fill: #fff!important;
 }
 .detailpaginaLeftArrow:hover,
 .detailpaginaRightArrow:hover{
@@ -166,6 +196,8 @@
   padding-left: 11px;
   padding-right: 11px;
   cursor: pointer;
+  width: 16.666%;
+  float: left;
 }
 .detailpagina-thumb-slider-item i{
   display: inline-block;
@@ -191,13 +223,14 @@
 .detailpagina-main-des-top{
   padding-bottom: 20px;
 }
-.detailpagina-main-des-top h2{
+.detailpagina-main-des-top h1{
   font-weight: 900;
   line-height: 48px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #282828;
   margin-bottom: 15px;
+  font-size: 48px;
 }
 .detailpagina-main-des-top p{
   margin-bottom: 25px;
@@ -226,7 +259,7 @@
   background-size: 100% 100%;
 }
 .detailpagina-rtable-wrp{
-  padding: 12px 10px;
+  padding: 12px 10px 0;
   border: 4px solid #F3F3F3;
   background: #fff;
   margin-bottom: 40px;
@@ -244,7 +277,7 @@
 }
 .detailpagina-rtable-wrp .table td, 
 .detailpagina-rtable-wrp .table th {
-  padding: 15px 27px;
+  padding: 20px 27px;
   vertical-align: top;
   border-top: 0;
 }
@@ -253,6 +286,10 @@
 }
 .table-striped tbody tr:nth-of-type(2n+1){
   background-color: #fff;
+}
+.table-striped tbody tr:nth-of-type(2n+1) tr,
+.table-striped tbody tr:nth-of-type(2n+1) td{
+  padding: 15px 27px;
 }
 .detailpagina-testimonial{
   margin-bottom: 70px;
@@ -393,9 +430,9 @@
   width: 100%;
 }
 .detailpagina-form {
-  padding:30px 30px 32px;
+  padding:30px;
   background: #15B615;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 }
 .detailpagina-form label{
   font-weight: 700;
@@ -408,7 +445,7 @@
 .detailpagina-form input{
   width: 100%;
   background: #fff;
-  padding: 11px 15px;
+  padding: 9px 15px;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.02em;
@@ -425,7 +462,7 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #7B7B7B;
-  min-height: 74px;
+  min-height: 73px;
   border: 0;
   resize: none;
 }
@@ -469,7 +506,7 @@
   margin-bottom: 6px;
 }
 .detailpagina-submit{
-  padding-top: 15px;
+  padding-top: 13px;
 }
 .detailpagina-form h5{
   font-size: 26px;
@@ -514,17 +551,23 @@
   position: relative;
   padding-right: 21px;
 }
-.detailpagina-download-box a::after{
-  content: "";
+.detailpagina-download-box a:hover{
+  color: #000;
+}
+.detailpagina-download-box a i{
+  display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   right: 0;
-  top: 2px;
-  background: url('../images/detailpagina-download-icon.svg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 16px;
-  height: 16px; 
+  top: 0;
+}
+.detailpagina-download-box a i svg{
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.detailpagina-download-box a:hover i svg{
+  fill: #000!important;
 }
 .detailpagina-download-box span{
   display: inline-block;
@@ -579,9 +622,21 @@
   .detailpagina-slider-item-innr {
     min-height: 700px;
   }
+  .detailpagina-main-des-top h1{
+    line-height: 48px;
+    font-size: 44px;
+  }
+  .detailpagina-slider-des strong {
+    font-size: 50px;
+    line-height: 55px;
+  }
 }
 
 @media(max-width: 991px){
+  .detailpagina-slider-des strong {
+    font-size: 45px;
+    line-height: 50px;
+  }
   .detailpagina-slider-item-innr {
     min-height: 688px;
   }
@@ -599,6 +654,10 @@
     width: 100%;
     float: none;
     padding-top:50px;
+  }
+  .detailpagina-main-des-top h1{
+    font-size: 42px;
+    line-height: 45px;
   }
   .detailpagina-main-des-top ul {
     padding-left: 25px;
@@ -636,6 +695,14 @@
 }
 
 @media(max-width: 767px){
+  .detailpagina-slider-des strong {
+    font-size: 43px;
+    line-height: 48px;
+  }
+  .detailpagina-main-des-top h1{
+    font-size: 38px;
+    line-height: 42px;
+  }
   .detailpagina-slider-item-innr {
     min-height: 600px;
   }
@@ -656,35 +723,30 @@
     bottom: initial;
     top: 0;
   }
-
-.detailpaginaLeftArrow {
+  .detailpaginaLeftArrow {
     position: absolute;
     right: auto;
     bottom: initial;
     left: 0;
   }
-
   .detailTestimonialLeftArrow {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: auto;
+    bottom: 40px;
+    left: 20px;
     display: inline-block;
     cursor: pointer;
     z-index: 5;
   }
   .detailTestimonialRightArrow {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: auto;
+    bottom: 40px;
+    right: 20px;
     display: inline-block;
     cursor: pointer;
     z-index: 5;
   }
-
-
-
-
-
   .detailpagina-thumb-slider-innr {
     padding: 8px 0 12px;
   }
@@ -721,10 +783,7 @@
     transition: all .3s ease;
   }
   .detailTestimonialSlider-item {
-    padding: 57px 70px 55px;
-  }
-  .detailTestimonialSlider-item {
-    padding: 57px 60px 55px;
+    padding: 57px 50px 110px;
     text-align: center;
   }
   .detailTestimonialSlider-item .testimonial-ratings{
@@ -734,6 +793,13 @@
 }
 
 @media(max-width: 575px){
+  .detailpagina-slider-des .key-info-bg strong {
+    font-size: 17px;
+  }
+  .detailpagina-slider-des strong {
+    font-size: 34px;
+    line-height: 40px;
+  }
   .detailpagina-slider-des ul li:last-child {
     display: none;
   }
@@ -755,7 +821,7 @@
     content: none;
   }
   .detailTestimonialSlider-item {
-    padding: 55px 20px;
+    padding: 55px 20px 70px;
   }
 
 }
@@ -770,30 +836,16 @@
   .detailpagina-slider-des h1 {
     line-height: 40px;
   }
+  .detailpagina-main-des-top h1{
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 @media(max-width: 359px){
+  .detailpagina-slider-des li span {
+    font-size: 10px;
+  }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

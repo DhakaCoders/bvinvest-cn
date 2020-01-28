@@ -466,7 +466,15 @@ if(windowWidth < 768){
       slidesToShow: 1,
       slidesToScroll: 1,
       prevArrow: $('.detailTestimonialLeftArrow'),
-      nextArrow: $('.detailTestimonialRightArrow')
+      nextArrow: $('.detailTestimonialRightArrow'),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            dots: true
+          }
+        }
+      ]
     });
   }
 

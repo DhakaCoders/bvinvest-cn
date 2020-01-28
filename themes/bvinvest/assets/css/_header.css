@@ -244,7 +244,12 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a::after{
 
 
 
-
+@media(max-width: 1599px){
+    nav.main-nav > ul > li {
+        padding: 0 16px;
+        position: relative;
+    }
+}
 
 @media(max-width: 1499px){
 

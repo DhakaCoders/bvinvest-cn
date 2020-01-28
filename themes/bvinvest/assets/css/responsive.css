@@ -5,7 +5,9 @@
 	.container{
 		max-width: 1200px;
 	}
-
+	.container-xlg{
+		max-width: 1300px; 
+	}
 } 
 
 @media(max-width: 1499px){
