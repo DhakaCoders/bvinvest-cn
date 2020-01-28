@@ -37,10 +37,9 @@ Desktop---->
 
 
  10. https://www.screencast.com/t/GqdECVDkPjAp
- 	div badh diye just 'a' tag rekhe manage koro >>> margin padding konotai use kora jabe na ekane, position diye korchi, dekhe nen evabe cholbe kina??(red)
-
+ 	div badh diye just 'a' tag rekhe manage koro >>> margin padding konotai use kora jabe na ekane, position diye korchi, dekhe nen evabe cholbe kina??
  11. https://www.screencast.com/t/uVNslyF8yxU6
- 	ai grd ar markup ai 3 ta page dekhe idea nite hobe red
+ 	ai grd ar markup ai 3 ta page dekhe idea nite hobe 
 
  12. https://www.screencast.com/t/opQChdWzhvpC
  	ai gap ta aktu besi hobe maybe --done
@@ -89,11 +88,11 @@ Desktop---->
 	hover korle arrow color white daw --done
 
 5. https://www.screencast.com/t/rZ2ZPx01kNWJ
-	j koyta item ai add koruk na keno center a thakbe always.
-	border ta full-width thakbe red
+	j koyta item ai add koruk na keno center a thakbe always. --done
+	border ta full-width thakbe 
 
 6. https://www.screencast.com/t/qm1V5AahsJ
-	ata h1 daw --done red
+	ata h1 daw --done
 
 7. https://www.screencast.com/t/cjO70rPN
 	last item ar bottom gap ta aktu besi mone hosche --done

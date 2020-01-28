@@ -23,7 +23,7 @@
 }
 .detailpagina-slider.slick-initialized .detailpagina-slider-item{
   display: block;
-} 
+}
 .detailpagina-slider-item{
   background-repeat: no-repeat!important;
   background-position: center center!important;
@@ -183,6 +183,9 @@
 .detailpaginaLeftArrow:hover,
 .detailpaginaRightArrow:hover{
   background: #15B615;
+} 
+.detailpagina-thumb-slider .slick-track {
+  margin: auto!important;
 }
 .detailpagina-thumb-slider-innr{
   padding: 15px 0 16px;
