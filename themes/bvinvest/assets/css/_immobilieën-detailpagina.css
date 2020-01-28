@@ -264,7 +264,9 @@
   background: #fff;
   margin-bottom: 40px;
 }
-.detailpagina-rtable-wrp .table-head-con{
+
+.detailpagina-rtable-wrp .table thead tr,
+.detailpagina-rtable-wrp .table thead td{
   background: #15B615;
   padding: 20px 27px;
   font-weight: 700;
@@ -663,10 +665,13 @@
     padding-left: 25px;
     padding-bottom: 9px;
   }
+  .table-striped tbody tr:nth-of-type(2n+1) tr, 
+  .table-striped tbody tr:nth-of-type(2n+1) td,
   .detailpagina-rtable-wrp .table td, 
   .detailpagina-rtable-wrp .table th {
     padding: 15px;
   }
+
   .detailpagina-form {
     padding: 30px 30px 32px;
     background: #15B615;
@@ -752,10 +757,11 @@
   }
   .detailpagina-main-des-top ul {
     padding-left: 0;
-  }
+  }  
   .detailpagina-rtable-wrp{
-    width: 740px;
     overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
   }
   .detailpagina-testimonial p {
     font-size: 20px;
