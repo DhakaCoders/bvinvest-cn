@@ -323,7 +323,15 @@ if( $('.hmTestimonialSlider').length ){
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: $('.testimonialLeftArrow'),
-    nextArrow: $('.testimonialRightArrow')
+    nextArrow: $('.testimonialRightArrow'),
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          dots: true,
+        }
+      }
+    ]
   });
 }
 

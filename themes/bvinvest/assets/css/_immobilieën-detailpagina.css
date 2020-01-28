@@ -304,7 +304,7 @@
   display: block;
   line-height: 36px;
   letter-spacing: 0.02em;
-  padding-right: 80px;
+  padding-right:0;
   font-weight: 500;
 }
 .detailpagina-social {
@@ -656,17 +656,35 @@
     bottom: initial;
     top: 0;
   }
-  .detailTestimonialLeftArrow {
+
+.detailpaginaLeftArrow {
+    position: absolute;
     right: auto;
-    left: 0;
     bottom: initial;
-    top: 0;
+    left: 0;
+  }
+
+  .detailTestimonialLeftArrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 5;
   }
   .detailTestimonialRightArrow {
-    right: 0;
-    bottom: initial;
-    top: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 5;
   }
+
+
+
+
+
   .detailpagina-thumb-slider-innr {
     padding: 8px 0 12px;
   }
@@ -680,16 +698,7 @@
   .detailpagina-testimonial p {
     font-size: 20px;
   }
-
-
-
-
-
-
-.testimonialRightArrow {
-}
-
-.testimonialRightArrow {
+  .testimonialRightArrow {
     position: absolute;
     right: 15px;
     bottom: 45px;
@@ -699,7 +708,7 @@
     -webkit-transition: all .3s ease;
     -ms-transition: all .3s ease;
     transition: all .3s ease;
-}
+  }
   .testimonialLeftArrow {
     position: absolute;
     left: 15px;
@@ -711,14 +720,17 @@
     -ms-transition: all .3s ease;
     transition: all .3s ease;
   }
-
-
-
-
-
-
-
-
+  .detailTestimonialSlider-item {
+    padding: 57px 70px 55px;
+  }
+  .detailTestimonialSlider-item {
+    padding: 57px 60px 55px;
+    text-align: center;
+  }
+  .detailTestimonialSlider-item .testimonial-ratings{
+    display: table;
+    margin: auto;
+  }
 }
 
 @media(max-width: 575px){
@@ -742,6 +754,10 @@
   .detailpagina-main-sec::after {
     content: none;
   }
+  .detailTestimonialSlider-item {
+    padding: 55px 20px;
+  }
+
 }
 
 @media(max-width: 479px){  
