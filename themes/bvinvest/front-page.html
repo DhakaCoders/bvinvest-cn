@@ -20,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/plugin.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
  
@@ -432,8 +433,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="pregress-counter-innr-wrp">
-          
+        <div class="pregress-counter-innr-wrp">          
           <span class="pregressLeftArrow show-sm">
             <svg class="dft-slider-left-arrow" width="18" height="33" viewBox="0 0 18 33" fill="#C4C4C4">
               <use xlink:href="#dft-slider-left-arrow"></use>
@@ -463,10 +463,8 @@
               <span>Verhuurde panden</span>
             </div>
           </div>
-        </div>
-  
+        </div>  
       </div>
-
     </div>
   </div>    
 </section>
@@ -477,16 +475,62 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="hm-grd-slider-innr">
-          <div class="slider-filter-bar">
+          <div class="slider-filter-bar hide-sm">
             <a class="active" href="#">
               <span>Huizen</span>  <br>
               <strong>in de kijker</strong>
             </a>
-            <a data-toggle="tab" href="#">
+            <a href="#">
               <span>Opkomede</span> <br>
               <strong>Kijdagen</strong>
             </a>
           </div>
+
+          <div class="sm-slider-filter-bar show-sm">
+            <h1 class="huizen"><small>Huizen</small> <br> in de kijker</h1>
+            <h1 class="opkomede"><small>Opkomede</small> <br> Kijdagen</h1>
+            <div class="sm-filter-link">
+              <a class="lft-filter active" href="#">Huizen in de kijker</a>
+              <span class="switch-btn"><i></i></span>
+              <a class="rgt-filter" href="#">Opkomede Kijdagen</a>            
+            </div>
+            <div class="hmGrdSlider-info-right show-sm">
+              <ul class="ulc clearfix">
+                <li>
+                  <span class="key-info-bg">
+                    <i>  
+                      <svg class="hmGrdSlider-icon-key-svg" width="22.792" height="22.792" viewBox="0 0 22.792 22.792" fill="white">
+                        <use xlink:href="#hmGrdSlider-icon-key-svg"></use>
+                      </svg>
+                    </i>
+                  </span>
+                  <strong>Te koop</strong>
+                </li>
+                <li>
+                  <span class="date-info-bg">
+                    <i>  
+                      <svg class="hmGrdSlider-icon-date-svg" width="23" height="23" viewBox="0 0 23 23" fill="white">
+                        <use xlink:href="#hmGrdSlider-icon-date-svg"></use>
+                      </svg>
+                    </i>
+                  </span>
+                  <strong>Te koop</strong>
+                </li>
+                <li>
+                  <span class="medel-info-bg">
+                    <i>  
+                      <svg class="hmGrdSlider-icon-medel-svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <use xlink:href="#hmGrdSlider-icon-medel-svg"></use>
+                      </svg>
+                    </i>
+                  </span>
+                  <strong>Te koop</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
           <div class="hmGrdSlider-wrap">
             <span class="hmGrdSliderLeftArrow">
               <svg class="dft-slider-left-arrow" width="18" height="33" viewBox="0 0 18 33" fill="#C4C4C4">
@@ -1033,6 +1077,9 @@
     </div>
   </div>
 </footer>
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>

@@ -305,11 +305,11 @@ if (windowWidth <= 639) {
   $('.xs-cat-select').selectpicker();
 }
 
+
+
 /*
   Proshanto
 */
-
-
 
 if( $('.hmTestimonialSlider').length ){
   $('.hmTestimonialSlider').slick({
@@ -319,7 +319,7 @@ if( $('.hmTestimonialSlider').length ){
     infinite: true,
     arrows:true,
     speed: 1000,
-    //fade: true,
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: $('.testimonialLeftArrow'),
@@ -327,7 +327,7 @@ if( $('.hmTestimonialSlider').length ){
   });
 }
 
-if( $('.detailpagina-slider').length ){
+if( $('.detailpagina-slider-sec').length ){
   $('.detailpagina-slider').slick({
     pauseOnHover: false,
     autoplay: false,
@@ -341,20 +341,8 @@ if( $('.detailpagina-slider').length ){
     prevArrow: $('.detailpaginaLeftArrow'),
     nextArrow: $('.detailpaginaRightArrow'),
     asNavFor: '.detailpagina-thumb-slider',
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-        }
-      }
-    ]
   });
-}
 
-if( $('.detailpagina-thumb-slider').length ){
   $('.detailpagina-thumb-slider').slick({
       dots: false,
       autoplay: false,
@@ -369,24 +357,18 @@ if( $('.detailpagina-thumb-slider').length ){
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows:false,
-            dots: true
+            slidesToShow: 5,
+            //slidesToScroll: 1,
+            //focusOnSelect: false,
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows:false,
-            dots: true
+            //slidesToScroll: 1
           }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
     });
 }
@@ -421,9 +403,6 @@ if( $('.hmGrdSlider').length ){
             dots: true
           }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
     });
 }
@@ -466,20 +445,59 @@ if(windowWidth < 768){
       });
   }
 
+
+  if( $('.detailTestimonialSlider').length ){
+    $('.detailTestimonialSlider').slick({
+      pauseOnHover: false,
+      autoplay: false,
+      dots: false,
+      infinite: true,
+      arrows:true,
+      speed: 1000,
+      //fade: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.detailTestimonialLeftArrow'),
+      nextArrow: $('.detailTestimonialRightArrow')
+    });
+  }
+
+
+
 }
   
 
 
+//
+if( $('.slider-filter-bar').length ){
+  $('.slider-filter-bar > a').on('click', function(e){
+    e.preventDefault();
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+  });
+}
 
-$('.slider-filter-bar > a').on('click', function(e){
-  e.preventDefault();
-  $(this).addClass('active');
-  $(this).siblings().removeClass('active');
-});
 
+if( $('.sm-slider-filter-bar').length ){
+  $('.sm-filter-link > a.lft-filter').on('click', function(e){
+    e.preventDefault();
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    $('.huizen').css('opacity', '1');
+    $('.opkomede').css('opacity', '0');
+    $('.switch-btn > i').css('left', '3px');
+  });
 
-
-
+  $('.sm-filter-link > a.rgt-filter').on('click', function(e){
+    e.preventDefault();
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    $('.huizen').css('opacity', '0');
+    $('.opkomede').css('opacity', '1');  
+    $('.switch-btn > i').css('left', '14px');
+  });
+}
+  
 
 
 
@@ -696,6 +714,17 @@ $(this).removeClass('notOnScreen')
 
 
 */
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -255,10 +255,22 @@
   background-color: #fff;
 }
 .detailpagina-testimonial{
-  padding: 57px 100px 55px 90px;
   margin-bottom: 70px;
+  position: relative;
   background: -wekkit-linear-gradient(0deg, #F9F9F9, #F9F9F9);
   background: linear-gradient(0deg, #F9F9F9, #F9F9F9)
+}
+.detailTestimonialSlider-item{
+  padding: 57px 100px 55px 90px;  
+}
+.detailTestimonialSlider .detailTestimonialSlider-item{
+  display: none;
+}
+.detailTestimonialSlider .detailTestimonialSlider-item:first-child{
+  display: block;
+}
+.detailTestimonialSlider.slick-initialized .detailTestimonialSlider-item{
+  display: block;
 }
 .detailpagina-testimonial i{
   display: inline-block;
@@ -542,10 +554,15 @@
 
 
 
-
-
-
-
+/* .llevamosSlider .llevamosSlider-item{
+    display: none;
+}
+.llevamosSlider .llevamosSlider-item:first-child{
+    display: block;
+}
+.llevamosSlider.slick-initialized .llevamosSlider-item{
+    display: block;
+} */
 @media(max-width: 1499px){
 
 }
@@ -559,23 +576,184 @@
 }
 
 @media(max-width: 1199px){
-
+  .detailpagina-slider-item-innr {
+    min-height: 700px;
+  }
 }
 
 @media(max-width: 991px){
-
+  .detailpagina-slider-item-innr {
+    min-height: 688px;
+  }
+  .detailpagina-thumb-slider-item {
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+  }
+  .detailpagina-main-des-con {
+    width: 100%;
+    padding-right: 0;
+    float: none;
+  }
+  .detailpagina-main-side-bar {
+    width: 100%;
+    float: none;
+    padding-top:50px;
+  }
+  .detailpagina-main-des-top ul {
+    padding-left: 25px;
+    padding-bottom: 9px;
+  }
+  .detailpagina-rtable-wrp .table td, 
+  .detailpagina-rtable-wrp .table th {
+    padding: 15px;
+  }
+  .detailpagina-form {
+    padding: 30px 30px 32px;
+    background: #15B615;
+    margin-bottom: 46px;
+    margin: 0 auto 40px;
+    max-width: 600px;
+    width: 100%;
+  }
+  #detailpaginamap {
+    height: 350px;
+  }
+  .detailpagina-social {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .detailpagina-main-innr {
+    padding: 5px 0 32px;
+  }
+  .detailpagina-testimonial{
+    max-width: 650px;
+    margin: auto;
+  }
+  .detailpaginaTestimonialSlider-item {
+    padding: 57px 60px;
+  }
 }
 
 @media(max-width: 767px){
+  .detailpagina-slider-item-innr {
+    min-height: 600px;
+  }
+  .detailpagina-slider-arrow-wrp {
+    position: absolute;
+    left: 0;
+    bottom: initial;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 54px;
+    width: 100%;
+  }
+  .detailpaginaRightArrow {
+    right: 0;
+    bottom: initial;
+    top: 0;
+  }
+  .detailTestimonialLeftArrow {
+    right: auto;
+    left: 0;
+    bottom: initial;
+    top: 0;
+  }
+  .detailTestimonialRightArrow {
+    right: 0;
+    bottom: initial;
+    top: 0;
+  }
+  .detailpagina-thumb-slider-innr {
+    padding: 8px 0 12px;
+  }
+  .detailpagina-main-des-top ul {
+    padding-left: 0;
+  }
+  .detailpagina-rtable-wrp{
+    width: 740px;
+    overflow-x: scroll;
+  }
+  .detailpagina-testimonial p {
+    font-size: 20px;
+  }
+
+
+
+
+
+
+.testimonialRightArrow {
+}
+
+.testimonialRightArrow {
+    position: absolute;
+    right: 15px;
+    bottom: 45px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+  .testimonialLeftArrow {
+    position: absolute;
+    left: 15px;
+    bottom: 45px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+
+
+
+
+
+
 
 }
 
 @media(max-width: 575px){
-
+  .detailpagina-slider-des ul li:last-child {
+    display: none;
+  }
+  .detailpagina-main-des-con{
+    overflow: hidden;
+  }
+  #detailpaginamap {
+    height: 300px;
+  }
+  .detailpagina-main-innr {
+    padding: 5px 0 0px;
+  }
+  .detailpagina-form {
+    padding: 25px 15px;
+    background: #15B615;
+    margin-bottom: 0;
+  }
+  .detailpagina-main-sec::after {
+    content: none;
+  }
 }
 
 @media(max-width: 479px){  
-
+  .detailpagina-slider-des > span > strong {
+    font-size: 17px;
+  }
+  .detailpagina-slider-des li span {
+    font-size: 11px;
+  }
+  .detailpagina-slider-des h1 {
+    line-height: 40px;
+  }
 }
 
 @media(max-width: 359px){
