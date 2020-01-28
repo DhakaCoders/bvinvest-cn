@@ -68,3 +68,46 @@ Desktop---->
  	ai align ta mileni. slider container width besi hobe
 
 
+
+
+
+ Detailpagina  Page
+ ------------------------------
+Desktop---->
+1. https://www.screencast.com/t/cWSl0tXv
+	suare ta missing. ata 'sup' tag a daw
+
+2. https://www.screencast.com/t/4FBC7XGkOnJ5
+	ata h1 hobena. bcoz h1 ak ar besi use kora jabena. strog tag daw.
+	bcoz next slide item ao to h1 ache. tai double hoye jasche
+
+3. https://www.screencast.com/t/YG0Mu2GyJji
+	ai gap 2 ta maybe aktu besi hobe
+	r text golo icon ar maj borabor rakhte hobe
+
+4. https://www.screencast.com/t/garteZcWj4F
+	hover korle arrow color white daw
+
+5. https://www.screencast.com/t/rZ2ZPx01kNWJ
+	j koyta item ai add koruk na keno center a thakbe always.
+	border ta full-width thakbe
+
+6. https://www.screencast.com/t/qm1V5AahsJ
+	ata h1 daw
+
+7. https://www.screencast.com/t/cjO70rPN
+	last item ar bottom gap ta aktu besi mone hosche
+
+
+8. https://www.screencast.com/t/9UEABHfqokDq
+	left and right aikhane milbe .kothao kom besi hoiche maybe
+
+
+9. https://www.screencast.com/t/updAO4BFHQ
+	sprite hobe
+
+10. https://www.screencast.com/t/076cXLFIt
+	hover korle black color daw
+
+
+
