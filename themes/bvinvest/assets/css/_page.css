@@ -521,11 +521,11 @@ page-banner-filter-form
     -ms-transition: all .3s ease;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #C4C4C4;
   }
   .md-menu-btn-contact {
     float: left;
@@ -560,7 +560,7 @@ page-banner-filter-form
     left:0;
     right: 0;
     bottom: 0;
-    background-color: #292929;
+    background-color: #282828;
   }
   .md-menu-btn-bar {
     padding: 30px 30px 60px;
@@ -592,7 +592,7 @@ page-banner-filter-form
     margin-top: 0;
     position: fixed;
     z-index: 5;
-    background-color: #292929;
+    background-color: #282828;
     left: 0;
     right: 0;
     bottom: 0;
@@ -761,188 +761,9 @@ page-banner-filter-form
     vertical-align: baseline;
     margin-left: 8px;
   }
-
   body.bdyslroff{
     overflow: hidden;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -1102,6 +923,9 @@ page-banner-filter-form
     top: 5px;
     width: 18px;
     height: 15px;
+  }
+  .md-menu-close-btn-controller strong {
+    font-size: 16px;
   }
 }
 
