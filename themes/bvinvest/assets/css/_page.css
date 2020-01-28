@@ -210,7 +210,8 @@ page-banner-filter-form
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #282828;
-  border-radius: 0
+  border-radius: 0;
+  background-color: #fff;
 }
 .psearch-form-fields > ul > li:nth-child(4) .bootstrap-select>.dropdown-toggle{
   border-right: 0;
@@ -219,12 +220,20 @@ page-banner-filter-form
   right: 7px;
 }
 .psearch-form-wrap form .dropdown-menu {
-  background-color: #b3b2b1!important;
+  background-color: #eee!important;
+}
+.psearch-form-wrap form .dropdown-menu li a {
+  color: #515151;
+}
+.psearch-form-wrap .dropdown-item:focus, 
+.psearch-form-wrap .dropdown-item:hover {
+  background-color: #fff;
 }
 .psearch-form-fields .dropdown-menu > .active > a, 
 .psearch-form-fields .dropdown-menu > .active > a:focus, 
 .psearch-form-fields .dropdown-menu > .active > a:hover {
   background-color:  #15B615;
+  color: #fff;
 }
 .psearch-form-wrap .dropdown-toggle::after {
   content: "";

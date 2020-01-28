@@ -82,7 +82,7 @@ Containers
 	clear: both;
 }
 .container-xlg{
-	 
+	max-width: 1785px; 
 }
 .container-lg{
 	max-width: 1470px;
