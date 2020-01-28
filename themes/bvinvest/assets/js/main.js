@@ -832,7 +832,9 @@ if( $('#googlemap').length ){
 */
 
   
-
+$('.psearch-form-flt-btn').on('click', function(){
+  $('.psearch-form-wrap').fadeToggle();
+});
 
 
 

@@ -260,3 +260,23 @@
 	padding-bottom: 20px;
 }
 
+.psearch-form-flt-btn{
+	background: #15B615;
+	padding: 15px 0 15px 15px;
+	margin-bottom: 30px;
+	margin-top: 25px;
+}
+.psearch-form-flt-btn img{
+	display: inline-block;
+}
+.psearch-form-flt-btn strong{
+	margin-left: 15px;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	line-height: 28px;
+	font-weight: 700;
+}
+
+
