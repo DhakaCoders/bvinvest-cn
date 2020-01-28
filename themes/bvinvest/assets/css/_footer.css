@@ -401,6 +401,10 @@ footer-wrp
 	.ftr-middel-rgt a{
 		float: none;
 	}
+	footer{
+		padding-bottom: 80px;
+	}
+
 }
 
 @media(max-width: 767px){
