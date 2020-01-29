@@ -2,71 +2,99 @@ Home page
 ------------------------
 Desktop---->
 1. i) https://www.screencast.com/t/vFke48uj
-		mail icon ta text ar maj borabor thakbe. icon ta aktu upore tulo >> tule dichi 1px ekhon uprer dike beshi mone hocche
+		mail icon ta text ar maj borabor thakbe. icon ta aktu upore tulo >> tule dichi 1px ekhon uprer dike beshi mone hocche  <--- thak akhon j vabe ache
 
 	ii) https://www.screencast.com/t/eljUOU1E
-		aikhane gap besi hobe --done
+		aikhane gap besi hobe --done  <---Ok
 
-2. https://www.screencast.com/t/bpERb4gPLyN
-	design a ata aktu right ar dike ber kora ache >red
+2. https://www.screencast.com/t/bpERb4gPLyN 
+	design a ata aktu right ar dike ber kora ache >red  <---ok
 
 3. https://www.screencast.com/t/MDmeyBrvf
-	color mileni. ai color ta daw --done
+	color mileni. ai color ta daw --done  <---ok
 
 4. https://www.screencast.com/t/NM6jiaD76
-	align mileni . logo ta maybe 2/3px upore uthhbe --done
+	align mileni . logo ta maybe 2/3px upore uthhbe --done  <---ok
 
 5. https://www.screencast.com/t/PRWd8xAnp9
-	ai khane .ulc class ta tule diye . parent dhore manage koro. sub-menu class diye. --done
+	ai khane .ulc class ta tule diye . parent dhore manage koro. sub-menu class diye. --done <---ok
 
 6. https://www.screencast.com/t/I8EIp4pq
-	aipase white dekha jasche >> amar ekhane eta dekhte pacchi na
+	aipase white dekha jasche >> amar ekhane eta dekhte pacchi na  <--ok
 
 7. https://www.screencast.com/t/SKdIhW1H
-	ai hover bg ta tule daw. white a rakho. then dropdown ar bg jeta valo lage dite hobe --done
+	ai hover bg ta tule daw. white a rakho. then dropdown ar bg jeta valo lage dite hobe --done  <---ok
 
 8. https://www.screencast.com/t/J8IdGkXLPC90
 	aita h2 hobe. bcoz banner a h1 use korchi.
-	r span ta strong tag niye h2 ar vitore daw --done
+	r span ta strong tag niye h2 ar vitore daw --done  <---ok
 
 9. i) https://www.screencast.com/t/lL3acOxgQo0d
-	ai img ta div ar bg te use koro. --done
+	ai img ta div ar bg te use koro. --done  <---ok
    ii) https://www.screencast.com/t/3e4W1OB8Wv
-   	ai bg te parent section ar under a akta span niye use koro. --done
+   	ai bg te parent section ar under a akta span niye use koro. --done   <----ok
    	innerpage thake dekhe nite paro. 
 
 
  10. https://www.screencast.com/t/GqdECVDkPjAp
- 	div badh diye just 'a' tag rekhe manage koro >>> margin padding konotai use kora jabe na ekane, position diye korchi, dekhe nen evabe cholbe kina??
+ 	div badh diye just 'a' tag rekhe manage koro >>> margin padding konotai use kora jabe na ekane, position diye korchi, dekhe nen evabe cholbe kina??  <-----ok cholbe
+
  11. https://www.screencast.com/t/uVNslyF8yxU6
- 	ai grd ar markup ai 3 ta page dekhe idea nite hobe 
+ 	ai grd ar markup ai 3 ta page dekhe idea nite hobe <---ok
 
  12. https://www.screencast.com/t/opQChdWzhvpC
- 	ai gap ta aktu besi hobe maybe --done
+ 	ai gap ta aktu besi hobe maybe --done  <-----ok
 
  13. https://www.screencast.com/t/O6J2EkqzX
- 	ai icon ta aktu upore uthbe maybe. text borabor maje nai --done
+ 	ai icon ta aktu upore uthbe maybe. text borabor maje nai --done  <----ok
 
  14. https://www.screencast.com/t/Tj6EnBXSI86h
- 	exact text gulo bosate hobe --done
+ 	exact text gulo bosate hobe --done  <-----ok
 
  15. https://www.screencast.com/t/hIAyOSxftmhb
- 	ai arrow ta 1/2 px upore uthbe maybe. text borabor maje nai --done
+ 	ai arrow ta 1/2 px upore uthbe maybe. text borabor maje nai --done  <---ok
 
  16. https://www.screencast.com/t/OBDIIf3tD1nt
  	page reload dile slider brk hoye jay.
- 	sob slider a fix korte hobe. bakigulo ata fix dilam na --done
+ 	sob slider a fix korte hobe. bakigulo ata fix dilam na --done  <---ok
 
  17. https://www.screencast.com/t/MhzNWvsNtXK
- 	div ar bg te img ta use koro --done
+ 	div ar bg te img ta use koro --done  <---ok
 
  18. https://www.screencast.com/t/YFmv6b3S
- 	sprite icon hobe --done
+ 	sprite icon hobe --done  <---ok
 
  19. https://www.screencast.com/t/HbYjDyn7U
- 	ai align ta mileni. slider container width besi hobe --done
+ 	ai align ta mileni. slider container width besi hobe --done <---ok
 
 
+
+
+New----->
+1. https://prnt.sc/qugxxd
+	ai icon ta aktu text ar maj borabor nai
+
+
+2. https://www.screencast.com/t/bpERb4gPLyN
+	design a ata aktu right ar dike ber kora ache >red
+	ber na kore dileo equal rakho
+
+
+3. ager fix
+	6. https://www.screencast.com/t/I8EIp4pq
+	aipase white dekha jasche >> amar ekhane eta dekhte pacchi na
+	chrome a dekho . kono media screen on na korei. normal window te dekho
+
+4. ager fix
+	7. https://www.screencast.com/t/SKdIhW1H
+	ai hover bg ta tule daw. white a rakho. then dropdown ar bg jeta valo lage dite hobe --done <--ok
+
+	but focus a bg ta dekha jay. mane click korle. oitao thakbena
+
+5. https://prnt.sc/quhc2u
+	arrow ta text ar maj bora bor nai
+
+6.
 
 
 
@@ -74,39 +102,39 @@ Desktop---->
  ------------------------------
 Desktop---->
 1. https://www.screencast.com/t/cWSl0tXv
-	suare ta missing. ata 'sup' tag a daw --done
+	square ta missing. ata 'sup' tag a daw --done  <---ok
 
 2. https://www.screencast.com/t/4FBC7XGkOnJ5
 	ata h1 hobena. bcoz h1 ak ar besi use kora jabena. strog tag daw.
-	bcoz next slide item ao to h1 ache. tai double hoye jasche ---done
+	bcoz next slide item ao to h1 ache. tai double hoye jasche ---done  <--ok
 
 3. https://www.screencast.com/t/YG0Mu2GyJji
-	ai gap 2 ta maybe aktu besi hobe --done
+	ai gap 2 ta maybe aktu besi hobe --done  <---ok
 	r text golo icon ar maj borabor rakhte hobe
 
 4. https://www.screencast.com/t/garteZcWj4F
-	hover korle arrow color white daw --done
+	hover korle arrow color white daw --done  <---ok
 
 5. https://www.screencast.com/t/rZ2ZPx01kNWJ
-	j koyta item ai add koruk na keno center a thakbe always. --done
-	border ta full-width thakbe 
+	j koyta item ai add koruk na keno center a thakbe always. --done  <---ok
+	border ta full-width thakbe  
 
 6. https://www.screencast.com/t/qm1V5AahsJ
-	ata h1 daw --done
+	ata h1 daw --done  <---ok
 
 7. https://www.screencast.com/t/cjO70rPN
-	last item ar bottom gap ta aktu besi mone hosche --done
+	last item ar bottom gap ta aktu besi mone hosche --done  <---ok
 
 
 8. https://www.screencast.com/t/9UEABHfqokDq
-	left and right aikhane milbe .kothao kom besi hoiche maybe --done
+	left and right aikhane milbe .kothao kom besi hoiche maybe --done  <---ok cholbe
 
 
 9. https://www.screencast.com/t/updAO4BFHQ
-	sprite hobe --done
+	sprite hobe --done  <-----ok
 
 10. https://www.screencast.com/t/076cXLFIt
-	hover korle black color daw --done
+	hover korle black color daw --done  <---ok
 
 
 
