@@ -123,6 +123,9 @@ page-banner-filter-form
   position: relative;
   z-index: 5;
 }
+.psearch-form{
+  margin-right: -1px; 
+}
 .psearch-form-fields > ul > li{
   padding:25px 0 25px;
   width: 20%;
@@ -252,6 +255,14 @@ page-banner-filter-form
 .psearch-form-wrap .btn-light:focus {
   box-shadow: none!important;
 }
+
+.psearch-form-wrap .btn-light:not(:disabled):not(.disabled).active, 
+.psearch-form-wrap .btn-light:not(:disabled):not(.disabled):active, 
+.psearch-form-wrap .show > .btn-light.dropdown-toggle {
+  background: #fff;
+}
+
+
 .bradecumb-sec-wrp{
   background: #16b616;
   padding: 30px 0 25px;

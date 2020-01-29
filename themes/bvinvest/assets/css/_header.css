@@ -54,6 +54,7 @@
 .hdr-rgt-top-lnc-innr{
 	max-width: 610px;
 	width: 100%;
+    margin-right: -3px;
 }
 .hdr-rgt-top-pages{
 	width: 34.8%;
@@ -96,6 +97,9 @@
     display: inline-block;
     vertical-align: baseline;
     position: relative;
+}
+.hdr-rgt-top-addr a:first-child i{
+    top: -2px;
 }
 .hdr-rgt-top-addr a:last-child i{
     padding-right: 2px;
