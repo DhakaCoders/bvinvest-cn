@@ -94,7 +94,74 @@ New----->
 5. https://prnt.sc/quhc2u
 	arrow ta text ar maj bora bor nai
 
-6.
+
+
+Responsive----->
+
+1. https://prnt.sc/quhvff
+	akta submenu kore rakho aikhane. 
+
+2. https://prnt.sc/quhwup	
+	first time atar bg to black ache. open korle green
+
+3. https://prnt.sc/quixay
+	jokhon select gulo full-width hosche . sathe dropdown tao full-width korte hobe
+
+4. https://prnt.sc/quizcr
+	767px a ata apply koro
+
+5. https://prnt.sc/quj18f
+	lege jasche. banner ar height barao. mane niche gap thakbe. psd xs design asar ag pojonto
+
+6. https://prnt.sc/quj2gr
+	575px ai gap ta psd ar moto hobe
+
+7. https://prnt.sc/quj40t
+	1199px a ai direction gulo upore daw
+
+8. https://prnt.sc/quj52h
+	break  hoye jay. 768px pojonto font-size komay ak line a rakho
+
+9. https://prnt.sc/quj7w9
+	767px a left and right arrow. bottom thake ata daw. center nai pagi borabor
+
+10. https://prnt.sc/quj9gf
+	jokhon button 2 ta break hosche. tokhon 2 ta button ar width same hobe. psd milay fix koro
+
+11. https://prnt.sc/qujahy
+	575px a button 2 ta full-width hobena. akta max-width diye. center a rakho.
+
+
+12. https://prnt.sc/qujc4i
+	575px ai gap gulo psd ar sathe milay daw
+
+
+13. https://prnt.sc/qujd5w
+	575px px ai gap ja chilo niche namle abar bere gelo keno? fix koro
+
+14. https://prnt.sc/quje6b
+	575px a, ai gulo width 30px 30px daw
+
+15. https://prnt.sc/quje6b
+	lege jasche. 359px a aktu font size komay daw. 2 ta button ar
+
+
+16.  https://prnt.sc/qujgyn
+	1199px ar upore atar gap onek besi chilo. but 1199px a ato kom rakha jabe na. ager gap ar thake 70% or 60% or 50% rakha jete pare. but akibare 10% kora jabena.
+	same nicher gaptao kome geche. 
+
+17. https://prnt.sc/qujjdp
+	991px a img ta uporer section ar sathe lege geche
+
+18. https://prnt.sc/qujkzv
+	991px a ai arrow 2 ta aktu niche nambe maybe. dots borabor maje nai
+
+19. https://prnt.sc/qujn7o
+	991px ata center a hobe
+
+20 . https://prnt.sc/qujozf
+	767px a ata apply koro
+
 
 
 
