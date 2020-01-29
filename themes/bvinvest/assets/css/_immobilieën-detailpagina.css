@@ -1,6 +1,6 @@
 .detailpagina-main-sec{
   position: relative;
-}
+} 
 .detailpagina-main-sec::after{
   content: "";
   position: absolute;

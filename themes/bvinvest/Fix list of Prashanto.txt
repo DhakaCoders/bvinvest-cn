@@ -99,48 +99,48 @@ New----->
 Responsive----->
 
 1. https://prnt.sc/quhvff
-	akta submenu kore rakho aikhane. 
+	akta submenu kore rakho aikhane.  --done
 
 2. https://prnt.sc/quhwup	
-	first time atar bg to black ache. open korle green
+	first time atar bg to black ache. open korle green >> ame bujhinai eta. design e first time green dekhte pacchi
 
 3. https://prnt.sc/quixay
-	jokhon select gulo full-width hosche . sathe dropdown tao full-width korte hobe
+	jokhon select gulo full-width hosche . sathe dropdown tao full-width korte hobe >> ei width ta tow auto ase load dile thik hoye jai 
 
 4. https://prnt.sc/quizcr
-	767px a ata apply koro
+	767px a ata apply koro --done
 
 5. https://prnt.sc/quj18f
-	lege jasche. banner ar height barao. mane niche gap thakbe. psd xs design asar ag pojonto
+	lege jasche. banner ar height barao. mane niche gap thakbe. psd xs design asar ag pojonto --done
 
 6. https://prnt.sc/quj2gr
-	575px ai gap ta psd ar moto hobe
+	575px ai gap ta psd ar moto hobe --done
 
 7. https://prnt.sc/quj40t
-	1199px a ai direction gulo upore daw
+	1199px a ai direction gulo upore daw --done
 
 8. https://prnt.sc/quj52h
-	break  hoye jay. 768px pojonto font-size komay ak line a rakho
+	break  hoye jay. 768px pojonto font-size komay ak line a rakho --done
 
 9. https://prnt.sc/quj7w9
-	767px a left and right arrow. bottom thake ata daw. center nai pagi borabor
+	767px a left and right arrow. bottom thake ata daw. center nai pagi borabor --done
 
 10. https://prnt.sc/quj9gf
-	jokhon button 2 ta break hosche. tokhon 2 ta button ar width same hobe. psd milay fix koro
+	jokhon button 2 ta break hosche. tokhon 2 ta button ar width same hobe. psd milay fix koro red
 
 11. https://prnt.sc/qujahy
-	575px a button 2 ta full-width hobena. akta max-width diye. center a rakho.
+	575px a button 2 ta full-width hobena. akta max-width diye. center a rakho. red
 
 
 12. https://prnt.sc/qujc4i
-	575px ai gap gulo psd ar sathe milay daw
+	575px ai gap gulo psd ar sathe milay daw > gap gola thik ache dekhtechi
 
 
 13. https://prnt.sc/qujd5w
-	575px px ai gap ja chilo niche namle abar bere gelo keno? fix koro
+	575px px ai gap ja chilo niche namle abar bere gelo keno? fix koro --done
 
 14. https://prnt.sc/quje6b
-	575px a, ai gulo width 30px 30px daw
+	575px a, ai gulo width 30px 30px daw --done
 
 15. https://prnt.sc/quje6b
 	lege jasche. 359px a aktu font size komay daw. 2 ta button ar
@@ -148,19 +148,19 @@ Responsive----->
 
 16.  https://prnt.sc/qujgyn
 	1199px ar upore atar gap onek besi chilo. but 1199px a ato kom rakha jabe na. ager gap ar thake 70% or 60% or 50% rakha jete pare. but akibare 10% kora jabena.
-	same nicher gaptao kome geche. 
+	same nicher gaptao kome geche. --done
 
 17. https://prnt.sc/qujjdp
-	991px a img ta uporer section ar sathe lege geche
+	991px a img ta uporer section ar sathe lege geche --done
 
 18. https://prnt.sc/qujkzv
-	991px a ai arrow 2 ta aktu niche nambe maybe. dots borabor maje nai
+	991px a ai arrow 2 ta aktu niche nambe maybe. dots borabor maje nai --done
 
 19. https://prnt.sc/qujn7o
-	991px ata center a hobe
+	991px ata center a hobe --done
 
 20 . https://prnt.sc/qujozf
-	767px a ata apply koro
+	767px a ata apply koro --done
 
 
 
@@ -208,7 +208,7 @@ Desktop---->
 Responsive -------->
 
 1. https://prnt.sc/qukgik
-	2bar hoye geche. sob page a header and footer ta aktu valo kore pest korio
+	2bar hoye geche. sob page a header and footer ta aktu valo kore pest korio --done
 
 2. 
 
