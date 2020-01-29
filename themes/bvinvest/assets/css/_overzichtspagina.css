@@ -277,6 +277,8 @@
 	letter-spacing: 0.02em;
 	line-height: 28px;
 	font-weight: 700;
+	position: relative;
+	top: 2px;
 }
 
 

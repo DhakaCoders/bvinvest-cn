@@ -447,7 +447,62 @@ Gallery design
 	    padding: 50px 0 40px 55px;
 	}
 	.dfp-testi-cntlr{
-		padding-right: 70px;
+		padding-right: 0;
+		padding-bottom: 70px;
+	}
+	.default-page-con .hmTestimonialSlider .slick-dots li:after{
+		content: none;
+	}
+
+
+	.default-page-con .hmTestimonialSlider{
+		margin: 0;
+	}
+	.default-page-con .hmTestimonialSlider  ul.slick-dots{
+		position: absolute;
+		bottom: 0;
+		top: auto;
+		margin: 0!important;
+		padding: 0;
+		height: auto;
+		line-height: 100%;
+	}
+	.default-page-con .hmTestimonialSlider ul.slick-dots{
+		bottom: -10px;
+	}
+
+	.default-page-con .hmTestimonialSlider ul.slick-dots li:after,
+	.default-page-con .hmTestimonialSlider ul.slick-dots li button:before{
+		content: none;
+	}
+
+	.default-page-con .hmTestimonialSlider ul.slick-dots li,
+	.default-page-con .hmTestimonialSlider ul.slick-dots li button,
+	.default-page-con .hmTestimonialSlider ul.slick-dots li button:before{
+		width: 13px;
+		height: 13px;
+		padding: 0;
+		margin: 0;
+	}
+	.default-page-con .hmTestimonialSlider ul.slick-dots li{
+		background: #EBEBEB;
+		border-radius: 100%;
+		margin: 0 8px;
+	}
+	.default-page-con .hmTestimonialSlider ul.slick-dots li.slick-active{
+		background: #15B615;
+	}
+	.default-page-con .hmTestimonialSlider-wrap .testimonialLeftArrow,
+	.default-page-con .hmTestimonialSlider-wrap .testimonialRightArrow{
+		bottom: -22px;
+		top: auto;
+	}
+	.dfp-testi-cntlr .hmTestimonialSlider strong{
+		padding-right: 0;
+	}
+	.default-page-con .dfp-testi-cntlr .hmTestimonialSlider-item{
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
 @media(max-width: 850px){
