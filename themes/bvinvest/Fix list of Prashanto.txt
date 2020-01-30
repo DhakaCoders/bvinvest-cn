@@ -126,10 +126,10 @@ Responsive----->
 	767px a left and right arrow. bottom thake ata daw. center nai pagi borabor --done
 
 10. https://prnt.sc/quj9gf
-	jokhon button 2 ta break hosche. tokhon 2 ta button ar width same hobe. psd milay fix koro red
+	jokhon button 2 ta break hosche. tokhon 2 ta button ar width same hobe. psd milay fix koro --done
 
 11. https://prnt.sc/qujahy
-	575px a button 2 ta full-width hobena. akta max-width diye. center a rakho. red
+	575px a button 2 ta full-width hobena. akta max-width diye. center a rakho. --done
 
 
 12. https://prnt.sc/qujc4i

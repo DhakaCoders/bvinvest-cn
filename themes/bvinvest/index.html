@@ -324,6 +324,48 @@
   </symbol>
 </svg>
 
+<style>
+.fl-slick-wrapper ul {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.fl-slick-wrapper .slick li,
+.fl-slick-wrapper .slick-thumbs li {
+  min-heght: 60px;
+  height: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 10px 0;
+}
+
+.fl-slick-wrapper #slick-buttons {
+  width: 100%;
+  text-align: center;
+}
+
+
+.fl-slick-wrapper button {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+.fl-slick-wrapper .slick-prev {
+  left: 40px !important;
+  z-index: 22;
+}
+.fl-slick-wrapper .slick-next {
+  right: 50px !important;
+}
+
+.fl-slick-wrapper .slick-thumbs .slick-current {
+  background: #000 !important;
+  color: #FFF !important;
+}
+</style>
 </head>
 <body>  
   
@@ -444,6 +486,36 @@
 <div class="margin" data-value='100'></div>
 <div class="padding" data-value='100'></div>
 
+
+<div class="fl-slick-wrapper">
+
+
+
+    <div id="slick-buttons" class="slick-buttons">
+      <button class="btn btn-default" value="foto">Foto</button>
+      <button class="btn btn-default" value="movie">Movie</button>
+    </div>
+
+
+
+
+<div class="slick-thumbs-wrapper">
+    <ul id="slick-thumbs" class="slick-thumbs" >
+
+        <!-- foto -->
+        <li class="foto" style="color: #fff; background: #0f9d58;">1 Foto</li>
+        <li class="foto" style="color: #000; background: #0f9d58;">2 Foto</li>
+        <li class="foto" style="color: #fff; background: #0f9d58;">3 Foto</li>
+        <li class="foto" style="color: #000; background: #0f9d58;">4 Foto</li>
+        <!-- movie -->
+        <li class="movie" style="color: #fff; background: #999;">1 movie</li>
+        <li class="movie" style="color: #000; background: #999;">2 movie</li>
+        <li class="movie" style="color: #fff; background: #999;">3 movie</li>
+        <li class="movie" style="color: #000; background: #999;">4 movie</li>
+
+    </ul>
+</div>
+</div>
 
 
 
@@ -664,6 +736,59 @@
 <script src="assets/js/app.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+(function($) {
+  /*----------  Filter  ----------*/
+$('#slick-buttons button').bind('click', function(e){
+var filter = $(this).val();
+var key = "."+filter;
 
+$('#slick-thumbs').slick('slickUnfilter');
+$('#slick-thumbs').slick('slickFilter',key).slick('refresh');
+$('#slick-thumbs').slick('slickGoTo', 0);
+//$('#slick, #slick-thumbs').slick('resize');
+//$('#slick').slick('slickSetOption', 'asNavFor', $currentSliderNav, false);
+
+});
+
+
+/*----------  Carousel Slick ----------*/
+
+
+$('#slick-thumbs').slick({
+infinite: false,
+dots: false,
+arrows: true,
+slidesToShow:3,
+slidesToScroll: 1,
+responsive: [
+    {
+        breakpoint: 1280,
+        settings: {
+            slidesToShow: 6,
+            slidesToScroll: 1,
+
+        }
+    },
+    {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+
+        }
+    },
+    {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        }
+    },
+
+]
+});
+})(jQuery);
+</script>
 </body>
 </html>
