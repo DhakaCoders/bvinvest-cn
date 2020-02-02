@@ -31,6 +31,11 @@
 .hdr-rgt-top-lnc{
     padding: 11px 0 3px;
 }
+.hdr-rgt-top-lnc li{
+    float: left;
+    padding-left: 1px;
+    padding-right: 1px;
+}
 .hdr-rgt-top-lnc a {
     display: inline-block;
     vertical-align: middle;
