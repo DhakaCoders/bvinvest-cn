@@ -1020,34 +1020,41 @@
               <p>Vul onderstaand formulier in om een gratis waardebepaling aan te vragen voor uw pand! We helpen u zo snel mogelijk verder.</p>
             </div>
           <div class="ftr-top-form clearfix">
-            <div id="wp-form">
-              <form class="wpforms-validate wpforms-form">
+            
+            <div class="wpforms-container">
+              <form class="wpforms-form">
+                
                 <div class="wpforms-field-container">
-                  <div id="wpforms-723-field_2-container" class="wpforms-field wpforms-field-text 1in2col" data-field-id="2">
-                  <label class="wpforms-field-label" for="wpforms-723-field_2">Naam *</label>
-                  <input id="wpforms-723-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="Naam *" required="" type="text" />
+                  
+                  <div class="wpforms-field">
+                    <label class="wpforms-field-label">Naam *</label>
+                    <input type="text" name="name" placeholder="Naam *" required>
                   </div>
-                  <div id="wpforms-723-field_2-container" class="wpforms-field wpforms-field-text 1in2col" data-field-id="2">
-                  <label class="wpforms-field-label" for="wpforms-723-field_2">Voornaam *</label>
-                  <input id="wpforms-723-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" placeholder="Voornaam *" required="" type="text" />
+                  <div class="wpforms-field">
+                    <label class="wpforms-field-label">Voornaam *</label>
+                    <input type="text" name="name" placeholder="Voornaam *" required>
                   </div>
-                  <div id="wpforms-723-field_4-container" class="wpforms-field wpforms-field-text 1in2col" data-field-id="4">
-                  <label class="wpforms-field-label" for="wpforms-723-field_4">Telefoon *</label>
-                  <input id="wpforms-723-field_4" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][4]" placeholder="Telefoon *" required="" type="text" />
+
+                  <div class="wpforms-field">
+                    <label class="wpforms-field-label">Telefoon *</label>
+                    <input type="text" name="text" placeholder="Telefoon *" required>
                   </div>
-                  <div id="wpforms-723-field_7-container" class="wpforms-field wpforms-field-email 1in2col" data-field-id="7">
-                  <label class="wpforms-field-label" for="wpforms-723-field_7">E-mailadres *</label>
-                  <input id="wpforms-723-field_7" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][7]" placeholder="E-mailadres *" required="" type="email" />
+
+                  <div class="wpforms-field">
+                    <label class="wpforms-field-label">E-mailadres *</label>
+                    <input type="email" name="email" placeholder="E-mailadres *" required>
                   </div>
-                </div>
-                <div class="wpforms-submit-container"><input name="wpforms[id]" type="hidden" value="723" />
-                  <input name="wpforms[author]" type="hidden" value="2" />
-                  <input name="wpforms[post_id]" type="hidden" value="14" />
-                  <button id="wpforms-submit-723" class="wpforms-submit " name="wpforms[submit]" type="submit" value="wpforms-submit" data-alt-text="Sending..." data-submit-text="Verzenden">gratis schatting</button>
-                </div>
+
+                </div><!-- end of .wpforms-field-container-->
+
                 <div class="ftr-msg">
                   <p>We contacteren u binnen de <br> werkdag!</p>
                 </div>
+                <div class="wpforms-submit-container">
+                  <button type="submit" name="submit" class="wpforms-submit">gratis schatting</button>
+                </div>
+              
+
               </form>
             </div>
           </div>

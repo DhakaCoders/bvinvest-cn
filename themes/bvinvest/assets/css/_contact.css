@@ -190,6 +190,7 @@ contact-form-sec-wrp
 	float: left;
 	padding: 0 12px;
 	margin-bottom: 25px;
+	position: relative;
 }
 .contact-form-wrp .wpforms-field-container{
 	margin: 0 -12px;
@@ -224,10 +225,11 @@ contact-form-sec-wrp
 	-webkit-transition: all 0.5s;
 	letter-spacing: 0.02em;
 }
-.contact-form-wrp .wpforms-field-container .yourCustomStraat{
+
+.contact-form-wrp .wpforms-field-container .StraatField{
 	width: 74%;
 }
-.contact-form-wrp .wpforms-field-container .yourCustomNr{
+.contact-form-wrp .wpforms-field-container .NrField{
 	width: 26%;
 }
 .contact-form-wrp .wpforms-field-container .wpforms-field-textarea{
@@ -302,7 +304,7 @@ contact-form-sec-wrp
 	color: #656565;
 }
 .gw-form-wrp .wpforms-field-container .wpforms-field-html{
-	padding-top: 12px;
+	padding-top: 5px;
 }
 .contact-form-wrp .wpforms-field-container .wpforms-field-html p a{
 	color: inherit;
@@ -341,6 +343,23 @@ contact-form-sec-wrp
 	background: #15B615;
 	color: #fff;
 }
+
+.contact-form-wrp .wpforms-field-container .wpforms-has-error label.wpforms-error {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: #DB4655;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    text-align: right;
+    width: auto;
+}
+.contact-form-wrp .wpforms-field-container .wpforms-has-error input{
+    border: 1px solid #DB4655 !important;
+}
+
 #googlemap{
 	height: 565px;
 	margin-top: -185px;
@@ -365,6 +384,11 @@ contact-form-sec-wrp
 	#googlemap {
 	    height: 500px;
 	    margin-top: -100px;
+	}
+	.contact-form-wrp .wpforms-field-container .wpforms-has-error label.wpforms-error {
+	    top: 100%;
+	    margin: 0;
+	    margin-top: 5px;
 	}
 }
 
