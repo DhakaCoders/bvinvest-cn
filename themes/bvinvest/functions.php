@@ -23,6 +23,9 @@ if( !function_exists('cbv_theme_setup') ){
 			add_theme_support('category-thumbnails');
 		}
         add_image_size( 'prodgrid', 278, 210, true );
+        add_image_size( 'historiek', 440, 360, true );
+        add_image_size( 'overonsgallery1', 504, 350, true );
+        add_image_size( 'overonsgallery2', 224, 348, true );
 
 		
 		// add size to media uploader
@@ -57,7 +60,7 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/popper.php' );
 	include_once( THEME_DIR . '/enq-scripts/bootstrap.php' );
     include_once( THEME_DIR . '/enq-scripts/fonts.php' );
-	include_once( THEME_DIR . '/enq-scripts/plugin.php' );
+	//include_once( THEME_DIR . '/enq-scripts/plugin.php' );
     include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
     include_once( THEME_DIR . '/enq-scripts/slick.php' );
     include_once( THEME_DIR . '/enq-scripts/matchheight.php' );

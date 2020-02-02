@@ -12,6 +12,8 @@
   $e_mailadres = get_field('emailaddress', 'options');
   $fttelephone = get_field('telephone', 'options');
   $show_telefoon = $fttelephone['ftelephone'];
+  $hshow_telefoon = $fttelephone['htelephone'];
+  $htelefoon = trim(str_replace($spacialArry, $replaceArray, $hshow_telefoon));
   $telefoon = trim(str_replace($spacialArry, $replaceArray, $show_telefoon));
   $copyright_text = get_field('copyright_text', 'options');
   $gmaplink = !empty($gmapsurl)?$gmapsurl: 'javascript:void()';
@@ -19,6 +21,93 @@
   $smedias = get_field('sociale_media', 'options');
   $ftbottom = get_field('ftbottom', 'options');
 ?>
+
+<!-- - md menu bar and pop up menu -- -->
+<div class="md-popup-main-menu-wrap" style="display:none">
+  <nav class="md-popup-main-nav clearfix">
+   <?php 
+    $menuOptions = array( 
+        'theme_location' => 'cbv_main_menu', 
+        'menu_class' => 'clearfix',
+        'container' => 'hnav',
+        'container_class' => 'hnav'
+      );
+    wp_nav_menu( $menuOptions ); 
+  ?>
+  </nav>
+  <div class="md-popup-main-menu-ftr clearfix">
+    <div class="md-popup-main-menu-btm clearfix">
+      <?php 
+        $menuOptions = array( 
+            'theme_location' => 'cbv_top_menu', 
+            'menu_class' => 'clearfix',
+            'container' => 'tnav',
+            'container_class' => 'tnav'
+          );
+        wp_nav_menu( $menuOptions ); 
+      ?>
+    </div>
+  </div>
+  <div class="md-popup-main-social-addr clearfix">
+    <div class="md-popup-main-addr text-left">
+      <ul class="clearfix ulc">
+        <?php if( !empty( $email ) ): ?>
+        <li>
+          <a href="mailto:<?php echo $email; ?>">
+            <i>
+              <img src="<?php echo THEME_URI; ?>/assets/images/popup-main-addr-icon-1.svg" alt="">
+            </i>
+            <?php printf('<span>%s</span>', $email); ?>
+          </a>
+        </li>
+        <?php endif; ?>
+        <?php if( !empty( $hshow_telefoon ) ): ?>
+        <li>
+          <a href="tel:<?php echo $htelefoon; ?>">
+            <i>
+              <img src="<?php echo THEME_URI; ?>/assets/images/popup-main-addr-icon-2.svg" alt="">
+            </i>
+            <?php printf('<span>%s</span>', $hshow_telefoon); ?>
+          </a>
+        </li>
+        <?php endif; ?>
+      </ul>
+    </div>    
+    <div class="md-popup-main-social text-right">
+      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/popup-main-social-icon-1.svg" alt=""></a>
+      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/popup-main-social-icon-2.svg" alt=""></a>
+    </div>
+  </div>
+</div>
+<div class="home-bnr-md-nav-bar-controller show-md">
+  <div class="md-menu-btn-bar show-md clearfix">
+      <div class="md-menu-btn-contact">
+        <a href="#">
+          <span> Gratis <br>waardebepaling</span>
+        </a>
+      </div>
+      <div class="nav-opener-popup">
+        <div class="nav-opener-innr"> 
+          <div class="nav-opener-btn">
+            <img src="<?php echo THEME_URI; ?>/assets/images/md-nav-opener-btn.svg" alt="">
+          </div>
+          <strong>MENU</strong>
+        </div>
+     </div>
+    <div class="md-menu-close-btn-controller clearfix">
+      <div class="fl-close-btn-wrp">
+         <div class="fl-close-btn">
+           <img src="<?php echo THEME_URI; ?>/assets/images/md-nav-close-btn.svg" alt="">
+         </div>
+         <strong>SLUIT</strong> 
+      </div>
+    </div> 
+  </div>
+</div>
+
+
+
+
 <footer class="footer-wrp">
   <div class="ftr-top-wrp">
     <div class="container">
@@ -65,20 +154,13 @@
                   <div class="ftr-socail">
                     <?php if( !empty( $bwt ) ) printf('<span>BTW: %s</span>', $bwt);  ?>
                     <div class="socail">
-                      <a href="#">
-                        <i>  
-                          <svg class="ftr-fb-icon-svg" width="14" height="22" viewBox="0 0 14 22" fill="#7B7B7B">
-                            <use xlink:href="#ftr-fb-icon-svg"></use>
-                          </svg>
-                        </i>
+                    <?php if($smedias): ?>
+                      <?php foreach($smedias as $smedia): ?>
+                      <a target="_blank" href="<?php echo $smedia['url']; ?>">
+                        <?php echo $smedia['icon']; ?>
                       </a>
-                      <a href="#">
-                        <i>  
-                          <svg class="ftr-ins-icon-svg" width="22" height="22" viewBox="0 0 22 22" fill="#7B7B7B">
-                            <use xlink:href="#ftr-ins-icon-svg"></use>
-                          </svg>
-                        </i>
-                      </a>
+                      <?php endforeach; ?>
+                    <?php endif; ?> 
                     </div>
                   </div>
                 </ul>
@@ -87,20 +169,13 @@
               <div class="ftr-socail hide-sm">
                 <?php if( !empty( $bwt ) ) printf('<span>BTW: %s</span>', $bwt);  ?>
                 <div class="socail">
-                  <a href="#">
-                    <i>  
-                      <svg class="ftr-fb-icon-svg" width="14" height="22" viewBox="0 0 14 22" fill="#7B7B7B">
-                        <use xlink:href="#ftr-fb-icon-svg"></use>
-                      </svg>
-                    </i>
-                  </a>
-                  <a href="#">
-                    <i>  
-                      <svg class="ftr-ins-icon-svg" width="22" height="22" viewBox="0 0 22 22" fill="#7B7B7B">
-                        <use xlink:href="#ftr-ins-icon-svg"></use>
-                      </svg>
-                    </i>
-                  </a>
+                  <?php if($smedias): ?>
+                      <?php foreach($smedias as $smedia): ?>
+                      <a target="_blank" href="<?php echo $smedia['url']; ?>">
+                        <?php echo $smedia['icon']; ?>
+                      </a>
+                      <?php endforeach; ?>
+                    <?php endif; ?> 
                 </div>
               </div>
             </div>
