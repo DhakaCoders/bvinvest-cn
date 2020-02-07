@@ -207,58 +207,5 @@ $thisID = get_the_ID();
   </div>
 </section>
 <?php endif; ?>
-
-<section class="footer-top-form-sec-wrp" style="background: url(<?php echo THEME_URI; ?>/assets/images/footer-top-form-bg.jpg);">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="footer-top-form-inr clearfix">
-          <div class="footer-form-wrp">
-           <div class="ftr-top-frm-dsc">
-              <h4>Gratis waardebepaling</h4>
-              <p>Vul onderstaand formulier in om een gratis waardebepaling aan te vragen voor uw pand! We helpen u zo snel mogelijk verder.</p>
-            </div>
-          <div class="ftr-top-form clearfix">
-            
-            <div class="wpforms-container">
-              <form class="wpforms-form">
-                
-                <div class="wpforms-field-container">
-                  
-                  <div class="wpforms-field yourCustomClass">
-                    <label class="wpforms-field-label">Naam *</label>
-                    <input type="text" name="name" placeholder="Naam *" required>
-                  </div>
-                  <div class="wpforms-field yourCustomClass">
-                    <label class="wpforms-field-label">Voornaam *</label>
-                    <input type="text" name="name" placeholder="Voornaam *" required>
-                  </div>
-
-                  <div class="wpforms-field yourCustomClass">
-                    <label class="wpforms-field-label">Telefoon *</label>
-                    <input type="text" name="text" placeholder="Telefoon *" required>
-                  </div>
-
-                  <div class="wpforms-field yourCustomClass">
-                    <label class="wpforms-field-label">E-mailadres *</label>
-                    <input type="email" name="email" placeholder="E-mailadres *" required>
-                  </div>
-
-                </div><!-- end of .wpforms-field-container-->
-
-                <div class="wpforms-submit-container">
-                  <button type="submit" name="submit" class="wpforms-submit">gratis schatting</button>
-                </div>
-                <div class="ftr-msg">
-                  <p>We contacteren u binnen de <br> werkdag!</p>
-                </div>
-
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('templates/footer', 'form'); ?>
 <?php get_footer(); ?>

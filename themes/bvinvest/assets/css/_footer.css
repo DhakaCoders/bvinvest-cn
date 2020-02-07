@@ -218,7 +218,7 @@ footer-wrp
  Contact form css
 ------------------------
 */
-.ftr-top-form .wpforms-field-container .wpforms-field{
+body #ftr-top-wpform.ftr-top-form .wpforms-field-container .wpforms-field{
 	width: 50%;
 	float: left;
 	clear: none;
@@ -226,14 +226,14 @@ footer-wrp
 	position: relative;
 	margin-bottom: 30px;
 }
-.ftr-top-form .wpforms-field-container{
+body #ftr-top-wpform.ftr-top-form .wpforms-field-container{
 	margin-left: -10px;
 	margin-right: -10px;
 }
-.ftr-top-form .wpforms-field-container .wpforms-field.fullwidth{
+body #ftr-top-wpform.ftr-top-form .wpforms-field-container .wpforms-field.fullwidth{
 	width: 100%;
 }
-.ftr-top-form .wpforms-field-container .wpforms-field .wpforms-field-label{
+body #ftr-top-wpform.ftr-top-form .wpforms-field-container .wpforms-field .wpforms-field-label{
 	font-size: 14px;
 	line-height: 16px;
 	color: #fff !important;
@@ -245,7 +245,7 @@ footer-wrp
 	letter-spacing: 0.02em;
 }
 
-.ftr-top-form .wpforms-field-container .wpforms-field input {
+body #ftr-top-wpform.ftr-top-form .wpforms-field-container .wpforms-field input {
 	max-width: 100%;
 	width: 100%;
 	height: 48px;
@@ -262,13 +262,13 @@ footer-wrp
 	border:1px solid transparent;
 	letter-spacing: 0.02em;
 }
-.ftr-top-form .wpforms-field-container .wpforms-field input:focus{
+body #ftr-top-wpform.ftr-top-form .wpforms-field-container .wpforms-field input:focus{
 	border-color:#107a10; 
 }
 
 
-.ftr-top-form .wpforms-submit-container button[type="submit"],
-.ftr-top-form .wpforms-submit-container input[type="submit"]{
+body #ftr-top-wpform.ftr-top-form .wpforms-submit-container button[type="submit"],
+body #ftr-top-wpform.ftr-top-form .wpforms-submit-container input[type="submit"]{
 	max-width: 210px !important;
 	width: 100% !important;
 	height: 50px !important;
@@ -291,8 +291,8 @@ footer-wrp
 	cursor: pointer;
 	letter-spacing: 0.02em;
 }
-.ftr-top-form .wpforms-submit-container button[type="submit"]:hover,
-.ftr-top-form .wpforms-submit-container input[type="submit"]:hover{
+body #ftr-top-wpform.ftr-top-form .wpforms-submit-container button[type="submit"]:hover,
+body #ftr-top-wpform.ftr-top-form .wpforms-submit-container input[type="submit"]:hover{
 	background:#fff !important;
 	border-color: #fff !important;
 	color: #000 !important;
@@ -560,12 +560,12 @@ footer-wrp
 }
 
 @media(max-width: 575px){
-	.ftr-top-form .wpforms-field-container .wpforms-field {
+	body #ftr-top-wpform.ftr-top-form .wpforms-field-container .wpforms-field {
 	   width: 100%;
 	   padding: 0;
 	   margin-bottom: 20px;
 	}
-	.ftr-top-form .wpforms-field-container {
+	body #ftr-top-wpform.ftr-top-form .wpforms-field-container {
 	    margin-left: 0;
 	    margin-right: 0;
 	}
@@ -581,8 +581,8 @@ footer-wrp
 	.ftr-msg p br{
 		display: none;
 	}
-	.ftr-top-form .wpforms-submit-container button[type="submit"],
-	.ftr-top-form .wpforms-submit-container input[type="submit"] {
+	body #ftr-top-wpform.ftr-top-form .wpforms-submit-container button[type="submit"],
+	body #ftr-top-wpform.ftr-top-form .wpforms-submit-container input[type="submit"] {
 	    max-width: 330px !important;
 	    width: 100% !important;
 	    margin: 0 auto;

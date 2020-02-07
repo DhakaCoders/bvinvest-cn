@@ -541,7 +541,7 @@ $thisID = get_the_ID();
                 <a href="#">Routebeschrijving</a>
               </div>
             </div>
-            <div class="detailpagina-form hide-md">
+            <div class="detailpagina-form hide-md" id="detailpagina-wpform">
               <div class="wpforms-container">
                 <h5>interesse?</h5>
                 <p>Contacteer ons voor meer informatie of een bezoek.</p>
@@ -601,7 +601,7 @@ $thisID = get_the_ID();
                 </i>
               </a>
             </div>            
-            <div class="detailpagina-form show-md">
+            <div class="detailpagina-form show-md" id="detailpagina-wpform">
               <div class="wpforms-container">
                 <h5>interesse?</h5>
                 <p>Contacteer ons voor meer informatie of een bezoek.</p>

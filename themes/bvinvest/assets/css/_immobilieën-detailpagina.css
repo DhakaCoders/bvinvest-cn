@@ -434,30 +434,35 @@
 .detailpagina-map-block-link i img{
   width: 100%;
 }
-.detailpagina-form {
+body #detailpagina-wpform.detailpagina-form {
   padding:30px;
   background: #15B615;
   margin-bottom: 44px;
 }
-.detailpagina-form label{
+body #detailpagina-wpform.detailpagina-form label{
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 0;
+  margin: 0 0 0px 0;
+  line-height: inherit;
 }
-.detailpagina-form input{
+body #detailpagina-wpform.detailpagina-form input{
   width: 100%;
   background: #fff;
-  padding: 9px 15px;
+  padding: 9px 15px !important;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #7B7B7B;
+  border: 0;
+  border-radius: 0;
+  height: 46px;
+  line-height: initial;
 }
-.detailpagina-form textarea{
+body #detailpagina-wpform.detailpagina-form textarea{
   width: 100%;
   background: #fff;
   padding: 11px 15px;
@@ -467,27 +472,44 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #7B7B7B;
+  height: initial;
   min-height: 73px;
   border: 0;
+  border-radius: 0;
   resize: none;
 }
-.detailpagina-form input:focus,
-.detailpagina-form textarea:focus{
+body #detailpagina-wpform.detailpagina-form .wpforms-required-label {
+    color: #fff;
+}
+body #detailpagina-wpform.detailpagina-form input.wpforms-error{
+  border: 1px solid #DB4655 !important;
+}
+body #detailpagina-wpform.detailpagina-form .wpforms-form label.wpforms-error{
+  display: block;
+  color: #DB4655;
+  font-size: 12px;
+  float: none;
+}
+body #detailpagina-wpform.detailpagina-form .wpforms-form .wpforms-field{
+  padding: 0;
+}
+body #detailpagina-wpform.detailpagina-form input:focus,
+body #detailpagina-wpform.detailpagina-form textarea:focus{
   background: #d7d7d7; 
 }
-.detailpagina-form ::placeholder {
+body #detailpagina-wpform.detailpagina-form ::placeholder {
   color: #7B7B7B;
   opacity: 1;
 }
-.detailpagina-form :-ms-input-placeholder { 
+body #detailpagina-wpform.detailpagina-form :-ms-input-placeholder { 
   color: #7B7B7B;
   opacity: 1;
 }
-.detailpagina-form ::-ms-input-placeholder {
+body #detailpagina-wpform.detailpagina-form ::-ms-input-placeholder {
   color: #7B7B7B;
   opacity: 1;
 }
-.detailpagina-form button{
+body #detailpagina-wpform.detailpagina-form button{
   background: #15B615;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
@@ -503,17 +525,20 @@
   -ms-transition: all .3s ease;
   transition: all .3s ease; 
 }
-.detailpagina-form button:hover{
+body #detailpagina-wpform.detailpagina-form button:hover{
   background: #fff;
   color: #15B615;
 }
-.detailpagina-form-grup{
+body #detailpagina-wpform.detailpagina-form-grup{
   margin-bottom: 6px;
 }
-.detailpagina-submit{
+body #detailpagina-wpform.detailpagina-form .wpforms-submit-container{
   padding-top: 13px;
 }
-.detailpagina-form h5{
+body #detailpagina-wpform.detailpagina-form .wpforms-container-full{
+  margin-bottom: 0px;
+}
+body #detailpagina-wpform.detailpagina-form h5{
   font-size: 26px;
   line-height: 30px;
   letter-spacing: 0.02em;
@@ -521,7 +546,7 @@
   color: #FFFFFF;
   margin-bottom: 5px;
 }
-.detailpagina-form p{
+body #detailpagina-wpform.detailpagina-form p{
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -675,7 +700,7 @@
     padding: 15px;
   }
 
-  .detailpagina-form {
+  body #detailpagina-wpform.detailpagina-form {
     padding: 30px 30px 32px;
     background: #15B615;
     margin-bottom: 46px;
@@ -821,7 +846,7 @@
   .detailpagina-main-innr {
     padding: 5px 0 0px;
   }
-  .detailpagina-form {
+  body #detailpagina-wpform.detailpagina-form {
     padding: 25px 15px;
     background: #15B615;
     margin-bottom: 0;
