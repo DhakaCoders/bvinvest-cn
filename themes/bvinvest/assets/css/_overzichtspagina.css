@@ -237,10 +237,8 @@
 	justify-content: center;
 	border-radius: 8px
 }
+.bvi-pgt-cltr ul.page-numbers .current,
 .bvi-pgt-cltr ul.page-numbers li a:hover{
-	color: #15B615;
-}
-.bvi-pgt-cltr ul.page-numbers .current{
 	height: 40px;
 	width: 40px;
 	display: flex;

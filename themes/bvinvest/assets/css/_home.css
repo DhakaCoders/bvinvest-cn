@@ -102,28 +102,35 @@
 .slider-filter-bar{
   padding: 60px 90px 40px 0;
 }
-.slider-filter-bar a{
+.slider-filter-bar a,
+.slider-filter-bar button{
   display: inline-block;
   vertical-align: baseline;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #C4C4C4;
   margin-right: 70px;
+  text-align: left;
+  cursor: pointer;
 }
-.slider-filter-bar a.active{
+.slider-filter-bar a.active,
+.slider-filter-bar button.active{
   color: #282828;
 }
-.slider-filter-bar a:hover{
+.slider-filter-bar a:hover,
+.slider-filter-bar button:hover{
   color: #15B615;
 }
-.slider-filter-bar a span{
+.slider-filter-bar a span,
+.slider-filter-bar button span{
   display: inline-block;
   vertical-align: baseline;
   font-weight: 500;
   font-size: 24px;
   line-height: 48px;
 }
-.slider-filter-bar a strong{
+.slider-filter-bar a strong,
+.slider-filter-bar button strong{
   display: inline-block;
   vertical-align: baseline;
   font-weight: 900;
@@ -581,7 +588,7 @@ ul.testimonial-ratings li i{
   padding-left: 10px;
   padding-right: 10px;
 }
-.pregress-counter-col span{
+.pregress-counter-col span.label{
   display: inline-block;
   vertical-align: baseline;
   font-weight: 700;
@@ -906,11 +913,13 @@ ul.testimonial-ratings li i{
     right: 15px;
     bottom: 45px;
   }
-  .slider-filter-bar a span {
+  .slider-filter-bar a span,
+  .slider-filter-bar button span{
     font-size: 20px;
     line-height: 35px;
   }
-  .slider-filter-bar a strong {
+  .slider-filter-bar a strong,
+  .slider-filter-bar button strong{
     font-size: 42px;
     line-height: 48px;
   }

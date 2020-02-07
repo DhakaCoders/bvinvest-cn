@@ -319,7 +319,6 @@ if( $('.hmTestimonialSlider').length ){
     infinite: true,
     arrows:true,
     speed: 1000,
-    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: $('.testimonialLeftArrow'),
@@ -380,40 +379,6 @@ if( $('.detailpagina-slider-sec').length ){
       ]
     });
 }
-
-
-
-// if( $('.hmGrdSlider').length ){
-//   $('.hmGrdSlider').slick({
-//       dots: false,
-//       autoplay: false,
-//       infinite: true,
-//       speed: 1000,
-//       slidesToShow: 3,
-//       slidesToScroll: 1,
-//       arrows:true,
-//       prevArrow: $('.hmGrdSliderLeftArrow'),
-//       nextArrow: $('.hmGrdSliderRightArrow'),
-//       responsive: [
-//         {
-//           breakpoint: 768,
-//           settings: {
-//             slidesToShow: 2,
-//             slidesToScroll: 1,
-//             dots: true
-//           }
-//         },
-//         {
-//           breakpoint: 576,
-//           settings: {
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//             dots: true
-//           }
-//         }
-//       ]
-//     });
-// }
 
 
 var windowWidth = $(window).width();
@@ -478,27 +443,7 @@ if(windowWidth < 768){
     });
   }
 }
-  
 
-
-
-//
-if( $('.slider-filter-bar').length ){
-  $('.slider-filter-bar > a').on('click', function(e){
-    e.preventDefault();
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-
-    // code for filter
-    var filter = $(this).val();
-    var key = "."+filter;
-    $('.hmGrdSlider').slick('slickUnfilter');
-    $('.hmGrdSlider').slick('slickFilter',key).slick('refresh');
-    $('.hmGrdSlider').slick('slickGoTo', 0);
-
-  });
-
-}
 
 if( $('.sm-slider-filter-bar').length ){
   $('.sm-filter-link > a.lft-filter').on('click', function(e){
@@ -519,8 +464,6 @@ if( $('.sm-slider-filter-bar').length ){
     $('.switch-btn > i').css('left', '14px');
   });
 }
-  
-
 
 
 
@@ -554,8 +497,20 @@ if( $('.hmGrdSlider').length ){
         }
       ]
     });
+  
+  //init filter
+  var initfilter = $('.slider-filter-bar a.active').attr('value');
+  $('.hmGrdSlider').slick('slickFilter', initfilter).slick('refresh');
+  //filter based on class
+  $('.slider-filter-bar a').on('click', function(e){
+    e.preventDefault();
+    var filter = $(this).attr('value');
+    var key = filter;
+    $('.hmGrdSlider').slick('slickUnfilter');
+    $('.hmGrdSlider').slick('slickFilter', key).slick('refresh');
+    $('.hmGrdSlider').slick('slickGoTo', 0);
+  });
 }
-
 
 
 /*
@@ -596,187 +551,6 @@ if( $('#detailpaginamap').length ){
 }
 
 
-/**/
-if( $('#container5').length ){
-var bar5 = new ProgressBar.Circle(container5, {
-  color: '#aaa',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 10,
-  trailWidth: 10,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#aaa', width: 10 },
-  to: { color: '#15B615', width: 10 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText(0);
-    } else {
-      circle.setText(7846);
-    }
-
-  }
-});
-bar5.animate(0.68);  // Number from 0.0 to 1.0
-
-}
-
-
-
-if( $('#container1').length ){
-  var bar1 = new ProgressBar.Circle(container1, {
-    color: '#aaa',
-    // This has to be the same size as the maximum width to
-    // prevent clipping
-    strokeWidth: 10,
-    trailWidth: 10,
-    easing: 'easeInOut',
-    duration: 1400,
-    text: {
-      autoStyleContainer: false
-    },
-    from: { color: '#aaa', width: 10 },
-    to: { color: '#15B615', width: 10 },
-    // Set default step function for all animate calls
-    step: function(state, circle) {
-      circle.path.setAttribute('stroke', state.color);
-      circle.path.setAttribute('stroke-width', state.width);
-
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText(0);
-      } else {
-        circle.setText(9248);
-      }
-
-    }
-  });
-  bar1.animate(0.9);  // Number from 0.0 to 1.0
-}
-
-if( $('#container2').length ){
-  var bar2 = new ProgressBar.Circle(container2, {
-    color: '#aaa',
-    // This has to be the same size as the maximum width to
-    // prevent clipping
-    strokeWidth: 10,
-    trailWidth: 10,
-    easing: 'easeInOut',
-    duration: 1400,
-    text: {
-      autoStyleContainer: false
-    },
-    from: { color: '#aaa', width: 10 },
-    to: { color: '#15B615', width: 10 },
-    // Set default step function for all animate calls
-    step: function(state, circle) {
-      circle.path.setAttribute('stroke', state.color);
-      circle.path.setAttribute('stroke-width', state.width);
-
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText(0);
-      } else {
-        circle.setText(1578);
-      }
-
-    }
-  });
-  bar2.animate(0.8);  // Number from 0.0 to 1.0
-}
-
-if( $('#container3').length ){
-  var bar3 = new ProgressBar.Circle(container3, {
-    color: '#aaa',
-    // This has to be the same size as the maximum width to
-    // prevent clipping
-    strokeWidth: 10,
-    trailWidth: 10,
-    easing: 'easeInOut',
-    duration: 1400,
-    text: {
-      autoStyleContainer: false
-    },
-    from: { color: '#aaa', width: 10 },
-    to: { color: '#15B615', width: 10 },
-    // Set default step function for all animate calls
-    step: function(state, circle) {
-      circle.path.setAttribute('stroke', state.color);
-      circle.path.setAttribute('stroke-width', state.width);
-
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText(0);
-      } else {
-        circle.setText(7846);
-      }
-
-    }
-  });
-  bar3.animate(0.68);  // Number from 0.0 to 1.0
-}
-
-if( $('#container4').length ){
-  var bar4 = new ProgressBar.Circle(container4, {
-    color: '#aaa',
-    // This has to be the same size as the maximum width to
-    // prevent clipping
-    strokeWidth: 10,
-    trailWidth: 10,
-    easing: 'easeInOut',
-    duration: 1400,
-    text: {
-      autoStyleContainer: false
-    },
-    from: { color: '#aaa', width: 10 },
-    to: { color: '#15B615', width: 10 },
-    // Set default step function for all animate calls
-    step: function(state, circle) {
-      circle.path.setAttribute('stroke', state.color);
-      circle.path.setAttribute('stroke-width', state.width);
-
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText(0);
-      } else {
-        circle.setText(897);
-      }
-
-    }
-  });
-  bar4.animate(0.55);  // Number from 0.0 to 1.0
-
-}
-
-/*
-
-$('.classname').onScreen({
-tolerance: 100,
-toggleClass: true,
-doIn: function() {
-$(this).addClass('onScreen')
-},
-doOut: function() {
-$(this).removeClass('notOnScreen')
-}
-});
-
-
-*/
-
-
-
-
-
-
 //sm-popup-main-menu
 var windowWidth = $(window).width();
 if (windowWidth <= 991) {
@@ -807,34 +581,6 @@ if (windowWidth <= 991) {
   };
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -903,49 +649,15 @@ if( $('#googlemap').length ){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
   Shoriful
 */
-
-  
 $('.psearch-form-flt-btn').on('click', function(){
   $('.psearch-form-wrap').fadeToggle();
 });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-new WOW().init();
 
 window.onscroll=function(){
   scrollTimeline();
@@ -959,6 +671,5 @@ function scrollTimeline(){
 
 var prpgofstop = $('.product-inr-tab-wrp .img-change-pagi').offset().top;
 $('.prPaginationOutside').css('top', prpgofstop);
-
 
 })(jQuery);
