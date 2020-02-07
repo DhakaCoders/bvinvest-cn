@@ -101,7 +101,7 @@
       <div class="col-sm-12">
         <div class="bw-invest-innr">
           <div class="bw-invest-img">
-            <div class="bw-invest-img-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/bv-img.jpg');">
+            <div class="bw-invest-img-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/bv-img.jpg');">
               <span>
                 <img src="<?php echo THEME_URI; ?>/assets/images/bv-img.jpg" alt="">            
               </span>              
@@ -138,20 +138,32 @@
 
           <div class="pregressSlider pregress-counter-innr clearfix dft-slider-pagi">
             <div class="pregress-counter-col">
-              <div id="container1"></div>
-              <span>Kandidaat Kopers</span>
+<div class="circle1 bv-progress-bar">
+  <span class="number">9248</span>
+  <canvas data-percent="92" class="bar" width="200" height="200"></canvas>
+</div>
+<span class="label">Kandidaat Kopers</span>
+            </div>
+            <div class="pregress-counter-col"> 
+<div class="circle2 bv-progress-bar">
+  <span class="number">1578</span>
+  <canvas data-percent="75" class="bar" width="200" height="200"></canvas>
+</div> 
+<span class="label">Verkochte panden</span>         
             </div>
             <div class="pregress-counter-col">
-              <div id="container2"></div>
-              <span>Verkochte panden</span>            
+<div class="circle3 bv-progress-bar">
+  <span class="number">7846</span>
+  <canvas data-percent="78" class="bar" width="200" height="200"></canvas>
+</div> 
+<span class="label">Kandidaat Huurders</span>            
             </div>
             <div class="pregress-counter-col">
-              <div id="container3"></div>
-              <span>Kandidaat Huurders</span>            
-            </div>
-            <div class="pregress-counter-col">
-              <div id="container4"></div>
-              <span>Verhuurde panden</span>
+<div class="circle4 bv-progress-bar">
+  <span class="number">897</span>
+  <canvas data-percent="89" class="bar" width="200" height="200"></canvas>
+</div>
+<span class="label">Verhuurde panden</span>
             </div>
           </div>
         </div>  
@@ -167,22 +179,14 @@
       <div class="col-sm-12">
         <div class="hm-grd-slider-innr">
           <div class="slider-filter-bar hide-sm">
-            <!-- <a class="active" href="#" value="fl-huizen">
+            <a class="active" href="#" value=".flhuizen">
               <span>Huizen</span>  <br>
               <strong>in de kijker</strong>
             </a>
-            <a href="#" value="fl-opkomede">
+            <a href="#" value=".flopkomede">
               <span>Opkomede</span> <br>
               <strong>Kijdagen</strong>
-            </a> -->
-            <button class="active" value="fl-huizen">
-              <span>Huizen</span>  <br>
-              <strong>in de kijker</strong>
-            </button>
-            <button value="fl-opkomede">
-              <span>Opkomede</span> <br>
-              <strong>Kijdagen</strong>
-            </button>
+            </a>
           </div>
           <div class="sm-slider-filter-bar show-sm">
             <h1 class="huizen"><small>Huizen</small> <br> in de kijker</h1>
@@ -239,10 +243,10 @@
               </svg>
             </span>
             <div class="hmGrdSlider dft-slider-pagi">
-              <div class="hmGrdSlider-item fl-huizen green-info">
+              <div class="hmGrdSlider-item flhuizen green-info">
                 <div class="hmGrdSlider-grd">
                   <div class="hmGrdSlider-grd-img">
-                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI; ?>/assets/images/hmGrdSlider-grd-img-001.jpg');"></div>
+                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI;  ?>/assets/images/hmGrdSlider-grd-img-001.jpg');"></div>
                     <a href="#" class="overlay-link"></a>
                     <div class="hm-grd-img-info-wrp">
                       <span class="key-info-grd-spn">
@@ -280,10 +284,10 @@
                   </div>
                 </div>
               </div>
-              <div class="hmGrdSlider-item fl-opkomede sky-info">
+              <div class="hmGrdSlider-item flopkomede sky-info">
                 <div class="hmGrdSlider-grd">
                   <div class="hmGrdSlider-grd-img">                    
-                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI; ?>/assets/images/hmGrdSlider-grd-img-002.jpg');"></div>
+                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI;  ?>/assets/images/hmGrdSlider-grd-img-002.jpg');"></div>
                     <a href="#" class="overlay-link"></a>
                     <div class="hm-grd-img-info-wrp">
                       <span class="key-info-grd-spn">
@@ -321,10 +325,10 @@
                   </div>
                 </div>
               </div>
-              <div class="hmGrdSlider-item fl-huizen green-info">
+              <div class="hmGrdSlider-item flhuizen green-info">
                 <div class="hmGrdSlider-grd">
-                  <div class="hmGrdSlider-grd-img">                    
-                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI; ?>/assets/images/hmGrdSlider-grd-img-001.jpg');"></div>
+                  <div class="hmGrdSlider-grd-img">
+                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI;  ?>/assets/images/hmGrdSlider-grd-img-001.jpg');"></div>
                     <a href="#" class="overlay-link"></a>
                     <div class="hm-grd-img-info-wrp">
                       <span class="key-info-grd-spn">
@@ -362,10 +366,10 @@
                   </div>
                 </div>
               </div>
-              <div class="hmGrdSlider-item fl-opkomede yellow-info">
+              <div class="hmGrdSlider-item flopkomede green-info">
                 <div class="hmGrdSlider-grd">
                   <div class="hmGrdSlider-grd-img">                    
-                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI; ?>/assets/images/hmGrdSlider-grd-img-002.jpg');"></div>
+                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI;  ?>/assets/images/hmGrdSlider-grd-img-001.jpg');"></div>
                     <a href="#" class="overlay-link"></a>
                     <div class="hm-grd-img-info-wrp">
                       <span class="key-info-grd-spn">
@@ -403,10 +407,10 @@
                   </div>
                 </div>
               </div>
-              <div class="hmGrdSlider-item fl-opkomede green-info">
+              <div class="hmGrdSlider-item flopkomede yellow-info">
                 <div class="hmGrdSlider-grd">
                   <div class="hmGrdSlider-grd-img">                    
-                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI; ?>/assets/images/hmGrdSlider-grd-img-001.jpg');"></div>
+                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI;  ?>/assets/images/hmGrdSlider-grd-img-002.jpg');"></div>
                     <a href="#" class="overlay-link"></a>
                     <div class="hm-grd-img-info-wrp">
                       <span class="key-info-grd-spn">
@@ -444,10 +448,51 @@
                   </div>
                 </div>
               </div>
-              <div class="hmGrdSlider-item fl-huizen yellow-info">
+              <div class="hmGrdSlider-item flopkomede green-info">
                 <div class="hmGrdSlider-grd">
                   <div class="hmGrdSlider-grd-img">                    
-                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI; ?>/assets/images/hmGrdSlider-grd-img-002.jpg');"></div>
+                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI;  ?>/assets/images/hmGrdSlider-grd-img-001.jpg');"></div>
+                    <a href="#" class="overlay-link"></a>
+                    <div class="hm-grd-img-info-wrp">
+                      <span class="key-info-grd-spn">
+                        <i>  
+                          <svg class="hmGrdSlider-icon-key-svg" width="22.792" height="22.792" viewBox="0 0 22.792 22.792" fill="white">
+                            <use xlink:href="#hmGrdSlider-icon-key-svg"></use>
+                          </svg>
+                        </i>
+                        <strong>Te koop</strong>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="hmGrdSlider-grd-des mHc text-uppercase">
+                    <span>€ 276.600,00</span>
+                    <h5><a href="#">WONING AALST</a></h5>
+                    <ul class="ulc clearfix">
+                      <li>
+                        <i>  
+                          <svg class="hmGrdSlider-grd-bed-icon-svg" width="26" height="26" viewBox="0 0 26 26" fill="#7B7B7B">
+                            <use xlink:href="#hmGrdSlider-grd-bed-icon-svg"></use>
+                          </svg>
+                        </i>
+                        <span>2-4 Slaapkamers</span>
+                      </li>
+                      <li>
+                        <i>  
+                          <svg class="hmGrdSlider-grd-tab-icon-svg" width="26" height="26" viewBox="0 0 26 26" fill="#7B7B7B">
+                            <use xlink:href="#hmGrdSlider-grd-tab-icon-svg"></use>
+                          </svg>
+                        </i>
+                        <span>1-3 Badkamers</span>
+                      </li>
+                    </ul>
+                    <a href="#">Meer Info</a>
+                  </div>
+                </div>
+              </div>
+              <div class="hmGrdSlider-item flhuizen yellow-info">
+                <div class="hmGrdSlider-grd">
+                  <div class="hmGrdSlider-grd-img">                    
+                    <div class="hmGrdSlider-grd-img-bg" style="background:url('<?php echo THEME_URI;  ?>/assets/images/hmGrdSlider-grd-img-002.jpg');"></div>
                     <a href="#" class="overlay-link"></a>
                     <div class="hm-grd-img-info-wrp">
                       <span class="key-info-grd-spn">

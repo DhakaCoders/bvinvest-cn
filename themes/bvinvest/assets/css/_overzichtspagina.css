@@ -280,3 +280,12 @@
 }
 
 
+@media(max-width: 1599px){
+	.bvi-grd-key span, 
+	.bvi-grd-date span{
+		font-size: 13px;
+	}
+	.bvi-grd-key{
+		padding: 10px 15px 12px 10px;
+	}
+}
