@@ -44,7 +44,7 @@ gw-form-sec-wrp
 	background: #f9f9f9;
 	margin-bottom: 24px;
 	position: relative;
-	padding: 60px 20px 55px;
+	padding: 45px 20px 50px;
 	text-align: center;
 }
 .progrees-bar-wrp .progressbar-text {
@@ -61,7 +61,7 @@ gw-form-sec-wrp
     position: relative;
     margin: 0 auto 20px;
 }
-.progrees-bar-wrp span {
+.progrees-bar-wrp span.label{
     display: inline-block;
     vertical-align: baseline;
     font-weight: 700;
