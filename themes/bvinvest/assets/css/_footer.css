@@ -264,6 +264,9 @@ body #ftr-top-wpform.ftr-top-form .wpforms-field-container .wpforms-field input 
 	border:1px solid transparent;
 	letter-spacing: 0.02em;
 }
+body #ftr-top-wpform.ftr-top-form .wpforms-required-label{
+	color: #fff;
+}
 body #ftr-top-wpform.ftr-top-form .wpforms-field-container .wpforms-field input:focus{
 	border-color:#107a10; 
 }
