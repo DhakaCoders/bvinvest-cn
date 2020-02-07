@@ -1,12 +1,22 @@
 <?php get_header(); ?>
+<?php
+  $hero = get_field('hero', HOMEID);
+  $heroposter = '';
+  if(!empty($hero['achtergrondafbeelding'])) $heroposter = cbv_get_image_src($hero['achtergrondafbeelding']);
+?>
 <section class="page-banner-sec-con">
-  <div class="page-banner-bg-con" style="background: url('<?php echo THEME_URI; ?>/assets/images/home-banner-img.jpg');"></div>
+  <div class="page-banner-bg-con" style="background: url('<?php echo $heroposter; ?>');"></div>
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
         <div class="page-banner-des text-center m-auto">
-          <h1>Professionals in <strong>vastgoedwereld</strong></h1>
-          <p>B&V Invest is dé specialist voor alles wat er op de vastgoedmarkt beweegt. </p>
+          <h1>
+          <?php 
+          if( !empty( $hero['subtitel'] ) ) printf( '%s', $hero['subtitel']); 
+          if( !empty( $hero['titel'] ) ) printf( '<strong>%s</strong>', $hero['titel']); 
+          ?>
+          </h1>
+        <?php if( !empty( $hero['beschrijving'] ) ) echo wpautop( $hero['beschrijving'], true ); ?>  
         </div>
         <div class="sm-page-banner-des text-center show-sm">
           <strong>Een pand verkopen of <br/> verhuren?</strong>
@@ -93,7 +103,15 @@
   </div>
 </section>
 
-
+<?php
+  $intro = get_field('intro', HOMEID);
+  if( $intro ):
+  $intropostertag = $introposter = '';
+  if(!empty($intro['afbeelding'])){ 
+    $introposter = cbv_get_image_src($intro['afbeelding'], 'hintro');
+    $intropostertag = cbv_get_image_src($intro['afbeelding'], 'hintro');
+  }
+?>
 <section class="bw-invest-sec">
   <span class="bw-invest-top-gray-bg"></span>
   <div class="container">
@@ -101,24 +119,34 @@
       <div class="col-sm-12">
         <div class="bw-invest-innr">
           <div class="bw-invest-img">
-            <div class="bw-invest-img-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/bv-img.jpg');">
+            <div class="bw-invest-img-bg" style="background: url('<?php echo $introposter; ?>');">
               <span>
-                <img src="<?php echo THEME_URI; ?>/assets/images/bv-img.jpg" alt="">            
+                <?php echo $intropostertag; ?>            
               </span>              
             </div>
           </div>
           <div class="bw-invest-des">
-            <h2><strong>B&V INVEST</strong> IMMOBILIËN AALST</h2>
-            <p>B&V Invest is een jong en dynamisch team uit regio Aalst. Ons team staat for innovatie, flexibiliteit en activiteit! Samen met onze goede contacten in de vastgoedwereld staan wij te allen tijde aan uw zijde.</p>
-            <p>Wij komen vrijblijvend bij u langs en maken een waardebepaling van uw woning gratis en voor niets. Geen loze beloftes maar een correcte prijs volgens de huidige toestand van de vastgoedmarkt.</p>
-            <a href="#">Over Ons</a>
+            <h2>
+            <?php 
+              if( !empty( $intro['subtitel'] ) ) printf( '<strong>%s</strong>', $intro['subtitel']); 
+              if( !empty( $intro['titel'] ) ) printf( '%s', $intro['titel']); 
+              ?>
+            </h2>
+            <?php 
+              if( !empty( $intro['beschrijving'] ) ) echo wpautop( $intro['beschrijving'], true ); 
+
+              $knop = $intro['knop'];
+              if( is_array( $knop ) &&  !empty( $knop['url'] ) ){
+                printf('<a href="%s" target="%s">%s</a>', $knop['url'], $knop['target'], $knop['title']); 
+              }
+            ?>  
           </div>
         </div> 
       </div>
     </div>
   </div>    
 </section>
-
+<?php endif; ?>
 
 <section class="pregress-counter-sec ">
   <div class="container">
@@ -586,15 +614,22 @@
     </div>
   </div>    
 </section>
-
+<?php
+  $reviewposter = get_field('review_afbeelding', HOMEID);
+  $reviewpostertag = $reviewpostersrc = '';
+  if(!empty($reviewposter)){ 
+    $reviewpostersrc = cbv_get_image_src($reviewposter, 'hreview');
+    $reviewpostertag = cbv_get_image_src($reviewposter, 'hreview');
+  }
+?>
 
 <section class="hm-testimonial-sec">
   <div class="hm-testimonial-innr">
     <div class="hm-testimonial-img clearfix">
       <div class="hm-testimonial-img-innr">
-        <div class="hm-testimonial-bg" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/hm-testimonial-img.jpg);">
+        <div class="hm-testimonial-bg" style="background-image: url(<?php echo $reviewpostersrc; ?>);">
           <span>
-            <img src="<?php echo THEME_URI; ?>/assets/images/hm-testimonial-img.jpg" alt="">
+            <?php echo $reviewpostertag; ?>
           </span>          
         </div>              
       </div>
