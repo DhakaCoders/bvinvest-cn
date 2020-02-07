@@ -127,7 +127,7 @@ page-banner-filter-form
   margin-right: -1px; 
 }
 .psearch-form-fields > ul > li{
-  padding:25px 0 25px;
+  padding: 28px 0 22px;
   width: 20%;
   float: left;
 }
@@ -178,7 +178,7 @@ page-banner-filter-form
 .psearch-form-fields .submit button{
   position: relative;
   width: 100%;
-  height: 144px;
+  height: 118px;
   background: #15B615;
   border: none;
   padding-left: 26px;
@@ -204,7 +204,7 @@ page-banner-filter-form
   top: -2px;
 }
 .psearch-form-fields .bootstrap-select>.dropdown-toggle{
-  padding: 33px 37px 33px 40px;
+  padding: 20px 37px 20px 40px;
   border: none;
   border-right: 1px solid #F1F1F1;
   font-weight: 500;
@@ -215,6 +215,9 @@ page-banner-filter-form
   color: #282828;
   border-radius: 0;
   background-color: #fff;
+}
+.pageSearch .psearch-form-fields .bootstrap-select>.dropdown-toggle{
+  padding: 27px 37px 20px 40px;
 }
 .psearch-form-fields > ul > li:nth-child(4) .bootstrap-select>.dropdown-toggle{
   border-right: 0;
