@@ -270,7 +270,7 @@ page-banner-filter-form
 .bradecumb{
   float: left;
   position: relative;
-  padding-left: 26px;
+  padding-left: 13px;
 }
 .bradecumb ul{
   list-style: none;
@@ -280,8 +280,8 @@ page-banner-filter-form
 }
 .bradecumb > a{
   position: absolute;
-  left: 12px;
-  top: -7px;
+  left: 0;
+  top: -8px;
 }
 .bradecumb ul i:hover svg{
   fill: #ddd;
@@ -297,7 +297,7 @@ page-banner-filter-form
   content: "";
   position: absolute;
   right: -9px;
-  top: 1px;
+  top: 3px;
   background: url(../images/bradecumb-arrows.svg);
   background-repeat: no-repeat;
   background-size: 18px 13px;
