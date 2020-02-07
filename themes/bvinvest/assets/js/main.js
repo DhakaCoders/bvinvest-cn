@@ -319,7 +319,6 @@ if( $('.hmTestimonialSlider').length ){
     infinite: true,
     arrows:true,
     speed: 1000,
-    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: $('.testimonialLeftArrow'),
