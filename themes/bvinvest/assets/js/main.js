@@ -504,6 +504,8 @@ if( $('.hmGrdSlider').length ){
   //filter based on class
   $('.slider-filter-bar a').on('click', function(e){
     e.preventDefault();
+    $('.slider-filter-bar a').removeClass('active');
+    $(this).addClass('active');
     var filter = $(this).attr('value');
     var key = filter;
     $('.hmGrdSlider').slick('slickUnfilter');
@@ -658,18 +660,20 @@ $('.psearch-form-flt-btn').on('click', function(){
 
 
 
-
-window.onscroll=function(){
-  scrollTimeline();
-};
-function scrollTimeline(){
-  var mE = $('.middleElement').offset().top;
-  var fL = $('.firstLine').offset().top;
-  ofH = mE - fL;
-    $('.activeLine').css('height', ofH);
+if( $('.middleElement').length ){
+  window.onscroll=function(){
+    scrollTimeline();
+  };
+  function scrollTimeline(){
+    var mE = $('.middleElement').offset().top;
+    var fL = $('.firstLine').offset().top;
+    ofH = mE - fL;
+      $('.activeLine').css('height', ofH);
+  }
 }
-
-var prpgofstop = $('.product-inr-tab-wrp .img-change-pagi').offset().top;
-$('.prPaginationOutside').css('top', prpgofstop);
+if( $('.product-inr-tab-wrp .img-change-pagi').length ){
+  var prpgofstop = $('.product-inr-tab-wrp .img-change-pagi').offset().top;
+  $('.prPaginationOutside').css('top', prpgofstop);
+}
 
 })(jQuery);

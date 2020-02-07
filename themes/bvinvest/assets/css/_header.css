@@ -57,20 +57,20 @@
     fill: #15B615!important;
 }
 .hdr-rgt-top-lnc-innr{
-	max-width: 610px;
-	width: 100%;
-    margin-right: -3px;
+    margin-right: 0;
 }
 .hdr-rgt-top-pages{
-	width: 34.8%;
 	float: left;
 }
+.hdr-rgt-top-pages ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
 .hdr-rgt-top-social{
-	width: 14.95%;
 	float: left;
 }
 .hdr-rgt-top-addr{
-	width: 50.25%;
 	float: left;
 }
 .hdr-rgt-top-pages{
@@ -87,9 +87,11 @@
 	padding-right: 8px;
 	position: relative;
 }
-.hdr-rgt-top-social a{
-	padding-left: 6px;
-	padding-right: 6px;
+.hdr-rgt-top-social a {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 19px;
+    color: #7B7B7B;
 }
 .hdr-rgt-top-addr{
 	padding-left: 22px;

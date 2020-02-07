@@ -56,22 +56,21 @@ $thisID = get_the_ID();
             foreach( $galleries as $gallery ): 
             if($i == 1){
               $gallerytag1 = '';
-              if(!empty($gallery)) $gallerytag1 = cbv_get_image_tag($gallery, 'overonsgallery1');
+              if(!empty($gallery)) $gallerytag1 = cbv_get_image_src($gallery, 'overonsgallery1');
             ?>
-            <div class="over-ons-lft-img">
-              <?php echo $gallerytag1; ?>
+            <div class="over-ons-lft-img" style="background: url(<?php echo $gallerytag1; ?>);">
             </div>
             <?php break;} $i++; endforeach; ?>
-            <div class="over-ons-lft-btm-img-wrp">
+            <div class="over-ons-lft-btm-img-wrp clearfix">
               <?php 
               $i = 1; 
               foreach( $galleries as $gallery ): 
               if($i != 1){
               $gallerytag2 = '';
-              if(!empty($gallery)) $gallerytag2 = cbv_get_image_tag($gallery, 'overonsgallery2');
+              if(!empty($gallery)) $gallerytag2 = cbv_get_image_src($gallery, 'overonsgallery2');
               ?>
-              <div class="over-ons-lft-btm-img">
-                <?php echo $gallerytag2; ?>
+              <div class="over-ons-lft-btm-inr">
+                <div class="over-ons-lft-btm-img" style="background: url(<?php echo $gallerytag2; ?>);"></div>
               </div>
               <?php continue;} $i++; endforeach; ?>
             </div>
