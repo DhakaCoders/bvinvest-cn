@@ -5,39 +5,11 @@
 get_header(); 
 $thisID = get_the_ID();
 ?>
-<section class="bradecumb-sec-wrp">
-  <div class="container-lg">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="bradecumb-inr clearfix">
-          <div class="bradecumb">
-            <a href="#">
-              <i>  
-                <svg class="home-bradecumb-svg" width="25" height="25" viewBox="0 0 25 25" fill="#fff">
-                  <use xlink:href="#home-bradecumb-svg"></use>
-                </svg>
-              </i>
-            </a>
-            <ul class="clearfix">          
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Binnenpagina</a></li>
-              <li><a href="#">Binnenpagina</a></li>
-            </ul>
-          </div>
-          <div class="bradecumb-btn">
-            <a href="#">
-              <i>  
-                <svg class="bradecumb-ary-svg" width="18" height="14" viewBox="0 0 18 14" fill="#fff">
-                  <use xlink:href="#bradecumb-ary-svg"></use>
-                </svg>
-              </i>
-            Terug</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php 
+get_template_part('templates/breadcrumbs'); 
+
+$gwform = get_field('gwform', $thisID);
+?>
 
 <section class="gw-form-sec-wrp">
   <div class="container"> 
@@ -47,38 +19,49 @@ $thisID = get_the_ID();
           
           <div class="contact-form-rgt clearfix">
             <div class="contact-form-dsc">
-              <h1>Gratis waardebepaling</h1>
-              <p>B&V Invest komt graag langs voor een <strong>gratis waardebepaling</strong> van uw pand. We geven u graag ook nuttige tips voor de verdere verkoop of verhuur van uw eigendom. Vul onderstaand formulier in of contacteer ons rechtstreeks via <strong>053 / 700 002</strong>.</p>
+              <?php 
+                if( !empty( $gwform['titel'] ) ) printf( '<h1>%s</h1>', $gwform['titel']); 
+                if( !empty( $gwform['beschrijving'] ) ) echo wpautop( $gwform['beschrijving'], true ); 
+              ?>
             </div>
             <div class="contact-form-wrp gw-form-wrp clearfix" id="contact-wpform">
               <div class="wpforms-container">
-                <?php echo do_shortcode('[wpforms id="161" title="false" description="false"]'); ?>
+              <?php 
+                if( !empty( $gwform['shortcode'] ) ) echo do_shortcode( $gwform['shortcode'] ); 
+              ?>
               </div>
             </div>
           </div>
+          <?php 
+            $kandidaat = get_field('kandidaat_huurders', $thisID);
+          ?>
           <div class="contact-form-lft">
             <div class="progrees-bar-wrp">
-              <div id="container5"></div>
-              <span>Kandidaat Huurders</span>                       
+              <div class="circle1 bv-progress-bar center bvp-loaded">
+              <?php 
+                if( !empty( $kandidaat['aantal'] ) ) printf( '<span class="number">%s</span>', $kandidaat['aantal']); 
+                if( !empty( $kandidaat['percentage'] ) ) printf( '<canvas data-percent="%s" class="bar" width="200" height="200"></canvas>', $kandidaat['percentage']); 
+              ?>  
+              </div>
+              <?php if( !empty( $kandidaat['titel'] ) ) printf( '<span class="label">%s</span> ', $kandidaat['titel']); ?>                      
             </div>
+            <?php 
+              $inforepeater = get_field('info_repeater', $thisID);
+              $infos = $inforepeater['inforepeater'];
+              if(  $infos ):
+
+              foreach( $infos as $info ):
+            ?>
             <div class="gw-dsc-box">
               <i>
                 <img src="<?php echo THEME_URI; ?>/assets/images/gw-dsc-box-check.svg">
               </i>
-              <p>Nunc non purus posuere nisl aliquet iaculis in at justo.</p>
+              <?php 
+                if( !empty( $info['beschrijving'] ) ) echo do_shortcode( $info['beschrijving'] ); 
+              ?>
             </div>
-            <div class="gw-dsc-box">
-              <i>
-                <img src="<?php echo THEME_URI; ?>/assets/images/gw-dsc-box-check.svg">
-              </i>
-              <p>Suspendisse faucibus tortor vel enim sollicitudin, vel varius eros aliquet.</p>
-            </div>
-            <div class="gw-dsc-box">
-              <i>
-                <img src="<?php echo THEME_URI; ?>/assets/images/gw-dsc-box-check.svg">
-              </i>
-              <p>Quisque viverra tempor est, quis vulputate massa mollis.</p>
-            </div>
+            <?php endforeach; ?>
+            <?php endif; ?>
           </div>
         </div>
       </div>
