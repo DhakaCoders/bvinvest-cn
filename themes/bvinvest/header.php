@@ -343,24 +343,24 @@
             <div class="hdr-rgt-top-lnc clearfix">
               <div class="hdr-rgt-top-lnc-innr float-right clearfix">
                 <div class="hdr-rgt-top-pages">
-                  <a href="#">Over Ons</a>
-                  <a href="#">Diensten</a>                 
+                  <?php 
+                    $menuOptions = array( 
+                      'theme_location' => 'cbv_top_menu', 
+                      'menu_class' => 'clearfix',
+                      'container' => 'tnav',
+                      'container_class' => 'tnav'
+                      );
+                    wp_nav_menu( $menuOptions ); 
+                  ?>              
                 </div>
                 <div class="hdr-rgt-top-social">
-                  <a href="#">
-                    <i>  
-                      <svg class="hdr-fb-icon-svg" width="22" height="22" viewBox="0 0 22 22" fill="#7B7B7B">
-                        <use xlink:href="#hdr-fb-icon-svg"></use>
-                      </svg>
-                    </i>
-                  </a>
-                  <a href="#">
-                    <i>  
-                      <svg class="hdr-insta-icon-svg" width="22" height="22" viewBox="0 0 22 22" fill="#7B7B7B">
-                        <use xlink:href="#hdr-insta-icon-svg"></use>
-                      </svg>
-                    </i>
-                  </a>   
+                  <?php if($smedias): ?>
+                    <?php foreach($smedias as $smedia): ?>
+                    <a target="_blank" href="<?php echo $smedia['url']; ?>">
+                      <?php echo $smedia['icon']; ?>
+                    </a>
+                    <?php endforeach; ?>
+                  <?php endif; ?>  
                 </div>
                 <div class="hdr-rgt-top-addr">
                   <?php if( !empty( $show_telefoon ) ): ?>

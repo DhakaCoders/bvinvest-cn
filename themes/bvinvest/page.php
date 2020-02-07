@@ -37,8 +37,9 @@ while ( have_posts() ) :
   </div>
 </section>
 <section class="innerpage-con-wrap">
+  <span class="innerpage-rgt-top-gray-bg"></span>
   <?php if(have_rows('inhoud')){  ?>
-  <div class="container-sm">
+  <div class="container">
     <div class="row">
       <div class="col-sm-12">
         <article class="default-page-con">
@@ -49,11 +50,11 @@ while ( have_posts() ) :
               $subtitel = get_sub_field('subtitel');
               $afbeelding = get_sub_field('afbeelding');
               echo '<div class="dfp-promo-module clearfix">';
+                if( !empty($subtitel) ) printf('<strong>%s</strong>', $subtitel);
                 if( !empty($title) ) printf('<h1>%s</h1>', $title);
                 if( !empty($afbeelding) ){
                   echo '<div class="dfp-plate-one-img-bx">', cbv_get_image_tag($afbeelding), '</div>';
                 }
-                if( !empty($subtitel) ) printf('<strong>%s</strong>', $subtitel);
               echo '</div>';    
           }elseif( get_row_layout() == 'teksteditor' ){
               $beschrijving = get_sub_field('fc_teksteditor');
@@ -68,8 +69,8 @@ while ( have_posts() ) :
               $imgposcls = ( $positie_afbeelding == 'right' ) ? 'fl-dft-rgtimg-lftdes' : '';
               echo '<div class="fl-dft-overflow-controller">
                 <div class="fl-dft-lftimg-rgtdes clearfix equalHeight '.$imgposcls.'">';
-                      echo '<div class="fl-dft-lftimg-rgtdes-lft matchHeightCol" style="background: url('.$imgsrc.');"></div>';
-                      echo '<div class="fl-dft-lftimg-rgtdes-rgt matchHeightCol">';
+                      echo '<div class="fl-dft-lftimg-rgtdes-lft mHc" style="background: url('.$imgsrc.');"></div>';
+                      echo '<div class="fl-dft-lftimg-rgtdes-rgt mHc">';
                         echo wpautop($fc_tekst);
                       echo '</div>';
               echo '</div></div>';      
@@ -83,7 +84,6 @@ while ( have_posts() ) :
                 $imgsrc = cbv_get_image_src($image['ID'], 'dfpageg1');  
                 echo "<figure class='gallery-item'><div class='gallery-icon portrait'>";
                 if( $lightbox ) echo "<a data-fancybox='gallery' href='{$image['url']}'>";
-                    //echo '<div class="dfpagegalleryitem" style="background: url('.$imgsrc.');"></div>';
                     echo wp_get_attachment_image( $image['ID'], 'dfpageg1' );
                 if( $lightbox ) echo "</a>";
                 echo "</div></figure>";
@@ -104,16 +104,39 @@ while ( have_posts() ) :
                 endforeach;
               echo "</div>";
             }elseif( get_row_layout() == 'quote' ){
-              $fc_diensten = get_sub_field('fc_quote');
-              $achtergrond_links = get_sub_field('achtergrond_links');
-              $achtergrond_rechts = get_sub_field('achtergrond_rechts');
-              $bglinks = cbv_get_image_src($achtergrond_links, 'dfpageg1');
-              $bgrechts = cbv_get_image_src($achtergrond_rechts, 'dfpageg1');
-              echo "<div class='dft-blockquote-module clearfix'>";
-              echo '<div class="dft-blockquote-img matchHeightCol" style="background-image: url('.$bgrechts.');"></div>';
-              echo '<div class="dft-blockquote matchHeightCol" style="background-image: url('.$bglinks.');">';
-              printf('<blockquote>%s</blockquote>', $fc_diensten);
-              echo "</div></div>";
+          echo '<div class="dfp-testi-cntlr"><div class="hmTestimonialSlider-wrap">
+              <span class="testimonialLeftArrow">
+                <svg class="dft-slider-left-arrow" width="18" height="33" viewBox="0 0 18 33" fill="#C4C4C4">
+                  <use xlink:href="#dft-slider-left-arrow"></use>
+                </svg>
+              </span>
+              <span class="testimonialRightArrow">
+                <svg class="dft-slider-right-arrow" width="18" height="33" viewBox="0 0 18 33" fill="#C4C4C4">
+                  <use xlink:href="#dft-slider-right-arrow"></use>
+                </svg>
+              </span>';
+
+              echo '<div class="hmTestimonialSlider">';
+              $fcquotes = get_sub_field('fcquote');
+              foreach( $fcquotes  as $fcquote):
+                  echo '<div class="hmTestimonialSlider-item">
+                    <i>  
+                      <svg class="testimonial-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#656565">
+                        <use xlink:href="#testimonial-icon-svg"></use>
+                      </svg>
+                    </i>';
+                    if( !empty( $fcquote['fc_quote'] ) ) echo wpautop($fcquote['fc_quote']);
+                    echo '<ul class="ulc clearfix testimonial-ratings">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>';
+                   if( !empty( $fcquote['naam'] ) ) printf('<strong>%s<span>- %s</span></strong>', $fcquote['naam'], $fcquote['subtitel']);
+                   echo '</div>';
+                  endforeach;
+                  echo '</div></div></div>';
             }elseif( get_row_layout() == 'promo' ){
               $fc_title = get_sub_field('fc_title');
               $fc_beschrijving = get_sub_field('fc_beschrijving');
