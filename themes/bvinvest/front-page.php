@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <?php
   $hero = get_field('hero', HOMEID);
+  $mobile = get_field('mobile', HOMEID);
   $heroposter = '';
   if(!empty($hero['achtergrondafbeelding'])) $heroposter = cbv_get_image_src($hero['achtergrondafbeelding']);
 ?>
@@ -19,8 +20,14 @@
         <?php if( !empty( $hero['beschrijving'] ) ) echo wpautop( $hero['beschrijving'], true ); ?>  
         </div>
         <div class="sm-page-banner-des text-center show-sm">
-          <strong>Een pand verkopen of <br/> verhuren?</strong>
-          <a href="#"><span>Gratis waardebepaling</span></a>
+          <?php 
+            if( !empty( $mobile['titel'] ) ) printf( '<strong>%s</strong>', $mobile['titel']); 
+            $knop1 = $mobile['knop'];
+            if( is_array( $knop1 ) &&  !empty( $knop1['url'] ) ){
+              printf('<a href="%s" target="%s"><span>%s</span></a>', $knop1['url'], $knop1['target'], $knop1['title']); 
+            }
+
+              ?>
         </div>
         <div class="psearch-form-wrap">
           <form>
@@ -649,54 +656,7 @@
           </span>
 
           <div class="hmTestimonialSlider dft-slider-pagi">
-            <div class="hmTestimonialSlider-item">
-              <i>  
-                <svg class="testimonial-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#656565">
-                  <use xlink:href="#testimonial-icon-svg"></use>
-                </svg>
-              </i>
-              <p>Als ik aan B&V Invest denk, schieten mij alleen positieve dingen te binnen. Zowel bij de aankoop van mijn woning als bij de verhuur ervan werkten zij heel professioneel en correct. Ik kan er nog steeds terecht met vragen.</p>
-              <ul class="ulc clearfix testimonial-ratings">
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-              </ul>
-              <strong>Mevr. Elke Van Cauteren <span>- Klant</span></strong>
-            </div>
-            <div class="hmTestimonialSlider-item">
-              <i>  
-                <svg class="testimonial-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#656565">
-                  <use xlink:href="#testimonial-icon-svg"></use>
-                </svg>
-              </i>
-              <p>Als ik aan B&V Invest denk, schieten mij alleen positieve dingen te binnen. Zowel bij de aankoop van mijn woning als bij de verhuur ervan werkten zij heel professioneel en correct. Ik kan er nog steeds terecht met vragen.</p>
-              <ul class="ulc clearfix testimonial-ratings">
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-              </ul>
-              <strong>Mevr. Elke Van Cauteren <span>- Klant</span></strong>
-            </div>
-            <div class="hmTestimonialSlider-item">
-              <i>  
-                <svg class="testimonial-icon-svg" width="70" height="70" viewBox="0 0 70 70" fill="#656565">
-                  <use xlink:href="#testimonial-icon-svg"></use>
-                </svg>
-              </i>
-              <p>Als ik aan B&V Invest denk, schieten mij alleen positieve dingen te binnen. Zowel bij de aankoop van mijn woning als bij de verhuur ervan werkten zij heel professioneel en correct. Ik kan er nog steeds terecht met vragen.</p>
-              <ul class="ulc clearfix testimonial-ratings">
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-                <li><i class="fa fa-star"></i></li>
-              </ul>
-              <strong>Mevr. Elke Van Cauteren <span>- Klant</span></strong>
-            </div>
+            <?php dynamic_sidebar('dshop-widget'); ?>
           </div>                  
         </div>    
       </div>  
