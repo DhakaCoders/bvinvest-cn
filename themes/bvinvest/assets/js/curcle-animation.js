@@ -136,6 +136,11 @@ if( $('.circle4').length ){
   });
 }
 
+if( $('.circle5').length ){
+  circleCounter('.circle5');
+  textCounter('.circle5 .number');
+}
+
 }
 
 })(jQuery);

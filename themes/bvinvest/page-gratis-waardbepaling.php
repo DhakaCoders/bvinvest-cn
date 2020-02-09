@@ -37,7 +37,7 @@ $gwform = get_field('gwform', $thisID);
           ?>
           <div class="contact-form-lft">
             <div class="progrees-bar-wrp">
-              <div class="circle1 bv-progress-bar center bvp-loaded">
+              <div class="circle5 bv-progress-bar center bvp-loaded">
               <?php 
                 if( !empty( $kandidaat['aantal'] ) ) printf( '<span class="number">%s</span>', $kandidaat['aantal']); 
                 if( !empty( $kandidaat['percentage'] ) ) printf( '<canvas data-percent="%s" class="bar" width="200" height="200"></canvas>', $kandidaat['percentage']); 

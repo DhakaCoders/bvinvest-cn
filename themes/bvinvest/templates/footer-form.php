@@ -11,7 +11,7 @@
           <div class="ftr-top-form clearfix" id="ftr-top-wpform">
             
             <div class="wpforms-container">
-            <?php echo do_shortcode('[wpforms id="170" title="false" description="false"]'); ?>
+            <?php echo do_shortcode('[wpforms id="235" title="false" description="false"]'); ?>
             <div class="ftr-msg">
               <p>We contacteren u binnen de <br> werkdag!</p>
             </div>
