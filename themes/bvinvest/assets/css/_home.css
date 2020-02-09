@@ -10,7 +10,7 @@
   right: 0;
   top: 0;
   height: 464px;
-}
+} 
 .bw-invest-innr{
   display: flex;
   align-items: center;
@@ -638,9 +638,6 @@ ul.testimonial-ratings li i{
 
 
 
-
-
-
 /*
 ----------------
  Pagination Css
@@ -662,7 +659,6 @@ ul.testimonial-ratings li i{
   vertical-align: baseline;
   float: none;
 }
-
 .dft-slider-pagi .slick-dots li,
 .dft-slider-pagi .slick-dots li button,
 .dft-slider-pagi .slick-dots li button::before{
@@ -675,7 +671,6 @@ ul.testimonial-ratings li i{
        -o-transition: all .25s ease;
           transition: all .25s ease;
 }
-
 .dft-slider-pagi .slick-dots li button::before{
   content: "";
 }
@@ -697,16 +692,32 @@ ul.testimonial-ratings li i{
 .hmGrdSlider.dft-slider-pagi .slick-dots li{
   background-image: url(../images/dft-slider-pagi-3.svg);
 }
-
 .hmTestimonialSlider.dft-slider-pagi .slick-dots {
   position: relative;
   top: -20px;
 }
-
 .detailTestimonialSlider.dft-slider-pagi .slick-dots {
     position: relative;
     top: -46px;
 }
+
+
+.hm-fixed-frem-con{
+  position: fixed;
+  right: 0;
+  bottom: 15%;
+  z-index: 99;
+}
+.hm-fixed-frem-con span{
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  max-width: 335px;
+}
+.hm-fixed-frem-con span img{
+  width: 100%;
+}
+
 
 
 
@@ -729,6 +740,11 @@ ul.testimonial-ratings li i{
     width: 53%;
     padding-right: 85px;
   }
+
+
+  .hm-fixed-frem-con span{
+    max-width: 270px;
+  }
 }
 
 @media(max-width: 1499px){
@@ -744,6 +760,9 @@ ul.testimonial-ratings li i{
   }
   .hmGrdSlider-info-right li {
     margin-left: 40px;
+  }
+  .hm-fixed-frem-con span{
+    max-width: 200px;
   }
 }
 @media(max-width: 1299px){
@@ -808,6 +827,9 @@ ul.testimonial-ratings li i{
   }
   .hmGrdSlider-grd-img-bg {
     min-height: 300px;
+  }
+  .hm-fixed-frem-con span{
+    max-width: 160px;
   }
 }
 
