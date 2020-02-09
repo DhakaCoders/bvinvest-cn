@@ -20,8 +20,38 @@
   $bwt = get_field('bwt', 'options');
   $smedias = get_field('sociale_media', 'options');
   $ftbottom = get_field('ftbottom', 'options');
-?>
+  $stky_knop = get_field('sticky_knop', 'options');
+  $selectpages = $stky_knop['select_pages'];
+  $stkyknop = $stky_knop['knop'];
 
+  $slug = '';
+  $stkyknop_status = false;
+  if ( is_page() ) $slug = get_queried_object()->post_name;
+  if( $selectpages ):
+    foreach($selectpages as $selectpage){
+      if( $selectpage->post_name == $slug ){
+        $stkyknop_status = true;
+        break;
+      } 
+    }
+  endif;
+
+?>
+<?php if($stky_knop && $stkyknop_status): ?>
+<div class="hm-fixed-frem-con hide-md">
+  <div class="hm-fixed-frem-innr">
+    <span>
+      <img src="<?php echo THEME_URI; ?>/assets/images/hm-fixed-frem.png" alt="">  
+    </span>
+    <a href="#">gratis waardebepaling</a>  
+    <?php 
+      if( is_array( $stkyknop ) &&  !empty( $stkyknop['url'] ) ){
+        printf('<a href="%s" target="%s">%s</a>', $stkyknop['url'], $stkyknop['target'], $stkyknop['title']); 
+      }
+    ?>  
+  </div>  
+</div>
+<?php endif; ?>
 <!-- - md menu bar and pop up menu -- -->
 <div class="md-popup-main-menu-wrap" style="display:none">
   <nav class="md-popup-main-nav clearfix">
