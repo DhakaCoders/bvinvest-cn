@@ -534,7 +534,7 @@ $thisID = get_the_ID();
           </div>
           <div class="detailpagina-main-side-bar">
             <div class="detailpagina-map-wrp">
-              <div id="detailpaginamap" data-latitude="38.03898" data-longitude="23.804699"></div>
+              <div data-marker="<?php echo THEME_URI; ?>/assets/images/map-marker.png" id="detailpaginamap" data-latitude="38.03898" data-longitude="23.804699"></div>
               <div class="detailpagina-map-block-link">
                 <i><img src="<?php echo THEME_URI; ?>/assets/images/detailpagina-map-block-link-img.png" alt=""></i>
                 <h6>Keizersplein 21 <br/>9300 Aalst</h6>

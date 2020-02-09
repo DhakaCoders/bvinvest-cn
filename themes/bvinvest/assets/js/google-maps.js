@@ -128,7 +128,7 @@ Start Contact Google Map ->>
 if( $('#googlemap').length ){
   var latitude = $('#googlemap').data('latitude');
   var longitude = $('#googlemap').data('longitude');
-
+  var markerIcon = $('#googlemap').data('marker');
   var myCenter= new google.maps.LatLng(latitude,  longitude);
   var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
   function initialize(){
@@ -150,7 +150,7 @@ if( $('#googlemap').length ){
 
     var marker= new google.maps.Marker({
       position:myCenter,
-      icon:'assets/images/map-marker.png'
+      icon: markerIcon
       });
     marker.setMap(map);
   }
@@ -166,7 +166,7 @@ Start Contact Google Map ->>
 if( $('#detailpaginamap').length ){
     var latitude = $('#detailpaginamap').data('latitude');
     var longitude = $('#detailpaginamap').data('longitude');
-
+    var markerIcon = $('#detailpaginamap').data('marker');
     var myCenter= new google.maps.LatLng(latitude,  longitude);
     var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
     function initialize(){
@@ -188,7 +188,7 @@ if( $('#detailpaginamap').length ){
         var map= new google.maps.Map(document.getElementById('detailpaginamap'),mapProp);
         var marker= new google.maps.Marker({
           position:myCenter,
-          icon:'assets/images/map-marker.png'
+          icon: markerIcon
         });
         marker.setMap(map);
     }

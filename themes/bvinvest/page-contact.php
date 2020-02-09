@@ -99,6 +99,6 @@ $thisID = get_the_ID();
 
 
 <section class="contact-google-map-wrp">
-  <div id="googlemap" data-latitude="38.03898" data-longitude="23.804699"></div>
+  <div data-marker="<?php echo THEME_URI; ?>/assets/images/map-marker.png" id="googlemap" data-latitude="38.03898" data-longitude="23.804699"></div>
 </section>
 <?php get_footer(); ?>
