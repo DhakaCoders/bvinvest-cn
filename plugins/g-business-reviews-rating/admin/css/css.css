@@ -1,0 +1,1039 @@
+/* CSS Document */
+
+.wrap .section.hide,
+.wrap #about.hide {
+	display: none;
+}
+.wrap > .summary {
+	font-size: 1.2em;
+	color: #006799;
+	margin: 0.5em 0 0.8em;
+}
+#google-business-reviews-rating-data,
+#google-business-reviews-rating-structured-data {
+	background-color: #23282d;
+	color: #b4b4b4;
+	padding: 0.7em;
+	border-radius: 6px;
+	box-shadow: 0 0 0 2px #9a9a9a inset;
+	line-height: 110%;
+	max-height: 60vh;
+	overflow: auto;
+	font-size: 11px;
+}
+#google-business-reviews-rating-structured-data {
+	margin: 2rem auto;
+	width: 80%;
+	top: 40%;
+	position: relative;
+	height: 50vh;
+	transform: translateY(-25vh);
+	max-height: 1800px;
+}
+#google-business-reviews-rating-overlay {
+	background-color: rgba(100, 138, 180, 0.8);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100000;
+	cursor: pointer;
+}
+#google-business-reviews-rating-settings h3 {
+	font-size: 1.2em;
+}
+.wrap #plugin-attribution {
+	display: inline-block;
+	position: absolute;
+	margin: 0;
+	right: 20px;
+	top: 30px;
+	z-index: 40;
+}
+.wrap > h1 .demo,
+#widgets-right .google-business-reviews-rating .demo {
+	font-size: 0.7em;
+	text-transform: uppercase;
+	display: inline-block;
+	background-color: #A61A17;
+	color: #f2e7e7;
+	padding: 0.1em 0.8em;
+	border-radius: 3px;
+	margin: 0 0.3em;
+	text-decoration: none;
+}
+#google-business-reviews-rating-settings .nav-tab > .dashicons {
+	top: 0.2em;
+	right: 0.05em;
+	transition: 0.3s color linear;
+	display: none;
+}
+#google-business-reviews-rating-settings .nav-tab .count {
+	display: none;
+}
+#reviews .all-stars,
+#reviews .rating-stars,
+.reviews-table td.rating {
+	font-family: Arial, Helvetica, sans-serif;
+}
+#google-business-reviews-rating-data .string,
+#google-business-reviews-rating-structured-data .string {
+	color: #19a7db;
+}
+#google-business-reviews-rating-data .number,
+#google-business-reviews-rating-structured-data .number {
+	color: #FFC682;
+}
+#google-business-reviews-rating-data .boolean,
+#google-business-reviews-rating-structured-data .boolean {
+	color: #AEF1A0;
+}
+#google-business-reviews-rating-data .null,
+#google-business-reviews-rating-structured-data .null {
+	color: #D99CD9;
+}
+#google-business-reviews-rating-data .key,
+#google-business-reviews-rating-structured-data .key {
+	color: #ff6464;
+}
+#google-business-reviews-rating-structured-data .boolean.error {
+	background-color: #FF0010;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0px 3px;
+	border-radius: 2px;
+}
+#google-business-reviews-rating-structured-data .error .dashicons {
+	position: relative;
+	display: inline-block;
+	top: -2px;
+}
+#google-business-reviews-rating-settings .nav-tab:hover .dashicons-admin-settings {
+	color: #4CA0DD;
+}
+#google-business-reviews-rating-settings .nav-tab:hover .dashicons-editor-code {
+	color: #6ABC52;
+}
+#google-business-reviews-rating-settings .nav-tab:hover .dashicons-star-filled {
+	color: #e7711b;
+}
+#google-business-reviews-rating-settings .nav-tab:hover .dashicons-buddicons-groups {
+	color: #EE46FF;
+}
+#google-business-reviews-rating-settings .nav-tab:hover .dashicons-cloud {
+	color: #50BDDF;
+}
+#google-business-reviews-rating-settings .nav-tab:hover .dashicons-heart {
+	color: #E03639;
+}
+#google-business-reviews-rating-settings .form-table td table {
+    border-collapse: collapse;
+    width: 100%;
+    clear: both;
+}
+#reviews-rating-preview,
+#reviews-rating-preview.badge .badge {
+	color: #111111;
+	background-color: #FFFFFF;
+}
+#reviews-rating-preview {
+	display: none;
+	padding: 2rem 2rem 1rem 2rem;
+	transition: 0.2s color linear, 0.2s background-color linear, 0.2s box-shadow linear, 0.2s width ease-in-out, 0.2s max-width ease-in-out;
+	box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.09) inset, 0 0 0 1px rgba(0, 0, 0, 0.29);
+	border-radius: 3px;
+	margin: -1rem 0 2rem;
+}
+#reviews-rating-preview.show {
+	display: block;
+}
+#reviews-rating-preview.dark,
+#reviews-rating-preview.badge .dark {
+	background-color: #0E0E0E;
+}
+#reviews-rating-preview .narrow {
+	max-width: 300px;
+	margin: 0 auto;
+}
+#reviews-rating-preview.badge,
+#reviews-rating-preview.dark.badge {
+	background-color: rgba(255, 255, 255, 0);
+	padding: 0;
+	box-shadow: none;
+}
+#reviews-rating-preview-heading {
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+	padding-bottom: 0.7rem;
+}
+#reviews-rating-preview-heading.active {
+	border-bottom: 1px dashed rgba(0, 0, 0, 0);
+}
+#reviews-rating-preview.hide {
+	opacity: 0;
+	display: none;
+}
+#reviews-rating-preview-heading.hide {
+	display: none;
+}
+#reviews-rating-preview-heading a {
+	display: block;
+	text-decoration: none;
+}
+#reviews-rating-preview-heading a:focus {
+	outline: none;
+	box-shadow: none;
+}
+#reviews-rating-preview-heading a .dashicons {
+	float: right;
+}
+#reviews-rating-preview.fonts {
+	font-family: Arial, Helvetica, sans-serif;
+}
+#reviews-rating-preview.dark,
+#reviews-rating-preview.badge .dark,
+#reviews-rating-preview.dark h2,
+#reviews-rating-preview.dark .text {
+	color: #FFFFFF;
+}
+#reviews-rating-preview.badge > .badge {
+	margin: 0 auto;
+}
+#reviews-rating-preview h2 {
+	font-size: 1.8rem;
+}
+#reviews-rating-preview h3 {
+	font-size: 1.7rem;
+}
+#reviews-rating-preview a.more {
+	color: #005B87;
+	cursor: pointer;
+}
+#reviews-rating-preview a.more:hover {
+	color: #007CB8;
+}
+#reviews-rating-preview.dark .listing a {
+	color: #0092D9;
+}
+#reviews-rating-preview.dark .listing a:hover {
+	color: #23B7FF;
+}
+#reviews-rating-preview .icon {
+	display: inline-block;
+	width: 100%;
+	min-width: 0.6em;
+	min-height: 0.6em;
+	max-width: 1.5em;
+	max-height: 1.5em;
+	position: relative;
+	vertical-align: middle;
+	bottom: 0.1em;
+	margin: 0 0.35em 0 0;
+}
+#google-business-reviews-rating-settings .form-table td table th,
+#google-business-reviews-rating-settings .form-table td table td {
+	padding: 0.2em;
+}
+#google-business-reviews-rating-settings .input label {
+	display: block;
+	padding: 0.4em 0.4em 0.4em 0;
+	margin: 0.2em 0 0 0;
+}
+#google-business-reviews-rating-settings .description.unset .highlight {
+	color: #0061BB;
+	display: inline-block;
+	padding: 0 0.15em;
+	font-weight: 600;
+	background-color: #e4f2fd;
+}
+#google-business-reviews-rating-settings .description .highlight {
+	background-color: transparent;
+}
+#google-business-reviews-rating-settings .small-text,
+#google-business-reviews-rating-settings .min,
+#google-business-reviews-rating-settings .max {
+	max-width: 7em;
+	display: inline-block;
+	width: 48%;
+}
+#google-business-reviews-rating-settings .dark #reviews-theme,
+#google-business-reviews-rating-settings #reviews-theme.dark {
+	color: #EDEDED;
+	background-color: #161616;
+}
+#google-business-reviews-rating-settings .fonts #reviews-theme,
+#google-business-reviews-rating-settings #reviews-theme.fonts {
+	font-family: Arial, Helvetica, sans-serif;
+}
+#google-business-reviews-rating-settings #theme-recommendation-badge,
+#google-business-reviews-rating-settings #theme-recommendation-columns,
+#google-business-reviews-rating-settings-reset #reset-confirm-text {
+	display: none;
+}
+#google-business-reviews-rating-settings-reset #reset-confirm-text label + label {
+	margin-left: 1em;
+}
+#google-business-reviews-rating-settings .shortcode {
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.09) inset;
+	background-color: rgba(0, 0, 0, 0.03);
+	border: 1px solid rgba(0, 0, 0, 0.01);
+	width: 100%;
+	border-radius: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-size: 0.9em;
+}
+#google-business-reviews-rating-settings #stylesheet {
+	margin: 0.7em 0.7em 0.7em 0;
+}
+#icon-image-row p,
+#logo-image-row p {
+	min-height: 5em;
+}
+#icon-image-row.empty p,
+#logo-image-row.empty p {
+	min-height: 0;
+}
+.icon-image,
+.logo-image {
+	margin: 0;
+}
+.icon-image button,
+.logo-image button {
+	transition: 0.3s opacity linear;
+}
+.icon-image #icon-image-preview,
+.logo-image #logo-image-preview {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 auto 0.4em;
+	max-width: 128px;
+	max-height: 128px;
+	border: 2px dashed rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	min-width: 1em;
+	min-height: 1em;
+	transition: 0.2s width ease-in-out, 0.2s height ease-in-out;
+	font-size: 1px;
+}
+.icon-image.empty #icon-image-preview,
+.logo-image.empty #logo-image-preview {
+	display: none;
+}
+.icon-image #icon-image-preview img,
+.logo-image #logo-image-preview img {
+	width: 100%;
+	height: auto;
+}
+.icon-image .button,
+.logo-image .button {
+	width: 11em;
+	overflow: hidden;
+}
+.icon-image.empty .set,
+.logo-image.empty .set,
+.icon-image.empty .button,
+.logo-image.empty .button {
+    position: relative;
+	width: auto;
+	margin: 0;
+}
+.icon-image .set,
+.logo-image .set,
+.icon-image .delete,
+.logo-image .delete {
+	padding: 1px 0 0;
+	margin: 0 0 0 7px;
+	width: calc(80% - 178px);
+	overflow: hidden;	
+	position: absolute;
+	min-width: 18em;
+	z-index: 501;
+	display: inline-block;
+}
+.icon-image .delete,
+.logo-image .delete {
+	margin-top: 2.6em;
+}
+#google-business-reviews-rating-settings .dashicons {
+	width: auto;
+	height: auto;
+	font-size: 1.2em;
+	display: inline-block;
+	position: relative;
+	top: 1px;
+}
+#google-business-reviews-rating-settings button .dashicons {
+	position: relative;
+	top: 5px;
+	margin: 0 0.2em 0 0;
+	font-size: 16px;
+}
+.parameters .code {
+	color: #0061BB;
+}
+.parameters th,
+.parameters td {
+	width: 6%;
+}
+.parameters .parameter,
+.parameters th {
+	font-weight: 600;
+}
+.parameters .parameter {
+	width: 13%;
+}
+.parameters .description {
+	width: 45%;
+}
+.parameters .accepted {
+	width: 22%;
+}
+.parameters .default {
+	width: 8%;
+}
+.parameters .boolean {
+	text-align: center;
+}
+.reviews-table .id a {
+	clear: both;
+	display: block;
+	opacity: 0.2;
+	transition: 0.2s opacity linear;
+	color: #464646;
+	padding: 0.2em;
+}
+.reviews-table .id .remove {
+	padding-top: 0.05em;
+}
+.reviews-table .review .id a {
+	opacity: 0;
+}
+.reviews-table .review.inactive .id .show-hide,
+.reviews-table .review:hover .id a {
+	opacity: 1;
+}
+.reviews-table .review.estimate .date {
+	cursor: pointer;
+}
+.reviews-table .review.estimate .time-estimate {
+	display: none;
+}
+.reviews-table .inactive td + td {
+    opacity: 0.6;
+}
+#reviews > .rating .rating-stars,
+.reviews-table td.rating {
+	color: #e7711b;
+}
+#reviews > .rating .all-stars,
+.reviews-table .rating .not,
+.reviews-table .rating-number {
+	color: #B7B7B7;
+}
+#reviews > .rating {
+	font-size: 1.4em;
+}
+#reviews > .rating .count {
+	color: #898989;
+	font-size: 0.9em;
+}
+#reviews > .rating .all-stars,
+#reviews > .rating .rating-stars {
+	display: inline-block;
+	height: 0.9em;
+	line-height: 110%;
+	overflow: hidden;
+	width: 4.25em;
+	font-size: 1.6rem;
+	top: 1px;
+	position: relative;
+}
+#reviews > .rating .all-stars {
+	margin-right: 0.2em;
+}
+#reviews > .rating .rating-stars {
+	position: relative;
+	top: -1.1em;
+	word-wrap: initial;
+}
+.reviews-table .number {
+	text-align: center;
+}
+.reviews-table .author .name,
+.reviews-table .author .avatar {
+	display: block;
+}
+.reviews-table .author .avatar {
+	max-width: 32px;
+	margin: 4px auto 0 0;
+}
+.reviews-table .author .avatar img {
+	width: 100%;
+	height: auto;
+}
+.estimate .submitted {
+	font-style: italic;
+	color: rgba(0, 0, 0, 0.6);
+}
+.reviews-table.wp-list-table tr {
+	display: table-row;
+}
+.reviews-table th,
+.reviews-table td {
+	display: table-cell;
+}
+.reviews-table .id,
+.reviews-table .language,
+.reviews-table .text,
+.reviews-table .place-id,
+.reviews-table .retrieved,
+.reviews-table .order,
+#reviews-import-table {
+	display: none;
+}
+#advanced .introduction {
+	max-width: calc(100% - 3px);
+}
+.advanced label {
+	vertical-align: inherit;
+}
+.advanced ol li {
+	transition: 0.3s color linear, 0.3s background-color linear;
+	border-radius: 3px;
+}
+.advanced ol li:hover {
+	color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
+}
+#html-import-figures {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+#html-import-figures li {
+	flex: 1 0 100%;
+	margin: 0 0 0.2rem;
+	transition: 0.5s box-shadow linear;
+	display: block;
+	padding: 0;
+}
+#html-import-figures li img {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+#html-import-figures .caption {
+	position: absolute;
+	color: #fff;
+	background-color: #008ec2;	
+	padding: 4px 6px;
+	max-width: 246px;
+	margin: -3rem 0 -1rem 0;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+	display: block;
+	line-height: 120%;
+	z-index: 33;
+}
+#html-import,
+#custom-styles,	
+#html-import-output table {
+	width: 100%;
+}
+#html-import,
+#custom-styles {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	min-height: 8em;
+	margin-bottom: 0.4em;
+	background-color:#404D53;
+	color: #D0DDE3;
+}
+#html-import-existing-label {
+	display: block;
+	padding: 0.8em 0 0;
+}
+#html-import.error {
+	box-shadow: 0 0 0 2px #C74345;
+}
+#html-import.valid {
+	
+	box-shadow: 0 0 0 2px #529B4A;
+}
+#html-import-review-text {
+	width: 100%;
+	max-width: none;
+}
+#html-import-output {
+	margin-top: 1.4rem;
+}
+#html-import-output th,
+#html-import-output td {
+	vertical-align: top;
+	text-align: left;
+}
+#html-import-output .existing td {
+	color: #707070;
+	background-color: rgba(0, 0, 0, 0.15);
+	opacity: 0.8;
+}
+#import-button,
+#import-clear-button {
+	display: none;
+}
+#about .entry-content p {
+	line-height: 180%;
+}
+#customize-theme-controls .google-business-reviews-rating p:nth-child(3) label, 
+#customize-theme-controls .google-business-reviews-rating p:nth-child(4) label, 
+#customize-theme-controls .google-business-reviews-rating p:nth-child(5) label, 
+#customize-theme-controls .google-business-reviews-rating p:nth-child(6) label, 
+#customize-theme-controls .google-business-reviews-rating p:nth-child(7) label, 
+#customize-theme-controls .google-business-reviews-rating p:nth-child(8) label {
+	max-width: none;
+	display: block;
+}
+#widgets-right .google-business-reviews-rating .business-name {
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #757575;
+	margin-bottom: 0.4rem;
+}
+#widgets-right .google-business-reviews-rating .icon {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	position: relative;
+	vertical-align: middle;
+	bottom: 0.1em;
+	margin: 0 0.2em 0 0;
+}
+#widgets-right .google-business-reviews-rating .icon img {
+	max-width: 100%;
+	height: auto;
+}
+#widgets-right .google-business-reviews-rating .plugin-attribution {
+	margin-top: 0;
+}
+#widgets-right .google-business-reviews-rating .demo {
+	padding: 0.5em 1em 0.4em 0.8em;
+	position: relative;
+	bottom: 0.2em;
+}
+#widgets-right .google-business-reviews-rating .demo .dashicons {
+	vertical-align: middle;
+	font-size: 2em;
+}
+#customize-theme-controls .google-business-reviews-rating input[type="number"].small-text {
+	width: 40%;
+}
+#customize-theme-controls .google-business-reviews-rating .business-name,
+#customize-theme-controls .google-business-reviews-rating .plugin-attribution {
+	display: none;
+}
+#google-business-reviews-rating-close {
+	margin: 4px 4px 0 auto;
+	font-size: 2rem;
+	cursor: pointer;
+	text-align: right;
+	width: 3rem;
+	height: 3rem;
+	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+}
+#google-business-reviews-rating-close .dashicons {
+	color: #FFFFFF;
+}
+.powered-by-google {
+	display: inline-block;
+	width: 143px;
+	height: 19px;
+	background: rgba(0, 0, 0, 0) url("data:image/svg+xml;charset=UTF-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJNYWluIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKd2lkdGg9IjE0Mi42MjNweCIgaGVpZ2h0PSIxOC42MTFweCIgdmlld0JveD0iMCAwIDE0Mi42MjMgMTguNjExIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNDIuNjIzIDE4LjYxMSIKeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgo8cGF0aCBmaWxsPSIjRUE0MzM1IiBkPSJNMTEwLjI4MSw5Ljc5NGMwLDIuNjc4LTIuMDk1LDQuNjUxLTQuNjY1LDQuNjUxYy0yLjU3MSwwLTQuNjY1LTEuOTczLTQuNjY1LTQuNjUxCmMwLTIuNjk2LDIuMDk1LTQuNjUxLDQuNjY1LTQuNjUxQzEwOC4xODYsNS4xNDMsMTEwLjI4MSw3LjA5NywxMTAuMjgxLDkuNzk0eiBNMTA4LjIzOSw5Ljc5NGMwLTEuNjczLTEuMjE0LTIuODE4LTIuNjIzLTIuODE4CmMtMS40MDksMC0yLjYyMywxLjE0NS0yLjYyMywyLjgxOGMwLDEuNjU2LDEuMjE0LDIuODE4LDIuNjIzLDIuODE4QzEwNy4wMjUsMTIuNjEyLDEwOC4yMzksMTEuNDQ4LDEwOC4yMzksOS43OTR6Ii8+CjxwYXRoIGZpbGw9IiNGQkJDMDUiIGQ9Ik0xMjAuMzQ1LDkuNzk0YzAsMi42NzgtMi4wOTUsNC42NTEtNC42NjUsNC42NTFzLTQuNjY1LTEuOTczLTQuNjY1LTQuNjUxYzAtMi42OTQsMi4wOTUtNC42NTEsNC42NjUtNC42NTEKUzEyMC4zNDUsNy4wOTcsMTIwLjM0NSw5Ljc5NHogTTExOC4zMDMsOS43OTRjMC0xLjY3My0xLjIxNC0yLjgxOC0yLjYyMy0yLjgxOGMtMS40MDksMC0yLjYyMywxLjE0NS0yLjYyMywyLjgxOApjMCwxLjY1NiwxLjIxNCwyLjgxOCwyLjYyMywyLjgxOEMxMTcuMDg5LDEyLjYxMiwxMTguMzAzLDExLjQ0OCwxMTguMzAzLDkuNzk0eiIvPgo8cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMTI5Ljk5LDUuNDI0djguMzQ5YzAsMy40MzQtMi4wMjUsNC44MzctNC40Miw0LjgzN2MtMi4yNTQsMC0zLjYxMS0xLjUwOC00LjEyMi0yLjc0bDEuNzc4LTAuNzQKYzAuMzE3LDAuNzU3LDEuMDkyLDEuNjUsMi4zNDIsMS42NWMxLjUzMywwLDIuNDgzLTAuOTQ2LDIuNDgzLTIuNzI2di0wLjY2OWgtMC4wNzFjLTAuNDU3LDAuNTY0LTEuMzM4LDEuMDU3LTIuNDQ5LDEuMDU3CmMtMi4zMjUsMC00LjQ1Ni0yLjAyNS00LjQ1Ni00LjYzMmMwLTIuNjI1LDIuMTMtNC42NjcsNC40NTYtNC42NjdjMS4xMDksMCwxLjk5LDAuNDkzLDIuNDQ5LDEuMDRoMC4wNzFWNS40MjZoMS45MzlWNS40MjR6Ck0xMjguMTk1LDkuODExYzAtMS42MzgtMS4wOTItMi44MzUtMi40ODMtMi44MzVjLTEuNDA5LDAtMi41ODksMS4xOTctMi41ODksMi44MzVjMCwxLjYyMSwxLjE4LDIuODAxLDIuNTg5LDIuODAxCkMxMjcuMTAzLDEyLjYxMiwxMjguMTk1LDExLjQzMSwxMjguMTk1LDkuODExeiIvPgo8cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMTMzLjE4OCwwLjUzdjEzLjYyOWgtMS45OTJWMC41M0gxMzMuMTg4eiIvPgo8cGF0aCBmaWxsPSIjRUE0MzM1IiBkPSJNMTQwLjk1LDExLjMyNGwxLjU4NSwxLjA1N2MtMC41MTIsMC43NTctMS43NDQsMi4wNjEtMy44NzUsMi4wNjFjLTIuNjQyLDAtNC42MTUtMi4wNDItNC42MTUtNC42NTEKYzAtMi43NjYsMS45OS00LjY1MSw0LjM4Ni00LjY1MWMyLjQxMywwLDMuNTk0LDEuOTIxLDMuOTgsMi45NThsMC4yMTIsMC41MjhsLTYuMjE3LDIuNTc1YzAuNDc2LDAuOTMzLDEuMjE2LDEuNDA5LDIuMjU0LDEuNDA5CkMxMzkuNywxMi42MTIsMTQwLjQyMSwxMi4xLDE0MC45NSwxMS4zMjRMMTQwLjk1LDExLjMyNHogTTEzNi4wNzEsOS42NTFsNC4xNTYtMS43MjZjLTAuMjI5LTAuNTgxLTAuOTE2LTAuOTg1LTEuNzI2LTAuOTg1CkMxMzcuNDYzLDYuOTQsMTM2LjAxOCw3Ljg1NiwxMzYuMDcxLDkuNjUxeiIvPgo8cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNOTMuNDExLDguNTg0VjYuNjExaDYuNjQ5YzAuMDY1LDAuMzQ0LDAuMDk5LDAuNzUxLDAuMDk5LDEuMTkxYzAsMS40OC0wLjQwNSwzLjMxMS0xLjcwOSw0LjYxNQpjLTEuMjY5LDEuMzIxLTIuODg5LDIuMDI1LTUuMDM2LDIuMDI1Yy0zLjk4LDAtNy4zMjYtMy4yNDItNy4zMjYtNy4yMjFTODkuNDMzLDAsOTMuNDEzLDBjMi4yMDIsMCwzLjc3LDAuODY0LDQuOTQ4LDEuOTkKbC0xLjM5MiwxLjM5MmMtMC44NDUtMC43OTMtMS45OS0xLjQwOS0zLjU1OC0xLjQwOWMtMi45MDYsMC01LjE3OSwyLjM0Mi01LjE3OSw1LjI0OHMyLjI3Myw1LjI0OCw1LjE3OSw1LjI0OApjMS44ODUsMCwyLjk1OC0wLjc1NywzLjY0Ni0xLjQ0NWMwLjU1OC0wLjU1OCwwLjkyNS0xLjM1NCwxLjA2OS0yLjQ0M0w5My40MTEsOC41ODR6Ii8+CjxnPgo8Zz4KPHBhdGggZmlsbD0iIzdDN0M3QyIgZD0iTTEuNDg2LDYuMzgydjEuMjg4aDAuMDMzQzIuMTksNi42NTcsMy4wODcsNi4xNTEsNC4yMSw2LjE1MWMxLjA3OSwwLDEuOTU0LDAuMzk5LDIuNjI1LDEuMTk3CmMwLjY3MSwwLjc5OCwxLjAwNywxLjc0OCwxLjAwNywyLjg0OGMwLDEuMTY3LTAuMzMsMi4xNTUtMC45OTEsMi45NjRjLTAuNjYsMC44MDktMS41NjMsMS4yMTQtMi43MDgsMS4yMTQKYy0wLjUyOCwwLTEuMDIxLTAuMTMyLTEuNDc4LTAuMzk2Yy0wLjQ1Ny0wLjI2NC0wLjgzOS0wLjYyMi0xLjE0OC0xLjA3M0gxLjQ4NnY0LjYzSDBWNi4zODJIMS40ODZ6IE0zLjg0NywxMy4wNTIKYzAuNzgxLDAsMS4zOTUtMC4yNywxLjg0MS0wLjgwOWMwLjQ0Ni0wLjUzOSwwLjY2OS0xLjIwNSwwLjY2OS0xLjk5OGMwLTAuNzgxLTAuMjI2LTEuNDM5LTAuNjc3LTEuOTczCkM1LjIyOCw3LjczOCw0LjYxNyw3LjQ3MSwzLjg0Nyw3LjQ3MWMtMC43MzgsMC0xLjMyOSwwLjI3Mi0xLjc3NSwwLjgxN3MtMC42NjksMS4xOTctMC42NjksMS45NTZjMCwwLjc3MSwwLjIyLDEuNDMxLDAuNjYsMS45ODEKQzIuNTA0LDEyLjc3NywzLjA5OCwxMy4wNTIsMy44NDcsMTMuMDUyeiIvPgo8cGF0aCBmaWxsPSIjN0M3QzdDIiBkPSJNOS43OTksNy4zMzljMC43OTgtMC43OTIsMS43NzUtMS4xODksMi45MzEtMS4xODljMS4xNTYsMCwyLjEzMiwwLjM5NiwyLjkzMSwxLjE4OQpjMC43OTgsMC43OTMsMS4xOTcsMS43NjcsMS4xOTcsMi45MjJjMCwxLjE1Ni0wLjM5OSwyLjEzLTEuMTk3LDIuOTIyYy0wLjc5OCwwLjc5My0xLjc3NSwxLjE4OS0yLjkzMSwxLjE4OQpjLTEuMTU2LDAtMi4xMzMtMC4zOTYtMi45MzEtMS4xODljLTAuNzk4LTAuNzkyLTEuMTk3LTEuNzY2LTEuMTk3LTIuOTIyQzguNjAyLDkuMTA2LDkuMDAxLDguMTMyLDkuNzk5LDcuMzM5eiBNMTQuNTk1LDguMzYzCmMtMC41MTctMC41MjgtMS4xMzktMC43OTItMS44NjYtMC43OTJjLTAuNzI2LDAtMS4zNDgsMC4yNjQtMS44NjYsMC43OTJjLTAuNTE4LDAuNTI4LTAuNzc2LDEuMTYyLTAuNzc2LDEuODk5CmMwLDAuNzI2LDAuMjU4LDEuMzU3LDAuNzc2LDEuODljMC41MTcsMC41MzQsMS4xMzksMC44MDEsMS44NjYsMC44MDFjMC43MjYsMCwxLjM0OC0wLjI2NywxLjg2Ni0wLjgwMQpjMC41MTctMC41MzQsMC43NzYtMS4xNjQsMC43NzYtMS44OUMxNS4zNzEsOS41MjQsMTUuMTEyLDguODkxLDE0LjU5NSw4LjM2M3oiLz4KPHBhdGggZmlsbD0iIzdDN0M3QyIgZD0iTTE4LjYwNyw2LjM4MmwyLjI0NSw0LjkybDIuMTc5LTQuOTczaDAuMzkxbDEuOTcxLDQuOTczbDIuMjQ1LTQuOTJoMS42ODRsLTMuNzEzLDcuOTkxbC0wLjQzOCwwCmwtMi4wNDEtNS4xNjhsLTIuMDY4LDUuMTY4bC0wLjQ2OSwwbC0zLjY3MS03Ljk5MUgxOC42MDd6Ii8+CjxwYXRoIGZpbGw9IiM3QzdDN0MiIGQ9Ik0zNi44NTEsMTAuNDkzaC01Ljg5NGMwLjAxMSwwLjY5NCwwLjIzMSwxLjI5MywwLjY2LDEuOGMwLjQyOSwwLjUwNiwwLjk4NSwwLjc2LDEuNjY4LDAuNzYKYzAuNTM5LDAsMC45ODItMC4xMjQsMS4zMjktMC4zNzJjMC4zNDctMC4yNDgsMC42NzQtMC42MjUsMC45ODItMS4xMzFsMS4yNTUsMC43MWMtMC4zNjMsMC42Ni0wLjg2MSwxLjE3OC0xLjQ5NCwxLjU1MgpjLTAuNjMzLDAuMzc0LTEuMzI5LDAuNTYxLTIuMDg5LDAuNTYxYy0xLjE1NiwwLTIuMDc4LTAuMzg1LTIuNzY2LTEuMTU2Yy0wLjY4OC0wLjc3LTEuMDMyLTEuNzM5LTEuMDMyLTIuOTA2CmMwLTEuMjMyLDAuMzI1LTIuMjM0LDAuOTc0LTMuMDA1YzAuNjQ5LTAuNzcsMS41NzktMS4xNTYsMi43OS0xLjE1NmMxLjE3OCwwLDIuMDc1LDAuMzgzLDIuNjkxLDEuMTQ4CmMwLjYxNiwwLjc2NSwwLjkyNSwxLjc1MywwLjkyNSwyLjk2NFYxMC40OTN6IE0zMS4wMzksOS4zN2g0LjMyNmMtMC4wODgtMC41OTQtMC4zMTktMS4wNjUtMC42OTMtMS40MTIKYy0wLjM3NC0wLjM0Ny0wLjg1My0wLjUyLTEuNDM3LTAuNTJjLTAuNTcyLDAtMS4wNTksMC4xODItMS40NjEsMC41NDVDMzEuMzcyLDguMzQ3LDMxLjEyNyw4LjgwOSwzMS4wMzksOS4zN3oiLz4KPHBhdGggZmlsbD0iIzdDN0M3QyIgZD0iTTM5LjcwNyw2LjM4MnYxLjI1NWgwLjA0OWMwLjE4Ny0wLjQ2MiwwLjQ2NS0wLjgyNiwwLjgzNC0xLjA5YzAuMzY5LTAuMjY0LDAuNzk1LTAuMzk2LDEuMjc5LTAuMzk2CmMwLjQxOCwwLDAuODI2LDAuMTI3LDEuMjIyLDAuMzhsLTAuNjc3LDEuMzU0Yy0wLjI0Mi0wLjIwOS0wLjU0NS0wLjMxNC0wLjkwOC0wLjMxNGMtMC4zODUsMC0wLjcwNSwwLjA4LTAuOTU4LDAuMjM5CmMtMC4yNTMsMC4xNi0wLjQzNywwLjM4NS0wLjU1MywwLjY3N2MtMC4xMTYsMC4yOTItMC4xOTMsMC41NzgtMC4yMzEsMC44NTljLTAuMDM5LDAuMjgxLTAuMDU4LDAuNjAyLTAuMDU4LDAuOTY2djMuNzk3aC0xLjQ4NgpWNi4zODJIMzkuNzA3eiIvPgo8cGF0aCBmaWxsPSIjN0M3QzdDIiBkPSJNNTAuNzAzLDEwLjQ5M2gtNS44OTRjMC4wMTEsMC42OTQsMC4yMzEsMS4yOTMsMC42NiwxLjhjMC40MjksMC41MDYsMC45ODUsMC43NiwxLjY2OCwwLjc2CmMwLjUzOSwwLDAuOTgyLTAuMTI0LDEuMzI5LTAuMzcyYzAuMzQ3LTAuMjQ4LDAuNjc0LTAuNjI1LDAuOTgyLTEuMTMxbDEuMjU1LDAuNzFjLTAuMzYzLDAuNjYtMC44NjEsMS4xNzgtMS40OTQsMS41NTIKYy0wLjYzMywwLjM3NC0xLjMyOSwwLjU2MS0yLjA4OSwwLjU2MWMtMS4xNTYsMC0yLjA3OC0wLjM4NS0yLjc2Ni0xLjE1NmMtMC42ODgtMC43Ny0xLjAzMi0xLjczOS0xLjAzMi0yLjkwNgpjMC0xLjIzMiwwLjMyNS0yLjIzNCwwLjk3NC0zLjAwNWMwLjY0OS0wLjc3LDEuNTc5LTEuMTU2LDIuNzktMS4xNTZjMS4xNzgsMCwyLjA3NSwwLjM4MywyLjY5MSwxLjE0OApjMC42MTYsMC43NjUsMC45MjUsMS43NTMsMC45MjUsMi45NjRWMTAuNDkzeiBNNDQuODkxLDkuMzdoNC4zMjZjLTAuMDg4LTAuNTk0LTAuMzE5LTEuMDY1LTAuNjkzLTEuNDEyCmMtMC4zNzQtMC4zNDctMC44NTMtMC41Mi0xLjQzNy0wLjUyYy0wLjU3MiwwLTEuMDU5LDAuMTgyLTEuNDYxLDAuNTQ1QzQ1LjIyNCw4LjM0Nyw0NC45NzksOC44MDksNDQuODkxLDkuMzd6Ii8+CjxwYXRoIGZpbGw9IiM3QzdDN0MiIGQ9Ik01Ny43MzYsMTQuMTA5di0xLjIwNWgtMC4wMzNjLTAuMzA4LDAuNDUxLTAuNjkxLDAuODA5LTEuMTQ4LDEuMDczCmMtMC40NTcsMC4yNjQtMC45NDksMC4zOTYtMS40NzgsMC4zOTZjLTEuMTQ1LDAtMi4wNDctMC40MDUtMi43MDgtMS4yMTRjLTAuNjYtMC44MDktMC45OTEtMS43OTctMC45OTEtMi45NjQKYzAtMS4xLDAuMzM2LTIuMDUsMS4wMDctMi44NDhjMC42NzEtMC43OTgsMS41NDYtMS4xOTcsMi42MjUtMS4xOTdjMS4xMjMsMCwyLjAyLDAuNTA2LDIuNjkxLDEuNTE5aDAuMDMzVjIuMTExaDEuNDg2djExLjk5OApINTcuNzM2eiBNNTUuMzA5LDEzLjA1MmMwLjc4MSwwLDEuMzk1LTAuMjcsMS44NDEtMC44MDljMC40NDYtMC41MzksMC42NjktMS4yMDUsMC42NjktMS45OThjMC0wLjc4MS0wLjIyNi0xLjQzOS0wLjY3Ny0xLjk3MwpjLTAuNDUxLTAuNTM0LTEuMDYyLTAuODAxLTEuODMzLTAuODAxYy0wLjczOCwwLTEuMzI5LDAuMjcyLTEuNzc1LDAuODE3Yy0wLjQ0NiwwLjU0NS0wLjY2OSwxLjE5Ny0wLjY2OSwxLjk1NgpjMCwwLjc3MSwwLjIyLDEuNDMxLDAuNjYsMS45ODFDNTMuOTY2LDEyLjc3Nyw1NC41NjEsMTMuMDUyLDU1LjMwOSwxMy4wNTJ6Ii8+CjxwYXRoIGZpbGw9IiM3QzdDN0MiIGQ9Ik02NS44MSwxNC4xMDlWMi4xMTFoMS40ODZ2NS41NTloMC4wMzNDNjgsNi42NTcsNjguODk3LDYuMTUxLDcwLjAyLDYuMTUxCmMxLjA3OSwwLDEuOTU0LDAuMzk5LDIuNjI1LDEuMTk3YzAuNjcxLDAuNzk4LDEuMDA3LDEuNzQ4LDEuMDA3LDIuODQ4YzAsMS4xNjctMC4zMywyLjE1NS0wLjk5LDIuOTY0CmMtMC42NiwwLjgwOS0xLjU2MywxLjIxNC0yLjcwOCwxLjIxNGMtMC41MjgsMC0xLjAyMS0wLjEzMi0xLjQ3OC0wLjM5NmMtMC40NTctMC4yNjQtMC44MzktMC42MjItMS4xNDgtMS4wNzNoLTAuMDMzdjEuMjA1Ckg2NS44MXogTTY5LjY1NywxMy4wNTJjMC43ODEsMCwxLjM5NS0wLjI3LDEuODQxLTAuODA5YzAuNDQ2LTAuNTM5LDAuNjY5LTEuMjA1LDAuNjY5LTEuOTk4YzAtMC43ODEtMC4yMjYtMS40MzktMC42NzctMS45NzMKYy0wLjQ1MS0wLjUzNC0xLjA2Mi0wLjgwMS0xLjgzMy0wLjgwMWMtMC43MzgsMC0xLjMyOSwwLjI3Mi0xLjc3NSwwLjgxN3MtMC42NjksMS4xOTctMC42NjksMS45NTYKYzAsMC43NzEsMC4yMiwxLjQzMSwwLjY2LDEuOTgxQzY4LjMxMywxMi43NzcsNjguOTA4LDEzLjA1Miw2OS42NTcsMTMuMDUyeiIvPgo8cGF0aCBmaWxsPSIjN0M3QzdDIiBkPSJNNzcuNCwxMi43ODhsLTMuNTMzLTYuNDA2SDc1LjZsMi42MDgsNC45MDRsMi40MjctNC45MDRoMS42NjdsLTUuMjU4LDExLjE1MmgtMS42ODRMNzcuNCwxMi43ODh6Ii8+CjwvZz4KPC9nPgo8L2c+Cjwvc3ZnPgo=") no-repeat 0 0 / cover;
+}
+.signature {
+	display: inline-block;
+	width: 84px;
+	height: 38px;
+	background: url("data:image/svg+xml;charset=UTF-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJTaWduYXR1cmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iODMuOTZweCIgaGVpZ2h0PSIzOC40NThweCIgdmlld0JveD0iMCAwIDgzLjk2IDM4LjQ1OCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgODMuOTYgMzguNDU4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+CjxwYXRoIGZpbGw9IiMxQzc1QkMiIGQ9Ik0xLjMwNywzNC4zNDFDOC4yNTEsMjUuOTcsMTMuNjg1LDE0LjMwNCwxNy4xNTcsNC4wMDljLTAuNDM0LTAuMTItMC44NjktMC4yNC0xLjMwMy0wLjM1OQpjLTEuNjYsMTAuNTIzLTMuNDM2LDIxLjA4MS00LjAwNywzMS43MzVjLTAuMDM1LDAuNjQ5LDAuOTc3LDAuOTU1LDEuMjU5LDAuMzQxYzUuMzgtMTEuNzEyLDkuNjQ5LTIzLjc2NSwxNi42NTgtMzQuNjc5CmMwLjQ3Mi0wLjczNi0wLjY5OC0xLjQxMy0xLjE2Ny0wLjY4MmMtNy4wMiwxMC45MzEtMTEuMjczLDIyLjk1Ni0xNi42NTgsMzQuNjc5YzAuNDIsMC4xMTQsMC44NCwwLjIyNywxLjI1OSwwLjM0MQpjMC41NjQtMTAuNTI5LDIuMzE4LTIwLjk3NiwzLjk1OS0zMS4zNzZjMC4xMzQtMC44NDktMS4wMi0xLjItMS4zMDMtMC4zNTljLTEuNTU4LDQuNjE4LTMuODQ0LDkuMDY5LTUuOTY4LDEzLjQ0NApDNy4xNzMsMjIuNjgxLDQuMzQsMjguNTc3LDAuMzUxLDMzLjM4NkMtMC4yMDEsMzQuMDUxLDAuNzUsMzUuMDEzLDEuMzA3LDM0LjM0MUwxLjMwNywzNC4zNDF6Ii8+CjxwYXRoIGZpbGw9IiMxQzc1QkMiIGQ9Ik0yMy4xNSwyNC45MDZjLTIuNjA4LDEuNjIxLTUuMTQ4LDQuNjcyLTUuNzU3LDcuNzQ4Yy0wLjU1MSwyLjc4MSwxLjk0NiwzLjM2Miw0LjA1OCwyLjU4MQpjMi44LTEuMDM2LDQuNzc0LTMuNDE4LDUuMzY0LTYuMzE4YzAuNTMyLTIuNjEyLTIuNTk4LTMuMTA4LTQuNDY4LTMuMTY5Yy0wLjg3Mi0wLjAyOC0wLjg2OSwxLjMyNCwwLDEuMzUyCmMwLjU3NSwwLjAxOSwxLjEzLDAuMDYzLDEuNjk3LDAuMTY5YzEuNDMyLDAuMjY5LDEuNTY4LDEuMDg3LDEuMjA0LDIuMzc3Yy0wLjUxMywxLjgyLTEuOTk4LDMuMTczLTMuNjA5LDQuMDM1CmMtMC42NzUsMC4zNjEtMi40ODksMS4yMTctMi45MDgsMC4wNTZjLTAuMzE4LTAuODg0LDAuMzctMi4wMTQsMC43NDktMi43NDhjMS4wMTYtMS45NzEsMi40Ni0zLjczOSw0LjM1Mi00LjkxNQpDMjQuNTcxLDI1LjYxNCwyMy44OTMsMjQuNDQ1LDIzLjE1LDI0LjkwNkwyMy4xNSwyNC45MDZ6Ii8+CjxwYXRoIGZpbGw9IiMxQzc1QkMiIGQ9Ik0zNS42ODEsMjUuOTU0Yy0zLjA1MywwLjA2OS01LjM4NCwyLjE5Ny03LjA3OCw0LjU2MWMtMS4wMTMsMS40MTQtMi40NjksNC4xMDktMC41MzUsNS4zNgpjMy40MzEsMi4yMiw4LjIyNy03LjU4LDEwLjAxNC05LjI0OGMtMC4zNzctMC4wOTktMC43NTMtMC4xOTktMS4xMy0wLjI5OGMwLjM4MSwxLjUwMS0wLjkwMywxMi44MjgsMy41MzIsOC42MjgKYzAuNjM0LTAuNi0wLjMyMy0xLjU1NC0wLjk1Ni0wLjk1NmMtMS40ODQsMS40MDUtMS4yMjEtMi42NzctMS4yMjItMy41ODdjLTAuMDAyLTEuNDE2LDAuMzAyLTMuMDU2LTAuMDUxLTQuNDQ1CmMtMC4xMjktMC41MDktMC43NjctMC42MzYtMS4xMy0wLjI5OGMtMi40MTgsMi4yNTctMy44NTIsNS40ODQtNi4yMDUsNy44NDdjLTAuNDkxLDAuNDkzLTEuMzI3LDEuMzM2LTIuMTA1LDEuMjEKYy0wLjk4OC0wLjE2MSwwLjI1Ny0yLjM3MiwwLjQxNS0yLjY2N2MxLjI1LTIuMzM1LDMuNjc0LTQuNjkyLDYuNDUtNC43NTRDMzYuNTUxLDI3LjI4NiwzNi41NTMsMjUuOTM1LDM1LjY4MSwyNS45NTQKTDM1LjY4MSwyNS45NTR6Ii8+CjxwYXRoIGZpbGw9IiMxQzc1QkMiIGQ9Ik01NC4zMjcsOC44NThjLTIuNTk0LDQuMzA5LTQuODYsOC44MTktNy4xMzUsMTMuMzAyYy0xLjk5LDMuOTIxLTUuMjUyLDguNTMyLTUuNjcyLDEyLjk1CmMtMC4wNTksMC42MjMsMC43NiwwLjg0NiwxLjE1NCwwLjQ3OGMxLjU4NS0xLjQ4Miw0Ljk4OC02LjEyNiw2Ljk0OC0yLjEzOWMwLjg0MSwxLjcxLDIuMzUsMi45ODMsMy44NDcsNC4wODcKYzAuNzAyLDAuNTE4LDEuMzc1LTAuNjU1LDAuNjgyLTEuMTY3Yy0yLjQwNi0xLjc3Ni0zLjQyMy02LjI1OC02LjYwMy02LjQ4M2MtMi4zMS0wLjE2NC00LjQzNywzLjQ0Ni01LjgyOSw0Ljc0NwpjMC4zODUsMC4xNTksMC43NjksMC4zMTksMS4xNTQsMC40NzhjMC40MTctNC4zODIsNC4wNzYtOS40ODYsNi4wNzEtMTMuNDE2YzIuMDgxLTQuMSw0LjE4LTguMjEyLDYuNTUyLTEyLjE1MwpDNTUuOTQ1LDguNzkxLDU0Ljc3Niw4LjExMiw1NC4zMjcsOC44NThMNTQuMzI3LDguODU4eiIvPgo8cGF0aCBmaWxsPSIjMUM3NUJDIiBkPSJNNzMuMTA5LDUuMzc1Yy0xLjgxOCw0LjUxNi0zLjMxOSw5LjEzOC00Ljg3NiwxMy43NDhjLTEuNTQsNC41Ni0zLjAzNCwxMC42NzEtNi4zMjQsMTQuMzA3CmMwLjM4NSwwLjE1OSwwLjc2OSwwLjMxOSwxLjE1NCwwLjQ3OGMwLjA2OC00LjA2LDEuMjU3LTcuODE1LDIuMzc5LTExLjY3NGMtMC40MTIsMC4wNTQtMC44MjMsMC4xMDgtMS4yMzUsMC4xNjEKYzguNjgyLDEyLjMyMiwxNi40MzctNS44MDYsMTkuNTA5LTEyLjk3NWMtMC4zODktMC4yMjctMC43NzgtMC40NTUtMS4xNjctMC42ODJjLTQuMDI3LDkuNTExLTguMzExLDE4Ljg2NC0xMS4xMiwyOC44MzIKYy0wLjIzNywwLjg0MSwxLjA2NywxLjE5NywxLjMwMywwLjM1OWMyLjc3Ny05Ljg1Myw3LjAwMS0xOS4xMDUsMTAuOTgzLTI4LjUwOWMwLjMzNS0wLjc5Mi0wLjgyNC0xLjQ4My0xLjE2Ny0wLjY4MgpjLTIuNDEsNS42MjUtOS40ODgsMjMuODgzLTE3LjE3NCwxMi45NzVjLTAuMzI5LTAuNDY3LTEuMDYyLTAuNDM0LTEuMjM1LDAuMTYxYy0xLjE2LDMuOTkxLTIuMzU3LDcuODUzLTIuNDI3LDEyLjAzNApjLTAuMDEsMC41NzIsMC43NTUsMC45MTksMS4xNTQsMC40NzhjMi43MDMtMi45ODcsNC4wNjItNy43MjgsNS40Ni0xMS40NTljMi4xMzUtNS42OTcsMy44MTMtMTEuNTQ0LDYuMDg3LTE3LjE5MwpDNzQuNzM4LDQuOTI1LDczLjQzLDQuNTc3LDczLjEwOSw1LjM3NUw3My4xMDksNS4zNzV6Ii8+CjwvZz4KPC9zdmc+Cg==") no-repeat 0 0 / cover;
+}
+
+@media (min-width: 600px) {
+	.powered-by-google {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 650px) {
+	.reviews-table .id {
+		display: table-cell;
+	}
+}
+
+@media (min-width: 700px) {
+	.wrap.banner > h1::before {
+		position: absolute;
+		display: block;
+		content: '';
+		box-shadow: 0 0 0 2px rgba(0, 52, 120, 0.25);
+		margin: -19px 0 0 -18px;
+		left: 0;
+		right: 0;
+		height: 98px;
+		z-index: 30;
+		background: rgba(0, 52, 120, 0.25) url("data:image/svg+xml;charset=UTF-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJNb3RpZiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCndpZHRoPSI1MTJweCIgaGVpZ2h0PSIyMTlweCIgdmlld0JveD0iMCAwIDUxMiAyMTkiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiAyMTkiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KPGRlZnM+Cjxwb2x5Z29uIGlkPSJTVkdJRF8xXyIgcG9pbnRzPSIwLDAgNDA4LjU5MSwwIDUxMiwxMDQuMDk5IDUxMiwyMTkgMCwyMTkgCQkiLz4KPC9kZWZzPgo8Y2xpcFBhdGggaWQ9IlNWR0lEXzJfIj4KPHVzZSB4bGluazpocmVmPSIjU1ZHSURfMV8iICBvdmVyZmxvdz0idmlzaWJsZSIgb3BhY2l0eT0iMC43Ii8+CjwvY2xpcFBhdGg+Cjxwb2x5Z29uIG9wYWNpdHk9IjAuNyIgY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzJfKSIgZmlsbD0iIzY2QTlFNiIgcG9pbnRzPSI1NzUuNjQ1LDI0Mi4xMDEgNDUzLjUyOCwxOTYuOTA0IDM4MC4xOTEsOTEuMDU2IAo1MTEuMTEyLDEyOC43NDQgCSIvPgo8cG9seWdvbiBvcGFjaXR5PSIwLjciIGNsaXAtcGF0aD0idXJsKCNTVkdJRF8yXykiIGZpbGw9IiM1MDkyRDAiIHBvaW50cz0iNDQzLjU4MSwyMDQuMzQgMzIxLjQ2NSwxNTkuMTQzIDI0OC4xMjgsNTMuMjk0IAozNzkuMDQ5LDkwLjk4MyAJIi8+Cjxwb2x5Z29uIG9wYWNpdHk9IjAuNyIgY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzJfKSIgZmlsbD0iIzc0QjZGNCIgcG9pbnRzPSIzMTEuNTE4LDE2Ni41NzggMTg5LjQwMSwxMjEuMzgxIDExNi4wNjUsMTUuNTMzIAoyNDYuOTg2LDUzLjIyMiAJIi8+Cjxwb2x5Z29uIG9wYWNpdHk9IjAuNyIgY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzJfKSIgZmlsbD0iIzg3QzlGRiIgcG9pbnRzPSIxNzkuNDU1LDEyOC44MTcgNTcuMzM4LDgzLjYyIC0xNS45OTgsLTIyLjIyOCAKMTE0LjkyMywxNS40NiAJIi8+Cjxwb2x5Z29uIG9wYWNpdHk9IjAuNyIgY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzJfKSIgZmlsbD0iIzc3QjlGNiIgcG9pbnRzPSI1MTIuMjU0LDEyOC44MTcgMzkwLjEzNyw4My42MiAzMTYuODAxLC0yMi4yMjggCjQ0Ny43MjIsMTUuNDYgCSIvPgo8cG9seWdvbiBvcGFjaXR5PSIwLjciIGNsaXAtcGF0aD0idXJsKCNTVkdJRF8yXykiIGZpbGw9IiM3N0JBRjciIHBvaW50cz0iMzgwLjE5MSw5MS4wNTYgMjU4LjA3NCw0NS44NTkgMTg0LjczOCwtNTkuOTg5IAozMTUuNjU5LC0yMi4zMDEgCSIvPgo8cG9seWdvbiBvcGFjaXR5PSIwLjciIGNsaXAtcGF0aD0idXJsKCNTVkdJRF8yXykiIGZpbGw9IiM4NkM4RkYiIHBvaW50cz0iMjQ4LjEyOCw1My4yOTQgMTI2LjAxMSw4LjA5OCA1Mi42NzUsLTk3Ljc1MSAKMTgzLjU5NSwtNjAuMDYyIAkiLz4KPHBvbHlnb24gb3BhY2l0eT0iMC43IiBjbGlwLXBhdGg9InVybCgjU1ZHSURfMl8pIiBmaWxsPSIjNjNBNUUyIiBwb2ludHM9IjExNi4wNjUsMTUuNTMzIC02LjA1MiwtMjkuNjY0IC03OS4zODksLTEzNS41MTIgCjUxLjUzMiwtOTcuODI0IAkiLz4KPHJlY3QgeD0iMTc3IiB5PSI0MiIgb3BhY2l0eT0iMC43IiBjbGlwLXBhdGg9InVybCgjU1ZHSURfMl8pIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMzM1IiBoZWlnaHQ9IjYxIi8+CjwvZz4KPC9zdmc+Cg==") no-repeat right top / 276px;
+	}
+	.wrap #plugin-attribution {
+		right: 27px;
+	}
+	#wpbody-content > .error,
+	#wpbody-content > .warning,
+	#wpbody-content > .notice,
+	#wpbody-content > .update-nag,
+	.wrap.banner > .error,
+	.wrap.banner > .warning,
+	.wrap.banner > .notice,
+	.wrap.banner > .update-nag {
+		padding-right: 38px;
+		position: absolute;
+		right: 18px;
+		width: calc(100% - 74px);
+		top: 10px;
+		opacity: 0.9;
+		z-index: 50;
+	}
+	.wrap.banner > .error,
+	.wrap.banner > .warning,
+	.wrap.banner > .notice.notice-error,
+	#wpbody-content > .update-nag {
+		z-index: 51;
+	}
+	#google-business-reviews-rating-settings .nav-tab-wrapper {
+		border-bottom: 2px solid #6093ca;
+		margin: 0 -21px auto;
+		padding: 9px 16px 0;
+		position: relative;
+		right: 1px;
+		z-index: 40;
+	}
+	#google-business-reviews-rating-settings .nav-tab {
+		color: #10233a;
+		border-radius: 4px 4px 0 0;
+		border-top: 2px solid #6093ca;
+		border-right: 2px solid #6093ca;
+		border-left: 2px solid #6093ca;
+		background: #dae2e9;
+		transition: 0.3s background-color linear, 0.3s color linear;
+	}
+	#google-business-reviews-rating-settings .nav-tab:hover {
+		background: #E3EAF0;
+		border-top: 2px solid #7AA7D8;
+		border-right: 2px solid #7AA7D8;
+		border-left: 2px solid #7AA7D8;
+	}
+	#google-business-reviews-rating-settings .nav-tab:hover,
+	#google-business-reviews-rating-settings .nav-tab:focus {
+		box-shadow: none;
+		outline: none;
+	}
+	#google-business-reviews-rating-settings .nav-tab-active,
+	#google-business-reviews-rating-settings .nav-tab-active:focus,
+	#google-business-reviews-rating-settings .nav-tab-active:focus:active,
+	#google-business-reviews-rating-settings .nav-tab-active:hover {
+		color: #6093ca;
+		border-bottom: 2px solid #f1f1f1;
+		background: #f1f1f1;
+		border-bottom-width: 2px;
+		margin-bottom: -2px;
+	}
+	#google-business-reviews-rating-settings .nav-tab > .dashicons {
+		display: inline-block;
+	}
+	#google-business-reviews-rating-settings .nav-tab .count {
+		color: #fff;
+		background-color: #6093ca;
+		box-shadow: 0 0 0 1px #6093ca;
+		border-radius: 50%;
+		line-height: 130%;
+		width: 1.4em;
+		height: 1.4em;
+		position: relative;
+		font-size: 0.85em;
+		display: inline-block;
+		text-align: center;
+		overflow: hidden;
+		margin: -0.2em -0.1em -0.2em 0.1em;
+	}
+	#widgets-right .google-business-reviews-rating label {
+		width: 42%;
+		display: inline-block;
+		min-width: 12.5em;
+	}
+}
+
+@media (min-width: 783px) {
+	.wrap #plugin-attribution,
+	#google-business-reviews-rating-settings .input label {
+		display: inline-block;
+	}
+	#google-business-reviews-rating-settings .input label {
+		padding: 0;
+		margin: 0;
+	}
+	#google-business-reviews-rating-settings .input * + label {
+		margin-left: 0.5em;
+	}
+	#google-business-reviews-rating-settings #stylesheet {
+		margin: 0 0 0 1em;
+	}
+	.reviews-table tr > * {
+		min-width: 4em;
+		width: 6%;
+		max-width: 9em;
+	}
+	.reviews-table tr > .number,
+	.reviews-table tr > .language {
+		width: 3%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.reviews-table tr > .date {
+		width: 8%;
+	}
+	.reviews-table tr > .text {
+		width: 50%;
+		max-width: none;
+	}
+	.reviews-table tr > .text .text-wrap {
+		max-height: 8.2em;
+		overflow: auto;
+	}
+	.reviews-table .text {
+		display: table-cell;
+	}
+	#reviews-import-table {
+		display: table;
+	}
+	.reviews-table .check-column,
+	#html-import-output .check-column,
+	#html-import-output .id {
+		width: 2%;
+		text-align: center;
+		min-width: 2em;
+		max-width: 3em;
+	}
+	#html-import-output .id {
+		text-align: left;
+	}
+	#html-import-output .rating,
+	#html-import-output .relative-time-description {
+		width: 5%;
+		max-width: 9em;
+	}
+	#html-import-output .text {
+		width: 40%;
+	}
+	#widgets-right .google-business-reviews-rating select {
+		max-width: calc(98% - 15em);
+	}
+	#customize-theme-controls .google-business-reviews-rating select {
+		max-width: none;
+	}
+}
+
+@media (min-width: 1100px) {
+	#wpbody-content > .error,
+	#wpbody-content > .warning,
+	#wpbody-content > .notice,
+	#wpbody-content > .update-nag,
+	.wrap.banner > .error,
+	.wrap.banner > .warning,
+	.wrap.banner > .notice,
+	.wrap.banner > .update-nag {
+		top: 50px;
+		right: 8px;
+		max-width: calc(100% - 770px);
+		width: 60%;
+		min-width: 15em;
+	}
+	.reviews-table .language,
+	.reviews-table .place-id,
+	.reviews-table .retrieved,
+	.reviews-table .order {
+		display: table-cell;
+	}
+	#advanced .introduction,
+	#about {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#advanced .introduction .entry-content {
+		flex: 1 0 48%;
+		margin: 0 3% 0 0;
+	}
+	#advanced .introduction .entry-meta {
+		flex: 2 0 48%;
+		margin: 0;
+	}
+	#advanced .html-import,
+	#advanced .submit {
+		position: absolute;
+		top: 32em;
+		width: 48%;
+	}
+	#advanced.import-results .html-import,
+	#advanced.import-results .submit {
+		position: relative;
+		top: 0;
+		width: auto;
+	}
+	#advanced .submit {
+		top: 46em;
+	}
+	#html-import-figures {
+		min-height: 48em;
+	}
+	#advanced #google-business-reviews-rating-settings-custom-styles,
+	#advanced #google-business-reviews-rating-settings-cache,
+	#advanced #google-business-reviews-rating-settings-reset {
+		position: relative;
+	}
+	#advanced #google-business-reviews-rating-settings-custom-styles .submit,
+	#advanced #google-business-reviews-rating-settings-cache .submit,
+	#advanced #google-business-reviews-rating-settings-reset .submit {
+		top: auto;
+		position: relative;
+		width: auto;
+	}
+	#about .entry-content {
+		flex: 2 0 64%;
+		margin: 0 3% 0 0;
+	}
+	#about .entry-meta {
+		flex: 1 0 33%;
+		margin: 0;
+	}
+	#customize-theme-controls .google-business-reviews-rating label {
+		display: inline-block;
+		max-width: none;
+	}
+}
+
+@media (min-width: 1350px) {
+	#advanced .introduction .entry-content {
+		flex: 1 0 43%;
+	}
+	#advanced .introduction .entry-meta {
+		flex: 2 0 54%;
+	}
+	#advanced .html-import,
+	#advanced .submit {
+		width: 42%;
+	}
+	#advanced.import-results .html-import,
+	#advanced.import-results .submit {
+		width: auto;
+	}
+}
+
+@media (min-width: 1450px) {
+	#google-business-reviews-rating-setup {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: start;
+	}
+	#reviews-rating-preview-heading {
+		display: none;
+	}
+	#google-business-reviews-rating-setup > * {
+		flex: 2 0 100%;
+	}
+	#google-business-reviews-rating-setup > #reviews-rating-settings {
+		flex: 1 0 60%;
+		max-width: 950px;
+	}
+	#google-business-reviews-rating-setup > #reviews-rating-preview,
+	#google-business-reviews-rating-setup > #reviews-rating-preview.hide {
+		display: block;
+	}
+	#google-business-reviews-rating-setup > #reviews-rating-preview {
+		flex: 1 0 15%;
+		max-height: 50em;
+		overflow: auto;
+		margin: 0;
+	}
+}
+
+@media (min-width: 1600px) {
+	#advanced .introduction .entry-content {
+		flex: 1 0 38%;
+	}
+	#advanced .introduction .entry-meta {
+		flex: 2 0 59%;
+	}
+	#advanced .html-import,
+	#advanced .submit {
+		position: relative;
+		top: 0;
+		width: auto;
+	}
+	#html-import-figures {
+		min-height: 0;
+	}
+	#html-import-figures li {
+		flex: 1 0 32%;
+		margin: 0 0.5% 1rem;
+	}
+	#html-import-figures li:first-child {
+		margin-left: 0;
+	}
+	#html-import-figures li:last-child {
+		margin-right: 0;
+	}
+	#html-import-review-text {
+		width: inherit;
+		max-width: inherit;
+	}
+	#google-business-reviews-rating-setup > #reviews-rating-settings {
+		flex: 1 0 50%;
+		max-width: 1000px;
+	}
+	#google-business-reviews-rating-setup > #reviews-rating-preview {
+		flex: 1 0 20%;
+	}
+}
+
+@media (min-width: 2000px) {
+	#advanced .introduction .entry-content{
+		flex: 1 0 33%;
+	}
+	#advanced .introduction .entry-meta {
+		flex: 2 0 64%;
+	}
+	#customize-theme-controls .google-business-reviews-rating p:nth-child(3) label, 
+	#customize-theme-controls .google-business-reviews-rating p:nth-child(4) label, 
+	#customize-theme-controls .google-business-reviews-rating p:nth-child(5) label, 
+	#customize-theme-controls .google-business-reviews-rating p:nth-child(6) label, 
+	#customize-theme-controls .google-business-reviews-rating p:nth-child(7) label , 
+	#customize-theme-controls .google-business-reviews-rating p:nth-child(8) label{
+		width: 55%;
+		display: inline-block;
+		min-width: 12em;
+	}
+	#customize-theme-controls .google-business-reviews-rating input[type="number"].small-text {
+		min-width: 4em;
+		width: calc(38% - 6em);
+	}
+	#google-business-reviews-rating-setup > #reviews-rating-settings {
+		flex: 1 0 40%;
+	}
+	#google-business-reviews-rating-setup > #reviews-rating-preview {
+		flex: 1 0 40%;
+	}
+}

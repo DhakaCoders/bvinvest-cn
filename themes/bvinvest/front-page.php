@@ -650,7 +650,10 @@
           </span>
 
           <div class="hmTestimonialSlider dft-slider-pagi">
-            <?php dynamic_sidebar('dshop-widget'); ?>
+            <?php 
+            //dynamic_sidebar('dshop-widget'); 
+            echo do_shortcode('[reviews_rating review_item_order="text first" avatar="no" attribution="no" date="false" summary="no" icon="no" name="no" vicinity="no"]');
+            ?>
           </div>                  
         </div>    
       </div>  

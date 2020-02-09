@@ -164,8 +164,8 @@ $('.tab-btns-filter .tab-btns-filter-btn a.thisactive').on('click', function(e){
 /*
   Proshanto
 */
-if( $('.hmTestimonialSlider').length ){
-  $('.hmTestimonialSlider').slick({
+if( $('.hmTestimonialSlider0, .hmTestimonialSlider ul.listing').length ){
+  $('.hmTestimonialSlider, .hmTestimonialSlider ul.listing').slick({
     pauseOnHover: false,
     autoplay: false,
     dots: false,
