@@ -652,7 +652,8 @@
           <div class="hmTestimonialSlider dft-slider-pagi">
             <?php 
             //dynamic_sidebar('dshop-widget'); 
-            echo do_shortcode('[reviews_rating review_item_order="text first" avatar="no" attribution="no" date="false" summary="no" icon="no" name="no" vicinity="no"]');
+            echo do_shortcode('[reviews_rating review_item_order="text first" avatar="no" attribution="no" date="false" summary="no" icon="no" name="no" vicinity="no" 
+              html_tags="h3, h3, h3, div, div"]');
             ?>
           </div>                  
         </div>    

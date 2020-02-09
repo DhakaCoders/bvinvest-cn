@@ -742,10 +742,7 @@ ul.testimonial-ratings li i{
   color: #15B615;
 }
 
-
-
-
-.hmTestimonialSlider ul.listing li{
+.hmTestimonialSlider div.listing  div.no-avatar{
   display: flex;
   flex-direction: column;
   padding: 57px 15px 60px 85px;
@@ -758,7 +755,7 @@ ul.testimonial-ratings li i{
 .rating{
   order: 2;
 }
-.hmTestimonialSlider ul.listing li .text {
+.hmTestimonialSlider div.listing  div.no-avatar .text {
     font-style: italic;
     font-weight: 300;
     font-size: 26px;
@@ -769,7 +766,7 @@ ul.testimonial-ratings li i{
     padding-top: 85px;
     position: relative;
 }
-.hmTestimonialSlider ul.listing li .text:before{
+.hmTestimonialSlider div.listing  div.no-avatar .text:before{
   content: "";
   position: absolute;
   background: url(../images/testimonial-icon.svg) no-repeat;
@@ -778,44 +775,40 @@ ul.testimonial-ratings li i{
   left: 0;
   top: 0;
 }
-.hmTestimonialSlider ul.listing li .text br{
+.hmTestimonialSlider div.listing  div.no-avatar .text br{
   display: none;
 }
-.hmTestimonialSlider ul.listing li .rating {
+.hmTestimonialSlider div.listing  div.no-avatar .rating {
     font-size: 35px!important;
     color: #FFC107!important;
         margin-left: -3px!important;
         margin-bottom: 14px!important;
 }
-.hmTestimonialSlider ul.listing li .author-name {
+.hmTestimonialSlider div.listing  div.no-avatar .author-name {
     display: block;
     padding-right: 80px;
 }
-.hmTestimonialSlider ul.listing li .author-name a{
+.hmTestimonialSlider div.listing  div.no-avatar .author-name a{
     line-height: 36px;
     letter-spacing: 0.02em;
     font-weight: 500;  
     color: #656565;
     font-size: 18px;
 }
-.hmTestimonialSlider ul.listing li{
+.hmTestimonialSlider div.listing  div.no-avatar{
   display: none;
 }
-.hmTestimonialSlider ul.listing li:first-child,
-.hmTestimonialSlider ul.listing.slick-initialized li{
+.hmTestimonialSlider div.listing  div.no-avatar:first-child,
+.hmTestimonialSlider div.listing.slick-initialized div.no-avatar{
   display: flex;
 }
 .hmTestimonialSlider-wrap-innr > span{
   display: none;
 }
 
-
-
-
-
-
-
-
+.hmTestimonialSlider-wrap-innr .google-business-reviews-rating .listing li{
+  margin: 0 5px!important;
+}
 @media(max-width: 1599px){
   .bw-invest-img {
     padding: 55px 0 55px 45px;
@@ -1042,6 +1035,21 @@ ul.testimonial-ratings li i{
   }
   .hmTestimonialSlider strong {
     padding-right: 0;
+  }
+  .hmTestimonialSlider div.listing  div.no-avatar{
+      padding: 45px 15px 107px;
+      text-align: center;
+  }
+  .hmTestimonialSlider div.listing  div.no-avatar .text:before{
+    left: 50%;
+    margin-left: -35px;    
+  }
+  .hmTestimonialSlider div.listing  div.no-avatar .author-name{
+    padding-right: 0;
+  }
+  .hmTestimonialSlider div.listing  div.no-avatar .rating{
+    margin-left: 0!important;
+    margin-right: 0!important;
   }
 }
 
