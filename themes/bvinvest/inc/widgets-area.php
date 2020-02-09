@@ -2,9 +2,9 @@
 
 function deploy_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar Widget', 'demula' ),
-		'id'            => 'dshop-widget',
-		'description'   => __( 'Add widgets here to appear in your shop page.', 'demula' ),
+		'name'          => __( 'Testimonial Widget', 'demula' ),
+		'id'            => 'testimonial-widget',
+		'description'   => __( 'Add widgets here to appear in your testimonial.', 'demula' ),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '<span>',

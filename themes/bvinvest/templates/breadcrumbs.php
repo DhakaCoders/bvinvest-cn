@@ -14,7 +14,7 @@
             <?php cbv_breadcrumbs(); ?>
           </div>
           <div class="bradecumb-btn">
-            <a href="#">
+            <a href="javascript: window.history.go(-1)">
               <i>  
                 <svg class="bradecumb-ary-svg" width="18" height="14" viewBox="0 0 18 14" fill="#fff">
                   <use xlink:href="#bradecumb-ary-svg"></use>
