@@ -240,7 +240,9 @@ Gallery design
 	clear: left;
 }
 
-
+.bvi-grd-key img {
+    display: inline-block;
+}
 /*table*/
 
 .dfp-tbl-wrap{

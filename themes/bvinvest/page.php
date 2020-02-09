@@ -58,19 +58,20 @@ while ( have_posts() ) :
                 endforeach;
               echo "</div></div>";
               endif;      
-            }elseif( get_row_layout() == 'usps' ){
-              $fc_usps = get_sub_field('fc_usps');
-              echo "<div class='dft-img-title-grd-controller clearfix dftImgTitleGrdSlider'>";
-                foreach( $fc_usps as $usp ):
-                  echo "<div class='dft-img-title-grd-col'><div class='dft-img-title-grd-col-inner'>";
-                    echo "<span>";
-                    echo wp_get_attachment_image( $usp['icon'] );
-                    echo "</span>";
-                    printf('<div><h5>%s</h5>', $usp['titel']);
-                    if( !empty( $usp['beschrijving'] ) ) echo wpautop($usp['beschrijving']).'</div>';
+            }elseif( get_row_layout() == 'countdown' ){
+              $fc_counts = get_sub_field('fc_countdown');
+              echo "<div class='dfp-progress-area-ctlr'><div class='dfp-progress-area-slider dfpProgressAreaSlider'>";
+              $i = 1;
+                foreach( $fc_counts as $fccount ):
+                  echo "<div class='dfp-progress-area-slide-item'><div class='pregress-counter-col'><div class='circle".$i." bv-progress-bar center'>";
+                    echo '<span class="number">'.$fccount['aantal'].'</span>';
+                    echo "<canvas data-percent='".$fccount['percentage']."' class='bar' width='200' height='200'></canvas>";
+                    echo "</div>";
+                    echo '<span class="label">'.$fccount['titel'].'</span>';
                   echo "</div></div>";
+                  $i++;
                 endforeach;
-              echo "</div>";
+              echo "</div></div>";
             }elseif( get_row_layout() == 'quote' ){
           echo '<div class="dfp-testi-cntlr"><div class="hmTestimonialSlider-wrap">
               <span class="testimonialLeftArrow">
@@ -94,13 +95,29 @@ while ( have_posts() ) :
                       </svg>
                     </i>';
                     if( !empty( $fcquote['fc_quote'] ) ) echo wpautop($fcquote['fc_quote']);
-                    echo '<ul class="ulc clearfix testimonial-ratings">
+                    echo '<ul class="ulc clearfix testimonial-ratings">';
+                      if($fcquote['select_review_number'] == 1):
+                      echo '<li><i class="fa fa-star"></i></li>';
+                      elseif($fcquote['select_review_number'] ==2):
+                      echo '<li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>';
+                      elseif($fcquote['select_review_number'] == 3):
+                      echo '<li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>';
+                      elseif($fcquote['select_review_number'] == 4):
+                      echo '<li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>';
+                      elseif($fcquote['select_review_number'] == 5):
+                      echo '<li><i class="fa fa-star"></i></li>
                       <li><i class="fa fa-star"></i></li>
                       <li><i class="fa fa-star"></i></li>
                       <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                    </ul>';
+                      <li><i class="fa fa-star"></i></li>';
+                      endif;
+                    echo '</ul>';
                    if( !empty( $fcquote['naam'] ) ) printf('<strong>%s<span>- %s</span></strong>', $fcquote['naam'], $fcquote['subtitel']);
                    echo '</div>';
                   endforeach;
@@ -120,38 +137,63 @@ while ( have_posts() ) :
               cbv_table($fc_table);
             }elseif( get_row_layout() == 'product' ){
               $fc_product = get_sub_field('fc_product');
-              $memQuery = new WP_Query(array(
-                'post_type' => 'product',
-                'posts_per_page'=> -1,
-                'post__in' => $fc_product
-              ));
-              if( $memQuery->have_posts() ):
-                echo '<div class="dft-2grd-img-content clearfix"><div class="dft2grdImgConSlider">';
-                        while($memQuery->have_posts()): $memQuery->the_post();
-                        $gridImage = get_post_thumbnail_id(get_the_ID());
-                        if(!empty($gridImage)){
-                          $pimgScr = cbv_get_image_src($gridImage, 'pgprodgrid');
-                        }else{
-                          $pimgScr = '';
-                        }  
-                        $term_obj_list = get_the_terms( get_the_ID(), 'product_cat' );
-                        echo '<div class="dft-2grd-img-con-item-col">';
-                        echo '<div class="dft-img-col-hover-scale">
-                          <a class="overlay-link" href="'.get_the_permalink().'"></a>';
-                        echo '<div class="dft-2grd-img-con-item-img" style="background-image: url('.$pimgScr.');"></div></div>';
-                        echo '<div class="dft-2grd-img-con-item-des">';
-                        if ( $term_obj_list && ! is_wp_error( $term_obj_list ) ) : 
-                          printf('<strong>%s</strong>', join(', ', wp_list_pluck($term_obj_list, 'name')));
-                        endif;
-                        printf('<h4><a href="%s">%s</a></h4>', get_the_permalink(), get_the_title());
-                        echo wpautop( get_the_excerpt(), true );;
-                        echo '<a href="'.get_the_permalink().'">More Info <em><img src="'.THEME_URI.'/assets/images/list-icon.svg"></em></a>';
-                        echo '</div>';
-                        echo '</div>';
-                    endwhile;
+              if( $fc_product ):
+                $pgridsrc = $pgridicon = $infopicon = '';
+                echo '<div class="dfp-grd-slider-ctlr"><div class="dfp-grd-slider dfpGrdSlider">';
+                  $i = 1;
+                  foreach ($fc_product as $key => $product) {
+                    $knop1 = $product['knop'];
+                    $plink = 'javascript:void();';
+                    $addclass = ' green';
+                    if( $i == 2 ) $addclass = ' sky'; 
+                    if( is_array( $knop1 ) &&  !empty( $knop1['url'] ) ){
+                      $plink = $knop1['url'];
+                    } 
+                    if(!empty($product['afbeelding'])) $pgridsrc = cbv_get_image_src($product['afbeelding'], 'historiek');
 
-                echo '</div></div> <div class="dft-2grd-img-content-separetor"></div>';
-              endif; wp_reset_postdata();
+                    if(!empty($product['icon'])) $pgridicon = cbv_get_image_tag($product['icon']);
+                    $pinfo = $product['product_info'];
+                    echo '<div class="dfp-grd-slide-item'.$addclass.'"><div class="bvi-grd-item">';
+                    echo '<div class="bvi-grd-item-img-ctlr">';
+                    echo '<a href="'.$plink.'" class="overlay-link"></a>';
+                    echo '<div class="bvi-grd-item-img" style="background: url('.$pgridsrc.');"></div>';
+                    echo '<div class="bvi-grid-key-info-ctlr">
+                    <div class="bvi-grd-icon"></div>
+                    <div class="bvi-grd-key-date clearfix">
+                      <div class="bvi-grd-key">
+                        <i>'.$pgridicon.'</i>
+                        <span>'.$product['icon_titel'].'</span>
+                      </div>
+                    </div> 
+                    </div>';
+                    echo '</div>';
+
+                    echo '<div class="mHc bvi-grd-item-des">
+                  <strong>€ '.$product['prijs'].'</strong>
+                  <h5><a href="'.$plink.'">'.$product['titel'].'</a></h5>
+                  <div class="bvi-grd-item-feature clearfix">';
+                    if($pinfo):
+                      foreach ($pinfo as $key => $infop) {
+                        if(!empty($infop['icon'])) $infopicon = cbv_get_image_tag($infop['icon']);
+                      echo '<div class="bvi-grd-item-feature-item">
+                        <i>'.$infopicon.'</i>
+                        <span>'.$infop['titel'].'</span>
+                      </div>';
+                      }
+                    endif;
+                  echo '</div>';
+
+                  if( is_array( $knop1 ) &&  !empty( $knop1['url'] ) ){
+                    printf('<div class="bvi-grd-item-des-link"><a href="%s" target="%s">%s</a></div>', $knop1['url'], $knop1['target'], $knop1['title']); 
+                  }
+
+
+                  echo '</div></div></div>';
+                  $i++;
+                  }
+
+                echo '</div></div>';
+              endif;
             }elseif( get_row_layout() == 'afbeelding' ){
               $fc_afbeelding = get_sub_field('fc_afbeelding');
               if( !empty( $fc_afbeelding ) ){
