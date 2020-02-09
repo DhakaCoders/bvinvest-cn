@@ -650,7 +650,7 @@
           </span>
 
           <div class="hmTestimonialSlider dft-slider-pagi">
-            <?php dynamic_sidebar('dshop-widget'); ?>
+            <?php dynamic_sidebar('testimonial-widget'); ?>
           </div>                  
         </div>    
       </div>  

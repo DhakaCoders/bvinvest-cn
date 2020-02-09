@@ -28,6 +28,7 @@ if( !function_exists('cbv_theme_setup') ){
         add_image_size( 'overonsgallery2', 224, 348, true );
         add_image_size( 'hintro', 504, 600, true );
         add_image_size( 'hreview', 534, 548, true );
+        add_image_size( 'ontactsidebar', 362, 490, true );
 
 		
 		// add size to media uploader

@@ -5,42 +5,29 @@
 get_header(); 
 $thisID = get_the_ID();
 ?>
-<section class="bradecumb-sec-wrp">
-  <div class="container-lg">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="bradecumb-inr clearfix">
-          <div class="bradecumb">
-            <a href="#">
-              <i>  
-                <svg class="home-bradecumb-svg" width="25" height="25" viewBox="0 0 25 25" fill="#fff">
-                  <use xlink:href="#home-bradecumb-svg"></use>
-                </svg>
-              </i>
-            </a>
-            <ul class="clearfix">          
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Binnenpagina</a></li>
-              <li><a href="#">Binnenpagina</a></li>
-            </ul>
-          </div>
-          <div class="bradecumb-btn">
-            <a href="#">
-              <i>  
-                <svg class="bradecumb-ary-svg" width="18" height="14" viewBox="0 0 18 14" fill="#fff">
-                  <use xlink:href="#bradecumb-ary-svg"></use>
-                </svg>
-              </i>
-            Terug</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('templates/breadcrumbs'); ?>
+<?php
+  $gwform = get_field('gwform', $thisID);
+  $afbeelding = get_field('afbeelding', $thisID);
+  $spacialArry = array(".", "/", "+", " ");$replaceArray = '';
+  $adres = get_field('address', 'options');
+  $gmapsurl = get_field('google_maps', 'options');
+  $email = get_field('emailaddress', 'options');
+  $fttelephone = get_field('telephone', 'options');
+  $show_telefoon = $fttelephone['ftelephone'];
+  $telefoon = trim(str_replace($spacialArry, $replaceArray, $show_telefoon));
+  $gmaplink = !empty($gmapsurl)?$gmapsurl: 'javascript:void()';
+  $bwt = get_field('bwt', 'options');
+  $smedias = get_field('sociale_media', 'options');
+  $google_map = get_field('gmap', $thisID);
 
 
-
+  $sidebarimg = $sidebartag ='';
+  if(!empty($afbeelding)){
+    $sidebarimg = cbv_get_image_src($afbeelding, 'ontactsidebar');
+    $sidebartag = cbv_get_image_tag($afbeelding, 'ontactsidebar');
+  }
+?>
 <section class="contact-form-sec-wrp">
   <div class="container">
     <div class="row">
@@ -48,47 +35,43 @@ $thisID = get_the_ID();
         <div class="contact-form-inr clearfix">
           <div class="contact-form-rgt clearfix">
             <div class="contact-form-dsc">
-              <h1>Contact</h1>
-              <p>Bel ons op <strong>053 70 00 02,</strong> stuur een e-mail naar <a href="mailto:info@bvinvest.be"> info@bvinvest.be </a>of vul onderstaand contactformulier in!</p>
+              <?php 
+                if( !empty( $gwform['titel'] ) ) printf( '<h1>%s</h1>', $gwform['titel']); 
+                if( !empty( $gwform['beschrijving'] ) ) echo wpautop( $gwform['beschrijving'], true ); 
+              ?>
             </div>
             <div class="contact-form-wrp clearfix" id="contact-wpform">
               <div class="wpforms-container">
-                <?php echo do_shortcode('[wpforms id="166" title="false" description="false"]'); ?>
+              <?php if( !empty( $gwform['shortcode'] ) ) echo do_shortcode( $gwform['shortcode'] ); ?>
               </div>
             </div>
           </div>
+
           <div class="contact-form-lft">
             <div class="contact-form-info">
-              <span>E-mail: <a href="mailto:info@bvinvest.be">info@bvinvest.be</a></span>
-              <span>Tel: <a href="tel:053/700002">053/700002</a></span>
-              <span>BTW: <strong>BE0817951807</strong></span>
+              <?php if( !empty($email) ) printf('<span>E-mail: <a href="mailto:%s">%s</a></span>', $email, $email); ?>
+              <?php if( !empty($show_telefoon) ) printf('<span>Tel: <a href="tel:%s">%s</a></span>', $telefoon, $show_telefoon); ?>
+              <?php if( !empty($bwt) ) printf('<span>BTW: <strong>%s</strong></span>', $bwt); ?>
               <div class="contact-socail">
-                <a href="#">
-                    <i>  
-                      <svg class="ftr-fb-icon-svg" width="14" height="22" viewBox="0 0 14 22" fill="#7B7B7B">
-                        <use xlink:href="#ftr-fb-icon-svg"></use>
-                      </svg>
-                    </i>
+                <?php if($smedias): ?>
+                  <?php foreach($smedias as $smedia): ?>
+                  <a target="_blank" href="<?php echo $smedia['url']; ?>">
+                    <?php echo $smedia['icon']; ?>
                   </a>
-                  <a href="#">
-                    <i>  
-                      <svg class="ftr-ins-icon-svg" width="22" height="22" viewBox="0 0 22 22" fill="#7B7B7B">
-                        <use xlink:href="#ftr-ins-icon-svg"></use>
-                      </svg>
-                    </i>
-                  </a>
+                  <?php endforeach; ?>
+                <?php endif; ?>
               </div>
             </div>
             <div class="contact-map-location">
               <i>
                 <img src="<?php echo THEME_URI; ?>/assets/images/contact-map-icon.png">
               </i>
-              <h6>B&V Invest bvba</h6>
-              <span>eizersplein 21 <br> 9300 Aalst</span>
-              <a href="#">Routebeschrijving</a>
+              <?php _e('<h6>B&V Invest bvba</h6>', THEME_NAME);?>
+              <?php if( !empty( $adres ) ) printf('<span>%s</span>', $adres);  ?>
+              <a href="<?php echo $gmaplink; ?>">Routebeschrijving</a>
             </div>
-            <div class="contact-lft-img" style="background:url(<?php echo THEME_URI; ?>/assets/images/contact-lft-img.png);">
-              <img src="<?php echo THEME_URI; ?>/assets/images/contact-lft-img.png">
+            <div class="contact-lft-img" style="background:url(<?php echo $sidebarimg; ?>);">
+              <?php echo $sidebartag; ?>
             </div>
           </div>
         </div>
@@ -97,8 +80,9 @@ $thisID = get_the_ID();
   </div>    
 </section>
 
-
+<?php if( !empty($google_map) && $google_map):?>
 <section class="contact-google-map-wrp">
-  <div data-marker="<?php echo THEME_URI; ?>/assets/images/map-marker.png" id="googlemap" data-latitude="38.03898" data-longitude="23.804699"></div>
+  <div data-marker="<?php echo THEME_URI; ?>/assets/images/map-marker.png" id="googlemap" data-latitude="<?php echo $google_map['lat']; ?>" data-longitude="<?php echo $google_map['lng']; ?>"></div>
 </section>
+<?php endif; ?>
 <?php get_footer(); ?>

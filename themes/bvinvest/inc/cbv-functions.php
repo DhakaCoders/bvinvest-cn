@@ -97,3 +97,39 @@ function pcategory_dropdown(){
 
  echo wp_dropdown_categories( $args );
 }
+
+
+function cbv_table( $table){
+  if ( ! empty ( $table ) ) {
+    echo '<div class="dfp-tbl-wrap">
+    <div class="table-dsc" data-aos="fade-up" data-aos-delay="200">
+    <table>';
+    if ( ! empty( $table['caption'] ) ) {
+      echo '<caption>' . $table['caption'] . '</caption>';
+    }
+    if ( ! empty( $table['header'] ) ) {
+      echo "<thead>";
+      echo '<tr>';
+      foreach ( $table['header'] as $th ) {
+        echo '<th>';
+        echo $th['c'];
+        echo '</th>';
+      }
+      echo '</tr>';
+      echo '</thead>';
+    }
+    echo '<tbody>';
+    foreach ( $table['body'] as $tr ) {
+      echo '<tr>';
+      foreach ( $tr as $td ) {
+        echo '<td>';
+        echo $td['c'];
+        echo '</td>';
+      }
+      echo '</tr>';
+    }
+    echo '</tbody>';
+    echo '</table></div>';
+    echo '</div>';
+  }  
+}

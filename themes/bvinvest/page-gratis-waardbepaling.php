@@ -26,9 +26,7 @@ $gwform = get_field('gwform', $thisID);
             </div>
             <div class="contact-form-wrp gw-form-wrp clearfix" id="contact-wpform">
               <div class="wpforms-container">
-              <?php 
-                if( !empty( $gwform['shortcode'] ) ) echo do_shortcode( $gwform['shortcode'] ); 
-              ?>
+              <?php if( !empty( $gwform['shortcode'] ) ) echo do_shortcode( $gwform['shortcode'] ); ?>
               </div>
             </div>
           </div>
