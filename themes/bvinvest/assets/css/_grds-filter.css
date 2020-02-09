@@ -32,28 +32,29 @@ body #prmap .gm-style .gm-style-iw-c {
     font-weight: 300;
     font-size: 18px;
     line-height: 20px;
-    color: #323232;
+    color: #282828;
     padding: 5px 0 8px;
     display: block;
 }
 .kImmoinfoWindow span.kiipprice {
     font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
-    color: #A99E81;
-    padding-bottom: 25px;
+    font-weight: normal;
+    font-size: 17px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #16b616;
+    padding-bottom: 20px;
     display: block;
+    padding-top: 10px;
 }
-
 .kImmoinfoWindow a {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    color: #242424;
-    border-bottom: 2px solid #242424;
+    color: #282828;
+    border-bottom: 2px solid #282828;
     padding-bottom: 3px;
     display: inline-block;
     vertical-align: baseline;
@@ -77,9 +78,12 @@ body #prmap .gm-style .gm-style-iw-t::before {
     top: -2px;
     transform: translate(-50%,-50%) rotate(-45deg);
 }
-.gm-ui-hover-effect{
-	padding-right: 20px!important;
-	padding-top: 10px!important;
+.gm-ui-hover-effect {
+    padding-right: 20px!important;
+    padding-top: 1px!important;
+    top: 0!important;
+    right: 0!important;
+    padding-left: 0!important;
 }
 .kiiwicon{
 	display: block;
@@ -134,7 +138,8 @@ body #prmap .gm-style .gm-style-iw-t::before {
 .tab-btns-filter-btn{
 	padding-right: 10px;
 }
-.tab-btns-filter button{
+.tab-btns-filter button,
+.tab-btns-filter a{
 	cursor: pointer;
 	min-width: 185px;
 	height: 56px;
@@ -174,20 +179,75 @@ body #prmap .gm-style .gm-style-iw-t::before {
 .tab-btns-bar-ctlr{
 	padding-bottom: 35px;
 }
-.tab-btns-filter-btn button:hover{
+.tab-btns-filter-btn button.btn-tekoop:hover,
+.tab-btns-filter-btn a.btn-tekoop:hover{
 	border-color: #15B615;
 }
-.tab-btns-filter-btn button.mixitup-control-active{
+.tab-btns-filter-btn button.btn-tekoop.mixitup-control-active,
+.tab-btns-filter-btn a.btn-tekoop.thisactive{
 	border-color: #15B615;
 	opacity: 1!important;
 }
-.tab-btns-filter-btn button.mixitup-control-active i{
+.tab-btns-filter-btn button.btn-tekoop.mixitup-control-active i,
+.tab-btns-filter-btn a.btn-tekoop.thisactive i,
+.tab-btns-filter-btn a.btn-tekoop i{
 	background: #15B615!important;
 }
-.tab-btns-filter-btn button.mixitup-control-active span{
+.tab-btns-filter-btn button.btn-tekoop.mixitup-control-active span,
+.tab-btns-filter-btn a.btn-tekoop.thisactive span,
+.tab-btns-filter-btn a.btn-tekoop span{
 	color: #15B615;
 }
 
+.tab-btns-filter-btn button.btn-verkocht:hover,
+.tab-btns-filter-btn a.btn-verkocht:hover{
+	border-color: #FA9014;
+}
+.tab-btns-filter-btn button.btn-verkocht.mixitup-control-active,
+.tab-btns-filter-btn a.btn-verkocht.thisactive{
+	border-color: #FA9014;
+	opacity: 1!important;
+}
+.tab-btns-filter-btn button.btn-verkocht.mixitup-control-active i,
+.tab-btns-filter-btn a.btn-verkocht.thisactive i{
+	background: #FA9014!important;
+}
+.tab-btns-filter-btn button.btn-verkocht.mixitup-control-active span,
+.tab-btns-filter-btn a.btn-verkocht.thisactive span,
+.tab-btns-filter-btn a.btn-verkocht{
+	color: #FA9014;
+}
+
+.tab-btns-filter-btn button.btn-tehuur:hover,
+.tab-btns-filter-btn a.btn-tehuur:hover{
+	border-color: #14A7FA;
+}
+.tab-btns-filter-btn button.btn-tehuur.mixitup-control-active,
+.tab-btns-filter-btn a.btn-tehuur.thisactive{
+	border-color: #14A7FA;
+	opacity: 1!important;
+}
+.tab-btns-filter-btn button.btn-tehuur.mixitup-control-active i,
+.tab-btns-filter-btn a.btn-tehuur.thisactive i{
+	background: #14A7FA!important;
+}
+.tab-btns-filter-btn button.btn-tehuur.mixitup-control-active span,
+.tab-btns-filter-btn a.btn-tehuur.thisactive span,
+.tab-btns-filter-btn a.btn-tehuur{
+	color: #14A7FA;
+}
+.tab-btns-filter-btn a.btn-verkocht i{
+	background: #FA9014!important;
+}
+.tab-btns-filter-btn a.btn-verkocht span{
+	color: #FA9014;
+}
+.tab-btns-filter-btn a.btn-tehuur i{
+	background: #14A7FA!important;
+}
+.tab-btns-filter-btn a.btn-tehuur span{
+	color: #14A7FA;
+}
 .tab-btns-filter{
 	float: left;
 }
@@ -212,12 +272,22 @@ body #prmap .gm-style .gm-style-iw-t::before {
 	border: 0;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-	color: #282828;
+	color: #282828!important;
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: 500;
+	padding-right: 0!important;
+	padding-left: 7px!important;
 }
-
+.tab-btns-bar-rgt-select button.btn-light:focus{
+	box-shadow: initial!important;
+}
+.tab-btns-bar-rgt-select .show>.btn-light.dropdown-toggle,
+.tab-btns-bar-rgt-select .btn-light:not(:disabled):not(.disabled):active{
+    color: #282828;
+    background-color: transparent;
+    border-color: transparent;
+}
 .tab-btns-bar-rgt-select .dropdown-toggle::after {
     content: "";
     border: 0!important;
@@ -228,6 +298,10 @@ body #prmap .gm-style .gm-style-iw-t::before {
     height: 9px;
     position: relative;
     top: 3px;
+}
+.tab-btns-bar-rgt-select .dropdown.show .dropdown-toggle::after {
+    background-repeat: no-repeat;
+    background-image: url(../images/select-dropdown-icon-up.png);
 }
 .tab-btns-bar-rgt-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: 245px;
@@ -496,6 +570,62 @@ body #prmap .gm-style .gm-style-iw-t::before {
 	.tab-btns-bar-rgt-select label{
 		width: 100%;
 		display: block;
+	}
+	.tab-btns-filter{
+		width: 100%;
+		height: 66px;
+		position: relative;
+		overflow: hidden;
+		padding-top: 66px;
+	}
+	.tab-btns-filter .tab-btns-filter-btn{
+		width: 100%;
+		display: initial;
+		float: none;
+		padding: 0;
+	}
+	.tab-btns-filter .tab-btns-filter-btn a{
+		width: 100%;
+		outline: 0!important;
+		position: relative;
+		margin: 5px 0;
+	}
+	.tab-btns-filter .tab-btns-filter-btn a.thisactive {
+	    height: 56px;
+	    opacity: 1;
+	    visibility: visible;
+	    text-align: left;
+	    display: flex;
+	    justify-content: start;
+	    padding-left: 30px;
+	    position: absolute;
+	    left: 0
+	    right: 0;
+	    top: 5px;
+	}
+	.tab-btns-filter .tab-btns-filter-btn a.thisactive:after {
+	    content: "";
+	    border: 0!important;
+	    background-repeat: no-repeat;
+	    background-image: url(../images/down-xs-arrow-green.png);
+	    background-size: 100% 100%;
+	    width: 16px;
+	    height: 10px;
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	    right: 25px;
+	}
+	.tab-btns-filter.showtoggle{
+		height: 190px;
+	}
+	.tab-btns-filter.showtoggle .tab-btns-filter-btn a{
+		height: 56px;
+	    visibility: visible;
+	    opacity: 1;		
+	    margin: 5px 0;
 	}
 }
 

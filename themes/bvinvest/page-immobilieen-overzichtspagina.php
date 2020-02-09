@@ -5,6 +5,7 @@
 get_header(); 
 $thisID = get_the_ID();
 ?>
+
 <section class="bradecumb-sec-wrp">
   <div class="container-lg">
     <div class="row">
@@ -12,25 +13,18 @@ $thisID = get_the_ID();
         <div class="bradecumb-inr clearfix">
           <div class="bradecumb">
             <a href="#">
-              <i>  
-                <svg class="home-bradecumb-svg" width="25" height="25" viewBox="0 0 25 25" fill="#fff">
-                  <use xlink:href="#home-bradecumb-svg"></use>
-                </svg>
-              </i>
+              <i><svg class="home-bradecumb-svg" width="25" height="25" viewBox="0 0 25 25" fill="#fff">
+                  <use xlink:href="#home-bradecumb-svg"></use></svg></i>
             </a>
             <ul class="clearfix">          
               <li><a href="#">Home</a></li>
-              <li><a href="#">Binnenpagina</a></li>
-              <li><a href="#">Binnenpagina</a></li>
+              <li><a href="#">Kijkdagen</a></li>
             </ul>
           </div>
           <div class="bradecumb-btn">
             <a href="#">
-              <i>  
-                <svg class="bradecumb-ary-svg" width="18" height="14" viewBox="0 0 18 14" fill="#fff">
-                  <use xlink:href="#bradecumb-ary-svg"></use>
-                </svg>
-              </i>
+              <i><svg class="bradecumb-ary-svg" width="18" height="14" viewBox="0 0 18 14" fill="#fff">
+                  <use xlink:href="#bradecumb-ary-svg"></use></svg></i>
             Terug</a>
           </div>
         </div>
@@ -55,8 +49,7 @@ $thisID = get_the_ID();
                 <ul class="clearfix ulc">
                   <li>
                     <div>
-                      <select class="selectpicker" data-size="3">
-                        <option value="*">type</option>
+                      <select class="selectpicker" data-size="6" data-max-options="1" title="Type" multiple>
                         <option value="type1">Option 1</option>
                         <option value="type2">Option 2</option>
                         <option value="type3">Option 3</option>
@@ -67,8 +60,7 @@ $thisID = get_the_ID();
                   </li>
                   <li>
                     <div>
-                      <select class="selectpicker" data-size="3">
-                        <option value="*">Land</option>
+                      <select class="selectpicker" data-size="6" data-max-options="1" title="Land" multiple>
                         <option value="type1">Option 1</option>
                         <option value="type2">Option 2</option>
                         <option value="type3">Option 3</option>
@@ -85,8 +77,7 @@ $thisID = get_the_ID();
                   </li> -->
                   <li>
                     <div>
-                      <select class="selectpicker" data-size="3">
-                        <option value="*">Gemeente</option>
+                      <select class="selectpicker" data-size="6" data-max-options="1" title="Gemeente" multiple>
                         <option value="type1">Option 1</option>
                         <option value="type2">Option 2</option>
                         <option value="type3">Option 3</option>
@@ -97,8 +88,7 @@ $thisID = get_the_ID();
                   </li>
                   <li>
                     <div>
-                      <select class="selectpicker" data-size="3">
-                        <option value="*">Prijsklasse</option>
+                      <select class="selectpicker" data-size="6" data-max-options="1" title="Prijsklasse" multiple>
                         <option value="type1">Option 1</option>
                         <option value="type2">Option 2</option>
                         <option value="type3">Option 3</option>
@@ -111,11 +101,8 @@ $thisID = get_the_ID();
                     <div class="submit">
                       <button type="submit">
                         <span>zoeken 
-                        <i>  
-                          <svg class="banner-seach-icon-svg" width="23" height="23" viewBox="0 0 23 23" fill="white">
-                            <use xlink:href="#banner-seach-icon-svg"></use>
-                          </svg>
-                        </i>
+                        <i><svg class="banner-seach-icon-svg" width="23" height="23" viewBox="0 0 23 23" fill="white"><use xlink:href="#banner-seach-icon-svg"></use>
+                          </svg></i>
                       </span>
                       </button>
                     </div>
@@ -123,7 +110,7 @@ $thisID = get_the_ID();
                 </ul>
               </div>
             </div>
-          </form>
+          </form> 
         </div>
       </div>
     </div>
@@ -135,38 +122,38 @@ $thisID = get_the_ID();
     <div class="row">
       <div class="col-md-12">
         <div class="tab-btns-bar-ctlr clearfix">
+          
           <div class="tab-btns-filter">
             <div class="tab-btns-filter-btn">
-              <button class="" type="button" data-filter=".category-a">
-                <i>
-                  <svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
-                    <use xlink:href="#bvi-key-svg"></use>
-                  </svg>
-                </i>
+              <a href="<?php echo esc_url(home_url('/te-koop')); ?>" class="btn-tekoop thisactive">
+                <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
                 <span>te koop</span>
-              </button>
+              </a>
             </div>
             <div class="tab-btns-filter-btn">
-              <button class="" type="button" data-filter=".category-b">
-                <i>
-                  <svg class="bvi-calendar-2-svg" width="19" height="19" viewBox="0 0 19 19" fill="#fff">
-                    <use xlink:href="#bvi-calendar-2-svg"></use>
-                  </svg>
-                </i>
+              <a href="<?php echo esc_url(home_url('/te-huur')); ?>" class="btn-tehuur">
+                <i><svg class="bvi-calendar-2-svg" width="19" height="19" viewBox="0 0 19 19" fill="#fff"><use xlink:href="#bvi-calendar-2-svg"></use></svg></i>
                 <span>te huur</span>
-              </button>
+              </a>
             </div>
             <div class="tab-btns-filter-btn">
-              <button class="" type="button" data-filter=".category-c">
-                <i>
-                  <svg class="bvi-rlsts-svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff">
-                    <use xlink:href="#bvi-rlsts-svg"></use>
-                  </svg>
-                </i>
+              <a href="<?php echo esc_url(home_url('/verkocht-en-verhuurd')); ?>" class="btn-verkocht">
+                <i><svg class="bvi-rlsts-svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff"><use xlink:href="#bvi-rlsts-svg"></use></svg></i>
                 <span>Realisaties</span>
-              </button>
+              </a>
             </div>
-        </div>
+          </div>
+
+          <div class="tab-btns-bar-rgt-select clearfix">
+            <label>Sorteer op: </label>
+            <select id="itemSort" class="selectpicker" data-max-options="1" title="PRIJS TOENEMEND" data-size="6" multiple>
+              <option value="price:asc">Price</option>
+              <option value="title:asc">A-Z</option>
+              <option value="title:desc">Z-A</option>
+              <option value="place:asc">Place</option>
+            </select>
+          </div>
+
         </div>
       </div>
     </div>
@@ -179,438 +166,360 @@ $thisID = get_the_ID();
       <div class="col-sm-12">
         <div class="bvi-grid-ctlr">
           <ul class="ulc clearfix mixContainer">
-            <li class="green bv-grd-item mix category-a">
-              <div class="bvi-grd-item">  
+            
+            <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
+              <div class="bvi-grd-item">
                 <div class="bvi-grd-item-img-ctlr">
                   <a href="#" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-1.jpg');">   
                   </div>
                   <div class="bvi-grid-key-info-ctlr clearfix">
-                    <div class="bvi-grd-icon">
-                    </div>
                     <div class="bvi-grd-key-date clearfix">
-                      <div class="bvi-grd-key green">
-                        <i>
-                          <svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
-                            <use xlink:href="#bvi-key-svg"></use>
-                          </svg>
-                        </i>
+                      <div class="bvi-grd-cat">
+                        <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
                         <span>Te koop</span>
                       </div>
                       <div class="bvi-grd-date">
-                        <i>
-                          <svg class="bvi-calendar-svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff">
-                            <use xlink:href="#bvi-calendar-svg"></use>
-                          </svg>
-                        </i>
+                        <i><svg class="bvi-calendar-svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff"><use xlink:href="#bvi-calendar-svg"></use></svg></i>
                         <span>donderdag, 16 Jan, 12u00</span>
                       </div>
                     </div>   
-                  </div>
-                  
-                                    
+                  </div>               
                 </div>
 
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
-                  <h5><a href="#">WONING AALST</a></h5>
+                  <h5 class="property-title">
+                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                  </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bed-svg"></use>
-                        </svg>
-                      </i>
+                      <i><svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bed-svg"></use></svg></i>
                       <span>2-4 Slaapkamers</span>
                     </div>
                     <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bath-svg"></use>
-                        </svg>
-                      </i>
+                      <i><svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bath-svg"></use></svg></i>
                       <span>1-3 Badkamers</span>
                     </div>
                   </div>
-                  <div class="bvi-grd-item-des-link">
+                  <div class="bvi-grd-item-link">
                     <a href="#">Meer Info</a>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="green bv-grd-item mix category-a">
+            <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
-                
                 <div class="bvi-grd-item-img-ctlr">
                   <a href="#" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-2.jpg');">   
                   </div>
-                  <div class="bvi-grid-key-info-ctlr">
-                    <div class="bvi-grd-key green">
-                      <i>
-                        <svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
-                          <use xlink:href="#bvi-key-svg"></use>
-                        </svg>
-                      </i>
-                      <span>Te koop</span>
-                    </div>
-                  </div>
-                                    
+                  <div class="bvi-grid-key-info-ctlr clearfix">
+                    <div class="bvi-grd-key-date clearfix">
+                      <div class="bvi-grd-cat">
+                        <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
+                        <span>Te koop</span>
+                      </div>
+
+                    </div>   
+                  </div>               
                 </div>
 
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
-                  <h5><a href="#">WONING AALST</a></h5>
+                  <h5 class="property-title">
+                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                  </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bed-svg"></use>
-                        </svg>
-                      </i>
+                      <i><svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bed-svg"></use></svg></i>
                       <span>2-4 Slaapkamers</span>
                     </div>
                     <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bath-svg"></use>
-                        </svg>
-                      </i>
+                      <i><svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bath-svg"></use></svg></i>
                       <span>1-3 Badkamers</span>
                     </div>
                   </div>
-                  <div class="bvi-grd-item-des-link">
+                  <div class="bvi-grd-item-link">
                     <a href="#">Meer Info</a>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="red bv-grd-item mix category-b">
+
+            <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
-                
                 <div class="bvi-grd-item-img-ctlr">
                   <a href="#" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-3.jpg');">   
                   </div>
-                  <div class="bvi-grid-key-info-ctlr">
-                    <div class="bvi-grd-key red">
-                      <i>
-                        <svg class="bvi-act-svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff">
-                          <use xlink:href="#bvi-act-svg"></use>
-                        </svg>
-                      </i>
-                      <span>verkocht</span>
-                    </div>
-                  </div>
-                                    
-                </div>
+                  <div class="bvi-grid-key-info-ctlr clearfix">
+                    <div class="bvi-grd-key-date clearfix">
+                      <div class="bvi-grd-cat">
+                        <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
+                        <span>Te koop</span>
+                      </div>
 
-                <div class="mHc bvi-grd-item-des">
-                  <strong class="vkt">Verkocht</strong>
-                  <h5><a href="#">WONING AALST</a></h5>
-                  <div class="bvi-grd-item-feature clearfix">
-                    <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bed-svg"></use>
-                        </svg>
-                      </i>
-                      <span>2-4 Slaapkamers</span>
-                    </div>
-                    <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bath-svg"></use>
-                        </svg>
-                      </i>
-                      <span>1-3 Badkamers</span>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </li>
-            <li class="green bv-grd-item mix category-a">
-              <div class="bvi-grd-item">
-                
-                <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-4.jpg');">   
-                  </div>
-                  <div class="bvi-grid-key-info-ctlr">
-                    <div class="bvi-grd-key green">
-                      <i>
-                        <svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
-                          <use xlink:href="#bvi-key-svg"></use>
-                        </svg>
-                      </i>
-                      <span>Te koop</span>
-                    </div>
-                  </div>                
+                    </div>   
+                  </div>               
                 </div>
 
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
-                  <h5><a href="#">WONING AALST</a></h5>
+                  <h5 class="property-title">
+                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                  </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bed-svg"></use>
-                        </svg>
-                      </i>
+                      <i><svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bed-svg"></use></svg></i>
                       <span>2-4 Slaapkamers</span>
                     </div>
                     <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bath-svg"></use>
-                        </svg>
-                      </i>
+                      <i><svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bath-svg"></use></svg></i>
                       <span>1-3 Badkamers</span>
                     </div>
                   </div>
-                  <div class="bvi-grd-item-des-link">
+                  <div class="bvi-grd-item-link">
                     <a href="#">Meer Info</a>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="green bv-grd-item mix category-c">
-              <div class="bvi-grd-item">
-                
-                <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-5.jpg');">   
-                  </div>
-                  <div class="bvi-grid-key-info-ctlr">
-                    <div class="bvi-grd-key green">
-                      <i>
-                        <svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
-                          <use xlink:href="#bvi-key-svg"></use>
-                        </svg>
-                      </i>
-                      <span>Te koop</span>
-                    </div>
-                  </div>
-                                   
-                </div>
 
-                <div class="mHc bvi-grd-item-des">
-                  <strong>€ 276.600,00</strong>
-                  <h5><a href="#">WONING AALST</a></h5>
-                  <div class="bvi-grd-item-feature clearfix">
-                    <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bed-svg"></use>
-                        </svg>
-                      </i>
-                      <span>2-4 Slaapkamers</span>
-                    </div>
-                    <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bath-svg"></use>
-                        </svg>
-                      </i>
-                      <span>1-3 Badkamers</span>
-                    </div>
-                  </div>
-                  <div class="bvi-grd-item-des-link">
-                    <a href="#">Meer Info</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="green bv-grd-item mix category-c">
+            <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
-                
-                <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-6.jpg');">   
-                  </div>
-                  <div class="bvi-grid-key-info-ctlr">
-                    <div class="bvi-grd-key green">
-                      <i>
-                        <svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
-                          <use xlink:href="#bvi-key-svg"></use>
-                        </svg>
-                      </i>
-                      <span>Te koop</span>
-                    </div>
-                  </div>
-                                    
-                </div>
-
-                <div class="mHc bvi-grd-item-des">
-                  <strong>€ 276.600,00</strong>
-                  <h5><a href="#">WONING AALST</a></h5>
-                  <div class="bvi-grd-item-feature clearfix">
-                    <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bed-svg"></use>
-                        </svg>
-                      </i>
-                      <span>2-4 Slaapkamers</span>
-                    </div>
-                    <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bath-svg"></use>
-                        </svg>
-                      </i>
-                      <span>1-3 Badkamers</span>
-                    </div>
-                  </div>
-                  <div class="bvi-grd-item-des-link">
-                    <a href="#">Meer Info</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="green bv-grd-item mix category-a category-b">
-              <div class="bvi-grd-item">
-                
-                <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-7.jpg');">   
-                  </div>
-                  <div class="bvi-grid-key-info-ctlr">
-                    <div class="bvi-grd-key green">
-                      <i>
-                        <svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
-                          <use xlink:href="#bvi-key-svg"></use>
-                        </svg>
-                      </i>
-                      <span>Te koop</span>
-                    </div>
-                  </div>
-                                    
-                </div>
-
-                <div class="mHc bvi-grd-item-des">
-                  <strong>€ 276.600,00</strong>
-                  <h5><a href="#">WONING AALST</a></h5>
-                  <div class="bvi-grd-item-feature clearfix">
-                    <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bed-svg"></use>
-                        </svg>
-                      </i>
-                      <span>2-4 Slaapkamers</span>
-                    </div>
-                    <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bath-svg"></use>
-                        </svg>
-                      </i>
-                      <span>1-3 Badkamers</span>
-                    </div>
-                  </div>
-                  <div class="bvi-grd-item-des-link">
-                    <a href="#">Meer Info</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="green bv-grd-item mix category-a category-c">
-              <div class="bvi-grd-item">
-                
                 <div class="bvi-grd-item-img-ctlr">
                   <a href="#" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-1.jpg');">   
                   </div>
-                  <div class="bvi-grid-key-info-ctlr">
-                    <div class="bvi-grd-key green">
-                      <i>
-                        <svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
-                          <use xlink:href="#bvi-key-svg"></use>
-                        </svg>
-                      </i>
-                      <span>Te koop</span>
-                    </div> 
-                  </div>
-                                  
+                  <div class="bvi-grid-key-info-ctlr clearfix">
+                    <div class="bvi-grd-key-date clearfix">
+                      <div class="bvi-grd-cat">
+                        <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
+                        <span>Te koop</span>
+                      </div>
+
+                    </div>   
+                  </div>               
                 </div>
 
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
-                  <h5><a href="#">WONING AALST</a></h5>
+                  <h5 class="property-title">
+                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                  </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bed-svg"></use>
-                        </svg>
-                      </i>
+                      <i><svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bed-svg"></use></svg></i>
                       <span>2-4 Slaapkamers</span>
                     </div>
                     <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bath-svg"></use>
-                        </svg>
-                      </i>
+                      <i><svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bath-svg"></use></svg></i>
                       <span>1-3 Badkamers</span>
                     </div>
                   </div>
-                  <div class="bvi-grd-item-des-link">
+                  <div class="bvi-grd-item-link">
                     <a href="#">Meer Info</a>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="green bv-grd-item mix category-c">
+
+            <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
-                
                 <div class="bvi-grd-item-img-ctlr">
                   <a href="#" class="overlay-link"></a>
-                  <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-8.jpg');">   
+                  <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-2.jpg');">   
                   </div>
-                  <div class="bvi-grid-key-info-ctlr">
-                    <div class="bvi-grd-key green">
-                      <i>
-                        <svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
-                          <use xlink:href="#bvi-key-svg"></use>
-                        </svg>
-                      </i>
-                      <span>Te koop</span>
-                    </div>
-                  </div>
-                                   
+                  <div class="bvi-grid-key-info-ctlr clearfix">
+                    <div class="bvi-grd-key-date clearfix">
+                      <div class="bvi-grd-cat">
+                        <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
+                        <span>Te koop</span>
+                      </div>
+
+                    </div>   
+                  </div>               
                 </div>
 
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
-                  <h5><a href="#">WONING AALST</a></h5>
+                  <h5 class="property-title">
+                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                  </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bed-svg"></use>
-                        </svg>
-                      </i>
+                      <i><svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bed-svg"></use></svg></i>
                       <span>2-4 Slaapkamers</span>
                     </div>
                     <div class="bvi-grd-item-feature-item">
-                      <i>
-                        <svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff">
-                          <use xlink:href="#bvi-bath-svg"></use>
-                        </svg>
-                      </i>
+                      <i><svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bath-svg"></use></svg></i>
                       <span>1-3 Badkamers</span>
                     </div>
                   </div>
-                  <div class="bvi-grd-item-des-link">
+                  <div class="bvi-grd-item-link">
                     <a href="#">Meer Info</a>
                   </div>
                 </div>
               </div>
             </li>
+
+            <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
+              <div class="bvi-grd-item">
+                <div class="bvi-grd-item-img-ctlr">
+                  <a href="#" class="overlay-link"></a>
+                  <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-3.jpg');">   
+                  </div>
+                  <div class="bvi-grid-key-info-ctlr clearfix">
+                    <div class="bvi-grd-key-date clearfix">
+                      <div class="bvi-grd-cat">
+                        <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
+                        <span>Te koop</span>
+                      </div>
+
+                    </div>   
+                  </div>               
+                </div>
+
+                <div class="mHc bvi-grd-item-des">
+                  <strong>€ 276.600,00</strong>
+                  <h5 class="property-title">
+                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                  </h5>
+                  <div class="bvi-grd-item-feature clearfix">
+                    <div class="bvi-grd-item-feature-item">
+                      <i><svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bed-svg"></use></svg></i>
+                      <span>2-4 Slaapkamers</span>
+                    </div>
+                    <div class="bvi-grd-item-feature-item">
+                      <i><svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bath-svg"></use></svg></i>
+                      <span>1-3 Badkamers</span>
+                    </div>
+                  </div>
+                  <div class="bvi-grd-item-link">
+                    <a href="#">Meer Info</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
+              <div class="bvi-grd-item">
+                <div class="bvi-grd-item-img-ctlr">
+                  <a href="#" class="overlay-link"></a>
+                  <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-1.jpg');">   
+                  </div>
+                  <div class="bvi-grid-key-info-ctlr clearfix">
+                    <div class="bvi-grd-key-date clearfix">
+                      <div class="bvi-grd-cat">
+                        <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
+                        <span>Te koop</span>
+                      </div>
+
+                    </div>   
+                  </div>               
+                </div>
+
+                <div class="mHc bvi-grd-item-des">
+                  <strong>€ 276.600,00</strong>
+                  <h5 class="property-title">
+                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                  </h5>
+                  <div class="bvi-grd-item-feature clearfix">
+                    <div class="bvi-grd-item-feature-item">
+                      <i><svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bed-svg"></use></svg></i>
+                      <span>2-4 Slaapkamers</span>
+                    </div>
+                    <div class="bvi-grd-item-feature-item">
+                      <i><svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bath-svg"></use></svg></i>
+                      <span>1-3 Badkamers</span>
+                    </div>
+                  </div>
+                  <div class="bvi-grd-item-link">
+                    <a href="#">Meer Info</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
+              <div class="bvi-grd-item">
+                <div class="bvi-grd-item-img-ctlr">
+                  <a href="#" class="overlay-link"></a>
+                  <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-2.jpg');">   
+                  </div>
+                  <div class="bvi-grid-key-info-ctlr clearfix">
+                    <div class="bvi-grd-key-date clearfix">
+                      <div class="bvi-grd-cat">
+                        <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
+                        <span>Te koop</span>
+                      </div>
+
+                    </div>   
+                  </div>               
+                </div>
+
+                <div class="mHc bvi-grd-item-des">
+                  <strong>€ 276.600,00</strong>
+                  <h5 class="property-title">
+                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                  </h5>
+                  <div class="bvi-grd-item-feature clearfix">
+                    <div class="bvi-grd-item-feature-item">
+                      <i><svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bed-svg"></use></svg></i>
+                      <span>2-4 Slaapkamers</span>
+                    </div>
+                    <div class="bvi-grd-item-feature-item">
+                      <i><svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bath-svg"></use></svg></i>
+                      <span>1-3 Badkamers</span>
+                    </div>
+                  </div>
+                  <div class="bvi-grd-item-link">
+                    <a href="#">Meer Info</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
+              <div class="bvi-grd-item">
+                <div class="bvi-grd-item-img-ctlr">
+                  <a href="#" class="overlay-link"></a>
+                  <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-3.jpg');">   
+                  </div>
+                  <div class="bvi-grid-key-info-ctlr clearfix">
+                    <div class="bvi-grd-key-date clearfix">
+                      <div class="bvi-grd-cat">
+                        <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
+                        <span>Te koop</span>
+                      </div>
+
+                    </div>   
+                  </div>               
+                </div>
+
+                <div class="mHc bvi-grd-item-des">
+                  <strong>€ 276.600,00</strong>
+                  <h5 class="property-title">
+                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                  </h5>
+                  <div class="bvi-grd-item-feature clearfix">
+                    <div class="bvi-grd-item-feature-item">
+                      <i><svg class="bvi-bed-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bed-svg"></use></svg></i>
+                      <span>2-4 Slaapkamers</span>
+                    </div>
+                    <div class="bvi-grd-item-feature-item">
+                      <i><svg class="bvi-bath-svg" width="26" height="20" viewBox="0 0 26 20" fill="#fff"><use xlink:href="#bvi-bath-svg"></use></svg></i>
+                      <span>1-3 Badkamers</span>
+                    </div>
+                  </div>
+                  <div class="bvi-grd-item-link">
+                    <a href="#">Meer Info</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
           </ul>
         </div>
       </div>

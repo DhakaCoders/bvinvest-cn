@@ -187,18 +187,20 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="ftr-middel-inr clearfix">
+          <div class="ftr-middel-inr">
             <div class="ftr-middel-lft clearfix">
-            <?php if( !empty( $copyright_text ) ) printf( '<span>%s</span>', $copyright_text); ?>
-            <?php 
-              $ftmenuOptions = array( 
-                  'theme_location' => 'cbv_copyright_menu', 
-                  'menu_class' => 'clearfix',
-                  'container' => 'copynav',
-                  'container_class' => 'copynav'
-                );
-              wp_nav_menu( $ftmenuOptions ); 
-            ?>  
+              <?php if( !empty( $copyright_text ) ) printf( '<span>%s</span>', $copyright_text); ?>  
+            </div>
+            <div class="ftr-middel-lft">
+              <?php 
+                $ftmenuOptions = array( 
+                    'theme_location' => 'cbv_copyright_menu', 
+                    'menu_class' => 'clearfix',
+                    'container' => 'copynav',
+                    'container_class' => 'copynav'
+                  );
+                wp_nav_menu( $ftmenuOptions ); 
+              ?>
             </div>
             <div class="ftr-middel-rgt">
               <a href="#">webdesign by conversal</a>

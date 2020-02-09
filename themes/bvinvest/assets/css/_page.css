@@ -197,6 +197,7 @@ page-banner-filter-form
 .psearch-form-fields .submit button span{
   position: relative;
   padding-right: 38px;
+  vertical-align: middle;
 }
 .psearch-form-fields .submit button i{
   position: absolute;
@@ -226,14 +227,24 @@ page-banner-filter-form
   right: 7px;
 }
 .psearch-form-wrap form .dropdown-menu {
-  background-color: #eee!important;
+  background-color: #fff!important;
 }
-.psearch-form-wrap form .dropdown-menu li a {
+.psearch-form-wrap form .dropdown-menu li a,
+.tab-btns-bar-rgt-select .dropdown-menu li a{
   color: #515151;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  line-height: 20px;
+  font-size: 14px;
 }
 .psearch-form-wrap .dropdown-item:focus, 
-.psearch-form-wrap .dropdown-item:hover {
-  background-color: #fff;
+.psearch-form-wrap .dropdown-item:hover,
+.psearch-form-wrap .dropdown-item.selected,
+.tab-btns-bar-rgt-select .dropdown-item:focus,
+.tab-btns-bar-rgt-select .dropdown-item:hover,
+.tab-btns-bar-rgt-select .dropdown-item.selected{
+  background-color: #15B615;
+  color: #fff;
 }
 .psearch-form-fields .dropdown-menu > .active > a, 
 .psearch-form-fields .dropdown-menu > .active > a:focus, 
@@ -264,7 +275,9 @@ page-banner-filter-form
 .psearch-form-wrap .show > .btn-light.dropdown-toggle {
   background: #fff;
 }
-
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark{
+  display: none;
+}
 
 .bradecumb-sec-wrp{
   background: #16b616;

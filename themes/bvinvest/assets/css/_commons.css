@@ -167,7 +167,9 @@ img{
 	bottom: 0;
 	z-index: 10;
 }
-
+.bvi-property .overlay-link{
+	z-index: 2;
+}
 
 /**
 Selects
@@ -237,12 +239,15 @@ form  .dropdown-menu{
     box-shadow: none;
     padding: 12px 0 10px;
 }
-form  .dropdown-menu li{
+form  .dropdown-menu li,
+.tab-btns-bar-rgt-select .dropdown-menu li{
     position: relative;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
-form  .dropdown-menu li a{
-	padding-top: 6px;
+form .dropdown-menu li a,
+.tab-btns-bar-rgt-select .dropdown-menu li a{
+	padding-top: 7px;
+	padding-bottom: 7px;
 	color: #fff;
 }
 .dropdown-menu>.active>a, 
