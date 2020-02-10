@@ -180,6 +180,7 @@ if( $('.hmTestimonialSlider div.listing').length ){
       {
         breakpoint: 992,
         settings: {
+          adaptiveHeight: true,
           dots: true,
         }
       }
@@ -193,13 +194,10 @@ if( $('.detailpagina-slider-sec').length ){
     autoplay: false,
     dots: false,
     infinite: true,
-    arrows:true,
+    arrows:false,
     speed: 1000,
-    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1, 
-    prevArrow: $('.detailpaginaLeftArrow'),
-    nextArrow: $('.detailpaginaRightArrow'),
     asNavFor: '.detailpagina-thumb-slider',
   });
 
@@ -209,9 +207,12 @@ if( $('.detailpagina-slider-sec').length ){
       infinite: true,
       speed: 1000,
       slidesToShow: 6,
-      //slidesToScroll: 1,
-      arrows:false,
+      slidesToScroll: 1,
+      centerMode: false,
+      arrows:true,
       focusOnSelect: true,
+    prevArrow: $('.detailpaginaLeftArrow'),
+    nextArrow: $('.detailpaginaRightArrow'),
       asNavFor: '.detailpagina-slider',
       responsive: [
         {
@@ -433,7 +434,7 @@ if( $('.middleElement').length ){
   Shoriful
 */
 $('.psearch-form-flt-btn').on('click', function(){
-  $('.psearch-form-wrap').fadeToggle();
+  $('.psearch-form-wrap').slideToggle();
 });
 
 if( $('.product-inr-tab-wrp .img-change-pagi').length ){
