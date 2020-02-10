@@ -164,6 +164,30 @@ $('.tab-btns-filter .tab-btns-filter-btn a.thisactive').on('click', function(e){
 /*
   Proshanto
 */
+if( $('.hmTestimonialSlider').length ){
+  $('.hmTestimonialSlider').slick({
+    pauseOnHover: false,
+    autoplay: false,
+    dots: false,
+    infinite: true,
+    arrows:true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: $('.testimonialLeftArrow'),
+    nextArrow: $('.testimonialRightArrow'),
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          adaptiveHeight: true,
+          dots: true,
+        }
+      }
+    ]
+  });
+}
+
 if( $('.hmTestimonialSlider div.listing').length ){
   $('.hmTestimonialSlider div.listing').slick({
     pauseOnHover: false,
@@ -354,9 +378,9 @@ if( $('.hmGrdSlider').length ){
   var initfilter = $('.slider-filter-bar a.active').attr('value');
   $('.hmGrdSlider').slick('slickFilter', initfilter).slick('refresh');
   //filter based on class
-  $('.slider-filter-bar a').on('click', function(e){
+  $('.slider-filter-bar a, .sm-filter-link a').on('click', function(e){
     e.preventDefault();
-    $('.slider-filter-bar a').removeClass('active');
+    $('.slider-filter-bar a, .sm-filter-link a').removeClass('active');
     $(this).addClass('active');
     var filter = $(this).attr('value');
     var key = filter;

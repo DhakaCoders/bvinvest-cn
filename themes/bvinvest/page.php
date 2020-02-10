@@ -118,7 +118,7 @@ while ( have_posts() ) :
                       <li><i class="fa fa-star"></i></li>';
                       endif;
                     echo '</ul>';
-                   if( !empty( $fcquote['naam'] ) ) printf('<strong>%s<span>- %s</span></strong>', $fcquote['naam'], $fcquote['subtitel']);
+                   if( !empty( $fcquote['naam'] ) ) printf('<strong>%s<span> - %s</span></strong>', $fcquote['naam'], $fcquote['subtitel']);
                    echo '</div>';
                   endforeach;
                   echo '</div></div></div>';
@@ -143,6 +143,8 @@ while ( have_posts() ) :
                   $i = 1;
                   foreach ($fc_product as $key => $product) {
                     $knop1 = $product['knop'];
+                    $type = '';
+                    $type = $product['type'];
                     $plink = 'javascript:void();';
                     $addclass = ' green';
                     if( $i == 2 ) $addclass = ' sky'; 
@@ -153,19 +155,30 @@ while ( have_posts() ) :
 
                     if(!empty($product['icon'])) $pgridicon = cbv_get_image_tag($product['icon']);
                     $pinfo = $product['product_info'];
-                    echo '<div class="dfp-grd-slide-item'.$addclass.'"><div class="bvi-grd-item">';
+                    echo '<div class="dfp-grd-slide-item '.$type.'"><div class="bvi-grd-item">';
                     echo '<div class="bvi-grd-item-img-ctlr">';
                     echo '<a href="'.$plink.'" class="overlay-link"></a>';
                     echo '<div class="bvi-grd-item-img" style="background: url('.$pgridsrc.');"></div>';
-                    echo '<div class="bvi-grid-key-info-ctlr">
-                    <div class="bvi-grd-icon"></div>
-                    <div class="bvi-grd-key-date clearfix">
-                      <div class="bvi-grd-key">
-                        <i>'.$pgridicon.'</i>
-                        <span>'.$product['icon_titel'].'</span>
-                      </div>
-                    </div> 
-                    </div>';
+                    echo '<div class="bvi-grid-key-info-ctlr clearfix">
+                    <div class="bvi-grd-key-date clearfix">';
+                      if( $type == 'tehuur' ){
+                      echo '<div class="bvi-grd-cat">
+                        <i><svg class="bvi-calendar-2-svg" width="19" height="19" viewBox="0 0 19 19" fill="#fff"><use xlink:href="#bvi-calendar-2-svg"></use></svg></i>
+                        <span>Te huur</span>
+                      </div>';
+                    }elseif( $type == 'verkocht' ){
+                      echo '<div class="bvi-grd-cat">
+                        <i><svg class="bvi-act-svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff">
+                            <use xlink:href="#bvi-act-svg"></use></svg></i>
+                        <span>Verkocht</span>
+                      </div>';                      
+                    }else{
+                      echo '<div class="bvi-grd-cat">
+                        <i><svg class="bvi-key-svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff"><use xlink:href="#bvi-key-svg"></use></svg></i>
+                        <span>Te koop</span>
+                      </div>';                      
+                    }
+                    echo '</div></div>';
                     echo '</div>';
 
                     echo '<div class="mHc bvi-grd-item-des">

@@ -10,11 +10,11 @@ get_header();
 <section class="prlocations">
   <!--Types: tekoop, tehuur and verkocht-->
   <div id="prmapdata">
-    <span data-title="Ravenakkerstraat 48 Moorsel" data-link="#" data-price="265.000" data-type="tehuur" data-latitude="50.9569388" data-longitude="4.1068167"></span>
-    <span data-title="Ravenakkerstraat 48 Aalst" data-link="#" data-price="265.000" data-type="tehuur" data-latitude="50.9569318" data-longitude="4.1068167"></span>
-    <span data-title="Lijnzaadstraat 54 Aalst" data-link="#" data-price="429.000" data-type="tehuur" data-latitude="50.953396" data-longitude="4.067167"></span>
-    <span data-title="Jan Bijlstraat 21 Aalst" data-link="#" data-price="295.000" data-type="tehuur" data-latitude="50.9478536" data-longitude="4.0459704"></span>
-    <span data-title="Kerrebroekstraat 98 Aalst" data-link="#" data-price="249.000" data-type="tehuur" data-latitude="50.9506563" data-longitude="4.02790630000004"></span>                    
+    <span data-title="WONING AALST" data-link="#" data-price="265.000" data-type="tehuur" data-latitude="50.9569388" data-longitude="4.1068167"></span>
+    <span data-title="WONING AALST" data-link="#" data-price="265.000" data-type="tehuur" data-latitude="50.9569318" data-longitude="4.1068167"></span>
+    <span data-title="WONING AALST" data-link="#" data-price="429.000" data-type="tehuur" data-latitude="50.953396" data-longitude="4.067167"></span>
+    <span data-title="WONING AALST" data-link="#" data-price="295.000" data-type="tehuur" data-latitude="50.9478536" data-longitude="4.0459704"></span>
+    <span data-title="WONING AALST" data-link="#" data-price="249.000" data-type="tehuur" data-latitude="50.9506563" data-longitude="4.02790630000004"></span>                    
   </div>
 
   <div id="prmap" data-uri="<?php echo THEME_URI; ?>/" data-lat="50.936736" data-lon="4.030753"></div>

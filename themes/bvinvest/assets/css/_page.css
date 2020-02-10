@@ -965,8 +965,9 @@ page-banner-filter-form
   .psearch-form-fields > ul > li:not(:last-child){
     border-bottom: 1px solid #F1F1F1;
   }
-
-
+  .home .page-banner-sec-con {
+      height: 610px;
+  }
 }
 
 @media(max-width: 479px){  
