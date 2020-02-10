@@ -206,9 +206,14 @@
   display: inline-block;
   vertical-align: baseline;
   max-width: 208px;
+  border: 2px solid transparent;
+}
+.detailpagina-thumb-slider-item.slick-current.slick-active i{
+  border-color: #15B615;
 }
 .detailpagina-thumb-slider-item i img{
   width: 100%;
+  vertical-align: top;
 }
 .detailpagina-main-innr{
   padding: 42px 0 32px;

@@ -104,8 +104,13 @@
       </ul>
     </div>    
     <div class="md-popup-main-social text-right">
-      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/popup-main-social-icon-1.svg" alt=""></a>
-      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/popup-main-social-icon-2.svg" alt=""></a>
+      <?php if($smedias): ?>
+        <?php foreach($smedias as $smedia): ?>
+        <a target="_blank" href="<?php echo $smedia['url']; ?>">
+          <?php echo $smedia['icon']; ?>
+        </a>
+        <?php endforeach; ?>
+      <?php endif; ?>
     </div>
   </div>
 </div>
@@ -170,7 +175,7 @@
                 ?>
               </div>
               <div class="ftr-col-dsc ftr-contact hide-sm">
-                <?php if( !empty( $adres ) ) printf('<span><a href="%s">%s</a></span>', $gmaplink, $adres);  ?>
+                <?php if( !empty( $adres ) ) printf('<span><a target="_blank" href="%s">%s</a></span>', $gmaplink, $adres);  ?>
                 <?php if( !empty( $e_mailadres ) ) printf('<span>E-mail: <a href="mailto:%s">%s</a></span>', $e_mailadres, $e_mailadres);  ?>
                 <?php if( !empty( $show_telefoon ) ) printf('<span>Tel: <a href="tel:%s">%s</a></span>', $telefoon, $show_telefoon);  ?>
               </div>
@@ -178,7 +183,7 @@
               <div class="ftr-contact show-sm">
                 <h5 class="show-sm">Contact</h5>
                 <ul>
-                  <?php if( !empty( $adres ) ) printf('<span><a href="%s">%s</a></span>', $gmaplink, $adres);  ?>
+                  <?php if( !empty( $adres ) ) printf('<span><a target="_blank" href="%s">%s</a></span>', $gmaplink, $adres);  ?>
                   <?php if( !empty( $e_mailadres ) ) printf('<span>E-mail: <a href="mailto:%s">%s</a></span>', $e_mailadres, $e_mailadres);  ?>
                   <?php if( !empty( $show_telefoon ) ) printf('<span>Tel: <a href="tel:%s">%s</a></span>', $telefoon, $show_telefoon);  ?>
                   <div class="ftr-socail">
@@ -233,7 +238,7 @@
               ?>
             </div>
             <div class="ftr-middel-rgt">
-              <a href="#">webdesign by conversal</a>
+              <a target="_blank" href="#">webdesign by conversal</a>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ $gratis = get_field('gratis_waardebepaling', 'options');
             
             <div class="wpforms-container">
             <?php if( !empty( $gratis['form_sortcode'] ) ) echo do_shortcode( $gratis['form_sortcode'] ); ?>
-            <div class="ftr-msg">
+            <div class="ftr-form-msg">
               <p>We contacteren u binnen de <br> werkdag!</p>
             </div>
             </div>

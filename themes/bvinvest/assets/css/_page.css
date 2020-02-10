@@ -123,6 +123,9 @@ page-banner-filter-form
   position: relative;
   z-index: 5;
 }
+.psearch-form-wrap.pageSearch{
+  display: none;
+}
 .psearch-form{
   margin-right: -1px; 
 }
@@ -197,6 +200,7 @@ page-banner-filter-form
 .psearch-form-fields .submit button span{
   position: relative;
   padding-right: 38px;
+  display: inline-block;
   vertical-align: middle;
 }
 .psearch-form-fields .submit button i{
@@ -464,7 +468,7 @@ page-banner-filter-form
     font-size: 15px;
   }  
   .psearch-form-fields .submit button i {
-    top: -5px;
+    top: -2px;
   }
   .psearch-form-fields .submit button i svg{
     width: 18px!important;
@@ -773,7 +777,7 @@ page-banner-filter-form
   .md-popup-main-social{
     width: 35%;
     float: left;
-    padding-top: 15px;
+    padding-top: 0;
   }
   .md-popup-main-addr li{
     padding-bottom: 5px;
@@ -804,6 +808,8 @@ page-banner-filter-form
     display: inline-block;
     vertical-align: baseline;
     margin-left: 8px;
+    font-size: 19px;
+    color: #7B7B7B;
   }
 
 
@@ -886,7 +892,7 @@ page-banner-filter-form
     height: 18px;  
   }
   .psearch-form-fields .submit button i {
-    top: -6px;
+    top: -2px;
   }
   .psearch-form-fields .bootstrap-select>.dropdown-toggle {
     font-size: 16px;
@@ -942,7 +948,10 @@ page-banner-filter-form
 
 @media(max-width: 575px){
   .page-banner-sec-con {
-    margin-bottom: 122px;
+    margin-bottom: 0;
+  }
+  .bw-invest-sec{
+    padding-top: 122px;
   }
   .psearch-form-fields > ul > li:nth-child(1),
   .psearch-form-fields > ul > li:nth-child(2),

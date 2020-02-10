@@ -1,6 +1,6 @@
 <?php 
 /*
-  Template Name: Immobilieen Overzichtspagina
+  Template Name: Te Koop
 */
 get_header(); 
 $thisID = get_the_ID();
@@ -16,75 +16,14 @@ $thisID = get_the_ID();
         </div>
       </div>
       <div class="col-md-12">
+        <div class="psearch-form-flt-btn show-639">
+            <img src="<?php echo THEME_URI; ?>/assets/images/rlst-filter-btn.png">
+            <strong>Filter</strong>
+        </div>
+      </div>
+      <div class="col-md-12">
         <div class="psearch-form-wrap pageSearch">
-          <form>
-            <div class="psearch-form">
-              <div class="psearch-form-fields">
-                <ul class="clearfix ulc">
-                  <li>
-                    <div>
-                      <select class="selectpicker" data-size="6" data-max-options="1" title="Type" multiple>
-                        <option value="type1">Option 1</option>
-                        <option value="type2">Option 2</option>
-                        <option value="type3">Option 3</option>
-                        <option value="type4">Option 4</option>
-                        <option value="type5">Option 5</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <select class="selectpicker" data-size="6" data-max-options="1" title="Land" multiple>
-                        <option value="type1">Option 1</option>
-                        <option value="type2">Option 2</option>
-                        <option value="type3">Option 3</option>
-                        <option value="type4">Option 4</option>
-                        <option value="type5">Option 5</option>
-                      </select>
-                    </div>
-                  </li>
-                  
-                  <!-- <li>
-                    <div>
-                      <input type="text" name="" placeholder="Lorem ipsum">
-                    </div>
-                  </li> -->
-                  <li>
-                    <div>
-                      <select class="selectpicker" data-size="6" data-max-options="1" title="Gemeente" multiple>
-                        <option value="type1">Option 1</option>
-                        <option value="type2">Option 2</option>
-                        <option value="type3">Option 3</option>
-                        <option value="type4">Option 4</option>
-                        <option value="type5">Option 5</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <select class="selectpicker" data-size="6" data-max-options="1" title="Prijsklasse" multiple>
-                        <option value="type1">Option 1</option>
-                        <option value="type2">Option 2</option>
-                        <option value="type3">Option 3</option>
-                        <option value="type4">Option 4</option>
-                        <option value="type5">Option 5</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="submit">
-                      <button type="submit">
-                        <span>zoeken 
-                        <i><svg class="banner-seach-icon-svg" width="23" height="23" viewBox="0 0 23 23" fill="white"><use xlink:href="#banner-seach-icon-svg"></use>
-                          </svg></i>
-                      </span>
-                      </button>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </form> 
+          <?php get_template_part( 'templates/form', 'search' ); ?>
         </div>
       </div>
     </div>
@@ -144,7 +83,7 @@ $thisID = get_the_ID();
             <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
                 <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
+                  <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-1.jpg');">   
                   </div>
                   <div class="bvi-grid-key-info-ctlr clearfix">
@@ -164,7 +103,7 @@ $thisID = get_the_ID();
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
                   <h5 class="property-title">
-                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                    <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>">WONING AALST WONING AALST WONING AALST WONING AALST</a>
                   </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
@@ -185,7 +124,7 @@ $thisID = get_the_ID();
             <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
                 <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
+                  <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-2.jpg');">   
                   </div>
                   <div class="bvi-grid-key-info-ctlr clearfix">
@@ -202,7 +141,7 @@ $thisID = get_the_ID();
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
                   <h5 class="property-title">
-                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                    <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>">WONING AALST WONING AALST WONING AALST WONING AALST</a>
                   </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
@@ -224,7 +163,7 @@ $thisID = get_the_ID();
             <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
                 <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
+                  <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-3.jpg');">   
                   </div>
                   <div class="bvi-grid-key-info-ctlr clearfix">
@@ -241,7 +180,7 @@ $thisID = get_the_ID();
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
                   <h5 class="property-title">
-                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                    <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>">WONING AALST WONING AALST WONING AALST WONING AALST</a>
                   </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
@@ -263,7 +202,7 @@ $thisID = get_the_ID();
             <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
                 <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
+                  <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-1.jpg');">   
                   </div>
                   <div class="bvi-grid-key-info-ctlr clearfix">
@@ -280,7 +219,7 @@ $thisID = get_the_ID();
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
                   <h5 class="property-title">
-                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                    <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>">WONING AALST WONING AALST WONING AALST WONING AALST</a>
                   </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
@@ -302,7 +241,7 @@ $thisID = get_the_ID();
             <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
                 <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
+                  <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-2.jpg');">   
                   </div>
                   <div class="bvi-grid-key-info-ctlr clearfix">
@@ -319,7 +258,7 @@ $thisID = get_the_ID();
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
                   <h5 class="property-title">
-                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                    <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>">WONING AALST WONING AALST WONING AALST WONING AALST</a>
                   </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
@@ -341,7 +280,7 @@ $thisID = get_the_ID();
             <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
                 <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
+                  <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-3.jpg');">   
                   </div>
                   <div class="bvi-grid-key-info-ctlr clearfix">
@@ -358,7 +297,7 @@ $thisID = get_the_ID();
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
                   <h5 class="property-title">
-                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                    <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>">WONING AALST WONING AALST WONING AALST WONING AALST</a>
                   </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
@@ -380,7 +319,7 @@ $thisID = get_the_ID();
             <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
                 <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
+                  <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-1.jpg');">   
                   </div>
                   <div class="bvi-grid-key-info-ctlr clearfix">
@@ -397,7 +336,7 @@ $thisID = get_the_ID();
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
                   <h5 class="property-title">
-                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                    <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>">WONING AALST WONING AALST WONING AALST WONING AALST</a>
                   </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
@@ -419,7 +358,7 @@ $thisID = get_the_ID();
             <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
                 <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
+                  <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-2.jpg');">   
                   </div>
                   <div class="bvi-grid-key-info-ctlr clearfix">
@@ -436,7 +375,7 @@ $thisID = get_the_ID();
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
                   <h5 class="property-title">
-                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                    <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>">WONING AALST WONING AALST WONING AALST WONING AALST</a>
                   </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">
@@ -458,7 +397,7 @@ $thisID = get_the_ID();
             <li class="bvi-property tekoop mix" data-price="90" data-title="B" data-place="K">
               <div class="bvi-grd-item">
                 <div class="bvi-grd-item-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
+                  <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>" class="overlay-link"></a>
                   <div class="bvi-grd-item-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/image-3.jpg');">   
                   </div>
                   <div class="bvi-grid-key-info-ctlr clearfix">
@@ -475,7 +414,7 @@ $thisID = get_the_ID();
                 <div class="mHc bvi-grd-item-des">
                   <strong>€ 276.600,00</strong>
                   <h5 class="property-title">
-                    <a href="#">WONING AALST WONING AALST WONING AALST WONING AALST</a>
+                    <a href="<?php echo esc_url(home_url('/immobilien-details/')); ?>">WONING AALST WONING AALST WONING AALST WONING AALST</a>
                   </h5>
                   <div class="bvi-grd-item-feature clearfix">
                     <div class="bvi-grd-item-feature-item">

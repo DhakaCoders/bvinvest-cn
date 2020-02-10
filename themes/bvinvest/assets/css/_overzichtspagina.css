@@ -314,3 +314,21 @@
 		overflow: hidden;
 	}
 }
+@media(max-width: 1199px){
+	.bvi-grd-cat{
+		margin-right: 5px;
+	}
+}
+@media(max-width: 1199px){
+	.bvi-grd-key-date{
+		max-height: 115px;
+	    display: flex;
+	    flex-direction: column-reverse;
+	    flex-wrap: wrap;
+	    flex-basis: auto;
+	    align-items: flex-start;		
+	}
+	.bvi-grd-date{
+		margin-bottom: 4px;
+	}
+}

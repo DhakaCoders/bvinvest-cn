@@ -68,7 +68,7 @@ $thisID = get_the_ID();
               </i>
               <?php _e('<h6>B&V Invest bvba</h6>', THEME_NAME);?>
               <?php if( !empty( $adres ) ) printf('<span>%s</span>', $adres);  ?>
-              <a href="<?php echo $gmaplink; ?>">Routebeschrijving</a>
+              <a target="_blank" href="<?php echo $gmaplink; ?>">Routebeschrijving</a>
             </div>
             <div class="contact-lft-img" style="background:url(<?php echo $sidebarimg; ?>);">
               <?php echo $sidebartag; ?>

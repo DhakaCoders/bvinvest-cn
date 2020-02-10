@@ -3,6 +3,18 @@
 contact-form-sec-wrp
 -------------------
 */
+.wpforms-field-container{
+	width: 100%;
+	float: left;
+}
+.wpforms-field-container:after,
+.wpforms-field-container:before,
+.wpforms-submit-container:after,
+.wpforms-submit-container:before{
+	content: "";
+	display: table;
+	clear: both;
+}
 .contact-form-sec-wrp{
 	padding-top: 70px;
 }
@@ -46,6 +58,11 @@ contact-form-sec-wrp
 	vertical-align: baseline;
 	text-decoration: none;
 	padding-right: 20px;
+	font-size: 19px;
+	color: #7B7B7B;
+}
+.contact-socail a:hover{
+	color: #15B615;
 }
 .contact-map-location {
     background: #15B615;
@@ -365,7 +382,13 @@ body #contact-wpform.contact-form-wrp .wpforms-field-container .wpforms-has-erro
 	height: 565px;
 	margin-top: -185px;
 }
-
+body .wpforms-field-container .wpforms-field.wpforms-has-error input{
+	border-color: #FF2E00;
+}
+body div.wpforms-container-full .wpforms-form .wpforms-field.wpforms-has-error label.wpforms-error{
+	color: #FF8A00;
+	font-size: 12px;
+}
 /*
 --------------------
  Responsive Css

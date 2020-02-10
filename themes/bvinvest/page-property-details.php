@@ -1,6 +1,6 @@
 <?php 
 /*
-  Template Name: Immobilieën Detailpagina
+  Template Name: Property Details
 */
 get_header(); 
 $thisID = get_the_ID();
@@ -292,7 +292,101 @@ $thisID = get_the_ID();
             </div>
           </div>
         </div>    
-      </div>   
+      </div>  
+      <div class="detailpagina-slider-item green-info" style="background: url(<?php echo THEME_URI; ?>/assets/images/detailpagina-slide-item-img.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="detailpagina-slider-item-innr">
+                <div class="detailpagina-slider-des">
+                  <span class="key-info-bg">
+                    <i>  
+                      <svg class="hmGrdSlider-icon-key-svg" width="22.792" height="22.792" viewBox="0 0 22.792 22.792" fill="white">
+                        <use xlink:href="#hmGrdSlider-icon-key-svg"></use>
+                      </svg>
+                    </i>
+                    <strong>TE KOOP: €276.600,00</strong>
+                  </span>
+                  <strong>WONING AALST</strong>
+                  <ul class="ulc clearfix">
+                    <li>
+                      <i>  
+                        <svg class="detailpagina-slider-icon-1-svg" width="26" height="26" viewBox="0 0 26 26" fill="white">
+                          <use xlink:href="#detailpagina-slider-icon-1-svg"></use>
+                        </svg>
+                      </i>
+                      <span>3 Slaapkamers</span>
+                    </li>
+                    <li>
+                      <i>  
+                        <svg class="detailpagina-slider-icon-2-svg" width="26" height="26" viewBox="0 0 26 26" fill="white">
+                          <use xlink:href="#detailpagina-slider-icon-2-svg"></use>
+                        </svg>
+                      </i>
+                      <span>2 Badkamers</span>
+                    </li>
+                    <li>
+                      <i>  
+                        <svg class="detailpagina-slider-icon-3-svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                          <use xlink:href="#detailpagina-slider-icon-3-svg"></use>
+                        </svg>
+                      </i>
+                      <span>200 m <sup>2</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+      <div class="detailpagina-slider-item green-info" style="background: url(<?php echo THEME_URI; ?>/assets/images/detailpagina-slide-item-img.jpg);">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="detailpagina-slider-item-innr">
+                <div class="detailpagina-slider-des">
+                  <span class="key-info-bg">
+                    <i>  
+                      <svg class="hmGrdSlider-icon-key-svg" width="22.792" height="22.792" viewBox="0 0 22.792 22.792" fill="white">
+                        <use xlink:href="#hmGrdSlider-icon-key-svg"></use>
+                      </svg>
+                    </i>
+                    <strong>TE KOOP: €276.600,00</strong>
+                  </span>
+                  <strong>WONING AALST</strong>
+                  <ul class="ulc clearfix">
+                    <li>
+                      <i>  
+                        <svg class="detailpagina-slider-icon-1-svg" width="26" height="26" viewBox="0 0 26 26" fill="white">
+                          <use xlink:href="#detailpagina-slider-icon-1-svg"></use>
+                        </svg>
+                      </i>
+                      <span>3 Slaapkamers</span>
+                    </li>
+                    <li>
+                      <i>  
+                        <svg class="detailpagina-slider-icon-2-svg" width="26" height="26" viewBox="0 0 26 26" fill="white">
+                          <use xlink:href="#detailpagina-slider-icon-2-svg"></use>
+                        </svg>
+                      </i>
+                      <span>2 Badkamers</span>
+                    </li>
+                    <li>
+                      <i>  
+                        <svg class="detailpagina-slider-icon-3-svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                          <use xlink:href="#detailpagina-slider-icon-3-svg"></use>
+                        </svg>
+                      </i>
+                      <span>200 m <sup>2</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div> 
     </div>  
     <div class="detailpagina-slider-arrow-wrp">
       <div class="container">
@@ -339,6 +433,12 @@ $thisID = get_the_ID();
               </div>
               <div class="detailpagina-thumb-slider-item">
                 <i><img src="<?php echo THEME_URI; ?>/assets/images/detailpagina-thumb-slider-05.jpg" alt=""></i>
+              </div>
+              <div class="detailpagina-thumb-slider-item">
+                <i><img src="<?php echo THEME_URI; ?>/assets/images/detailpagina-thumb-slider-06.jpg" alt=""></i>
+              </div>
+              <div class="detailpagina-thumb-slider-item">
+                <i><img src="<?php echo THEME_URI; ?>/assets/images/detailpagina-thumb-slider-06.jpg" alt=""></i>
               </div>
               <div class="detailpagina-thumb-slider-item">
                 <i><img src="<?php echo THEME_URI; ?>/assets/images/detailpagina-thumb-slider-06.jpg" alt=""></i>

@@ -45,7 +45,9 @@
 	text-transform: uppercase;
 	color: #7B7B7B;
 }
-.hdr-rgt-top-lnc a:hover {
+.hdr-rgt-top-lnc a:hover,
+.socail a:hover,
+.hdr-rgt-top-lnc li.current-menu-item a{
 	color: #15B615;
 }
 .hdr-rgt-top-lnc a svg{

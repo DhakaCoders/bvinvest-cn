@@ -6,7 +6,7 @@
   background: -webkit-linear-gradient(0deg, #F9F9F9, #F9F9F9);
   background: linear-gradient(0deg, #F9F9F9, #F9F9F9);
   z-index: 1;
-  left: 56%;
+  width: 44%;
   right: 0;
   top: 0; 
   height: 464px;
@@ -119,20 +119,18 @@
 }
 .slider-filter-bar a:hover,
 .slider-filter-bar button:hover{
-  color: #15B615;
+  color: #282828;
 }
 .slider-filter-bar a span,
 .slider-filter-bar button span{
-  display: inline-block;
-  vertical-align: baseline;
+  display: block;
   font-weight: 500;
   font-size: 24px;
-  line-height: 48px;
+  line-height: 36px;
 }
 .slider-filter-bar a strong,
 .slider-filter-bar button strong{
-  display: inline-block;
-  vertical-align: baseline;
+  display: block;
   font-weight: 900;
   font-size: 48px;
   line-height: 48px;
@@ -189,20 +187,24 @@
   border-radius: 8px;
   position: relative;
 }
-.hm-grd-img-info-wrp{
+.hm-grd-img-info-wrp,
+.hm-grd-item-info-wrp{
   position: absolute;
   left: 8px;
   right: 8px;
   bottom: 10px;
   z-index: 12
 }
+.green-info .key-info-grd-spn,
 .green-info .key-info-grd-spn{
   background: #15B615;
 }
-.sky-info .key-info-grd-spn{
+.sky-info .key-info-grd-spn,
+.green-info .key-info-grd-spn{
   background: #14A7FA;
 }
-.yellow-info .key-info-grd-spn{
+.yellow-info .key-info-grd-spn,
+.green-info .key-info-grd-spn{
   background: #FA9014;
 }
 .hmGrdSlider-grd-img span::after{
@@ -250,6 +252,7 @@
 .hmGrdSlider-grd-des{
   padding: 27px 15px 20px 0;
   letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 .hmGrdSlider-grd-des > span{
   display: inline-block;
@@ -261,6 +264,7 @@
 .hmGrdSlider-grd-des h5{
   font-weight: 700;
   margin-bottom: 22px;
+  color: #282828;
 }
 .hmGrdSlider-grd-des h5 a{
   color: #282828;
@@ -292,6 +296,7 @@
   vertical-align: middle;
   font-size: 14px;
   color: #7B7B7B;
+  text-transform: uppercase;
 }
 .hmGrdSlider-grd-des > a{
   display: inline-block;
@@ -704,7 +709,7 @@ ul.testimonial-ratings li i{
 .hm-fixed-frem-con{
   position: fixed;
   right: 0;
-  bottom: 15%;
+  bottom: 0;
   z-index: 99;
 }
 .hm-fixed-frem-con span{
@@ -721,6 +726,7 @@ ul.testimonial-ratings li i{
 .hm-fixed-frem-innr{
   position: relative;
   height: 100%; 
+  transition: all 0.3s;
 }
 .hm-fixed-frem-innr a{
   display: inline-block;
@@ -729,7 +735,8 @@ ul.testimonial-ratings li i{
   text-transform: uppercase;
   font-size: 18px;
   position: absolute;
-  top: 42.4%;
+  top: 39.7%;;
+  padding: 10px 0;
   left: 63px;
   font-weight: 700;
   -webkit-transform: matrix(1, -0.13, 0.12, 0.92, 0, 0);
@@ -738,10 +745,12 @@ ul.testimonial-ratings li i{
   -o-transform: matrix(1, -0.13, 0.12, 0.92, 0, 0);
   transform: matrix(1, -0.13, 0.12, 0.92, 0, 0);
 }
-.hm-fixed-frem-innr a:hover{
+/*.hm-fixed-frem-innr a:hover{
   color: #15B615;
+}*/
+.hm-fixed-frem-innr:hover{
+  transform: rotate(6.1deg);
 }
-
 .hmTestimonialSlider div.listing  div.no-avatar{
   display: flex;
   flex-direction: column;
@@ -824,9 +833,10 @@ ul.testimonial-ratings li i{
     max-width: 270px;
   }
   .hm-fixed-frem-innr a {
-    font-size: 14px;
-    top: 41.5%;
-    left: 53px;
+      font-size: 14px;
+      top: 38%;
+      left: 53px;
+      padding: 10px 0;
   }
 }
 
@@ -886,9 +896,6 @@ ul.testimonial-ratings li i{
   .pregress-counter-col .progressbar-text {
     font-size: 28px;
   }
-  .pregress-counter-col span {
-    font-size: 18px;
-  }
   .hmGrdSlider-grd-des {
     padding: 27px 10px 20px 0;
   }
@@ -915,6 +922,13 @@ ul.testimonial-ratings li i{
   }
   .hmGrdSlider-grd-img-bg {
     min-height: 300px;
+  }
+  .hmGrdSlider-info-right{
+    padding-bottom: 30px;
+    padding-top: 0;    
+  }
+  .hmGrdSlider-info{
+    padding: 50px 0 72px;
   }
 /*   .hm-fixed-frem-con span{
     max-width: 160px;
@@ -965,9 +979,6 @@ ul.testimonial-ratings li i{
   }
   .pregress-counter-col .progressbar-text {
     font-size: 24px;
-  }
-  .pregress-counter-col span {
-    font-size: 14px;
   }
   .hm-testimonial-innr {
     display: block;
@@ -1051,12 +1062,15 @@ ul.testimonial-ratings li i{
     margin-left: 0!important;
     margin-right: 0!important;
   }
+  .bw-invest-des a{
+    height: 56px;
+    line-height: 56px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 @media(max-width: 767px){
-  .pregress-counter-col span {
-    font-size: 22px;
-  }
   .pregress-counter-col .progressbar-text {
     font-size: 33px;
   }
@@ -1088,7 +1102,7 @@ ul.testimonial-ratings li i{
   }
   .hmGrdSlider-info {
     border-top: 0;
-    padding: 32px 0 45px;
+    padding: 35px 0 45px;
   }
   .hmGrdSlider-info-left a {
     margin: 10px 10px;
@@ -1100,30 +1114,31 @@ ul.testimonial-ratings li i{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    padding: 145px 0 20px;
+    padding: 150px 0 20px;
   }
-  .sm-slider-filter-bar h1 {
-    font-weight: 500;
+  .sm-slider-filter-bar strong.filtertitle {
+    font-weight: 900;
     font-size: 34px;
     line-height: 40px;
     color: #282828;
     opacity: 0;
     position: absolute;
     top: 55px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
     -ms-transition: all .5s ease;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
   }
-  .sm-slider-filter-bar h1.huizen {
+  .sm-slider-filter-bar strong.huizen {
     opacity: 1;
   }
-  .sm-slider-filter-bar h1 small{
+  .sm-slider-filter-bar strong.filtertitle small{
     font-size: 24px;
-    line-height: 30px;
+    line-height: 40px;
+    font-weight: 500;
+    display: block;
   }
   .sm-slider-filter-bar a {
     font-weight: 700;
@@ -1147,8 +1162,8 @@ ul.testimonial-ratings li i{
     position: relative;
     background: #fff;
     padding: 2px;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 9px;
+    margin-right: 9px;
     width: 30px;
     height: 16px;
   }
@@ -1218,6 +1233,16 @@ ul.testimonial-ratings li i{
   .hmGrdSlider-info-left a:nth-child(1) {
     margin-bottom: 25px;
   }
+  .hmTestimonialSlider div.listing div.no-avatar{
+    padding-bottom: 65px;
+  }
+  .hmGrdSlider-grd-des{
+    height: auto!important;
+  }
+  .hmGrdSlider-info-right{
+    padding-top: 21px;
+    padding-bottom: 10px;
+  }
 
 }
 
@@ -1235,7 +1260,8 @@ ul.testimonial-ratings li i{
     margin: 10px 0;
     min-width: initial!important;
   }
-  .hmTestimonialSlider p {
+  .hmTestimonialSlider p,
+  .hmTestimonialSlider div.listing div.no-avatar .text{
     font-size: 20px;
     line-height: 30px;
   } 
@@ -1277,35 +1303,57 @@ ul.testimonial-ratings li i{
     width: 16px!important;
     height: 16px!important;
   }
+  .hm-testimonial-img-innr{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bw-invest-top-gray-bg{
+    left: auto;
+    right: 0;
+    width: 70%;
+  }
 }
 
 @media(max-width: 479px){
   .page-banner-sec-con {
-    margin-bottom: 82px;
+    margin-bottom: 0;
+  }
+  .bw-invest-sec{
+    padding-top: 85px;
   }
   .hmGrdSlider-info-right li {
       margin-left: 8px;
   }
-  .sm-slider-filter-bar h1 {
-    font-size: 23px;
-    line-height: 28px;
-  }
-  .sm-slider-filter-bar h1 small {
-    font-size: 18px;
-    line-height: 20px;
-  }
-  .sm-slider-filter-bar {
-    padding: 120px 0 20px;
-  }
-  .sm-slider-filter-bar h1 {
-    top: 55px;
-  }
+
   .hmGrdSlider-grd-des {
       padding: 27px 10px 10px 0;
   }
+  .hmGrdSlider-item{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .hmGrdSlider-info-right li strong{
+    line-height: 27px;
+    vertical-align: top;
+  }
+  .hmGrdSlider-info-right li span{
+    width: 25px;
+    height: 25px;
+    margin-right: 0;    
+  }
+  .hmGrdSlider-info-right li span i {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 24px;
+  }
+  .hmGrdSlider-info-right li span i svg {
+      width: 14px!important;
+      height: 14px!important;
+  }
 }
 
-@media(max-width: 399px){
+/*@media(max-width: 399px){
   .hmGrdSlider-info-right li {
     display: block;
     vertical-align: baseline;
@@ -1322,11 +1370,24 @@ ul.testimonial-ratings li i{
   .sm-slider-filter-bar span.switch-btn {
     display: none;
   }
-}
+}*/
 
 @media(max-width: 359px){
   .hmGrdSlider-info-left a {
     font-size: 15px;
+  }
+  .sm-slider-filter-bar a{
+    font-size: 11px;
+  }
+  .sm-slider-filter-bar span.switch-btn{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .hmGrdSlider-info-right li {
+      margin-left: 5px;
+  }
+  .hmGrdSlider-info-right li strong{
+    font-size: 12px;
   }
 }
 

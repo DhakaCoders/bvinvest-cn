@@ -41,74 +41,7 @@ get_header();
       </div>
       <div class="col-md-12">
         <div class="psearch-form-wrap pageSearch">
-          <form>
-            <div class="psearch-form">
-              <div class="psearch-form-fields">
-                <ul class="clearfix ulc">
-                  <li>
-                    <div>
-                      <select class="selectpicker" data-size="6" data-max-options="1" title="Type" multiple>
-                        <option value="type1">Option 1</option>
-                        <option value="type2">Option 2</option>
-                        <option value="type3">Option 3</option>
-                        <option value="type4">Option 4</option>
-                        <option value="type5">Option 5</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <select class="selectpicker" data-size="6" data-max-options="1" title="Land" multiple>
-                        <option value="type1">Option 1</option>
-                        <option value="type2">Option 2</option>
-                        <option value="type3">Option 3</option>
-                        <option value="type4">Option 4</option>
-                        <option value="type5">Option 5</option>
-                      </select>
-                    </div>
-                  </li>
-                  
-                  <!-- <li>
-                    <div>
-                      <input type="text" name="" placeholder="Lorem ipsum">
-                    </div>
-                  </li> -->
-                  <li>
-                    <div>
-                      <select class="selectpicker" data-size="6" data-max-options="1" title="Gemeente" multiple>
-                        <option value="type1">Option 1</option>
-                        <option value="type2">Option 2</option>
-                        <option value="type3">Option 3</option>
-                        <option value="type4">Option 4</option>
-                        <option value="type5">Option 5</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <select class="selectpicker" data-size="6" data-max-options="1" title="Prijsklasse" multiple>
-                        <option value="type1">Option 1</option>
-                        <option value="type2">Option 2</option>
-                        <option value="type3">Option 3</option>
-                        <option value="type4">Option 4</option>
-                        <option value="type5">Option 5</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="submit">
-                      <button type="submit">
-                        <span>zoeken 
-                        <i><svg class="banner-seach-icon-svg" width="23" height="23" viewBox="0 0 23 23" fill="white"><use xlink:href="#banner-seach-icon-svg"></use>
-                          </svg></i>
-                      </span>
-                      </button>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </form> 
+          <?php get_template_part( 'templates/form', 'search' ); ?> 
         </div>
       </div>
     </div>
@@ -471,59 +404,5 @@ get_header();
 
 
 
-
-<section class="footer-top-form-sec-wrp" style="background: url(<?php echo THEME_URI; ?>/assets/images/footer-top-form-bg.jpg);">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="footer-top-form-inr clearfix">
-          <div class="footer-form-wrp">
-           <div class="ftr-top-frm-dsc">
-              <h4>Gratis waardebepaling</h4>
-              <p>Vul onderstaand formulier in om een gratis waardebepaling aan te vragen voor uw pand! We helpen u zo snel mogelijk verder.</p>
-            </div>
-          <div class="ftr-top-form clearfix">
-            
-            <div class="wpforms-container">
-              <form class="wpforms-form">
-                
-                <div class="wpforms-field-container">
-                  
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">Naam *</label>
-                    <input type="text" name="name" placeholder="Naam *" required>
-                  </div>
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">Voornaam *</label>
-                    <input type="text" name="name" placeholder="Voornaam *" required>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">Telefoon *</label>
-                    <input type="text" name="text" placeholder="Telefoon *" required>
-                  </div>
-
-                  <div class="wpforms-field">
-                    <label class="wpforms-field-label">E-mailadres *</label>
-                    <input type="email" name="email" placeholder="E-mailadres *" required>
-                  </div>
-
-                </div><!-- end of .wpforms-field-container-->
-
-                <div class="ftr-msg">
-                  <p>We contacteren u binnen de <br> werkdag!</p>
-                </div>
-                <div class="wpforms-submit-container">
-                  <button type="submit" name="submit" class="wpforms-submit">gratis schatting</button>
-                </div>
-              
-
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('templates/footer', 'form'); ?>
 <?php get_footer(); ?>
